@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title id="browser-title"></title>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    </head>
+    <body>
+        
+        <header>
+        
+            <div id="nav-icon-container">
+                <div id="nav-menu-icon-open">
+                    <hr width="25px">
+                    <hr width="15px">
+                    <hr width="20px">
+                </div>
+                <div id="logo-container"> 
+                    <img src="img/logo.svg">
+                </div>
+            </div>
+            
+            <div> 
+                <h2 id="header-title">título del video</h2>
+            </div>
+            <div id="notes-menu-icon-container"> 
+                <img id="notes-menu-icon" src="img/notes-close-icon.svg">
+            </div>
+
+        </header>
+
+        <main>
+
+            <section id="internal-page-fragment-container">
+                <object id="object-internal-page-view" ></object>
+            </section>
+            
+            <section id="video-screen-fragment-container">
+                <section id="video-section">
+                
+                    <div id="video-container">
+                        <div id="video-display">
+                            
+                            <video id="video-player" poster="img/video-size-placeholder.png" controls>
+                                <track id="video-captation" label="Español" kind="subtitles" srclang="es">
+                            </video>
+                            
+                        </div>
+                        <div id="video-controls">
+                            
+                            <hr id="video-time-line-back">                        
+                            <div id="video-buttons-container">
+                                <div>
+                                    <img id="audio-button" src="img/audio-icon.svg">
+                                    <hr id="audio-line">
+                                </div>
+                                <div>
+                                    <!-- current time -->
+                                    <p id="current-video-time-display">00:00</p>
+                                    <img id="go-to-previous-video" src="img/next-icon.svg">
+                                    <img id="play-video-button" src="img/play-icon.svg">
+                                    <img id="go-to-next-video" src="img/next-icon.svg">
+                                    <!-- video duration -->
+                                    <p id="video-time-duration-display">00:00</p>
+                                </div>
+                                <div>
+                                    <img id="video-subtitle-button" src="img/subtitle-icon.svg" alt="activar/desactivar subtitulos"/>
+                                    <img id="video-fullscreen-button" src="img/full-screen-icon.svg" alt="modo pantalla completa" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="notes-section">
+                    <p>section 2</p>
+                </section>
+            </section>
+            
+        </main>
+
+        <div id="nav-menu-container">
+
+            <aside>
+                <section id="nav-menu-title-container">
+
+                    <div id="nav-menu-icon-close">
+                        <hr width="25px">
+                        <hr width="15px">
+                        <hr width="20px">
+                    </div>
+
+                    <div id="title-container">
+                        <h1>¡A Programar!</h1>
+                    </div>
+                </section>
+                
+                <section id="nav-menu-open-icons">
+                    <img id="cat-image" src="img/scratch-cat.svg">
+                    <img id="logo-image-menu-open" src="img/logo.svg">
+                </section>
+
+                <hr class="nav-menu-line">
+
+                <nav id="main-nav-bar">
+                    <!-- adding items with js -->
+                </nav>
+            </aside>
+            <div id="close-menu-area"></div>
+        </div>
+
+
+        <script type="text/javascript" src="./main-index.js"></script>
+        <script type="text/javascript" src="js/references-id.js"></script>
+        <script type="text/javascript" src="js/menu-model.js"></script>
+        <script type="text/javascript" src="js/EventBus.js"></script>    
+        <script type="text/javascript" src="js/view.js"></script>
+        <script type="text/javascript" src="js/header-bar.js"></script>    
+        <script type="text/javascript" src="js/side-bar.js"></script>
+        <script type="text/javascript" src="js/video-buttons-controller.js"></script>        
+        <script type="text/javascript" src="js/notes-menu.js"></script>
+        <script type="text/javascript" src="js/fragment-controller.js"></script>
+        <script type="text/javascript" src="js/session-manager.js"></script>
+        <script type="text/javascript" src="js/main-setup.js"></script>
+    </body>
+</html>
