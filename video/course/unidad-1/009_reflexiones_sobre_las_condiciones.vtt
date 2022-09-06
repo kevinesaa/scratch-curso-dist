@@ -1,0 +1,139 @@
+WEBVTT
+
+1
+00:00:04.260 --> 00:00:09.830
+Observa con atención la forma de la
+condición dentro del bloque de decisión.
+
+2
+00:00:09.830 --> 00:00:16.750
+Tiene forma de hexágono, allí podemos
+poner solamente bloques de ese mismo formato.
+
+3
+00:00:16.750 --> 00:00:20.080
+Por ejemplo,
+no podemos poner el bloque mover.
+
+4
+00:00:20.080 --> 00:00:23.500
+Lo que es especial con estos
+bloques hexagonales es
+
+5
+00:00:23.500 --> 00:00:29.380
+que representan condiciones que pueden
+tomar el valor verdadero o falso.
+
+6
+00:00:29.380 --> 00:00:31.695
+En computación se dice que son valores de
+
+7
+00:00:31.695 --> 00:00:38.260
+tipo booleano, que pueden tomar uno de
+dos posibles valores: verdadero o falso.
+
+8
+00:00:38.260 --> 00:00:41.354
+Una forma de pensar sobre
+estas condiciones es
+
+9
+00:00:41.354 --> 00:00:45.250
+como una pregunta que puede
+tener como respuesta sí o no.
+
+10
+00:00:45.250 --> 00:00:50.442
+Algunas preguntas del mundo real
+que podrían ser de este tipo son:
+
+11
+00:00:51.442 --> 00:00:53.248
+¿está la puerta cerrada?
+
+12
+00:00:53.248 --> 00:00:55.060
+¿Inés vive en Monevideo?
+
+13
+00:00:55.060 --> 00:00:56.091
+¿Juan tiene 15 años?
+
+14
+00:00:56.091 --> 00:01:00.450
+Y en particular pensando
+en el programa que hicimos,
+
+15
+00:01:00.450 --> 00:01:02.761
+¿el gato está tocando el borde?
+
+16
+00:01:03.761 --> 00:01:07.070
+Analiza estos otros
+ejemplos que te proponemos.
+
+17
+00:01:07.070 --> 00:01:10.059
+¿Puedes explicar por qué no servirían?
+
+18
+00:01:11.059 --> 00:01:12.140
+¿Cuál es tu color favorito?
+
+19
+00:01:12.140 --> 00:01:14.085
+¿Qué edad tiene Juan?
+
+20
+00:01:14.085 --> 00:01:16.420
+¿Por qué Areti usa lentes?
+
+21
+00:01:17.420 --> 00:01:19.180
+¿Cuál es tu nombre?
+
+22
+00:01:19.180 --> 00:01:25.060
+Estas preguntas no tienen respuesta
+del tipo sí o no, verdadero o falso.
+
+23
+00:01:25.060 --> 00:01:27.088
+No son ejemplos de valores booleanos.
+
+24
+00:01:28.088 --> 00:01:32.406
+En esta unidad trabajamos
+con las decisiones y
+
+25
+00:01:32.406 --> 00:01:34.203
+vimos cómo incorporarlas a los programas.
+
+26
+00:01:34.203 --> 00:01:39.735
+Expresar las condiciones e incluirlas en
+las decisiones de tus programas es una
+
+27
+00:01:39.735 --> 00:01:44.397
+habilidad muy importante y en particular
+será muy útil cuando crees juegos,
+
+28
+00:01:44.397 --> 00:01:47.890
+por ejemplo para detectar si
+un personaje chocó a otro,
+
+29
+00:01:47.890 --> 00:01:51.580
+o para decidir si cumplió ciertos
+requisitos para cambiar de nivel.
+
+30
+00:01:51.580 --> 00:01:55.360
+Muy pronto las usaremos en
+los juegos que crearemos.

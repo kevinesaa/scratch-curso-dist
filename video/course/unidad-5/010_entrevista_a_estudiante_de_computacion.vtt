@@ -1,0 +1,409 @@
+WEBVTT
+
+1
+00:00:05.300 --> 00:00:07.200
+¡Hola a todos!
+
+2
+00:00:07.420 --> 00:00:09.060
+Aquí estoy con Karol Stanski,
+
+3
+00:00:09.300 --> 00:00:12.020
+quien es estudiante de primer año en la Escuela de Informática
+
+4
+00:00:12.220 --> 00:00:14.195
+en la Universidad de Edimburgo. ¡Hola Karol!
+
+5
+00:00:14.375 --> 00:00:15.370
+¡Hola!
+
+6
+00:00:15.582 --> 00:00:17.582
+¿Qué es lo que estudias?
+
+7
+00:00:18.220 --> 00:00:21.800
+Estudio Ciencias de la Computación, es mi primer año
+
+8
+00:00:22.000 --> 00:00:24.880
+es bastante básico, pero estamos comenzando a programar y 
+
+9
+00:00:25.340 --> 00:00:27.340
+pienso que es realmente interesante. 
+
+10
+00:00:27.540 --> 00:00:29.220
+¿Cuánto tiempo hace que programas?
+
+11
+00:00:29.700 --> 00:00:35.360
+He estado programando por cerca de dos años, sí,
+
+12
+00:00:35.640 --> 00:00:40.660
+comencé con C, y luego C++, cuando estaba en Polonia, 
+
+13
+00:00:40.860 --> 00:00:45.840
+y aquí comencé a programar en Haskell y Java. 
+
+14
+00:00:46.000 --> 00:00:49.340
+Muchas ideas y conceptos son iguales.
+
+15
+00:00:49.520 --> 00:00:54.760
+Creo que cuando aprendes un lenguaje, y quieres cambiarte a otro, 
+
+16
+00:00:54.860 --> 00:00:59.580
+es mucho más sencillo que empezar desde cero.
+
+17
+00:01:00.080 --> 00:01:05.820
+Así que, vale la pena aprender muchos lenguajes. 
+
+18
+00:01:06.100 --> 00:01:08.640
+Genial, mencionaste unos cuantos lenguajes
+
+19
+00:01:09.020 --> 00:01:11.140
+dijiste que el primero fue C ¿cierto?
+
+20
+00:01:11.228 --> 00:01:14.448
+¿Cómo te interesaste en la programación?
+
+21
+00:01:14.520 --> 00:01:17.160
+¿Cuál fue tu primer contecto con la programación en C?
+
+22
+00:01:17.580 --> 00:01:20.100
+Mi primo estudiaba Ciencias de la Computación y
+
+23
+00:01:20.280 --> 00:01:25.440
+me mostró algunos programas y fue muy genial ver que podías crear
+
+24
+00:01:25.540 --> 00:01:29.280
+algo a partir de la nada y hacer que tu computadora
+
+25
+00:01:29.340 --> 00:01:32.320
+hiciera un cálculo o corriera un programa,
+
+26
+00:01:32.320 --> 00:01:35.540
+que podías escribir un código y hacer que la computadora hiciera 
+
+27
+00:01:35.640 --> 00:01:38.340
+ cosas por tí que tú no puedes
+
+28
+00:01:38.600 --> 00:01:43.120
+dije, eso es lo que quiero hacer en el futuro.
+
+29
+00:01:43.120 --> 00:01:43.860
+Genial
+
+30
+00:01:44.040 --> 00:01:48.940
+Y ¿te acuerdas de qué se trataba tu primer programa de computadora?
+
+31
+00:01:49.980 --> 00:01:55.740
+Sí, fue una calculadora muy básica, ese fue mi primer programa.
+
+32
+00:01:56.500 --> 00:02:02.060
+Podía sumar, multiplicar, restar... números a otros números...
+
+33
+00:02:02.340 --> 00:02:07.280
+los cuales eran ingresados por el usuario.
+
+34
+00:02:07.460 --> 00:02:08.300
+Sí, ese fue.
+
+35
+00:02:08.520 --> 00:02:11.260
+Y ¿cómo lo hiciste? ¿Recibiste ayuda de tu primo
+
+36
+00:02:11.460 --> 00:02:14.480
+ o de algún familiar o maestro? 
+
+37
+00:02:14.520 --> 00:02:17.580
+¿o simplemente te lanzaste por tu cuenta y exploraste? ¿Cómo lo hiciste?
+
+38
+00:02:17.780 --> 00:02:21.180
+Sí, al principio mi primo me ayudó un poco
+
+39
+00:02:21.440 --> 00:02:30.620
+pero luego simplemente exploré muchos foros de discusión en Internet.
+
+40
+00:02:31.000 --> 00:02:37.860
+Son muy útiles. Si te trancas en algún punto, puedes googlearlo, lo hace muy útil y simple.
+
+41
+00:02:38.960 --> 00:02:41.740
+¡Genial! Ese es un buen consejo para la gente que está 
+
+42
+00:02:41.920 --> 00:02:44.800
+recién comenzando su experiencia en la programación.
+
+43
+00:02:44.800 --> 00:02:48.000
+Sí. Simplemente googlea tu problema y la gente te ayudará.
+
+44
+00:02:48.000 --> 00:02:51.360
+¿Qué es lo que más disfrutas de programar?
+
+45
+00:02:51.360 --> 00:02:54.900
+Antes mencionaste crear cosas que no estaban allí antes.
+
+46
+00:02:54.900 --> 00:02:58.720
+Sí, crear cosas y resolver problemas,
+
+47
+00:02:59.340 --> 00:03:01.580
+porque en general durante nuestras prácticas 
+
+48
+00:03:01.760 --> 00:03:04.200
+tenemos que... eh...
+
+49
+00:03:04.420 --> 00:03:08.260
+escribir algunos programas o funciones, dependiendo del lenguaje,
+
+50
+00:03:08.420 --> 00:03:11.560
+y tenemos que resolver problemas.
+
+51
+00:03:12.100 --> 00:03:14.500
+Algunos de ellos son realmente complicados,
+
+52
+00:03:14.700 --> 00:03:19.440
+pero luego de un tiempo lo haces cada vez mejor
+
+53
+00:03:19.640 --> 00:03:22.720
+ y eso lo hace muy divertido.
+
+54
+00:03:22.820 --> 00:03:26.640
+En nuestro curso, le decimos... a la gente que recién empieza...
+
+55
+00:03:26.860 --> 00:03:29.240
+a programar, les decimos que...
+
+56
+00:03:29.500 --> 00:03:32.020
+no vayan directamente a la computadora y empiecen a escribir.
+
+57
+00:03:32.540 --> 00:03:35.320
+Piénsalo un poco , diseña tu código,
+
+58
+00:03:35.780 --> 00:03:39.720
+piensa en el problema, y una vez que creaste una versión básica del programa
+
+59
+00:03:39.920 --> 00:03:42.200
+pruébalo para ver cómo funciona.
+
+60
+00:03:42.200 --> 00:03:45.620
+Pónle algunos comentarios para recordar qué hace cada parte del código,
+
+61
+00:03:45.660 --> 00:03:50.220
+¿Tú haces lo mismo? ¿Te dieron estos mismos consejos en nuestra escuela?
+
+62
+00:03:51.280 --> 00:03:55.080
+Sí, también, y pienso que es muy... eh... 
+
+63
+00:03:55.080 --> 00:03:57.380
+que el lápiz y el papel son también muy útiles
+
+64
+00:03:57.680 --> 00:04:02.160
+porque a veces enfrentas problemas dónde tienes números,
+
+65
+00:04:02.440 --> 00:04:10.280
+tienes que... encontrar un algoritmo. Pienso que lapicera o lápiz y papel son muy útiles.
+
+66
+00:04:10.840 --> 00:04:15.520
+Pero los comentarios y empezar por algo simple 
+
+67
+00:04:15.755 --> 00:04:17.855
+creo que también son muy útiles.
+
+68
+00:04:17.855 --> 00:04:22.655
+También hablamos sobre construir los programas de manera incremental,
+
+69
+00:04:22.655 --> 00:04:24.435
+empiezas con una versión simple
+
+70
+00:04:24.680 --> 00:04:26.140
+y luego agregas otro poco, y otro poco.
+
+71
+00:04:26.140 --> 00:04:27.580
+Existen muchos abordajes para esto.
+
+72
+00:04:29.020 --> 00:04:32.140
+Mencionamos el modelo en cascada, donde tú primero,
+
+73
+00:04:32.140 --> 00:04:35.260
+hablas sobre los requerimientos, luego pasas al diseño,
+
+74
+00:04:35.520 --> 00:04:39.060
+ luego haces la implementación, lo pruebas y listo.
+
+75
+00:04:39.340 --> 00:04:46.060
+Me pregunto, cuando construyes programas aquí para tus proyectos de la escuela 
+
+76
+00:04:46.260 --> 00:04:47.360
+y proyectos externos,
+
+77
+00:04:47.520 --> 00:04:49.260
+¿cómo lo haces? ¿cuál es tu abordaje?
+
+78
+00:04:49.260 --> 00:04:52.820
+Comienzo con algo bien simple, como lo mencionaste,
+
+79
+00:04:53.040 --> 00:04:56.480
+luego lo ejecuto y reviso si todo funciona bien, luego
+
+80
+00:04:56.640 --> 00:05:02.240
+voy agregando nuevas funciones u otras opciones, y luego lo construyo nuevamente
+
+81
+00:05:03.880 --> 00:05:05.580
+durante ese proceso
+
+82
+00:05:07.020 --> 00:05:09.620
+y sí, creo que esa es la mejor forma, 
+
+83
+00:05:09.740 --> 00:05:10.420
+para mí al menos,
+
+84
+00:05:10.500 --> 00:05:11.300
+>>Sí
+
+85
+00:05:11.300 --> 00:05:15.980
+porque no sabía esto hace un año,
+
+86
+00:05:16.240 --> 00:05:21.020
+y cuando comencé con proyectos más grandes,
+
+87
+00:05:21.380 --> 00:05:26.700
+me tranqué en varios lugares, por ejemplo que el programa no compilaba, 
+
+88
+00:05:27.200 --> 00:05:34.640
+o que tenía muchos errores, así que decidí empezar por algo realmente simple
+
+89
+00:05:34.640 --> 00:05:36.120
+y luego construirlo.
+
+90
+00:05:36.120 --> 00:05:37.080
+Muy bien.
+
+91
+00:05:37.080 --> 00:05:41.100
+Y... ¿cuáles son los desafíos que enfrentas al programar?
+
+92
+00:05:41.300 --> 00:05:45.760
+Eh....algún.... ¿algún punto que tu creas 
+
+93
+00:05:45.920 --> 00:05:47.920
+importante a tener en cuenta
+
+94
+00:05:48.220 --> 00:05:50.940
+en especial para personas que recién empiezan?
+
+95
+00:05:51.180 --> 00:05:56.960
+Sí, creo que un buen consejo es ser pacientes,
+
+96
+00:05:57.220 --> 00:06:01.680
+no empezar por algo muy complicado, porque entonces
+
+97
+00:06:01.880 --> 00:06:06.840
+piensas que programar es algo muy difícil,
+
+98
+00:06:07.080 --> 00:06:13.320
+pero... tienes que tener algo de experiencia para disfrutarlo y
+
+99
+00:06:13.480 --> 00:06:14.680
+sí... simplemente...
+
+100
+00:06:14.860 --> 00:06:16.420
+¡sé valiente!
+
+101
+00:06:16.620 --> 00:06:18.040
+Bien. Bueno ¡muchas gracias!
+
+102
+00:06:18.260 --> 00:06:19.380
+Muchas gracias.

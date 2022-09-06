@@ -1,0 +1,224 @@
+WEBVTT
+
+1
+00:00:03.000 --> 00:00:05.260
+Ahora vamos
+
+2
+00:00:05.260 --> 00:00:09.820
+a crear una nueva versión del video
+musical de Cody con más contenido visual.
+
+3
+00:00:09.820 --> 00:00:12.186
+¿Alguna vez cantaste con karaoke?
+
+4
+00:00:12.186 --> 00:00:17.160
+La idea aquí es que el video nos guíe para
+cantar la canción como en el karaoke.
+
+5
+00:00:17.160 --> 00:00:22.260
+Este es el efecto visual que queremos.
+
+6
+00:00:30.520 --> 00:00:35.237
+Cambiaremos el disfraz del gato por
+una flecha que nos guiará por dónde va
+
+7
+00:00:35.237 --> 00:00:36.087
+la canción.
+
+8
+00:00:36.087 --> 00:00:38.420
+Así podemos cantarla fácilmente.
+
+9
+00:00:40.420 --> 00:00:44.110
+Elegimos la flecha de la
+biblioteca de Scratch.
+
+10
+00:00:48.570 --> 00:00:53.030
+Podemos eliminar el otro disfraz que
+no usamos presionando sobre la x.
+
+11
+00:00:57.030 --> 00:01:00.690
+Le ponemos nombre al objeto y al disfraz.
+
+12
+00:01:08.255 --> 00:01:11.820
+La letra de la canción la
+podemos poner como fondo.
+
+13
+00:01:11.820 --> 00:01:15.143
+Vamos a crear una imagen
+similar a la que te mostramos.
+
+14
+00:01:15.143 --> 00:01:19.739
+Para ello selecciona el escenario,
+presiona la orejita de fondos,
+
+15
+00:01:19.739 --> 00:01:24.867
+elige la herramienta de texto, que es la
+que tiene como una "T", y posicionándote en
+
+16
+00:01:24.867 --> 00:01:29.300
+el lugar que prefieras, escribe la
+letra de la canción en varias líneas.
+
+17
+00:01:36.595 --> 00:01:43.890
+Ya tenemos listo el diseño tanto
+del objeto como del escenario.
+
+18
+00:01:43.890 --> 00:01:46.767
+Para lograr el movimiento
+de la flecha tenemos que
+
+19
+00:01:46.767 --> 00:01:51.230
+incorporar las instrucciones de
+movimiento dentro de cada bloque repetir.
+
+20
+00:01:51.230 --> 00:01:55.640
+Vamos a comenzar con la primera
+parte de la canción, la de "Hola Cody".
+
+21
+00:01:55.640 --> 00:02:00.387
+Primero le decimos a la flecha que vaya
+debajo de la primera palabra, "hola", que en
+
+22
+00:02:00.387 --> 00:02:03.900
+nuestro caso está en las coordenadas...,
+las vamos a calcular.
+
+23
+00:02:03.900 --> 00:02:08.510
+Aproximadamente es -120, 20.
+
+24
+00:02:19.325 --> 00:02:22.140
+Recuerda que en la unidad anterior vimos
+el sistema de coordenadas que usa Scratch.
+
+25
+00:02:22.140 --> 00:02:25.246
+La coordenada x representa
+el eje horizontal y
+
+26
+00:02:25.246 --> 00:02:27.421
+la coordenada y el eje vertical.
+
+27
+00:02:27.421 --> 00:02:30.980
+Una vez que sonó la primera
+nota vamos a mover la flecha.
+
+28
+00:02:30.980 --> 00:02:35.022
+Calculamos aproximadamente unos 20 pasos.
+
+29
+00:02:35.022 --> 00:02:38.904
+Y luego unos 40 pasos para
+pasar a la siguiente palabra y
+
+30
+00:02:38.904 --> 00:02:40.910
+finalmente otros 20 pasos.
+
+31
+00:02:40.910 --> 00:02:46.010
+Esto dependerá del diseño que
+hayas puesto en la pantalla.
+
+32
+00:02:55.550 --> 00:02:57.090
+Vamos a probar hasta aquí.
+
+33
+00:03:08.040 --> 00:03:10.215
+Bien, esta primera parte vamos bien.
+
+34
+00:03:10.215 --> 00:03:14.719
+Seguiremos el mismo proceso para las otras
+partes de la canción diciéndole a la
+
+35
+00:03:14.719 --> 00:03:19.747
+flecha dónde comenzar y cuántos pasos
+moverse luego que se toca cada nota.
+
+36
+00:03:19.747 --> 00:03:23.390
+En nuestro caso es -120, -20.
+
+37
+00:03:31.055 --> 00:03:34.920
+Y nos moveremos, por ejemplo,
+
+38
+00:03:34.920 --> 00:03:42.910
+30 pasos y la última posición
+es aproximadamente -120.
+
+39
+00:03:47.970 --> 00:03:53.030
+-70 y nos movemos 10 pasos.
+
+40
+00:03:53.030 --> 00:03:58.780
+Vamos a probarlo.
+
+41
+00:04:04.420 --> 00:04:08.060
+Tenemos que ajustar la flecha
+para la segunda frase.
+
+42
+00:04:08.060 --> 00:04:11.033
+Seguramente aquí convenga poner más pasos.
+
+43
+00:04:11.033 --> 00:04:12.290
+Por ejemplo 50.
+
+44
+00:04:12.290 --> 00:04:16.680
+Vamos a probarlo.
+
+45
+00:04:23.340 --> 00:04:24.804
+Buenísimo.
+
+46
+00:04:24.804 --> 00:04:28.200
+Lo podemos guardar para futuros usos.
+
+47
+00:04:28.200 --> 00:04:32.658
+En estos ejemplos hemos utilizado la
+estructura de control de iteración,
+
+48
+00:04:32.658 --> 00:04:33.870
+el bloque repetir.
+
+49
+00:04:33.870 --> 00:04:36.660
+En el próximo video
+veremos más aplicaciones.

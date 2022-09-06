@@ -1,0 +1,489 @@
+WEBVTT
+
+1
+00:00:04.570 --> 00:00:08.500
+También podemos crear animaciones
+muy lindas usando clones.
+
+2
+00:00:08.500 --> 00:00:12.830
+Observemos el siguiente ejemplo que
+adaptamos del sitio de Scratch.
+
+3
+00:00:12.830 --> 00:00:16.270
+Cada vez que se presiona
+la barra espaciadora,
+
+4
+00:00:16.270 --> 00:00:19.540
+se dispararán varios fuegos artificiales.
+
+5
+00:00:19.540 --> 00:00:24.090
+Analicemos la interfaz
+y el programa en sí.
+
+6
+00:00:24.090 --> 00:00:27.690
+La interfaz será la noche y
+los fuegos artificiales se
+
+7
+00:00:27.690 --> 00:00:30.990
+verán como puntos, que luego
+explotan como estrellas.
+
+8
+00:00:30.990 --> 00:00:33.426
+Vamos a ir creando la interfaz en Scratch.
+
+9
+00:00:33.426 --> 00:00:35.060
+Creamos un nuevo proyecto.
+
+10
+00:00:35.060 --> 00:00:42.018
+Modificamos el fondo del escenario
+para que simule la noche, lo
+
+11
+00:00:42.018 --> 00:00:46.640
+pintamos de negro y ponemos unos puntitos
+blancos para simular las estrellas.
+
+12
+00:00:46.640 --> 00:00:52.330
+Cambiamos los disfraces del gato para
+simular el fuego artificial.
+
+13
+00:00:52.330 --> 00:00:58.730
+Marcamos cambiar a modo de bits
+y limpiamos el dibujo del gato.
+
+14
+00:00:58.730 --> 00:01:02.814
+Haremos varios disfraces, así habrá
+distintos diseños de fuego artificial.
+
+15
+00:01:02.814 --> 00:01:06.542
+Pondremos un círculo pequeño de color
+diferente al negro en uno de ellos y
+
+16
+00:01:06.542 --> 00:01:10.004
+en cada uno de los otros,
+dos o tres, pondremos dibujos más
+
+17
+00:01:10.004 --> 00:01:14.420
+grandes con forma similar a una estrella,
+como estas que te mostramos.
+
+18
+00:01:26.585 --> 00:01:30.750
+El disfraz de punto lo ponemos primero
+y luego van los de las estrellas.
+
+19
+00:01:40.300 --> 00:01:41.510
+Pronta la interfaz.
+
+20
+00:01:41.510 --> 00:01:46.220
+Analicemos ahora el programa.
+
+21
+00:01:46.220 --> 00:01:51.285
+El programa procesará la barra
+espaciadora lanzando una cantidad al
+
+22
+00:01:51.285 --> 00:01:54.668
+azar de fuegos, por ejemplo,
+entre uno y diez.
+
+23
+00:01:54.668 --> 00:01:58.730
+El seudocódigo podría ser:
+cuando se presiona la barra,
+
+24
+00:01:58.730 --> 00:02:02.500
+repetir un número a la azar de veces,
+crear un fuego artificial.
+
+25
+00:02:02.500 --> 00:02:06.370
+¿Cómo implementamos crear un
+fuego artificial en Scratch?
+
+26
+00:02:06.370 --> 00:02:10.626
+En lugar de crear objetos diferentes
+para cada fuego artificial,
+
+27
+00:02:10.626 --> 00:02:12.150
+podemos crear clones.
+
+28
+00:02:12.150 --> 00:02:15.212
+De esta manera,
+podemos fácilmente incluir el
+
+29
+00:02:15.212 --> 00:02:20.270
+requerimiento de un número al azar de
+clones y reutilizar nuestro código.
+
+30
+00:02:20.270 --> 00:02:24.600
+Vamos a pasar nuestro
+seudocódigo a código Scratch.
+
+31
+00:02:24.600 --> 00:02:30.870
+Este proceso incluye, luego de que
+se presione la barra de espaciar,
+
+32
+00:02:30.870 --> 00:02:39.500
+un bloque repetir con un número
+al azar entre uno y diez,
+
+33
+00:02:39.500 --> 00:02:45.034
+crearemos el fuego artificial a través de
+un clon y esperaremos un segundo para que
+
+34
+00:02:45.034 --> 00:02:49.490
+la simulación de los fuegos sea más real y
+que haya un breve tiempo entre uno y otro.
+
+35
+00:02:53.490 --> 00:02:55.299
+Como vimos en un ejemplo anterior, el
+
+36
+00:02:55.299 --> 00:03:00.800
+propio objeto lo debemos esconder porque
+trabajaremos únicamente con los clones.
+
+37
+00:03:00.800 --> 00:03:04.260
+Así que agregamos al
+comienzo el bloque esconder.
+
+38
+00:03:06.260 --> 00:03:08.739
+Analicemos ahora cómo es el proceso que
+
+39
+00:03:08.739 --> 00:03:12.730
+debe hacer cada clon o fuego
+artificial cuando comienza.
+
+40
+00:03:12.730 --> 00:03:19.107
+Descomponiendo el proceso del clon, vemos
+que se puede dividir en: subir y explotar.
+
+41
+00:03:19.107 --> 00:03:24.993
+En términos generales, el proceso
+subir mostrará inicialmente el objeto
+
+42
+00:03:24.993 --> 00:03:29.890
+como un punto y lo hará desplazarse hacia
+arriba una cantidad al azar de pasos.
+
+43
+00:03:29.890 --> 00:03:34.110
+Para moverlo hacia arriba
+apuntamos en esa dirección.
+
+44
+00:03:34.110 --> 00:03:35.816
+Antes de que comience a subir,
+
+45
+00:03:35.816 --> 00:03:40.030
+también le pondremos un color al azar
+para que quede más lindo visualmente.
+
+46
+00:03:40.030 --> 00:03:46.370
+El seudocódigo podría ser: ponerle
+disfraz de punto, ponerle color,
+
+47
+00:03:46.370 --> 00:03:52.743
+ponerlo en el centro, apuntar hacia arriba
+y mover una cantidad de pasos al azar.
+
+48
+00:03:52.743 --> 00:03:57.115
+Cuando el fuego artificial explota,
+irá bajando y hará el
+
+49
+00:03:57.115 --> 00:04:02.010
+efecto especial de una estrella cambiando
+de forma y desapareciendo poco a poco,
+
+50
+00:04:02.010 --> 00:04:04.461
+y finalmente borramos el clon.
+
+51
+00:04:04.461 --> 00:04:09.470
+Podríamos expresarlo en el
+seudocódigo en forma similar a esto:
+
+52
+00:04:09.470 --> 00:04:12.885
+ponerle el disfraz de estrella,
+apuntar hacia abajo,
+
+53
+00:04:12.885 --> 00:04:17.163
+repetir hasta que sea muy chico,
+cambiar el efecto,
+
+54
+00:04:17.163 --> 00:04:22.840
+desvanecer, achicar, moverse unos
+pasos y al final, borrar el clon.
+
+55
+00:04:22.840 --> 00:04:27.400
+Ahora que ya tenemos las
+ideas más claras, ¡a programar!.
+
+56
+00:04:27.400 --> 00:04:33.090
+En Scratch podemos crear esos dos
+bloques que representan estos procesos.
+
+57
+00:04:45.725 --> 00:04:50.360
+Completaremos la definición del
+bloque subir y el bloque explotar.
+
+58
+00:04:50.360 --> 00:04:55.411
+Siguiendo nuestro seudocódigo para
+el proceso de subir tenemos que
+
+59
+00:04:55.411 --> 00:04:59.530
+se le pone el disfraz de punto y se
+le cambia el color también al azar.
+
+60
+00:05:10.040 --> 00:05:14.550
+El rango que elegimos es entre 15 y 200,
+que son valores posibles para los colores.
+
+61
+00:05:17.550 --> 00:05:19.770
+Lo ponemos en el
+
+62
+00:05:19.770 --> 00:05:26.890
+centro y lo orientamos hacia arriba,
+
+63
+00:05:26.890 --> 00:05:34.650
+para que salga cada uno en
+diferentes direcciónes.
+
+64
+00:05:34.650 --> 00:05:38.030
+Para hacerlo más real
+ponemos un bloque repetir y
+
+65
+00:05:38.030 --> 00:05:42.410
+dentro vamos moviendo unos pasos
+y esperando un breve tiempo.
+
+66
+00:05:50.410 --> 00:05:54.495
+La cantidad de veces del bloque
+repetir variará al azar,
+
+67
+00:05:54.495 --> 00:05:58.580
+así los fuegos llegan a distinta
+altura para hacerlo aún más real.
+
+68
+00:05:58.580 --> 00:06:04.180
+0.1.
+
+69
+00:06:04.180 --> 00:06:08.036
+También tendremos que agregar el
+bloque para mostrar el objeto,
+
+70
+00:06:08.036 --> 00:06:11.270
+al igual que hicimos en el
+ejemplo de cazar fantasmas.
+
+71
+00:06:11.270 --> 00:06:16.303
+De acuerdo a nuestro seudocódigo,
+el bloque explotar cambia el
+
+72
+00:06:16.303 --> 00:06:19.390
+disfraz a una de las estrellas
+y lo haremos al azar.
+
+73
+00:06:25.290 --> 00:06:31.190
+El disfraz de punto es el primero,
+por eso aquí pusimos entre dos y cuatro.
+
+74
+00:06:31.190 --> 00:06:39.930
+Luego apunta hacia abajo y repetiremos
+cambiar el efecto, achicar y mover.
+
+75
+00:06:39.930 --> 00:06:43.502
+Este proceso se repetirá hasta
+que el tamaño sea chico,
+
+76
+00:06:43.502 --> 00:06:45.250
+por ejemplo menor a cinco.
+
+77
+00:07:01.160 --> 00:07:05.447
+En particular, el proceso que repite
+es incluir el efecto pixelizar y el
+
+78
+00:07:05.447 --> 00:07:10.660
+efecto desvanecer para lograr la animación
+similar a un fuego artificial bien real.
+
+79
+00:07:10.660 --> 00:07:15.090
+También se va desplazando y
+esperando un breve tiempo.
+
+80
+00:07:47.100 --> 00:07:48.580
+Al final, borramos el clon.
+
+81
+00:07:48.580 --> 00:07:52.846
+Agregamos que cuando comience
+como clon, utilice el
+
+82
+00:07:52.846 --> 00:07:55.730
+bloque subir y luego el explotar.
+
+83
+00:08:04.070 --> 00:08:06.410
+Vamos a probarlo.
+
+84
+00:08:09.410 --> 00:08:10.975
+Muy bien.
+
+85
+00:08:10.975 --> 00:08:15.540
+Tenemos varios fuegos artificiales
+con diferentes colores y efectos.
+
+86
+00:08:15.540 --> 00:08:20.530
+Y ¿si quisiéramos hacer que los fuegos
+suban más rápido, cómo lo haríamos?
+
+87
+00:08:20.530 --> 00:08:25.023
+Todo lo que tenemos que hacer
+es cambiar el número de
+
+88
+00:08:25.023 --> 00:08:29.010
+pasos del bloque mover dentro
+del procedimiento de subir.
+
+89
+00:08:30.010 --> 00:08:32.973
+Simplemente cambiando este valor
+en un solo lugar ya obtenemos el
+
+90
+00:08:32.973 --> 00:08:35.050
+comportamiento que queremos.
+
+91
+00:08:35.050 --> 00:08:36.181
+¿Fácil, no?
+
+92
+00:08:36.181 --> 00:08:42.020
+Si en vez de usar clones, hubiéramos
+hecho un objeto separado para cada fuego,
+
+93
+00:08:42.020 --> 00:08:46.980
+tendríamos que ir al código de cada uno
+y modificar el valor correspondiente.
+
+94
+00:08:46.980 --> 00:08:51.850
+Esto podría ser dificultoso si tenemos
+muchos fuegos y nos llevaría mucho tiempo.
+
+95
+00:08:51.850 --> 00:08:55.780
+El uso de los clones hace que nuestros
+programas sean más flexibles y
+
+96
+00:08:55.780 --> 00:08:57.100
+fáciles de cambiar.
+
+97
+00:08:57.100 --> 00:08:59.218
+Así como con los procedimientos,
+
+98
+00:08:59.218 --> 00:09:03.900
+podemos hacer cambios en un solo lugar
+y afectar a todos los clones creados.
+
+99
+00:09:03.900 --> 00:09:08.179
+Te invitamos a que sigas trabajando
+en esta animación por ejemplo,
+
+100
+00:09:08.179 --> 00:09:11.024
+agregando sonidos o
+efectos visuales y ver de
+
+101
+00:09:11.024 --> 00:09:14.440
+esta manera por uno mismo
+cuán flexible es el programa.
+
+102
+00:09:14.440 --> 00:09:18.230
+Esperamos nos cuentes
+en el foro cómo te fue.

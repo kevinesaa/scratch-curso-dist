@@ -56,7 +56,7 @@ const MENU = {
         path:'unidad-3',
         type:menuOptionEntryTypes.videoContainer,
         items:[
-            {id:'vid-017', type:menuOptionEntryTypes.video, title:'Iteración: introducción', uri:'001_introducción.mp4', captationsUri:"001_introducción.vtt", notes : []},
+            {id:'vid-017', type:menuOptionEntryTypes.video, title:'Iteración: introducción', uri:'001_introduccion.mp4', captationsUri:"001_introducción.vtt", notes : []},
             {id:'res-002', type:menuOptionEntryTypes.internalPage, title:'Recursos de la unidad 2', uri:'../resources/unidad-02.html'},
             {id:'vid-018', type:menuOptionEntryTypes.video, title:'Iteración controlada por cantidad', uri:'002_iteracion_controlada_por_cantidad.mp4', captationsUri:"002_iteracion_controlada_por_cantidad.vtt", notes : []},
             {id:'vid-019', type:menuOptionEntryTypes.video, title:'Iteración controlada por condición', uri:'003_iteracion_controlada_por_condicion.mp4', captationsUri:"003_iteracion_controlada_por_condicion.vtt", notes : []},

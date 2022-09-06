@@ -1,0 +1,133 @@
+WEBVTT
+
+1
+00:00:04.065 --> 00:00:08.227
+Crearemos un video musical en
+Scratch usando la iteración.
+
+2
+00:00:08.227 --> 00:00:09.700
+Sí, ¡un video musical!.
+
+3
+00:00:09.700 --> 00:00:15.400
+Escucha esta canción.
+
+4
+00:00:20.880 --> 00:00:27.030
+Si escuchas con atención reconoceremos
+ciertos patrones en la canción.
+
+5
+00:00:27.030 --> 00:00:32.015
+El primer tramo consiste en cuatro
+notas que se repiten tres veces.
+
+6
+00:00:37.000 --> 00:00:42.750
+Luego tenemos otra parte
+que se repite dos veces.
+
+7
+00:00:42.750 --> 00:00:49.520
+Y finalmente tenemos la última
+nota repetida dos veces.
+
+8
+00:00:49.520 --> 00:00:54.960
+Así tenemos la frase "hola
+Cody" repetida tres veces.
+
+9
+00:00:54.960 --> 00:00:58.080
+La frase "ding dang" repetida
+dos y finalmente la
+
+10
+00:00:58.080 --> 00:01:00.400
+palabra "dong" repetida dos veces.
+
+11
+00:01:00.400 --> 00:01:05.535
+Cuando creamos el programa para esta
+canción sería bueno decirle a la
+
+12
+00:01:05.535 --> 00:01:09.310
+computadora que repita las
+secciones que hemos identificado.
+
+13
+00:01:09.310 --> 00:01:10.095
+¿Cómo?
+
+14
+00:01:10.095 --> 00:01:13.740
+Podemos usar el bloque repetir de Scratch.
+
+15
+00:01:13.740 --> 00:01:18.220
+Crearemos el programa en Scratch para
+hacer primero la música de fondo.
+
+16
+00:01:18.220 --> 00:01:21.650
+Comenzamos con un nuevo proyecto.
+
+17
+00:01:21.650 --> 00:01:24.970
+Utilizamos el bloque "tocar nota".
+
+18
+00:01:24.970 --> 00:01:29.370
+La primera secuencia es similar a ésta.
+
+19
+00:01:51.300 --> 00:01:55.870
+Se debe repetir tres veces.
+
+20
+00:01:55.870 --> 00:02:00.060
+La segunda secuencia es similar a ésta,
+
+21
+00:02:06.320 --> 00:02:13.580
+que se repite dos veces.
+
+22
+00:02:17.845 --> 00:02:24.081
+Y finalmente, tocar esta
+
+23
+00:02:24.081 --> 00:02:31.770
+nota durante un pulso que
+también se repetirá dos veces.
+
+24
+00:02:36.400 --> 00:02:41.586
+Estamos usando el bloque repetir
+con la cantidad dos o tres.
+
+25
+00:02:41.586 --> 00:02:45.880
+Vamos a agregar la bandera verde
+al comienzo y lo vamos a probar.
+
+26
+00:02:56.550 --> 00:03:00.120
+¡Excelente!
+
+27
+00:03:00.120 --> 00:03:04.728
+Hemos reproducido una tonada sencilla
+reconociendo distintos patrones o
+
+28
+00:03:04.728 --> 00:03:07.880
+secuencias musicales y
+usando el bloque repetir.
+
+29
+00:03:07.880 --> 00:03:10.510
+En el próximo video le
+agregaremos la letra.

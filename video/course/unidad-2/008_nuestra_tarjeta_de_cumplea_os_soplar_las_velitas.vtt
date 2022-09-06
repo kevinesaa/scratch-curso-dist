@@ -1,0 +1,244 @@
+WEBVTT
+
+1
+00:00:04.490 --> 00:00:08.980
+Ya vimos el diálogo con la mariposa y
+la parte referida a la mariposa volando.
+
+2
+00:00:08.980 --> 00:00:11.637
+Ahora es tiempo de ver
+el programa de la torta,
+
+3
+00:00:11.637 --> 00:00:13.760
+lo que llamamos velitas de la torta.
+
+4
+00:00:13.760 --> 00:00:19.230
+Comenzamos con la bandera verde. La torta
+tiene inicialmente el disfraz de prendido.
+
+5
+00:00:19.230 --> 00:00:24.188
+Y debemos esperar a que
+se detecte un soplido,
+
+6
+00:00:24.188 --> 00:00:27.940
+o sea un sonido en el micrófono,
+para cambiar el disfraz de apagado.
+
+7
+00:00:27.940 --> 00:00:32.080
+Para ello usaremos el
+bloque "esperar hasta que".
+
+8
+00:00:32.080 --> 00:00:36.627
+El bloque esperar hasta que pausa la
+ejecución del programa hasta que la
+
+9
+00:00:36.627 --> 00:00:39.900
+condición especificada sea cierta,
+verdadera.
+
+10
+00:00:39.900 --> 00:00:44.321
+Una vez que la condición se cumple se
+continúa con el resto de ejecución,
+
+11
+00:00:44.321 --> 00:00:47.810
+o sea sigue con el código que
+está después de este bloque.
+
+12
+00:00:47.810 --> 00:00:51.227
+Observa que la condición dentro
+del bloque esperar hasta que es de
+
+13
+00:00:51.227 --> 00:00:56.150
+tipo booleano, igual que la condición
+en un bloque si o repetir hasta que.
+
+14
+00:00:56.150 --> 00:01:00.355
+La condición en nuestro caso es que se
+haya detectado un sonido o en otras
+
+15
+00:01:00.355 --> 00:01:05.560
+palabras hasta que la intensidad de sonido
+supere cierto valor, por ejemplo 50.
+
+16
+00:01:05.560 --> 00:01:09.922
+Seleccionamos el bloque "mayor que"
+que está dentro de operadores y
+
+17
+00:01:09.922 --> 00:01:16.972
+completamos la condición,
+que la intensidad del sonido sea
+
+18
+00:01:16.972 --> 00:01:22.283
+mayor que 50.
+
+19
+00:01:22.283 --> 00:01:27.160
+Si no tienes micrófono puedes modificar el
+
+20
+00:01:27.160 --> 00:01:31.550
+comportamiento para que la condición sea
+que se presione la letra s de soplar.
+
+21
+00:01:31.550 --> 00:01:36.040
+Una vez que la condición se cumpla
+la torta cambiará de disfraz.
+
+22
+00:01:36.040 --> 00:01:41.758
+Recuerda que si trabajas en la versión
+
+23
+00:01:41.758 --> 00:01:46.710
+en línea te va a pedir autorización para
+usar tanto el micrófono como la cámara.
+
+24
+00:01:46.710 --> 00:01:49.990
+En la versión fuera de línea no
+te va a pedir esta autorización.
+
+25
+00:01:49.990 --> 00:01:53.910
+Puedes completar la animación agregando
+un lindo fondo de la biblioteca.
+
+26
+00:02:00.725 --> 00:02:07.540
+Vamos a probar todo junto.
+
+27
+00:02:18.540 --> 00:02:20.346
+Ya probamos todo junto.
+
+28
+00:02:20.346 --> 00:02:21.378
+¡Fabuloso!
+
+29
+00:02:21.378 --> 00:02:24.904
+Tenemos nuestra propia
+tarjeta de cumpleaños.
+
+30
+00:02:24.904 --> 00:02:26.115
+>> Hey.
+>> Sí, Cody.
+
+31
+00:02:26.115 --> 00:02:27.259
+>> Tengo una pregunta.
+
+32
+00:02:27.259 --> 00:02:29.928
+¿Podríamos haber usado el
+bloque si en la torta en
+
+33
+00:02:29.928 --> 00:02:31.897
+lugar del bloque esperar hasta que?
+
+34
+00:02:31.897 --> 00:02:33.690
+>> Es una excelente pregunta Cody.
+
+35
+00:02:33.690 --> 00:02:36.803
+Pero me temo que no,
+¿puedes descubir por qué?
+
+36
+00:02:36.803 --> 00:02:41.640
+Si usáramos el bloque si en lugar de
+esperar hasta que se cumpla la condición,
+
+37
+00:02:41.640 --> 00:02:45.186
+verificaría la condición enseguida
+de que pone el disfraz de prendido,
+
+38
+00:02:45.186 --> 00:02:49.716
+inmediatamente después de que comenzó el
+programa, por lo que si tratas de soplar luego de la
+
+39
+00:02:49.716 --> 00:02:54.763
+conversación con la mariposa, digamos unos
+segundos después perdiste tu chance de
+
+40
+00:02:54.763 --> 00:02:59.980
+soplar las velitas, ya hizo la
+verificación y el programa siguió.
+
+41
+00:02:59.980 --> 00:03:00.551
+>> Ah...claro.
+
+42
+00:03:00.551 --> 00:03:02.103
+>> Muchas gracias Cody.
+
+43
+00:03:02.103 --> 00:03:07.420
+Es muy útil pensar y analizar formas
+alternativas para hacer los programas.
+
+44
+00:03:07.420 --> 00:03:12.493
+Antes de extender nuestro programa más
+e incluir nuevos elementos, pensemos un
+
+45
+00:03:12.493 --> 00:03:16.000
+minuto acerca de la interacción
+del usuario con nuestro programa.
+
+46
+00:03:16.000 --> 00:03:21.540
+La mariposa pregunta la edad, el usuario
+la ingresa y la mariposa la repite.
+
+47
+00:03:21.540 --> 00:03:24.387
+Sin embargo, no tenemos
+ningún control sobre si el
+
+48
+00:03:24.387 --> 00:03:28.560
+usuario pone una respuesta incorrecta,
+por ejemplo, Inés o 1.000.000.
+
+49
+00:03:28.560 --> 00:03:31.923
+Por ahora no incluiremos nada
+para prevenir el ingreso de
+
+50
+00:03:31.923 --> 00:03:35.435
+datos incorrectos, pero lo tendremos
+en mente para el futuro.
+
+51
+00:03:35.435 --> 00:03:39.310
+En el próximo video agregaremos
+más elementos a la tarjeta.

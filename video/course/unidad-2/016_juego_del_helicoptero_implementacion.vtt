@@ -1,0 +1,441 @@
+WEBVTT
+
+1
+00:00:03.000 --> 00:00:07.200
+Llegamos a la implementación de
+nuestro juego del helicóptero.
+
+2
+00:00:07.200 --> 00:00:10.940
+Comencemos con un nuevo proyecto
+en Scratch para construirlo.
+
+3
+00:00:10.940 --> 00:00:14.020
+Primero, nos concentraremos en la interfaz.
+
+4
+00:00:14.020 --> 00:00:17.877
+Vamos a reemplazar el gato por un
+helicóptero que puedes elegir de
+
+5
+00:00:17.877 --> 00:00:20.130
+la biblioteca o dibujar uno tú mismo.
+
+6
+00:00:20.130 --> 00:00:23.710
+Vamos a agregarle otro
+disfraz al helicóptero.
+
+7
+00:00:29.420 --> 00:00:32.321
+Le damos nombre representativo al
+
+8
+00:00:32.321 --> 00:00:36.600
+objeto y también a sus disfraces.
+
+9
+00:00:53.230 --> 00:00:56.413
+Ahora dibujaremos diferentes
+fondos de cielos con distintas
+
+10
+00:00:56.413 --> 00:00:57.860
+configuraciones de nubes.
+
+11
+00:00:57.860 --> 00:01:01.966
+En cada fondo pondremos varias nubes
+que las vamos a representar como
+
+12
+00:01:01.966 --> 00:01:05.553
+óvalos grises,
+todo sobre un fondo de color celeste.
+
+13
+00:01:05.553 --> 00:01:09.746
+Para diseñar cada fondo la herramienta
+que usamos para dibujar es
+
+14
+00:01:09.746 --> 00:01:12.811
+similar a cuando dibujamos los
+disfraces para las frutas.
+
+15
+00:01:12.811 --> 00:01:14.410
+Seleccionamos el escenario,
+
+16
+00:01:14.410 --> 00:01:18.160
+presionamos en la orejita de
+fondos y dibujamos los nuestros.
+
+17
+00:01:44.420 --> 00:01:46.680
+Le ponemos nombre.
+
+18
+00:01:51.680 --> 00:01:52.525
+Bien.
+
+19
+00:01:52.525 --> 00:01:55.374
+Ahora vamos a implementar
+el comportamiento del
+
+20
+00:01:55.374 --> 00:01:58.370
+helicóptero siguiendo
+nuestro diseño de código.
+
+21
+00:01:58.370 --> 00:02:00.463
+Movimiento del helicóptero,
+
+22
+00:02:00.463 --> 00:02:05.372
+control de choques con las nubes y control
+de choques con el borde del escenario.
+
+23
+00:02:05.372 --> 00:02:09.239
+Primero nos ocuparemos del movimiento
+del helicóptero consultando
+
+24
+00:02:09.239 --> 00:02:10.580
+nuestro seudocódigo.
+
+25
+00:02:10.580 --> 00:02:15.564
+Cuando se presiona la flecha de la
+derecha, mirar hacia la derecha,
+
+26
+00:02:15.564 --> 00:02:17.833
+ajustar el disfraz y moverse.
+
+27
+00:02:17.833 --> 00:02:24.372
+Dijimos que, por ejemplo, al presionar
+la flecha derecha el helicóptero debe
+
+28
+00:02:24.372 --> 00:02:31.013
+apuntar hacia la derecha,
+ajustar su disfraz
+
+29
+00:02:31.013 --> 00:02:39.330
+para que sea más real y moverse 10 pasos.
+
+30
+00:02:39.330 --> 00:02:42.685
+El programa en Scratch
+luce de esta manera.
+
+31
+00:02:42.685 --> 00:02:47.050
+En forma similar vamos
+a implementar las otras flechas.
+
+32
+00:02:47.050 --> 00:02:51.650
+Podemos duplicar el código,
+
+33
+00:02:51.650 --> 00:02:56.580
+flecha a la izquierda,
+que apunte hacia la izquierda,
+
+34
+00:02:56.580 --> 00:03:02.037
+flecha hacia abajo, que
+
+35
+00:03:02.037 --> 00:03:08.320
+apunte hacia abajo y flecha hacia
+
+36
+00:03:08.320 --> 00:03:13.810
+arriba, que apunte hacia arriba.
+
+37
+00:03:13.810 --> 00:03:19.405
+Podemos ir probando
+nuestro código hasta acá.
+
+38
+00:03:19.405 --> 00:03:19.962
+¡Ups!
+
+39
+00:03:19.962 --> 00:03:20.838
+¿Qué pasó?
+
+40
+00:03:20.838 --> 00:03:25.000
+Tenemos que ajustar el sentido
+de rotación del helicóptero.
+
+41
+00:03:25.000 --> 00:03:28.630
+Elegimos esta opción.
+
+42
+00:03:34.060 --> 00:03:34.797
+Perfecto.
+
+43
+00:03:34.797 --> 00:03:37.490
+También podemos cambiar el
+tamaño si nos quedó muy grande.
+
+44
+00:03:37.490 --> 00:03:41.116
+Ahora que ya tenemos pronto
+el movimiento del helicóptero,
+
+45
+00:03:41.116 --> 00:03:44.040
+vamos a implementar la
+parte de tocar las nubes.
+
+46
+00:03:44.040 --> 00:03:50.093
+Recordemos el seudocódigo que teníamos,
+por siempre, si tocando la nube decir "auch".
+
+47
+00:03:50.093 --> 00:03:56.100
+Vamos a agregar la bandera
+verde y el bloque por siempre.
+
+48
+00:03:59.100 --> 00:04:01.226
+En primer lugar queremos comprobar si el
+
+49
+00:04:01.226 --> 00:04:04.710
+helicóptero está en contacto con
+una nube y si lo está decir "auch".
+
+50
+00:04:04.710 --> 00:04:10.670
+La condición de tocar una nube podemos
+expresarla como si está tocando su color.
+
+51
+00:04:10.670 --> 00:04:14.977
+Utilizamos un bloque si y
+
+52
+00:04:14.977 --> 00:04:21.065
+el bloque tocando color que está en sensores.
+
+53
+00:04:21.065 --> 00:04:26.166
+Para elegir el mismo color
+exacto presionamos sobre el
+
+54
+00:04:26.166 --> 00:04:30.478
+área ésta y luego sobre el
+área del color que queremos.
+
+55
+00:04:30.478 --> 00:04:33.747
+Cuando el helicóptero toca el
+color de la nube debe decir "auch"
+
+56
+00:04:33.747 --> 00:04:36.970
+entonces vamos a agregarle el
+bloque decir dentro del bloque si.
+
+57
+00:04:49.760 --> 00:04:51.550
+Lo probamos hasta aquí.
+
+58
+00:04:56.550 --> 00:04:58.300
+Bien, ahora veamos la tercera parte.
+
+59
+00:04:58.300 --> 00:05:02.210
+Repasemos el seudocódigo para el
+choque con el borde del escenario.
+
+60
+00:05:02.210 --> 00:05:07.100
+Por siempre, si toca el borde del
+escenario cambiar el fondo de nubes.
+
+61
+00:05:07.100 --> 00:05:11.370
+Vamos a agregar otro bloque si y ponerlo
+dentro del bloque por siempre que
+
+62
+00:05:11.370 --> 00:05:12.140
+ya tenemos.
+
+63
+00:05:12.140 --> 00:05:17.210
+La condición es tocando el borde.
+
+64
+00:05:23.360 --> 00:05:27.726
+Para el efecto que queremos usaremos
+el bloque "cambiar el fondo a" con la
+
+65
+00:05:27.726 --> 00:05:29.510
+opción de siguiente fondo.
+
+66
+00:05:36.390 --> 00:05:39.270
+Tenemos pronta la implementación del
+juego según nuestro diseño anterior.
+
+67
+00:05:39.270 --> 00:05:43.800
+Otra buena idea es reposicionar el
+helicóptero en el centro del nuevo fondo.
+
+68
+00:05:43.800 --> 00:05:45.165
+Agregamos.
+
+69
+00:05:49.165 --> 00:05:54.530
+Aquí estamos haciendo la suposición de que
+no hay nubes en el centro de cada fondo.
+
+70
+00:05:54.530 --> 00:05:58.111
+Observa que este detalle puede no haber
+sido capturado cuando definimos los
+
+71
+00:05:58.111 --> 00:05:59.220
+requisitos del juego,
+
+72
+00:05:59.220 --> 00:06:03.468
+pero es útil incluirlo con el fin de
+mantener el juego simple para Juan.
+
+73
+00:06:04.468 --> 00:06:07.590
+Vamos a probarlo.
+
+74
+00:06:15.590 --> 00:06:17.358
+Como vimos, puedes
+
+75
+00:06:17.358 --> 00:06:20.929
+descubrir nuevas ideas cuando se
+está implementando el programa.
+
+76
+00:06:20.929 --> 00:06:23.360
+La programación es un
+proceso muy creativo,
+
+77
+00:06:23.360 --> 00:06:26.528
+así que siéntete libre para
+incorporar las nuevas ideas que se te
+
+78
+00:06:26.528 --> 00:06:29.120
+ocurran al pensar las
+necesidades de los usuarios.
+
+79
+00:06:29.120 --> 00:06:32.486
+Si esas nuevas ideas son muy complejas de
+
+80
+00:06:32.486 --> 00:06:35.663
+programar, puedes tomar nota
+de ellas y pensarlas en
+
+81
+00:06:35.663 --> 00:06:40.170
+detalle una vez que hayas terminado la
+primera versión completa del programa.
+
+82
+00:06:40.170 --> 00:06:45.411
+Como un nuevo desafío y con ideas
+similares a este juego, piensa cómo
+
+83
+00:06:45.411 --> 00:06:50.080
+podrías desarrollar una versión propia y
+sencilla del juego Flappy Bird utilizando
+
+84
+00:06:50.080 --> 00:06:54.620
+en vez del helicóptero, un pajarito y
+en vez de nubes, un diseño con columnas.
+
+85
+00:06:54.620 --> 00:06:57.730
+Inténtalo, pero por sobre todo diviértete.
+
+86
+00:06:57.730 --> 00:07:02.346
+En esta unidad nos familiarizamos
+más aún con las estructuras de
+
+87
+00:07:02.346 --> 00:07:05.488
+control y creamos programas
+orientados a eventos.
+
+88
+00:07:05.488 --> 00:07:09.340
+También, vimos dos importantes
+fases de la ingeniería de software:
+
+89
+00:07:09.340 --> 00:07:13.660
+la especificación de los requerimientos
+y el diseño del software.
+
+90
+00:07:13.660 --> 00:07:17.720
+Y seguimos estos principios para
+construir un juego para un amigo.
+
+91
+00:07:17.720 --> 00:07:23.692
+En la próxima unidad, trabajaremos
+haciendo remix de juegos, recreándolos,
+
+92
+00:07:23.692 --> 00:07:28.250
+vamos a analizar uno en particular y
+lo modificaremos en variadas formas.
+
+93
+00:07:28.250 --> 00:07:32.524
+También veremos cómo llevar por
+ejemplo, el puntaje de un juego y
+
+94
+00:07:32.524 --> 00:07:36.080
+para ello, incorporaremos
+el concepto de variable.
+
+95
+00:07:36.080 --> 00:07:39.640
+Tenemos mucho más para aprender.

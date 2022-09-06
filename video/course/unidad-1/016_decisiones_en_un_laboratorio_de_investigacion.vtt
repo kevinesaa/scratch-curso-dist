@@ -1,0 +1,759 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.375
+Hola!
+
+2
+00:00:05.375 --> 00:00:08.928
+Estamos aquí en el corazón del foro informático,
+
+3
+00:00:08.928 --> 00:00:12.841
+me acompaña Rosa Filgueira quien es investigadora en nuestra universidad.
+
+4
+00:00:12.841 --> 00:00:13.922
+Hola Rosa.
+
+5
+00:00:13.922 --> 00:00:14.795
+>> Hola Areti.
+
+6
+00:00:14.795 --> 00:00:15.602
+Cómo estás?
+
+7
+00:00:15.602 --> 00:00:17.733
+>> Bien!
+Cuéntanos qué haces
+
+8
+00:00:17.733 --> 00:00:18.840
+en el área informáica?
+
+9
+00:00:18.840 --> 00:00:24.437
+>> Bueno, trabajo como investigadora, como dijiste,
+en el data intensive research group y
+
+10
+00:00:24.437 --> 00:00:27.440
+de forma muy cercana a otras ciencias.
+
+11
+00:00:27.440 --> 00:00:30.317
+Por ejemplo, trabajo mucho con sismólogos.
+
+12
+00:00:30.317 --> 00:00:31.800
+>> ¿Qué es un sismólogo?
+
+13
+00:00:31.800 --> 00:00:36.601
+>> Un sismólogo es una,
+persona que intenta comprender
+
+14
+00:00:36.601 --> 00:00:41.227
+lo que pasa con los terremotos, lo que 
+ocurre con los volcanes e intentan,
+
+15
+00:00:41.227 --> 00:00:44.547
+en el futuro, porque es algo que
+no es posible en la actualidad, pero
+
+16
+00:00:44.547 --> 00:00:48.691
+en el futuro intentan predecir
+cuándo ocurrirá un terremoto o
+
+17
+00:00:48.691 --> 00:00:51.826
+cuándo un volcán hará erupción
+y también trabajamos de cerca con
+
+18
+00:00:51.826 --> 00:00:54.960
+geólogos, que son 
+quienes estudian las rocas.
+
+19
+00:00:54.960 --> 00:00:58.710
+Así que es una combinación entre 
+gente que estudia las rocas y
+
+20
+00:00:58.710 --> 00:01:02.960
+gente que estudia eventos naturales
+como terremotos y volcanes.
+
+21
+00:01:02.960 --> 00:01:03.720
+>> Bien, y
+
+22
+00:01:03.720 --> 00:01:08.550
+¿Cómo la informática o los programas
+que tú haces ayudan a estas personas?
+
+23
+00:01:08.550 --> 00:01:13.500
+>> Bueno, por ejemplo, al trabajar con geólogos, 
+ellos realizan diferentes
+
+24
+00:01:13.500 --> 00:01:18.014
+experimentos en sus laboratorios
+y lo que hacen es 
+
+25
+00:01:18.014 --> 00:01:22.290
+tomar muestras de rocas y aplicarles
+presión en grandes cantidades.
+
+26
+00:01:22.290 --> 00:01:26.562
+Nosotros transmitimos la información,
+porque se hacen mediciones,
+
+27
+00:01:26.562 --> 00:01:31.409
+que se registran como porosidad, dureza, temperatura
+
+28
+00:01:31.409 --> 00:01:34.490
+y transferimos toda esa
+información en tiempo real desde
+
+29
+00:01:34.490 --> 00:01:37.303
+su laboratorio a nuestras instalaciones
+aquí en Edimburgo.
+
+30
+00:01:37.303 --> 00:01:39.399
+Luego lo subimos a un sitio web y,
+
+31
+00:01:39.399 --> 00:01:43.390
+en tiempo real, puedes
+ver cómo va el experimento.
+
+32
+00:01:43.390 --> 00:01:45.506
+>> Ahí es donde lo de los datos intensivos 
+entra en juego.
+
+33
+00:01:45.506 --> 00:01:46.229
+>> ¡Sí, exactamente!
+
+34
+00:01:46.229 --> 00:01:47.580
+>> Ustedes los ayudan con sus datos.
+
+35
+00:01:47.580 --> 00:01:48.310
+>> Exacto.
+
+36
+00:01:48.310 --> 00:01:51.719
+>> Así que, mucha gente piensa
+que los científicos de la computación y
+
+37
+00:01:51.719 --> 00:01:56.724
+los programadores son personas que se sientan 
+en la oscuridad, frente a una pantalla y
+
+38
+00:01:56.724 --> 00:01:59.610
+escriben todo el día como maníacos.
+
+39
+00:01:59.610 --> 00:02:02.091
+¿Es así tu día a día?
+
+40
+00:02:02.091 --> 00:02:05.525
+Describe un día típico en tu 
+trabajo como investigadora.
+
+41
+00:02:05.525 --> 00:02:09.246
+>> Bien, es cierto que pasamos
+mucho tiempo detrás de una computadora, pero
+
+42
+00:02:09.246 --> 00:02:10.528
+no todos los días.
+
+43
+00:02:10.528 --> 00:02:15.457
+Así, por ejemplo, tal vez la mitad del
+día hablo con los sismólogos
+
+44
+00:02:15.457 --> 00:02:20.490
+porque son los usuarios, intercambiamos e-mails,
+trato de entender sus requerimientos,
+
+45
+00:02:20.490 --> 00:02:23.393
+lo que quieren, hablo con mi jefe,
+sobre lo que ellos quieren
+
+46
+00:02:23.393 --> 00:02:27.970
+y cuando tenemos una idea de lo que
+quieren, entonces es cuando programamos.
+
+47
+00:02:27.970 --> 00:02:31.458
+Así que tal vez es cierto que 
+pasamos mucho tiempo en la computadora, pero
+
+48
+00:02:31.458 --> 00:02:33.275
+no pasamos todo el día programando.
+
+49
+00:02:33.275 --> 00:02:37.428
+También se trata de diseñar,
+preguntar, de, no sé,
+
+50
+00:02:37.428 --> 00:02:40.925
+hacer diferentes cosas, pero
+no programar todo el día.
+
+51
+00:02:40.925 --> 00:02:42.772
+>> ¿Esto es algo que disfrutas,
+la variedad?
+
+52
+00:02:42.772 --> 00:02:43.652
+>> Sí, sí, sí, sí.
+
+53
+00:02:43.652 --> 00:02:44.620
+Me gusta, me gusta mucho.
+
+54
+00:02:44.620 --> 00:02:46.000
+>> ¿Hace cuánto que programas?
+
+55
+00:02:46.000 --> 00:02:51.624
+>> Bueno, probablemente diría 
+que desde que tenía 18 años,
+
+56
+00:02:51.624 --> 00:02:54.832
+así que otros 18 años probablemente.
+
+57
+00:02:54.832 --> 00:02:58.830
+>> ¡Excelente! ¿y cuándo te empezó a 
+interesar la programación?
+
+58
+00:02:58.830 --> 00:03:00.982
+>> Porque era muy buena en Matemáticas.
+
+59
+00:03:00.982 --> 00:03:04.827
+Era muy buena en Física,
+realmente buena en Química.
+
+60
+00:03:04.827 --> 00:03:09.231
+En todo lo que era de tipo
+ ecuaciones matemáticas, pero
+
+61
+00:03:09.231 --> 00:03:12.658
+no era muy buena probablemente
+en Historia y Lengua
+
+62
+00:03:12.658 --> 00:03:15.416
+>> Entiendo.
+>> Así que quería hacer algo práctico
+
+63
+00:03:15.416 --> 00:03:17.721
+y entonces descubrí las computadoras.
+
+64
+00:03:17.721 --> 00:03:21.236
+Al principio pensé que era algo, muy
+como para muchachos,
+
+65
+00:03:21.236 --> 00:03:24.560
+pero luego me dí cuenta de que
+era muy sencillo también para las mujeres.
+
+66
+00:03:24.560 --> 00:03:29.398
+Así comencé mi primer año en la 
+universidad en Ciencias de la Computación y
+
+67
+00:03:29.398 --> 00:03:30.550
+me gustó muchísimo.
+
+68
+00:03:30.550 --> 00:03:34.792
+>> ¿Fue ahí dónde creaste tu 
+primer programa de computadora?
+
+69
+00:03:34.792 --> 00:03:38.056
+>> Sí.
+Probablemente empecé con un Hola Mundo y
+
+70
+00:03:38.056 --> 00:03:43.020
+lo hice en Pascal, y luego hice una calculadora,
+si mal no recuerdo, pero
+
+71
+00:03:43.020 --> 00:03:46.800
+por ejemplo, al terminar la carrera,
+hice un videojuego.
+
+72
+00:03:46.800 --> 00:03:51.406
+>> ¿Y al terminar tu doctorado también 
+creaste programas?
+
+73
+00:03:51.406 --> 00:03:54.273
+>> Sí, pero era
+un tipo de programa que
+
+74
+00:03:54.273 --> 00:03:58.443
+funciona oculto, que el
+usuario no nota que está ahí.
+
+75
+00:03:58.443 --> 00:04:03.550
+Hacíamos optimizaciones de
+otros programas que el usuario utilizaba,
+
+76
+00:04:03.550 --> 00:04:06.640
+y nuestros programas estaban detrás, 
+como fantasmas.
+
+77
+00:04:06.640 --> 00:04:11.509
+La idea era que ellos no
+notaran nuestra optimización para 
+
+78
+00:04:11.509 --> 00:04:16.180
+no molestar al usuario o al cliente
+con nuestras optimizaciones.
+
+79
+00:04:16.180 --> 00:04:20.040
+>> Eso es bastante diferente a trabajar
+con geólogos y sismólogos
+
+80
+00:04:20.040 --> 00:04:21.190
+¿no es así?
+
+81
+00:04:21.190 --> 00:04:22.885
+>> Sí.
+>> Ellos sí lo notan.
+
+82
+00:04:22.885 --> 00:04:24.669
+>> Notan lo que hacemos.
+
+83
+00:04:24.669 --> 00:04:29.336
+Es por eso, probablemente esa sea 
+la razón principal porque me gusta tanto
+
+84
+00:04:29.336 --> 00:04:33.895
+trabajar con científicos de datos, 
+para que puedan realmente ver lo que hacen.
+
+85
+00:04:33.895 --> 00:04:36.040
+Antes, nadie veía lo que hacían.
+
+86
+00:04:36.040 --> 00:04:38.598
+>> Así que tú realmente trabajas junto a ellos ¿no?
+
+87
+00:04:38.598 --> 00:04:39.288
+>> Sí.
+>> Sí.
+
+88
+00:04:39.288 --> 00:04:40.323
+>> Sí, sí, sí.
+
+89
+00:04:40.323 --> 00:04:41.590
+>> ¿Y eso es divertido?
+
+90
+00:04:41.590 --> 00:04:44.682
+>> Es muy divertido y es muy difícil
+al comienzo en términos
+
+91
+00:04:44.682 --> 00:04:48.760
+de comunicación, porque lo que uno piensa 
+que es obvio para ellos, no lo es,
+
+92
+00:04:48.760 --> 00:04:52.590
+y viceversa: cuando ellos te explican
+las cosas, piensan que
+
+93
+00:04:52.590 --> 00:04:54.690
+es algo obvio, pero no lo es para uno.
+
+94
+00:04:54.690 --> 00:04:59.272
+Pero es muy divertido, y he aprendido mucho
+sobre terremotos, muestras geológicas,
+
+95
+00:04:59.272 --> 00:05:01.980
+observatorios de volcanes, registros sísmicos.
+
+96
+00:05:01.980 --> 00:05:04.889
+>> Has estado programado desde hace tiempo.
+
+97
+00:05:04.889 --> 00:05:07.871
+¿Qué es lo que disfrutas más
+de hacerlo o
+
+98
+00:05:07.871 --> 00:05:10.758
+qué piensas que tiene de divertido
+programar?
+
+99
+00:05:10.758 --> 00:05:14.097
+>> Bueno,
+me gusta cuando escribo un programa
+
+100
+00:05:14.097 --> 00:05:19.841
+y funciona bien a la primera, lo que 
+normalmente no ocurre, pero cuando ocurre
+
+101
+00:05:19.841 --> 00:05:25.085
+es fantástico, y también me gusta cuando
+estoy trabajando con un programa y
+
+102
+00:05:25.085 --> 00:05:29.525
+por alguna razón no funciona, pero 
+luego de trabajarlo mucho
+
+103
+00:05:29.525 --> 00:05:32.905
+descubres el problema. Así, cuando
+un programa queda funcionando bien
+
+104
+00:05:32.905 --> 00:05:36.650
+en teoría va a funcionar bien
+para siempre.
+
+105
+00:05:36.650 --> 00:05:39.130
+>> Así que todo es acerca de la satisfacción
+de hacer que las cosas funcionen bien.
+
+106
+00:05:39.130 --> 00:05:40.537
+>> Exactamente.
+>> Muy bien.
+
+107
+00:05:40.537 --> 00:05:45.796
+En nuestro curso esta semana hemos
+visto conceptos como 'decisión'
+
+108
+00:05:45.796 --> 00:05:50.268
+'sí - entonces' y 'secuencia', tener
+una instrucción tras otra.
+
+109
+00:05:50.268 --> 00:05:51.453
+>> Bien.
+>> 'iteraciones', tener
+
+110
+00:05:51.453 --> 00:05:53.308
+cosas que se repiten una y otra vez.
+
+111
+00:05:53.308 --> 00:05:54.140
+>> Bien, sí, sí.
+
+112
+00:05:54.140 --> 00:05:57.227
+>> ¿Usas este tipo de ideas
+en tus programas?
+
+113
+00:05:57.227 --> 00:06:02.594
+>> Sí, por ejemplo en el caso de 
+transmitir la información desde los laboratorios
+
+114
+00:06:02.594 --> 00:06:08.179
+de los geólogos hacia nuestras instalaciones
+aquí en Edimburgo las usamos mucho.
+
+115
+00:06:08.179 --> 00:06:12.469
+Porque tenemos, como ya dije,
+una roca sobre la que se está aplicando
+
+116
+00:06:12.469 --> 00:06:18.412
+presión constante y si la roca no se rompe
+hay que transmitir datos.
+
+117
+00:06:18.412 --> 00:06:22.039
+Así, nuestro programa debe
+hacer lo siguiente:
+
+118
+00:06:22.039 --> 00:06:25.381
+medir todo el tiempo si
+la roca se rompe o no
+
+119
+00:06:25.381 --> 00:06:30.258
+porque, si eso ocurre, entonces 
+guardamos un valor en una variable,
+
+120
+00:06:30.258 --> 00:06:34.206
+Entonces evaluamos todo el tiempo:
+¿se rompió la roca?
+
+121
+00:06:34.206 --> 00:06:36.146
+En ese caso, no transmitimos datos.
+
+122
+00:06:36.146 --> 00:06:39.245
+Si continúa, si no se rompe,
+entonces transferimos los datos.
+
+123
+00:06:39.245 --> 00:06:42.151
+Otra cosa que evaluamos
+es la cantidad de datos.
+
+124
+00:06:42.151 --> 00:06:44.065
+Si la cantidad de datos es
+muy grande,
+
+125
+00:06:44.065 --> 00:06:47.301
+porque en algunos casos recogemos
+más información que en otros,
+
+126
+00:06:47.301 --> 00:06:51.466
+cuando son muchos los datos,
+los comprimimos, si no,
+
+127
+00:06:51.466 --> 00:06:54.133
+si no son muchos datos,
+los enviamos sin compresión.
+
+128
+00:06:54.133 --> 00:06:56.505
+Así que todo el tiempo se
+controlan cosas
+
+129
+00:06:56.505 --> 00:06:59.877
+relacionadas con la roca y
+se toman diferentes decisiones de
+
+130
+00:06:59.877 --> 00:07:02.070
+'si - entonces': si esto ocurre, entonces hacer tal cosa,
+
+131
+00:07:02.070 --> 00:07:05.073
+si esto no ocurre, 
+entonces hacer otra cosa.
+
+132
+00:07:05.073 --> 00:07:05.899
+>> ¡Perfecto!
+
+133
+00:07:05.899 --> 00:07:10.019
+Es un buen ejemplo de los bloques 'si - entonces'
+que hemos aprendido y usado en Scratch,
+
+134
+00:07:10.019 --> 00:07:11.803
+un lenguaje de programación 
+que estamos aprendiendo
+
+135
+00:07:11.803 --> 00:07:14.345
+y también el bloque 'por siempre'
+en el que las cosas se repiten de nuevo y de nuevo.
+
+136
+00:07:14.345 --> 00:07:14.850
+Excelente
+
+137
+00:07:14.850 --> 00:07:17.958
+>> Hasta, hasta que la roca se rompa.
+
+138
+00:07:17.958 --> 00:07:18.476
+>> Sí.
+
+139
+00:07:18.476 --> 00:07:22.261
+>> ¿Tienes algún consejo para los que
+son nuevos programando y
+
+140
+00:07:22.261 --> 00:07:26.821
+están recién descubriendo lo que es
+construir algoritmos y crear programas?
+
+141
+00:07:26.821 --> 00:07:30.312
+>> La mejor forma de hacerlo es
+tomar lápiz y papel y
+
+142
+00:07:30.312 --> 00:07:32.106
+pensar qué se quiere hacer.
+
+143
+00:07:32.106 --> 00:07:36.474
+En realidad, cómo se programa es
+lo último que pensamos
+
+144
+00:07:36.474 --> 00:07:38.400
+es sobre estructurar una idea.
+
+145
+00:07:38.400 --> 00:07:43.101
+Puedes escribir tu programa en seudocódigo
+y eso es, al principio
+
+146
+00:07:43.101 --> 00:07:47.123
+cuando empecé a programar pensé
+que lo más difícil era entender, 
+
+147
+00:07:47.123 --> 00:07:50.720
+no sé, Python, o C, o C++, pero
+eso es lo último que te debe preocupar,
+
+148
+00:07:50.720 --> 00:07:53.206
+porque realmente puedes hacer cualquier cosa
+con cualquier programa.
+
+149
+00:07:53.206 --> 00:07:55.250
+Lo difícil es pensarlo bien.
+
+150
+00:07:55.250 --> 00:07:58.698
+Así que, toma papel y lápiz
+
+151
+00:07:58.698 --> 00:08:03.467
+haz un esquema del programa y
+luego, cuando ya tengas la idea,
+
+152
+00:08:03.467 --> 00:08:06.640
+la programación será muy fácil,
+ve a la computadora y hazlo.
+
+153
+00:08:06.640 --> 00:08:10.805
+>> ¿Consejos para diseñar o
+estructurar en el papel?
+
+154
+00:08:10.805 --> 00:08:13.806
+>> Bueno, por ejemplo, si trabajo
+con matrices o listas
+
+155
+00:08:13.806 --> 00:08:18.147
+siempre dibujo lo que quiero hacer,
+dibujo una pequeña parte
+
+156
+00:08:18.147 --> 00:08:22.413
+para visualizar la idea
+de lo que quiero hacer, es muy fácil,
+
+157
+00:08:22.413 --> 00:08:27.279
+también cuando trabajo con iteraciones,
+dibujo un bucle alrededor de lo quiero repetir, 
+
+158
+00:08:27.279 --> 00:08:30.088
+ese tipo de visualización siempre ayuda.
+
+159
+00:08:30.088 --> 00:08:30.965
+>> Muy bien
+
+160
+00:08:30.965 --> 00:08:33.969
+Bueno, algunos consejos brillantes
+y útiles para que ustedes los usen.
+
+161
+00:08:33.969 --> 00:08:34.875
+¡Gracias Rosa!
+
+162
+00:08:34.875 --> 00:08:35.529
+>> Gracias a tí.

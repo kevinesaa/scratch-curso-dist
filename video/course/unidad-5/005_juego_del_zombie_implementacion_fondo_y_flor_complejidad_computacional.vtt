@@ -1,0 +1,592 @@
+WEBVTT
+
+1
+00:00:04.215 --> 00:00:08.430
+Cuando empiece el programa, queremos
+que el fondo sea el de la casa.
+
+2
+00:00:08.430 --> 00:00:11.044
+En el escenario agregamos el código:
+
+3
+00:00:11.044 --> 00:00:19.150
+al presionar bandera verde,
+cambiar el fondo a fondo casa.
+
+4
+00:00:19.150 --> 00:00:23.922
+Esto mismo se podría haber hecho desde
+el programa del personaje, fijando el
+
+5
+00:00:23.922 --> 00:00:25.370
+fondo directamente.
+
+6
+00:00:25.370 --> 00:00:28.848
+Muchas veces, como vimos en éste
+y en otros casos, hay más de
+
+7
+00:00:28.848 --> 00:00:31.576
+una forma posible de hacer las cosas.
+
+8
+00:00:31.576 --> 00:00:36.698
+Mmmm... esta idea de que puede haber más de
+una forma de resolver un problema me
+
+9
+00:00:36.698 --> 00:00:40.100
+hace pensar en la complejidad
+computacional de un algoritmo.
+
+10
+00:00:40.100 --> 00:00:44.730
+Sí, esta frase que suena como muy difícil,
+es de un concepto fácil de comprender.
+
+11
+00:00:44.730 --> 00:00:49.470
+Supongamos que tenemos varios algoritmos
+para resolver un mismo problema,
+
+12
+00:00:49.470 --> 00:00:54.210
+por ejemplo, queremos ir de una ciudad
+a otra y podemos tener varios algoritmos:
+
+13
+00:00:54.210 --> 00:00:58.617
+uno para ir en auto, otro para ir
+en avión y otro más para ir en bus.
+
+14
+00:00:58.617 --> 00:00:59.910
+¿Cuál elegimos?
+
+15
+00:00:59.910 --> 00:01:04.032
+A partir de evaluar elementos
+tales como el tiempo que demora o
+
+16
+00:01:04.032 --> 00:01:08.346
+los recursos que usa cada uno, podemos
+compararlos para elegir aquel que
+
+17
+00:01:08.346 --> 00:01:10.960
+convenga más según la
+situación particular.
+
+18
+00:01:10.960 --> 00:01:15.421
+Esta idea es similar a cuando tenemos
+diferentes algoritmos para un
+
+19
+00:01:15.421 --> 00:01:17.620
+mismo problema en computación.
+
+20
+00:01:17.620 --> 00:01:22.210
+Debemos considerar el tiempo y los
+recursos necesarios para elegir el
+
+21
+00:01:22.210 --> 00:01:24.802
+más conveniente según el caso particular.
+
+22
+00:01:24.802 --> 00:01:26.000
+Volvamos al juego.
+
+23
+00:01:26.000 --> 00:01:30.852
+Cuando diseñamos el programa para el
+escenario, especificamos que cuando el
+
+24
+00:01:30.852 --> 00:01:36.070
+juego termine, se debe cambiar al fondo
+determinado y detener todos los programas.
+
+25
+00:01:36.070 --> 00:01:40.577
+Esta es la reacción o comportamiento
+del escenario cuando recibe el
+
+26
+00:01:40.577 --> 00:01:42.640
+mensaje de terminar el juego.
+
+27
+00:01:42.640 --> 00:01:44.566
+¿Cómo lo implementamos?
+
+28
+00:01:44.566 --> 00:01:49.423
+Agregamos el bloque al recibir terminar
+juego, que está en la paleta de
+
+29
+00:01:49.423 --> 00:01:54.310
+eventos y especificamos que cambie el
+fondo y detenga todos los programas.
+
+30
+00:01:54.310 --> 00:01:58.059
+Aunque aún no hemos implementado
+el comportamiento de las flores,
+
+31
+00:01:58.059 --> 00:02:02.183
+o sea, no las consideraremos por ahora,
+podemos probar nuestro programa para las
+
+32
+00:02:02.183 --> 00:02:04.254
+demás partes que ya hemos implementado.
+
+33
+00:02:04.254 --> 00:02:05.210
+Vamos a probar.
+
+34
+00:02:20.640 --> 00:02:22.070
+Bien, las instrucciones aparecieron,
+
+35
+00:02:22.070 --> 00:02:26.925
+la escoba permite alejar los zombies,
+se actualiza el puntaje.
+
+36
+00:02:26.925 --> 00:02:30.240
+Veamos qué pasa cuando
+llega el zombie a la casa.
+
+37
+00:02:33.240 --> 00:02:36.120
+Bien, termina el juego pero, ¿por qué
+sigo viendo la escoba en el escenario?
+
+38
+00:02:36.120 --> 00:02:38.882
+En el programa actual no
+hay nada que le avise a la
+
+39
+00:02:38.882 --> 00:02:42.000
+escoba que debe esconderse
+cuando termina el juego.
+
+40
+00:02:42.000 --> 00:02:43.662
+¿Cómo lo solucionamos?
+
+41
+00:02:43.662 --> 00:02:48.264
+En el personaje que tiene el disfraz
+de escoba usamos el bloque al recibir y
+
+42
+00:02:48.264 --> 00:02:50.321
+elegimos el mensaje terminar juego.
+
+43
+00:02:50.321 --> 00:02:52.057
+Agregamos el bloque esconder.
+
+44
+00:02:52.057 --> 00:02:56.120
+Bien, ahora probemos nuevamente
+nuestro programa con esta corrección.
+
+45
+00:03:08.405 --> 00:03:09.043
+Bien, va funcionando.
+
+46
+00:03:09.043 --> 00:03:10.690
+Juguemos otro partido.
+
+47
+00:03:12.690 --> 00:03:13.433
+Ups, el personaje no se ve ahora.
+
+48
+00:03:14.433 --> 00:03:17.320
+Al hacer nuestra prueba
+detectamos otro error,
+
+49
+00:03:17.320 --> 00:03:20.966
+falta mostrar el objeto
+nuevamente al comienzo.
+
+50
+00:03:20.966 --> 00:03:25.486
+Agregamos en el personaje en
+el inicio, el bloque mostrar.
+
+51
+00:03:25.486 --> 00:03:32.030
+Vamos a probar nuevamente,
+Ahora sí se ve la escoba.
+
+52
+00:03:36.030 --> 00:03:37.560
+Lo dejamos que llegue al final,
+
+53
+00:03:37.560 --> 00:03:41.549
+ejecutamos nuevamente,
+está funcionando correctamente.
+
+54
+00:03:41.549 --> 00:03:42.550
+Solucionado.
+
+55
+00:03:42.550 --> 00:03:47.001
+Observa que aquí hemos aplicado otras
+etapas del proceso de desarrollo del
+
+56
+00:03:47.001 --> 00:03:49.380
+software: la prueba y la depuración.
+
+57
+00:03:49.380 --> 00:03:54.570
+Ahora programamos el comportamiento
+de la flor según nuestro diseño.
+
+58
+00:03:54.570 --> 00:04:00.167
+Ponemos la bandera verde y el bloque
+repetir con cantidad al azar de flores,
+
+59
+00:04:00.167 --> 00:04:01.570
+entre 3 y 10.
+
+60
+00:04:06.000 --> 00:04:10.430
+El proceso a repetir será
+crear un clon de este objeto.
+
+61
+00:04:14.430 --> 00:04:17.980
+Finalmente, y como vimos, lo escondemos
+porque trabajaremos con los clones.
+
+62
+00:04:19.980 --> 00:04:24.160
+Veamos el comportamiento cuando empiece
+como clon según nuestro seudocódigo.
+
+63
+00:04:28.160 --> 00:04:30.095
+Cuando empiece como clon,
+la posicionamos en un lugar
+
+64
+00:04:30.095 --> 00:04:36.030
+al azar del escenario, con x e y con
+valores por ejemplo entre -150 y 150.
+
+65
+00:04:36.030 --> 00:04:41.710
+La mostramos y repetimos el baile de
+la flor hasta que toque el zombie.
+
+66
+00:05:18.230 --> 00:05:23.220
+El baile se puede programar alternando
+el disfraz y esperando 0.3 segundos.
+
+67
+00:05:27.220 --> 00:05:28.094
+Después que la toque borramos el clon.
+
+68
+00:05:28.094 --> 00:05:30.760
+Vamos a ejecutar.
+
+69
+00:05:46.515 --> 00:05:48.063
+Bien, va funcionando.
+
+70
+00:05:48.063 --> 00:05:52.121
+Un detalle que podemos mejorar es
+que las flores podrían tocarse y
+
+71
+00:05:52.121 --> 00:05:54.270
+quedaría más lindo que no lo hagan.
+
+72
+00:05:54.270 --> 00:05:57.156
+Para evitar que se toquen,
+
+73
+00:05:57.156 --> 00:06:02.066
+cada vez que ubicamos una chequeamos
+que no esté tocando el color naranja de
+
+74
+00:06:02.066 --> 00:06:05.320
+los pétalos y que tampoco esté tocando
+el color verde oscuro del tallo.
+
+75
+00:06:05.320 --> 00:06:10.610
+Si llega a estar tocando, la volvemos
+a ubicar y verificamos nuevamente.
+
+76
+00:06:10.610 --> 00:06:14.989
+Luego del bloque mostrar agregamos
+un bloque repetir hasta que
+
+77
+00:06:14.989 --> 00:06:18.669
+con una condición doble:
+que no esté tocando el color verde y
+
+78
+00:06:18.669 --> 00:06:21.240
+que no esté tocando el
+color naranja de la flor.
+
+79
+00:06:21.240 --> 00:06:23.827
+Armamos la condición compuesta.
+
+80
+00:06:23.827 --> 00:06:26.240
+Primero colocamos el bloque y,
+
+81
+00:06:26.240 --> 00:06:32.640
+y luego un bloque no con la
+condición de tocando el color verde.
+
+82
+00:06:37.920 --> 00:06:43.200
+En la otra parte, otro bloque no con la
+condición de tocando el color naranja.
+
+83
+00:06:50.875 --> 00:06:54.736
+Si observas con cuidado, se ve claramente
+la condición compuesta por los
+
+84
+00:06:54.736 --> 00:06:58.550
+diferentes niveles de los bloques,
+uno encastrado dentro de otro.
+
+85
+00:06:58.550 --> 00:07:05.820
+Agregamos el bloque repetir hasta que
+con la condición compuesta que armamos.
+
+86
+00:07:11.755 --> 00:07:15.628
+Agregamos dentro el bloque ir
+a con posiciones al azar de x e
+
+87
+00:07:15.628 --> 00:07:17.690
+y entre -150 y 150.
+
+88
+00:07:21.800 --> 00:07:25.910
+También ponemos un comentario para
+aclarar esta parte del código.
+
+89
+00:07:41.040 --> 00:07:42.580
+Probamos nuevamente varias veces.
+
+90
+00:08:03.670 --> 00:08:04.760
+Bien, hagamos una pausa.
+
+91
+00:08:04.760 --> 00:08:08.130
+Pensemos un minuto acerca del proceso.
+
+92
+00:08:08.130 --> 00:08:12.584
+El desarrollo del software lo
+estamos haciendo, en general, en
+
+93
+00:08:12.584 --> 00:08:15.040
+forma iterativa e incremental.
+
+94
+00:08:15.040 --> 00:08:19.640
+Cada nueva versión incluye más cosas.
+
+95
+00:08:19.640 --> 00:08:22.349
+Hemos hablado de otros
+enfoques que se aplican en la
+
+96
+00:08:22.349 --> 00:08:24.240
+vida profesional como la cascada.
+
+97
+00:08:24.240 --> 00:08:27.533
+Otro enfoque es el de prototipar.
+
+98
+00:08:27.533 --> 00:08:32.402
+Un prototipo es un modelo del producto
+final y nos permite hacer pruebas sobre
+
+99
+00:08:32.402 --> 00:08:37.178
+ciertas características sin necesidad
+de tener todo el producto completo.
+
+100
+00:08:37.178 --> 00:08:40.340
+Por ejemplo, si pensamos
+en diseño industrial,
+
+101
+00:08:40.340 --> 00:08:43.085
+un prototipo de una silla
+podría ser un modelo en 3D,
+
+102
+00:08:43.085 --> 00:08:46.020
+en tres dimensiones de unos
+20 centímetros de altura.
+
+103
+00:08:46.020 --> 00:08:48.704
+Nos permite visualizar
+cómo quedaría la silla,
+
+104
+00:08:48.704 --> 00:08:52.570
+imaginarnos cómo se vería terminada
+sin tener que esperar a crearla.
+
+105
+00:08:52.570 --> 00:08:56.306
+Nos permite además hacer ajustes
+y correcciones de diseño antes de
+
+106
+00:08:56.306 --> 00:08:58.020
+construirla efectivamente,
+
+107
+00:08:58.020 --> 00:09:01.360
+lo cual es ciertamente que tener que
+hacerlos luego que ya está hecha.
+
+108
+00:09:01.360 --> 00:09:06.910
+Por ejemplo, en este caso podríamos
+haber creado un nuevo proyecto,
+
+109
+00:09:06.910 --> 00:09:11.590
+poner ahí solamente el código de las
+flores de su ubicación y probarlo.
+
+110
+00:09:11.590 --> 00:09:15.890
+Luego que tenemos esto resuelto,
+lo incluimos en el proyecto original.
+
+111
+00:09:15.890 --> 00:09:20.650
+Nuestro caso, como dijimos,
+usamos el enfoque incremental.
+
+112
+00:09:20.650 --> 00:09:22.949
+Seguimos probando un poco más.
+
+113
+00:09:27.949 --> 00:09:28.838
+Mirando con atención se observa que la
+
+114
+00:09:28.838 --> 00:09:31.540
+escoba queda como por
+detrás de las flores.
+
+115
+00:09:31.540 --> 00:09:33.488
+¿Podemos solucionarlo?
+
+116
+00:09:33.488 --> 00:09:36.705
+Sí.
+Para ello podemos agregar en el inicio de
+
+117
+00:09:36.705 --> 00:09:39.680
+la escoba, luego del mostrar,
+el bloque enviar al
+
+118
+00:09:39.680 --> 00:09:42.440
+frente que la ubica delante
+de todos los demás.
+
+119
+00:09:44.440 --> 00:09:45.650
+Probemos.
+
+120
+00:09:50.650 --> 00:09:52.260
+Bien, la escoba queda delante de las flores.
+
+121
+00:09:52.260 --> 00:09:55.170
+Tenemos lista una versión inicial,
+básica del juego.
+
+122
+00:09:55.170 --> 00:09:58.250
+Vamos a probar también el
+desplazamiento de la barra.
+
+123
+00:10:17.250 --> 00:10:20.140
+Bien, durante la especificación
+de requerimientos,
+
+124
+00:10:20.140 --> 00:10:23.398
+hablamos de que los zombies, cada
+tanto, vengan en grupos grandes,
+
+125
+00:10:23.398 --> 00:10:26.030
+que funciona como efecto
+sorpresa en nuestro juego.
+
+126
+00:10:26.030 --> 00:10:29.212
+En el próximo video
+extenderemos esta versión y
+
+127
+00:10:29.212 --> 00:10:31.790
+le agregaremos la invasión zombie.

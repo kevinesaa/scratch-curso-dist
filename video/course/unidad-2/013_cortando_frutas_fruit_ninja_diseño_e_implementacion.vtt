@@ -1,0 +1,354 @@
+WEBVTT
+
+1
+00:00:04.000 --> 00:00:06.920
+Un juego muy conocido
+es el de cortar fruta.
+
+2
+00:00:06.920 --> 00:00:10.645
+En este juego, es un
+requisito tener una cámara.
+
+3
+00:00:10.645 --> 00:00:14.161
+Durante el juego aparece una fruta
+y la debes cortar con la mano.
+
+4
+00:00:14.161 --> 00:00:16.990
+En realidad, con cualquier
+movimiento frente a la cámara.
+
+5
+00:00:16.990 --> 00:00:20.720
+Y luego aparece otra, que también
+debes cortar, y así sucesivamente.
+
+6
+00:00:20.720 --> 00:00:22.893
+¿Cómo podemos construirlo?
+
+7
+00:00:22.893 --> 00:00:25.240
+Primero, diseñamos la interfaz.
+
+8
+00:00:25.240 --> 00:00:28.276
+Habrá una fruta por vez en la pantalla.
+
+9
+00:00:28.276 --> 00:00:30.679
+Inicialmente la fruta aparece entera,
+
+10
+00:00:30.679 --> 00:00:33.520
+y una vez que es cortada,
+se muestra dividida en partes.
+
+11
+00:00:33.520 --> 00:00:37.750
+No es importante qué fruta usemos,
+siempre que haya un poco de variedad, al
+
+12
+00:00:37.750 --> 00:00:42.660
+menos tres frutas diferentes, y cada una
+en las dos versiones: entera y cortada.
+
+13
+00:00:42.660 --> 00:00:47.770
+Se espera que el jugador corte la fruta
+moviendo su mano frente a la cámara,
+
+14
+00:00:47.770 --> 00:00:51.585
+así que sus movimientos deben
+ser visibles durante el juego.
+
+15
+00:00:51.585 --> 00:00:55.127
+Esto significa que la imagen capturada
+por la cámara debe ser mostrada en
+
+16
+00:00:55.127 --> 00:00:55.810
+el escenario.
+
+17
+00:00:55.810 --> 00:00:57.760
+Aquí hay un boceto de
+la interfaz del juego.
+
+18
+00:00:57.760 --> 00:01:00.399
+Ahora, pensemos en el diseño del código.
+
+19
+00:01:00.399 --> 00:01:04.520
+Hay dos partes en las cuales
+podemos descomponer el programa:
+
+20
+00:01:04.520 --> 00:01:07.740
+la inicialización del
+juego y el juego en sí.
+
+21
+00:01:07.740 --> 00:01:10.808
+La inicialización incluye
+prender la cámara,
+
+22
+00:01:10.808 --> 00:01:13.270
+así el usuario puede verse a sí mismo.
+
+23
+00:01:13.270 --> 00:01:16.253
+También involucra fijar el
+primer diseño de fruta.
+
+24
+00:01:16.253 --> 00:01:18.300
+Por ejemplo, una manzana entera.
+
+25
+00:01:18.300 --> 00:01:23.050
+Los pasos en el inicio son:
+inicializar la cámara,
+
+26
+00:01:23.050 --> 00:01:26.662
+poner el disfraz de manzana completo.
+
+27
+00:01:26.662 --> 00:01:31.810
+El juego en sí es el siguiente: mostrar
+la fruta en algún lugar de la pantalla,
+
+28
+00:01:31.810 --> 00:01:34.861
+se debe esperar a que
+sea cortada por la mano,
+
+29
+00:01:34.861 --> 00:01:40.326
+se muestra la fruta cortada,
+y luego aparece otra, y así sucesivamente.
+
+30
+00:01:40.326 --> 00:01:45.179
+El proceso podría ser descripto
+repetir por siempre, mostrar la
+
+31
+00:01:45.179 --> 00:01:50.250
+fruta en algún lugar de la pantalla,
+esperar a que sea tocada la fruta,
+
+32
+00:01:50.250 --> 00:01:54.820
+mostrar la fruta cortada,
+mostrar la siguiente fruta completa.
+
+33
+00:01:54.820 --> 00:01:57.622
+Bien, ya tenemos diseñado
+nuestro Fruit ninja.
+
+34
+00:01:57.622 --> 00:01:59.830
+Ahora lo implementaremos en Scratch.
+
+35
+00:01:59.830 --> 00:02:03.040
+Comenzaremos con el diseño
+de la interfaz del juego.
+
+36
+00:02:03.040 --> 00:02:06.890
+Recuerda que esto refiere a cómo
+queremos que luzca la interfaz.
+
+37
+00:02:06.890 --> 00:02:09.813
+Respecto al escenario,
+lo veremos enseguida,
+
+38
+00:02:09.813 --> 00:02:12.890
+dentro del código de la
+inicialización del juego.
+
+39
+00:02:12.890 --> 00:02:14.871
+Ahora veamos la fruta.
+
+40
+00:02:14.871 --> 00:02:20.502
+Tenemos que elegir varias frutas y
+editarlas para tener dos versiones:
+
+41
+00:02:20.502 --> 00:02:21.608
+entera y partida.
+
+42
+00:02:21.608 --> 00:02:26.180
+Comenzamos agregando una manzana que
+obtenemos de la biblioteca de Scratch.
+
+43
+00:02:30.865 --> 00:02:35.550
+La duplicamos, así la podemos
+modificar para que parezca cortada.
+
+44
+00:02:35.550 --> 00:02:42.810
+La convertimos en mapa de bits y
+con la goma la partimos en dos.
+
+45
+00:02:48.600 --> 00:02:50.320
+Agregamos luego una sandía,
+
+46
+00:02:50.320 --> 00:02:54.390
+entera y partida, y después una naranja,
+también entera y partida.
+
+47
+00:03:11.195 --> 00:03:14.000
+Borramos el disfraz del gato.
+
+48
+00:03:14.000 --> 00:03:22.208
+Tenemos que poner los disfraces en
+forma consecutiva: entero y partido.
+
+49
+00:03:22.208 --> 00:03:26.638
+Recuerda que es buena práctica ponerle
+nombre significativo a cada elemento,
+
+50
+00:03:26.638 --> 00:03:28.300
+en este caso a los disfraces.
+
+51
+00:03:28.300 --> 00:03:32.965
+Vamos a cambiar eso.
+
+52
+00:04:04.190 --> 00:04:08.503
+Pronto, ya tenemos los
+elementos de la interfaz.
+
+53
+00:04:08.503 --> 00:04:10.620
+Ahora veamos el código.
+
+54
+00:04:10.620 --> 00:04:15.580
+Transformaremos el seudocódigo de la
+inicialización en el código Scratch.
+
+55
+00:04:15.580 --> 00:04:21.140
+Prendemos el video.
+
+56
+00:04:21.140 --> 00:04:26.700
+Fijamos la transparencia y ponemos
+el disfraz de la manzana entera.
+
+57
+00:04:29.700 --> 00:04:33.545
+Ahora, haremos el código para el juego en
+sí, consultando con nuestro seudocódigo.
+
+58
+00:04:33.545 --> 00:04:35.830
+Tenemos el proceso de repetir siempre.
+
+59
+00:04:35.830 --> 00:04:42.700
+Queremos ubicar el objeto en
+algún lugar de la pantalla.
+
+60
+00:04:42.700 --> 00:04:46.262
+Su posición puede ser elegida al
+azar si usamos el bloque número al
+
+61
+00:04:46.262 --> 00:04:47.890
+azar que está en operadores.
+
+62
+00:04:53.775 --> 00:04:56.242
+Aquí elegimos los valores -100 y 100,
+
+63
+00:04:56.242 --> 00:04:59.660
+pero puedes elegir otros dentro del
+rango de coordenadas de Scratch.
+
+64
+00:04:59.660 --> 00:05:06.830
+Ahora esperamos a que se detecte
+movimiento sobre el objeto.
+
+65
+00:05:06.830 --> 00:05:11.236
+Para lograr esto,
+usamos el bloque esperar hasta que con el
+
+66
+00:05:11.236 --> 00:05:14.022
+bloque movimiento del
+video en este objeto.
+
+67
+00:05:14.022 --> 00:05:17.110
+Y la condición que sea mayor,
+por ejemplo, a 50.
+
+68
+00:05:32.815 --> 00:05:35.022
+Cuando se detecta, cambiamos el disfraz.
+
+69
+00:05:35.022 --> 00:05:38.719
+Esperamos unos pocos segundos y luego
+cambiamos al siguiente disfraz, que
+
+70
+00:05:38.719 --> 00:05:40.520
+corresponde a la siguiente fruta.
+
+71
+00:05:53.560 --> 00:05:55.600
+Agregamos ahora la bandera verde.
+
+72
+00:05:55.600 --> 00:05:59.360
+El código completo quedaría
+como lo vemos aquí.
+
+73
+00:05:59.360 --> 00:06:02.901
+Vamos a probarlo.
+
+74
+00:06:04.901 --> 00:06:07.110
+Quedó genial, ¿no?
+
+75
+00:06:07.110 --> 00:06:10.972
+En el próximo video desarrollaremos
+otro juego siguiendo los
+
+76
+00:06:10.972 --> 00:06:14.330
+principios de diseño de software.

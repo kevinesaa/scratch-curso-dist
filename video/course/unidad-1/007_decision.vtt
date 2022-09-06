@@ -1,0 +1,187 @@
+WEBVTT
+
+1
+00:00:03.000 --> 00:00:05.676
+Hasta ahora hemos creado un programa en
+
+2
+00:00:05.676 --> 00:00:11.930
+Scratch que hace que el gato se mueva unos
+pasos, cambie su color y luego maúlle.
+
+3
+00:00:11.930 --> 00:00:15.989
+Este programa utiliza la
+estructura de control de
+
+4
+00:00:15.989 --> 00:00:20.349
+secuencia donde todas las tareas
+se llevan a cabo una después de la
+
+5
+00:00:20.349 --> 00:00:24.710
+otra, en el mismo orden en el
+que están en el programa.
+
+6
+00:00:24.710 --> 00:00:27.691
+¿Qué pasaría si quisiéramos que
+el gato maúlle sólo si llega al
+
+7
+00:00:27.691 --> 00:00:28.770
+borde del escenario?
+
+8
+00:00:28.770 --> 00:00:34.180
+Este caso es diferente al ejemplo
+anterior pues incluye una decisión.
+
+9
+00:00:34.180 --> 00:00:38.370
+Vamos a trabajar con la estructura
+de control de decisión.
+
+10
+00:00:40.370 --> 00:00:43.970
+Esta estructura de control
+permite justamente controlar el
+
+11
+00:00:43.970 --> 00:00:48.590
+flujo del programa a través de decisiones.
+
+12
+00:00:48.590 --> 00:00:53.884
+Cuando ejecutamos un programa que
+contiene una decisión, la computadora la
+
+13
+00:00:53.884 --> 00:00:57.460
+evalúa y decide por dónde seguir
+según la condición se cumpla o no.
+
+14
+00:00:58.460 --> 00:01:00.800
+Sólo si la condición es verdadera,
+
+15
+00:01:00.800 --> 00:01:06.265
+esto es, si se cumple, la parte
+correspondiente del programa se ejecuta.
+
+16
+00:01:07.265 --> 00:01:10.430
+Como ya mencionamos la decisión es
+una de las estructuras de control que
+
+17
+00:01:10.430 --> 00:01:16.142
+utilizamos para construir los programas
+junto con la secuencia y la iteración.
+
+18
+00:01:17.142 --> 00:01:21.599
+Se usa siempre que necesitemos
+que, en función del resultado de
+
+19
+00:01:21.599 --> 00:01:25.700
+cierta condición, se tome uno
+u otro camino alternativo.
+
+20
+00:01:26.700 --> 00:01:30.650
+Hay varios ejemplos de la vida diaria
+donde se utiliza esta estructura.
+
+21
+00:01:30.650 --> 00:01:34.710
+Por ejemplo,
+si tienes frío te pones un abrigo.
+
+22
+00:01:35.710 --> 00:01:39.523
+También podemos encontrar decisiones
+en la cocina, por ejemplo podemos crear
+
+23
+00:01:39.523 --> 00:01:44.800
+diferentes pizzas según los elementos que
+le pongamos encima a una pizza común.
+
+24
+00:01:44.800 --> 00:01:50.699
+Así, si queremos una pizza vegetariana
+incluiremos hongos y vegetales.
+
+25
+00:01:50.699 --> 00:01:54.030
+Si queremos una pizza picante,
+le agregaremos pepinillos y
+
+26
+00:01:54.030 --> 00:01:58.250
+si queremos una pizza mediterránea,
+le pondremos aceitunas.
+
+27
+00:02:00.250 --> 00:02:04.179
+La medicina es otra área donde
+las decisiones también tiene un
+
+28
+00:02:04.179 --> 00:02:05.610
+rol importante.
+
+29
+00:02:05.610 --> 00:02:08.300
+El mes pasado, por ejemplo, fui
+al doctor porque tenía fiebre,
+
+30
+00:02:08.300 --> 00:02:11.950
+me recomendó tomar unas
+pastillas por tres días.
+
+31
+00:02:11.950 --> 00:02:15.370
+Y si al cuarto día tenía fiebre,
+debía consultarle nuevamente.
+
+32
+00:02:16.370 --> 00:02:21.150
+¿Se te ocurren ejemplos de decisiones,
+por ejemplo, en juegos de mesa?
+
+33
+00:02:21.150 --> 00:02:23.278
+Sube tus ejemplos al foro de discusión.
+
+34
+00:02:24.278 --> 00:02:28.376
+Seguramente habrás notado que hemos usado
+mucho la palabra "si" en estos ejemplos.
+
+35
+00:02:28.376 --> 00:02:30.650
+No es coincidencia.
+
+36
+00:02:30.650 --> 00:02:35.000
+Es una forma de plantear decisiones
+y en Scratch tenemos un bloque "si"
+
+37
+00:02:35.000 --> 00:02:36.540
+para representarlas.
+
+38
+00:02:37.540 --> 00:02:40.046
+Pero antes de aprender cómo usarlas,
+
+39
+00:02:40.046 --> 00:02:44.170
+miremos en detalle algunos
+algoritmos con decisiones.

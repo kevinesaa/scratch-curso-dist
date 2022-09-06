@@ -1,0 +1,179 @@
+WEBVTT
+
+1
+00:00:04.920 --> 00:00:08.634
+En este video te mostraremos un
+breve ejemplo de qué tan parecido es
+
+2
+00:00:08.634 --> 00:00:13.813
+programar en Scratch y en Python,
+un lenguaje muy popular y sencillo.
+
+3
+00:00:13.813 --> 00:00:17.995
+El ejemplo es más fácil de seguir si
+conoces algo de inglés pero igualmente si
+
+4
+00:00:17.995 --> 00:00:20.450
+no sabes, no hay problema,
+está todo explicado.
+
+5
+00:00:20.450 --> 00:00:24.280
+¿Recuerdas nuestro programa
+de la tarjeta de cumpleaños?
+
+6
+00:00:24.280 --> 00:00:27.722
+Aquí tenemos la parte en la
+cual la mariposa saludaba y
+
+7
+00:00:27.722 --> 00:00:30.100
+preguntaba cuántos años cumplías.
+
+8
+00:00:30.100 --> 00:00:34.320
+En función de la respuesta
+ponía un mensaje u otro.
+
+9
+00:00:34.320 --> 00:00:38.500
+Si era menor a ocho decía
+¡Tan joven y ya programando!
+
+10
+00:00:38.500 --> 00:00:41.411
+En otro caso decía la edad y ¡Felicidades!
+
+11
+00:00:41.411 --> 00:00:45.120
+Luego mostraba en todos
+los casos "Sopla las velitas".
+
+12
+00:00:45.120 --> 00:00:49.530
+Veamos este mismo código
+escrito en Python.
+
+13
+00:00:49.530 --> 00:00:54.486
+Cada línea de código es una instrucción
+para el computador, así como lo es
+
+14
+00:00:54.486 --> 00:00:56.230
+cada bloque en Scratch.
+
+15
+00:00:56.230 --> 00:00:59.600
+El programa primero dice hola.
+
+16
+00:00:59.600 --> 00:01:05.260
+En Python se utiliza la palabra "print"
+que quiere decir imprimir en inglés.
+
+17
+00:01:05.260 --> 00:01:09.960
+Se le indica entre paréntesis
+qué queremos imprimir: "hola".
+
+18
+00:01:09.960 --> 00:01:14.590
+El siguiente bloque de Scratch
+es preguntar y esperar.
+
+19
+00:01:14.590 --> 00:01:19.692
+Aquí el usuario es invitado a ingresar
+un número para completar la frase "Hoy es
+
+20
+00:01:19.692 --> 00:01:21.270
+tu cumpleaños número..."
+
+21
+00:01:21.270 --> 00:01:27.520
+La sentencia de Python para esto es "input"
+que corresponde a entrada en inglés.
+
+22
+00:01:27.520 --> 00:01:29.373
+Ahí muestra la frase.
+
+23
+00:01:29.373 --> 00:01:34.160
+La palabra "int" refiere a que
+se tomará como un número entero.
+
+24
+00:01:34.160 --> 00:01:40.580
+El programa queda esperando que el usuario
+digite el número y presione enter.
+
+25
+00:01:40.580 --> 00:01:45.330
+El número que ingresa se asigna
+en la variable respuesta,
+
+26
+00:01:45.330 --> 00:01:50.160
+que es lo mismo que hace Scratch, espera
+el ingreso y carga la variable respuesta.
+
+27
+00:01:50.160 --> 00:01:55.720
+Siguiendo con el programa de Scratch, se
+verifica la respuesta con el bloque si.
+
+28
+00:01:55.720 --> 00:02:00.580
+En Python se usa la sentencia "if"
+que quiere decir si en inglés.
+
+29
+00:02:00.580 --> 00:02:05.877
+Si la respuesta es menor a ocho
+imprime usando la sentencia "print",
+
+30
+00:02:05.877 --> 00:02:11.050
+imprimir, la frase "¡Tan
+joven y ya programando!"
+
+31
+00:02:11.050 --> 00:02:14.224
+Si no es menor a ocho, imprime la
+variable respuesta y luego imprime la
+
+32
+00:02:14.224 --> 00:02:15.460
+palabra "¡Felicidades!"
+
+33
+00:02:15.460 --> 00:02:19.100
+Finalmente en ambos casos
+imprime "Sopla las velitas".
+
+34
+00:02:19.100 --> 00:02:22.720
+Puedes ver una correspondencia
+entre ambos programas.
+
+35
+00:02:22.720 --> 00:02:25.516
+De hecho los términos
+usados en uno y en otro no
+
+36
+00:02:25.516 --> 00:02:28.470
+son demasiado diferentes
+más allá del idioma.
+
+37
+00:02:28.470 --> 00:02:32.430
+Te invitamos a que en el futuro pruebes
+éste y otros lenguajes de programación.

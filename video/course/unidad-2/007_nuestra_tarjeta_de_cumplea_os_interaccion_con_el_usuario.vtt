@@ -1,0 +1,339 @@
+WEBVTT
+
+1
+00:00:04.000 --> 00:00:08.130
+En la primera unidad vimos la animación
+de una tarjeta de cumpleaños.
+
+2
+00:00:08.130 --> 00:00:11.920
+Ahora vamos a crear nuestra propia
+tarjeta de cumpleaños interactiva.
+
+3
+00:00:11.920 --> 00:00:16.790
+Queremos crear una tarjeta con dos
+personajes: una mariposa y una torta.
+
+4
+00:00:16.790 --> 00:00:20.640
+Que la mariposa esté animada y
+luce como si estuviera volando.
+
+5
+00:00:20.640 --> 00:00:23.524
+Cuando comienza el programa
+te saluda, te dice "hola".
+
+6
+00:00:23.524 --> 00:00:25.630
+Pregunta, ¿cuántos años cumples?
+
+7
+00:00:25.630 --> 00:00:28.690
+Repite tu respuesta y te felicita.
+
+8
+00:00:29.690 --> 00:00:33.490
+Y finalmente te invita a soplar
+las velitas de la torta.
+
+9
+00:00:33.490 --> 00:00:37.700
+Las velitas estarán prendidas al
+comienzo pero debemos apagarlas.
+
+10
+00:00:37.700 --> 00:00:39.769
+¿Cómo lo haremos?
+
+11
+00:00:39.769 --> 00:00:43.920
+Las apagaremos al soplar el micrófono.
+
+12
+00:00:43.920 --> 00:00:49.105
+Tenemos mucho trabajo por delante y
+bastantes cosas que hacer en el programa.
+
+13
+00:00:49.105 --> 00:00:53.626
+Por lo que vamos a descomponerlo en partes
+más pequeñas, así podremos manejarlo una
+
+14
+00:00:53.626 --> 00:00:54.290
+tras otra.
+
+15
+00:00:54.290 --> 00:00:56.808
+Miremos el comportamiento de la mariposa.
+
+16
+00:00:56.808 --> 00:00:58.650
+Hay dos aspectos importantes.
+
+17
+00:00:58.650 --> 00:01:03.510
+El primero de ellos es que interactúa con
+el usuario para hacerle una pregunta.
+
+18
+00:01:03.510 --> 00:01:06.398
+Repite su respuesta y
+dice algunas cosas más.
+
+19
+00:01:06.398 --> 00:01:10.480
+El segundo aspecto es que está
+volando durante todo el programa.
+
+20
+00:01:10.480 --> 00:01:13.295
+Podríamos llamar a estos dos aspectos:
+
+21
+00:01:13.295 --> 00:01:16.150
+diálogo con la mariposa
+y mariposa volando.
+
+22
+00:01:16.150 --> 00:01:18.264
+Solamente para ayudar a ordenarnos.
+
+23
+00:01:18.264 --> 00:01:21.310
+Ahora miremos el comportamiento
+relativo a la torta.
+
+24
+00:01:21.310 --> 00:01:24.657
+Las velitas están inicialmente prendidas y
+
+25
+00:01:24.657 --> 00:01:28.753
+se mantienen hasta que el usuario las
+apague al soplar por el micrófono.
+
+26
+00:01:28.753 --> 00:01:30.714
+En ese momento cambian a apagada.
+
+27
+00:01:30.714 --> 00:01:33.610
+Podríamos llamar a esta
+parte velitas de la torta.
+
+28
+00:01:33.610 --> 00:01:35.508
+Tenemos así tres partes.
+
+29
+00:01:35.508 --> 00:01:37.150
+Vamos a construirlo.
+
+30
+00:01:37.150 --> 00:01:42.110
+En un nuevo proyecto, vamos a borrar
+el gato y agregar los dos personajes.
+
+31
+00:01:42.110 --> 00:01:50.000
+Elegimos de la biblioteca de Scratch la
+mariposa, por ejemplo, ésta, y la torta.
+
+32
+00:01:56.690 --> 00:02:03.380
+Le vamos a poner nombres apropiados tanto
+a los objetos como a los disfraces.
+
+33
+00:02:10.385 --> 00:02:15.209
+Observa que la torta tiene dos disfraces:
+uno con las velitas prendidas y
+
+34
+00:02:15.209 --> 00:02:17.390
+otro con las velitas apagadas.
+
+35
+00:02:30.140 --> 00:02:34.229
+La mariposa tiene un disfraz, pero le vamos
+a agregar otro con diferente posición de
+
+36
+00:02:34.229 --> 00:02:34.890
+las alitas.
+
+37
+00:02:34.890 --> 00:02:40.380
+Lo duplicamos y lo vamos a editar.
+
+38
+00:02:40.380 --> 00:02:43.890
+Seleccionamos que desagrupe y
+
+39
+00:02:43.890 --> 00:02:49.490
+movemos la posición de las alitas
+para simular el efecto de vuelo.
+
+40
+00:02:49.490 --> 00:02:53.524
+Comenzaremos ahora con lo que
+denominamos diálogo con la mariposa.
+
+41
+00:02:53.524 --> 00:02:55.480
+Empezamos con la bandera verde.
+
+42
+00:02:55.480 --> 00:03:03.180
+Luego dice "hola", con un bloque decir.
+
+43
+00:03:03.180 --> 00:03:07.950
+Y para interactuar con el usuario
+usaremos un bloque específico para ello.
+
+44
+00:03:07.950 --> 00:03:13.360
+Dentro de la paleta de sensores
+tenemos el bloque "preguntar y esperar".
+
+45
+00:03:13.360 --> 00:03:20.595
+Dentro colocamos la pregunta.
+
+46
+00:03:20.595 --> 00:03:23.957
+Este bloque nos permite hacer
+una pregunta al usuario.
+
+47
+00:03:23.957 --> 00:03:26.317
+En este caso, ¿cuántos años cumple?
+
+48
+00:03:26.317 --> 00:03:27.830
+Y esperar su respuesta.
+
+49
+00:03:27.830 --> 00:03:30.988
+El usuario ingresará su
+edad y presionará enter.
+
+50
+00:03:30.988 --> 00:03:35.769
+Una vez que el valor es ingresado
+se asigna automáticamente a otro
+
+51
+00:03:35.769 --> 00:03:41.830
+bloque denominado respuesta
+que está también en sensores.
+
+52
+00:03:41.830 --> 00:03:46.415
+La mariposa repetirá la respuesta
+del usuario utilizando un
+
+53
+00:03:46.415 --> 00:03:49.705
+bloque decir y colocamos
+dentro el bloque respuesta.
+
+54
+00:03:49.705 --> 00:03:51.000
+Finalmente felicita
+
+55
+00:03:57.910 --> 00:04:00.960
+e invita a soplar las velitas.
+
+56
+00:04:02.960 --> 00:04:05.010
+Vamos a probar hasta aquí.
+
+57
+00:04:17.010 --> 00:04:18.380
+Bien, ahora manejaremos
+otra parte del programa.
+
+58
+00:04:18.380 --> 00:04:22.030
+La de la mariposa volando, para
+darle mas animación a la mariposa.
+
+59
+00:04:22.030 --> 00:04:25.834
+Queremos que todo el tiempo se
+mueva unos pasos hacia adelante y
+
+60
+00:04:25.834 --> 00:04:28.000
+hacia atrás cambiando su disfraz.
+
+61
+00:04:28.000 --> 00:04:31.227
+De esta manera el efecto de
+volar va a ser bien real.
+
+62
+00:04:31.227 --> 00:04:34.240
+Usaremos el bloque mover
+y siguiente disfraz.
+
+63
+00:04:34.240 --> 00:04:38.219
+Y también haremos una pequeña pausa entre
+cada movimiento con el bloque esperar.
+
+64
+00:04:38.219 --> 00:04:43.270
+Así el código que tenemos es: mover
+diez pasos, cambiar el disfraz,
+
+65
+00:04:43.270 --> 00:04:47.300
+esperamos un pequeño tiempo.
+
+66
+00:04:47.300 --> 00:04:51.810
+Lo duplicamos.
+
+67
+00:04:51.810 --> 00:04:58.860
+Ponemos el valor -10 para
+que vaya para el otro lado.
+
+68
+00:04:58.860 --> 00:05:02.771
+Y el código va quedando de esta manera.
+
+69
+00:05:02.771 --> 00:05:09.437
+Vamos a agregarle el bloque por
+siempre y la bandera verde.
+
+70
+00:05:09.437 --> 00:05:13.160
+Vamos a probar hasta aquí.
+
+71
+00:05:23.160 --> 00:05:24.620
+Ya funciona.
+
+72
+00:05:24.620 --> 00:05:26.998
+Tenemos prontas estas dos primeras partes.
+
+73
+00:05:28.498 --> 00:05:31.783
+En el próximo video analizaremos
+el código correspondiente a la
+
+74
+00:05:31.783 --> 00:05:34.270
+última parte,
+la de las velitas de la torta.

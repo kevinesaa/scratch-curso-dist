@@ -1,0 +1,236 @@
+WEBVTT
+
+1
+00:00:04.200 --> 00:00:07.859
+Vamos a retomar el programa
+inicial del gato para hacer que
+
+2
+00:00:07.859 --> 00:00:09.660
+repita su comportamiento.
+
+3
+00:00:09.660 --> 00:00:12.725
+Y si queremos que el gato
+se mantenga en movimiento y
+
+4
+00:00:12.725 --> 00:00:16.677
+cambiando de color por siempre,
+¿cómo lo hacemos?
+
+5
+00:00:16.677 --> 00:00:20.420
+Bueno, una forma sería copiar
+el código del programa y
+
+6
+00:00:20.420 --> 00:00:22.750
+ponerlo al final del código ya existente.
+
+7
+00:00:22.750 --> 00:00:27.230
+Podemos hacer esto una, dos y tres
+veces pero no hasta el infinito.
+
+8
+00:00:27.230 --> 00:00:31.730
+¿No habrá alguna forma de decirle
+que repita ese código por siempre?
+
+9
+00:00:31.730 --> 00:00:38.500
+Sí, la hay y se llama estructura de
+control de iteración o repetición.
+
+10
+00:00:38.500 --> 00:00:43.220
+La iteración es el proceso de
+repetir partes del programa.
+
+11
+00:00:43.220 --> 00:00:46.002
+Hay diferentes tipos de iteración.
+
+12
+00:00:46.002 --> 00:00:50.565
+En esta unidad nos concentraremos
+en los ciclos infinitos en
+
+13
+00:00:50.565 --> 00:00:55.780
+los cuales una sección del programa se
+ejecuta y se vuelve a ejecutar sin parar.
+
+14
+00:00:55.780 --> 00:00:59.940
+En próximas unidades veremos
+los otros tipos de iteración.
+
+15
+00:00:59.940 --> 00:01:03.968
+Como indicamos, la iteración
+es una de las estructuras de
+
+16
+00:01:03.968 --> 00:01:07.320
+control junto con la
+secuencia y la decisión.
+
+17
+00:01:07.320 --> 00:01:10.033
+Se usa siempre que necesitamos que un
+
+18
+00:01:10.033 --> 00:01:13.630
+comportamiento específico
+deba ser repetido.
+
+19
+00:01:13.630 --> 00:01:17.620
+Hay varios ejemplos de la vida
+real de este tipo de iteración.
+
+20
+00:01:17.620 --> 00:01:20.740
+Cuando nadamos necesitamos
+mover los pies y
+
+21
+00:01:20.740 --> 00:01:23.060
+los brazos todo el tiempo sin parar.
+
+22
+00:01:23.060 --> 00:01:27.890
+O la luna continuamente orbita
+alrededor de la Tierra una y otra vez.
+
+23
+00:01:27.890 --> 00:01:31.540
+O nuestro corazón está programado
+para latir por siempre,
+
+24
+00:01:31.540 --> 00:01:34.683
+desde el día que nacimos
+hasta que el día que morimos.
+
+25
+00:01:34.683 --> 00:01:39.060
+Ahora tratemos de modificar nuestro
+programa en Scratch para hacer que el
+
+26
+00:01:39.060 --> 00:01:43.300
+gato se mueva y cambie de color todo
+el tiempo, rebotando si toca el borde.
+
+27
+00:01:43.300 --> 00:01:46.890
+El código que tenemos por
+ahora lo hace una sola vez.
+
+28
+00:01:46.890 --> 00:01:52.025
+Para repetir por siempre debemos utilizar
+el bloque "por siempre" que está en la
+
+29
+00:01:52.025 --> 00:01:53.370
+paleta de control.
+
+30
+00:01:53.370 --> 00:02:00.990
+Ubicamos los tres bloques dentro del "por
+siempre" y con un doble clic lo ejecutamos.
+
+31
+00:02:00.990 --> 00:02:05.370
+¡Súper!
+
+32
+00:02:05.370 --> 00:02:08.156
+El gato se mueve todo el tiempo
+y va cambiando de color así como
+
+33
+00:02:08.156 --> 00:02:09.750
+rebotando cuando llega al borde.
+
+34
+00:02:09.750 --> 00:02:13.890
+Puedes incluir más bloques
+dentro del bloque por siempre.
+
+35
+00:02:13.890 --> 00:02:19.747
+Por ejemplo, podríamos usar el bloque
+"siguiente disfraz" que está en la paleta
+
+36
+00:02:19.747 --> 00:02:25.969
+de apariencia para hacer que el gato
+cambie su disfraz cada vez que se mueve.
+
+37
+00:02:25.969 --> 00:02:27.914
+Vamos a probarlo.
+
+38
+00:02:27.914 --> 00:02:29.098
+Va muy rápido.
+
+39
+00:02:29.098 --> 00:02:34.580
+Podemos agregarle el bloque "esperar
+un segundo" para hacerlo más real.
+
+40
+00:02:34.580 --> 00:02:39.797
+Podemos también cambiar el tiempo aquí.
+
+41
+00:02:39.797 --> 00:02:43.410
+Por ejemplo, cero dos segundos.
+
+42
+00:02:43.410 --> 00:02:48.050
+Observa que el bloque por siempre no tiene
+ningún enganche abajo que le permita luego
+
+43
+00:02:48.050 --> 00:02:52.809
+encastrar más bloques, por lo que no
+podemos poner ningún bloque después.
+
+44
+00:02:52.809 --> 00:02:54.610
+¿Puedes pensar por qué?
+
+45
+00:02:54.610 --> 00:02:57.752
+Como observas,
+una vez que el gato cambia de color o
+
+46
+00:02:57.752 --> 00:03:00.980
+vuelve al comienzo del ciclo
+para moverse otra vez.
+
+47
+00:03:00.980 --> 00:03:04.305
+No hay un final de este ciclo
+infinito y por esta razón no
+
+48
+00:03:04.305 --> 00:03:06.850
+podemos poner código luego que termine.
+
+49
+00:03:06.850 --> 00:03:11.275
+En el próximo video aprenderemos cómo
+cambiar los disfraces del gato y
+
+50
+00:03:11.275 --> 00:03:14.510
+combinaremos iteración y decisiones.

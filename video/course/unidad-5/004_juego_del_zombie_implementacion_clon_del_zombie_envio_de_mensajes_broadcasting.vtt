@@ -1,0 +1,294 @@
+WEBVTT
+
+1
+00:00:03.000 --> 00:00:06.318
+Vamos a programar ahora
+el comportamiento del
+
+2
+00:00:06.318 --> 00:00:10.500
+zombie cuando empiece como clon,
+siguiendo nuestro seudocódigo.
+
+3
+00:00:16.075 --> 00:00:19.855
+Agregamos el bloque cuando
+comience como clon y lo mostramos,
+
+4
+00:00:19.855 --> 00:00:21.650
+ya que antes lo escondíamos.
+
+5
+00:00:30.405 --> 00:00:33.068
+También le indicamos que mire hacia
+la izquierda para que cuando se
+
+6
+00:00:33.068 --> 00:00:37.444
+mueva, lo haga en esa dirección y que se
+ubique a una altura al azar, sobre la
+
+7
+00:00:37.444 --> 00:00:38.780
+derecha de la pantalla.
+
+8
+00:00:50.780 --> 00:00:52.288
+Elegimos x en 240 e
+
+9
+00:00:52.288 --> 00:00:57.540
+y en un valor al azar
+entre -150 y 150.
+
+10
+00:01:02.890 --> 00:01:08.240
+El color también lo modificamos al azar,
+para que quede más lindo, entre 1 y 200.
+
+11
+00:01:17.240 --> 00:01:18.333
+¿Cómo sigue su programa?
+
+12
+00:01:18.333 --> 00:01:22.709
+Por siempre, debe moverse unos
+pasos la cantidad indicada por la
+
+13
+00:01:22.709 --> 00:01:24.250
+variable pasos zombie.
+
+14
+00:01:42.995 --> 00:01:45.740
+Luego, debemos verificar si está
+tocando a nuestro personaje.
+
+15
+00:01:45.740 --> 00:01:50.356
+En este caso, se toca un sonido, se
+aumenta el puntaje y debe volver.
+
+16
+00:01:50.356 --> 00:01:53.920
+Podemos crear un bloque volver,
+que más adelante detallaremos.
+
+17
+00:02:21.065 --> 00:02:24.210
+Ahora debemos verificar
+si está tocando la flor.
+
+18
+00:02:24.210 --> 00:02:29.240
+El comportamiento que queremos que haga
+en ese caso es que quede detenido en
+
+19
+00:02:29.240 --> 00:02:30.956
+el tiempo durante un segundo.
+
+20
+00:02:30.956 --> 00:02:35.450
+Como ya vimos, el zombie no responderá
+nada, simplemente lo hacemos que espere.
+
+21
+00:02:49.450 --> 00:02:50.357
+En el caso que haya llegado a la casa,
+
+22
+00:02:50.357 --> 00:02:55.075
+o sea que su posición de x sea un valor muy
+bajo correspondiente a la izquierda de
+
+23
+00:02:55.075 --> 00:03:00.630
+la pantalla, por ejemplo menor
+a -200, debe terminar el juego.
+
+24
+00:03:00.630 --> 00:03:03.346
+¿Qué quiere decir que termina el juego?
+
+25
+00:03:03.346 --> 00:03:08.217
+Los distintos elementos del juego
+reaccionarán a esa situación según
+
+26
+00:03:08.217 --> 00:03:12.880
+corresponda. Por ejemplo,
+cuando se termina el juego,
+
+27
+00:03:12.880 --> 00:03:17.730
+entre otras cosas se debe cambiar al fondo
+determinado y detener todos los programas.
+
+28
+00:03:17.730 --> 00:03:22.120
+¿Cómo logramos interactuar
+entre los distintos objetos?
+
+29
+00:03:22.120 --> 00:03:26.460
+En Scratch lo haremos a través
+del envío de mensajes y
+
+30
+00:03:26.460 --> 00:03:30.510
+cada uno que reciba el mensaje
+responderá adecuadamente.
+
+31
+00:03:30.510 --> 00:03:34.162
+Veamos el siguiente ejemplo.
+
+32
+00:03:34.162 --> 00:03:38.940
+En un partido de fútbol el juez toca el
+silbato como señal de comienzo del juego.
+
+33
+00:03:38.940 --> 00:03:43.710
+Esta señal puede tomarse como un mensaje
+que se envía a todos en el estadio.
+
+34
+00:03:43.710 --> 00:03:46.727
+Los jugadores reaccionarán diferente,
+
+35
+00:03:46.727 --> 00:03:52.059
+por ejemplo, unos correrán hacia un lugar,
+otro dará el primer golpe a la pelota,
+
+36
+00:03:52.059 --> 00:03:55.960
+a su vez, algunas personas del
+público probablemente aplaudirán,
+
+37
+00:03:55.960 --> 00:04:00.480
+otras alentarán a un equipo u otro
+y otras más simplemente no harán nada.
+
+38
+00:04:00.480 --> 00:04:03.672
+La comunicación entre
+diferentes objetos en
+
+39
+00:04:03.672 --> 00:04:07.540
+Scratch funciona parecido
+a este ejemplo de fútbol.
+
+40
+00:04:07.540 --> 00:04:12.137
+Scratch nos deja enviar mensajes,
+hacer la difusión o
+
+41
+00:04:12.137 --> 00:04:17.366
+"broadcasting" de mensajes como se denomina
+en inglés, y podemos programarle a cada
+
+42
+00:04:17.366 --> 00:04:22.790
+objeto que, cuando reciba un cierto
+mensaje, haga determinadas acciones.
+
+43
+00:04:22.790 --> 00:04:28.130
+De esta manera podemos coordinar el
+comportamiento de diferentes objetos.
+
+44
+00:04:28.130 --> 00:04:32.225
+En nuestro caso queremos que
+el zombie comunique a los
+
+45
+00:04:32.225 --> 00:04:35.320
+demás para avisar que terminó el juego.
+
+46
+00:04:35.320 --> 00:04:40.927
+Así chequeamos con la posición que sea
+cercana a la izquierda, o sea con valores
+
+47
+00:04:40.927 --> 00:04:46.520
+de x menores a -200 y en ese caso,
+enviamos un mensaje que está en la paleta
+
+48
+00:04:46.520 --> 00:04:52.170
+de eventos,
+le ponemos de nombre terminar juego.
+
+49
+00:05:19.815 --> 00:05:22.842
+La reacción de los demás objetos
+al recibir este mensaje la
+
+50
+00:05:22.842 --> 00:05:24.030
+analizaremos luego.
+
+51
+00:05:24.030 --> 00:05:27.520
+Tenemos pendiente el
+bloque volver del zombie.
+
+52
+00:05:27.520 --> 00:05:31.324
+Lo que debe hacer es irse alejando
+de a poquito, a la misma cantidad de
+
+53
+00:05:31.324 --> 00:05:33.010
+pasos que se venía moviendo.
+
+54
+00:05:33.010 --> 00:05:37.910
+Así, colocamos que mire hacia la derecha.
+
+55
+00:05:37.910 --> 00:05:44.084
+luego el bloque repetir
+
+56
+00:05:44.084 --> 00:05:49.040
+hasta que con la condición de que la
+posición en x sea bien de la derecha,
+
+57
+00:05:49.040 --> 00:05:50.720
+por ejemplo superior a 220.
+
+58
+00:06:03.720 --> 00:06:04.474
+Lo que repetimos es
+
+59
+00:06:04.474 --> 00:06:09.870
+que se mueva la cantidad de pasos del
+zombie y al final, borramos el clon.
+
+60
+00:06:21.580 --> 00:06:25.290
+Agregamos un comentario para aclarar
+bien la función de este procedimiento.
+
+61
+00:06:37.770 --> 00:06:41.370
+En el próximo video programaremos
+el fondo y el comportamiento
+
+62
+00:06:41.370 --> 00:06:43.970
+de los demás objetos al recibir
+el aviso de terminar el juego.

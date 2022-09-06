@@ -1,0 +1,419 @@
+WEBVTT
+
+1
+00:00:04.100 --> 00:00:09.117
+Como habrás observado, hemos incorporado
+en todos los programas el bloque "al
+
+2
+00:00:09.117 --> 00:00:12.723
+presionar bandera verde"
+que representa lo que se
+
+3
+00:00:12.723 --> 00:00:16.660
+ejecutará cuando comience la ejecución
+del programa presionando la bandera.
+
+4
+00:00:16.660 --> 00:00:19.473
+Este bloque es un bloque
+de tipo de evento.
+
+5
+00:00:19.473 --> 00:00:21.661
+Los eventos son cosas que pasan,
+
+6
+00:00:21.661 --> 00:00:24.020
+ocurrencias o acciones que se dan.
+
+7
+00:00:24.020 --> 00:00:28.402
+Son muy útiles en la computación y
+nos ayudan a crear programas que
+
+8
+00:00:28.402 --> 00:00:31.858
+pueden reaccionar a cosas que ocurren,
+como un clic del mouse,
+
+9
+00:00:31.858 --> 00:00:35.380
+apretar una tecla o el movimiento
+del control manual de un juego.
+
+10
+00:00:35.380 --> 00:00:40.430
+Los eventos son particularmente
+útiles cuando construimos un juego.
+
+11
+00:00:40.430 --> 00:00:43.337
+Pero también son muy usados
+en otras áreas de aplicación,
+
+12
+00:00:43.337 --> 00:00:45.125
+como robótica o sistemas en la web.
+
+13
+00:00:45.125 --> 00:00:49.820
+Hay un enfoque de programación llamado
+programación orientada a eventos.
+
+14
+00:00:49.820 --> 00:00:51.595
+En este tipo de programación,
+
+15
+00:00:51.595 --> 00:00:56.363
+el flujo del programa está determinado por
+los eventos como las acciones del usuario,
+
+16
+00:00:56.363 --> 00:00:59.180
+por ejemplo,
+apretar un botón, o entradas de sensores.
+
+17
+00:00:59.180 --> 00:01:03.968
+Un programa orientado a eventos
+está permanentemente verificando o
+
+18
+00:01:03.968 --> 00:01:05.790
+escuchando los eventos.
+
+19
+00:01:05.790 --> 00:01:09.720
+Y cuando ellos ocurren,
+se ejecutan comportamientos específicos.
+
+20
+00:01:09.720 --> 00:01:14.693
+Las personas a menudo se comportan con
+el enfoque de orientado de eventos.
+
+21
+00:01:14.693 --> 00:01:18.440
+Por ejemplo, cuando alguien toca el timbre
+en mi casa, yo voy y abro la puerta.
+
+22
+00:01:18.440 --> 00:01:21.209
+¿Puedes pensar ejemplos
+del deporte donde se
+
+23
+00:01:21.209 --> 00:01:24.910
+pueda identificar comportamientos
+dirigidos por eventos?
+
+24
+00:01:24.910 --> 00:01:26.758
+Súbelos al foro de discusión.
+
+25
+00:01:26.758 --> 00:01:31.097
+Ahora crearemos un divertido juego
+interactivo que incorpora eventos y
+
+26
+00:01:31.097 --> 00:01:32.030
+usa la cámara.
+
+27
+00:01:32.030 --> 00:01:33.046
+Mira el juego.
+
+28
+00:01:33.046 --> 00:01:38.380
+Usamos la cámara para capturar nuestra
+cara y ponerla como fondo del escenario.
+
+29
+00:01:38.380 --> 00:01:41.800
+Le agregamos efectos especiales,
+como estos que estamos mostrando.
+
+30
+00:01:41.800 --> 00:01:43.049
+¿Cómo hacemos esto?
+
+31
+00:01:43.049 --> 00:01:46.998
+En un nuevo proyecto crearemos varios
+diseños divertidos como estos,
+
+32
+00:01:46.998 --> 00:01:48.460
+unos lentes especiales.
+
+33
+00:01:48.460 --> 00:01:51.504
+En el gato presionamos
+la orejita de disfraces,
+
+34
+00:01:51.504 --> 00:01:54.860
+aparecen estos dos disfraces
+borramos uno de ellos.
+
+35
+00:01:54.860 --> 00:01:57.716
+Y le cambiamos el disfraz.
+
+36
+00:01:57.716 --> 00:02:00.950
+Limpiamos el diseño primero.
+
+37
+00:02:00.950 --> 00:02:05.890
+La pantalla de diseño, como ya vimos es
+similar a la de los programas de dibujo
+
+38
+00:02:05.890 --> 00:02:10.830
+típicos con los que podemos dibujar,
+cambiar el color del pincel o borrar.
+
+39
+00:02:10.830 --> 00:02:14.520
+Cambiamos a modo mapa de bits.
+
+40
+00:02:14.520 --> 00:02:18.480
+Puedes dibujar con un pincel,
+
+41
+00:02:18.480 --> 00:02:21.660
+y crear fácilmente lo que desees.
+
+42
+00:02:28.760 --> 00:02:35.860
+Como dijimos puedes cambiar de
+color o borrar si te equivocas.
+
+43
+00:02:35.860 --> 00:02:40.295
+Vamos a probar un poco la herramienta.
+
+44
+00:02:43.295 --> 00:02:44.730
+Podemos borrar.
+
+45
+00:02:44.730 --> 00:02:48.480
+Cambiamos el tamaño de la goma.
+
+46
+00:02:48.480 --> 00:02:53.105
+Ahora que ya conocemos un poquito
+más de la herramienta vamos a hacer el
+
+47
+00:02:53.105 --> 00:02:55.060
+diseño para este programa.
+
+48
+00:02:55.060 --> 00:02:59.573
+Lo que queremos es que salgan dibujos
+divertidos sobre la imagen de la cara de
+
+49
+00:02:59.573 --> 00:03:00.850
+quien esté mirando.
+
+50
+00:03:00.850 --> 00:03:04.678
+Así que borramos todo y
+hacemos un primer diseño,
+
+51
+00:03:04.678 --> 00:03:06.690
+por ejemplo, unos lentes.
+
+52
+00:03:14.215 --> 00:03:21.740
+Le ponemos como nombre al disfraz, lentes.
+
+53
+00:03:21.740 --> 00:03:24.777
+Y agregamos otros disfraces más.
+
+54
+00:03:24.777 --> 00:03:29.290
+Para ello presionamos el
+pincel que aparece aquí.
+
+55
+00:03:29.290 --> 00:03:32.520
+Por ejemplo, podemos crear un sombrero,
+una barba.
+
+56
+00:03:47.895 --> 00:03:53.260
+Esta es otra cara.
+
+57
+00:03:53.260 --> 00:03:56.680
+De la misma forma agrega
+otros que tú desees.
+
+58
+00:03:56.680 --> 00:04:00.910
+Recuerda ponerle un nombre
+representativo a cada uno.
+
+59
+00:04:00.910 --> 00:04:06.170
+Queremos permitir al usuario cambiar entre
+los diferentes diseños cuando lo desee.
+
+60
+00:04:06.170 --> 00:04:10.845
+Para hacer esto especificaremos
+que cuando se presione la barra de
+
+61
+00:04:10.845 --> 00:04:13.011
+espaciar, pase al próximo disfraz.
+
+62
+00:04:13.011 --> 00:04:17.075
+La idea de que al presionar la tecla
+de espacio ocurra algo implica que se
+
+63
+00:04:17.075 --> 00:04:18.240
+trata de un evento.
+
+64
+00:04:18.240 --> 00:04:24.450
+Vamos a la paleta de eventos y elegimos
+el bloque al presionar tecla espacio.
+
+65
+00:04:24.450 --> 00:04:29.120
+Agregamos luego el bloque siguiente
+disfraz que está disponible en apariencia.
+
+66
+00:04:29.120 --> 00:04:31.777
+Tenemos nuestro programa
+orientado de eventos.
+
+67
+00:04:31.777 --> 00:04:35.128
+Cuando se presione la barra va
+a cambiar al siguiente disfraz.
+
+68
+00:04:35.128 --> 00:04:36.150
+Vamos a probarlo.
+
+69
+00:04:36.150 --> 00:04:40.030
+Funciona.
+
+70
+00:04:40.030 --> 00:04:42.448
+Ahora agregaremos la cámara.
+
+71
+00:04:42.448 --> 00:04:46.129
+Si no dispones de una cámara,
+elige un fondo de la biblioteca o
+
+72
+00:04:46.129 --> 00:04:49.150
+dibuja una cara en forma similar
+a como hicimos los disfraces.
+
+73
+00:04:49.150 --> 00:04:52.539
+En caso que tengas la cámara agregamos la
+
+74
+00:04:52.539 --> 00:05:00.090
+bandera verde y la prendemos.
+
+75
+00:05:00.090 --> 00:05:04.395
+Para indicar que se prenda usamos
+el bloque video encendido que lo
+
+76
+00:05:04.395 --> 00:05:06.440
+sacamos del área de sensores.
+
+77
+00:05:06.440 --> 00:05:11.605
+También fijamos la
+transparencia del video.
+
+78
+00:05:11.605 --> 00:05:15.674
+Si quieres averiguar más sobre
+la transparencia presiona con
+
+79
+00:05:15.674 --> 00:05:19.160
+botón derecho sobre el propio
+bloque y te aparecerá la ayuda.
+
+80
+00:05:19.160 --> 00:05:23.906
+La transparencia es un
+valor entre 0 y 100.
+
+81
+00:05:23.906 --> 00:05:26.620
+en este caso elegimos 0.
+
+82
+00:05:26.620 --> 00:05:33.776
+Cuando usamos los bloques
+relacionados al video, si
+
+83
+00:05:33.776 --> 00:05:37.360
+estamos trabajando en línea, te preguntará
+si permites que acceda a la cámara.
+
+84
+00:05:37.360 --> 00:05:41.398
+Le decimos que sí, de la misma forma
+que permitimos el acceso al micrófono.
+
+85
+00:05:41.398 --> 00:05:43.230
+¿Vamos a probar nuestro juego?
+
+86
+00:05:52.190 --> 00:05:55.150
+Hemos creado un programa
+orientado a eventos.
+
+87
+00:05:55.150 --> 00:05:58.709
+Cuando se presiona la barra se
+cambia al siguiente disfraz.
+
+88
+00:05:58.709 --> 00:06:01.510
+Es un ejemplo sencillo pero divertido,
+¿no?
+
+89
+00:06:01.510 --> 00:06:03.390
+Agrégale más efectos:
+
+90
+00:06:03.390 --> 00:06:06.962
+otra clase de sombrero, ¿una peluca quizás?.
+
+91
+00:06:06.962 --> 00:06:08.095
+Diviértete.

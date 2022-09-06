@@ -1,0 +1,287 @@
+WEBVTT
+
+1
+00:00:04.560 --> 00:00:07.478
+En el video anterior vimos
+cómo extender un juego que
+
+2
+00:00:07.478 --> 00:00:09.691
+originalmente habíamos creado nosotros.
+
+3
+00:00:09.691 --> 00:00:13.200
+Pero, ¿qué hay de los juegos que han sido
+construidos por otros programadores?
+
+4
+00:00:13.200 --> 00:00:14.872
+¿Podemos extenderlos?
+
+5
+00:00:14.872 --> 00:00:15.480
+¿Cómo?
+
+6
+00:00:15.480 --> 00:00:19.510
+Para responder a estas preguntas
+vamos a trabajar con el Pong.
+
+7
+00:00:19.510 --> 00:00:24.020
+El juego del Pong es un juego muy
+popular y es considerado un clásico.
+
+8
+00:00:24.020 --> 00:00:27.343
+Está disponible en el sitio de Scratch
+pero te recomendamos bajarlo de
+
+9
+00:00:27.343 --> 00:00:28.140
+nuestro sitio.
+
+10
+00:00:28.140 --> 00:00:29.228
+Vamos a probarlo,
+
+11
+00:00:29.228 --> 00:00:33.040
+juega con él durante algunos
+minutos para conocer cómo funciona.
+
+12
+00:00:33.040 --> 00:00:37.127
+Presiona la bandera verde y con el
+mouse podrás desplazar la paleta que te
+
+13
+00:00:37.127 --> 00:00:38.940
+permitirá pegarle a la pelota.
+
+14
+00:00:38.940 --> 00:00:42.840
+Si la pelota toca la línea roja
+de abajo, se termina el juego.
+
+15
+00:00:42.840 --> 00:00:48.770
+Luego de haberlo probado, vamos a analizar
+el programa para ver cómo está hecho.
+
+16
+00:00:48.770 --> 00:00:51.838
+Tiene dos objetos: la pelota y la paleta.
+
+17
+00:00:51.838 --> 00:00:56.580
+El escenario consiste de un fondo de
+pared de ladrillos y en la parte
+
+18
+00:00:56.580 --> 00:01:00.804
+inferior está la línea roja que es la que
+se debe evitar tocar durante el juego.
+
+19
+00:01:00.804 --> 00:01:03.430
+Analizaremos primero el
+programa de la paleta.
+
+20
+00:01:03.430 --> 00:01:07.666
+Este código lo que hace
+por siempre es fijar la
+
+21
+00:01:07.666 --> 00:01:11.620
+coordenada horizontal x de la paleta
+a la misma que tenga el ratón.
+
+22
+00:01:11.620 --> 00:01:16.041
+La coordenada y no se modifica, así que
+se mantiene a la altura original de
+
+23
+00:01:16.041 --> 00:01:16.790
+la paleta.
+
+24
+00:01:16.790 --> 00:01:21.757
+O sea, permitirá que al ver mover el
+ratón, la paleta se desplace hacia la
+
+25
+00:01:21.757 --> 00:01:24.910
+izquierda y la derecha pero sin
+moverse hacia arriba o abajo.
+
+26
+00:01:24.910 --> 00:01:27.282
+Ahora miremos el código de la pelota.
+
+27
+00:01:27.282 --> 00:01:32.110
+Lo primero que vemos es que hay dos
+bloques o globos nuevos de color amarillo.
+
+28
+00:01:32.110 --> 00:01:37.610
+Si te fijas, contienen explicaciones
+relacionadas al programa.
+
+29
+00:01:37.610 --> 00:01:43.360
+Estos bloques representan
+comentarios al programa.
+
+30
+00:01:43.360 --> 00:01:46.545
+Es buena norma de programación
+que cuando uno escribe un
+
+31
+00:01:46.545 --> 00:01:50.542
+programa agregue estas notas o
+comentarios con explicaciones que
+
+32
+00:01:50.542 --> 00:01:53.235
+pueden ayudar a comprender
+lo que se programó y son
+
+33
+00:01:53.235 --> 00:01:58.830
+particularmente útiles cuando compartimos
+o construimos juegos junto con los amigos.
+
+34
+00:01:58.830 --> 00:02:03.221
+Esas notas son parte de lo que
+se llama documentación técnica y
+
+35
+00:02:03.221 --> 00:02:05.340
+son para los programadores.
+
+36
+00:02:05.340 --> 00:02:08.024
+Scratch en sí no los tiene en cuenta.
+
+37
+00:02:08.024 --> 00:02:12.386
+Miremos, sin entrar en demasiado
+detalle por ahora, los bloques de
+
+38
+00:02:12.386 --> 00:02:13.579
+programa que tenemos.
+
+39
+00:02:13.579 --> 00:02:16.976
+En la parte superior está lo relativo
+a que rebote siempre la pelota y
+
+40
+00:02:16.976 --> 00:02:21.428
+en la parte inferior tenemos lo vinculado
+a tocar la paleta y el color rojo.
+
+41
+00:02:21.428 --> 00:02:26.197
+Podríamos agregar un nuevo comentario que
+este código que está en la parte inferior
+
+42
+00:02:26.197 --> 00:02:30.240
+corresponde a la interacción de la pelota
+con la paleta y con el borde de abajo.
+
+43
+00:02:30.240 --> 00:02:33.834
+Para agregar un comentario presiona
+con el botón derecho en el
+
+44
+00:02:33.834 --> 00:02:35.570
+lugar que desees agregarlo.
+
+45
+00:02:43.570 --> 00:02:49.288
+Ahora miremos en detalle
+esta parte del programa.
+
+46
+00:02:49.288 --> 00:02:53.260
+Por siempre, está verificando dos
+condiciones en forma consecutiva.
+
+47
+00:02:53.260 --> 00:02:58.070
+La primera de ellas está relacionada
+a si la pelota está tocando la paleta.
+
+48
+00:02:58.070 --> 00:03:04.000
+Si la condición es cierta, toca un sonido,
+gira la pelota y la mueve.
+
+49
+00:03:04.000 --> 00:03:07.805
+En la siguiente condición
+verifica si está tocando el
+
+50
+00:03:07.805 --> 00:03:11.422
+color rojo que representa
+que la pelota cayó.
+
+51
+00:03:11.422 --> 00:03:15.565
+En ese caso ejecuta el bloque
+detener todos que termina el programa.
+
+52
+00:03:15.565 --> 00:03:19.040
+Ahora analizaremos con un poco más de
+detalles la otra parte del programa.
+
+53
+00:03:19.040 --> 00:03:23.135
+Esto especifica la inicialización del
+juego, en otras palabras, dónde debe
+
+54
+00:03:23.135 --> 00:03:26.530
+estar la pelota al principio de
+todo y hacia dónde debe apuntar.
+
+55
+00:03:26.530 --> 00:03:31.330
+Aquí se eligió la dirección 45 que
+corresponde hacia arriba a la derecha.
+
+56
+00:03:31.330 --> 00:03:36.275
+Luego por siempre indica que rebote
+si está tocando el borde y se mueva.
+
+57
+00:03:36.275 --> 00:03:41.220
+Vamos a agregar un comentario relativo
+a esta parte por ejemplo, inicialización.
+
+58
+00:03:51.810 --> 00:03:56.613
+Así analizamos el código del programa
+del Pong hecho por otro programador,
+
+59
+00:03:56.613 --> 00:03:59.400
+lo entendimos y le agregamos comentarios.
+
+60
+00:03:59.400 --> 00:04:03.830
+En el próximo video empezaremos
+a hacer modificaciones al juego en sí.

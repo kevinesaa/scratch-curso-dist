@@ -1,0 +1,467 @@
+WEBVTT
+
+1
+00:00:03.000 --> 00:00:05.960
+¿Te suena la palabra clon?
+
+2
+00:00:05.960 --> 00:00:09.680
+Puedes haberla oído en el
+contexto de la biología,
+
+3
+00:00:09.680 --> 00:00:14.029
+quizás viste imágenes de Dolly, la oveja
+que fue clonada en los años 90 en el
+
+4
+00:00:14.029 --> 00:00:17.010
+Instituto Roslin de la
+Universidad de Edimburgo.
+
+5
+00:00:17.010 --> 00:00:21.850
+También en muchas películas aparecen
+clones de personajes como réplicas o
+
+6
+00:00:21.850 --> 00:00:24.320
+copias del personaje original.
+
+7
+00:00:24.320 --> 00:00:29.360
+En Scratch también es posible
+clonar y además es muy sencillo.
+
+8
+00:00:29.360 --> 00:00:34.120
+Imagina, por ejemplo, que estamos creando
+un juego con tres pececitos que nadan.
+
+9
+00:00:34.120 --> 00:00:38.380
+Debo poner tres objetos,
+uno por cada pececito.
+
+10
+00:00:38.380 --> 00:00:43.300
+Si decido tener más peces, debo modificar el
+programa agregando más objetos.
+
+11
+00:00:43.300 --> 00:00:46.119
+Esto requiere un poco de
+trabajo y limitaría en
+
+12
+00:00:46.119 --> 00:00:48.590
+cierta forma los juegos que puedo crear.
+
+13
+00:00:48.590 --> 00:00:52.940
+En la versión 2.0 de Scratch
+podemos crear clones de un objeto.
+
+14
+00:00:52.940 --> 00:00:58.970
+Esto es una copia exacta del objeto
+de forma que cada uno ejecute
+
+15
+00:00:58.970 --> 00:01:03.730
+el mismo código y tiene sus propias
+características, por ejemplo sus colores.
+
+16
+00:01:03.730 --> 00:01:09.733
+Clonar es una gran técnica para reutilizar
+nuestro código y es particularmente
+
+17
+00:01:09.733 --> 00:01:13.600
+útil cuando queremos una cantidad
+variable de objetos en nuestro programa.
+
+18
+00:01:13.600 --> 00:01:17.230
+Veremos varios juegos
+divertidos aplicándose esta idea.
+
+19
+00:01:17.230 --> 00:01:20.320
+El primero será el de cazar fantasmas.
+
+20
+00:01:20.320 --> 00:01:23.998
+En este juego irán apareciendo
+fantasmas y hay que meterlos en
+
+21
+00:01:23.998 --> 00:01:26.060
+una caja especial para cazarlos.
+
+22
+00:01:26.060 --> 00:01:29.710
+La cantidad de fantasmas es ilimitada,
+
+23
+00:01:29.710 --> 00:01:33.410
+por lo cual con lo que vimos hasta
+ahora no podríamos hacerlo fácilmente.
+
+24
+00:01:33.410 --> 00:01:36.960
+Por ello, es hora de utilizar
+el concepto de clon.
+
+25
+00:01:36.960 --> 00:01:40.689
+Durante el programa se irán
+creando clones del fantasma y
+
+26
+00:01:40.689 --> 00:01:44.740
+cada uno de ellos desaparecerá
+cuando sea tocado por la caja.
+
+27
+00:01:44.740 --> 00:01:47.818
+Diseñemos primero nuestra interfaz.
+
+28
+00:01:47.818 --> 00:01:53.510
+Tendremos dos objetos: una caja y un
+fantasma con un fondo de castillo.
+
+29
+00:01:53.510 --> 00:01:57.830
+Ahora diseñemos el código
+para nuestro juego.
+
+30
+00:01:57.830 --> 00:02:02.870
+Tenemos que programar el comportamiento
+de la caja y el de los fantasmas.
+
+31
+00:02:02.870 --> 00:02:06.860
+La caja siempre va a la
+posición del ratón.
+
+32
+00:02:06.860 --> 00:02:12.090
+El comportamiento de los fantasmas lo
+podemos descomponer en dos partes:
+
+33
+00:02:12.090 --> 00:02:17.060
+la creación del clon y su movimiento
+hasta que sea capturado por la caja.
+
+34
+00:02:17.060 --> 00:02:19.661
+Programemos en Scratch.
+
+35
+00:02:19.661 --> 00:02:24.799
+En un nuevo proyecto sacamos el
+gato y agregamos estos dos objetos:
+
+36
+00:02:24.799 --> 00:02:26.290
+la caja y el fantasma.
+
+37
+00:02:38.680 --> 00:02:43.070
+Le indicamos también el sentido del
+giro y le ponemos nombres apropiados.
+
+38
+00:02:59.820 --> 00:03:00.570
+Agregamos el fondo.
+
+39
+00:03:08.125 --> 00:03:15.680
+Editamos la caja para sacarle el moñito.
+
+40
+00:03:15.680 --> 00:03:16.460
+Desagrupamos.
+
+41
+00:03:21.460 --> 00:03:27.240
+Pronto. La caja la moveremos con el mouse,
+así que su código es similar a éste.
+
+42
+00:03:31.240 --> 00:03:34.124
+Por siempre, ir a puntero del ratón.
+
+43
+00:03:34.124 --> 00:03:37.770
+Ahora veamos la creación de los clones.
+
+44
+00:03:37.770 --> 00:03:40.800
+Tenemos la creación y el movimiento.
+
+45
+00:03:40.800 --> 00:03:45.492
+Cuando presionemos la bandera verde
+queremos que, continuamente, cree clones del
+
+46
+00:03:45.492 --> 00:03:47.320
+fantasma cada un breve tiempo.
+
+47
+00:03:49.320 --> 00:03:53.543
+Utilizamos el bloque por siempre,
+usamos el bloque
+
+48
+00:03:53.543 --> 00:03:58.690
+nuevo "crear clon" que está en la paleta de
+control e incluimos el bloque esperar.
+
+49
+00:03:58.690 --> 00:04:01.927
+Ponemos un tiempo breve, 0.5 segundos.
+
+50
+00:04:01.927 --> 00:04:05.848
+Hemos definido cuándo deben
+ser creados los clones, pero no
+
+51
+00:04:05.848 --> 00:04:09.410
+hemos especificado qué ocurrirá
+una vez que sean creados.
+
+52
+00:04:09.410 --> 00:04:14.220
+Para hacer esto, usaremos el
+bloque cuando comience como clon.
+
+53
+00:04:14.220 --> 00:04:19.138
+En este caso queremos que ese fantasma
+se ubique en alguna posición al
+
+54
+00:04:19.138 --> 00:04:23.390
+azar y mire también en una dirección al azar.
+
+55
+00:04:23.390 --> 00:04:27.850
+Elegimos la posición con un
+número al azar entre -180 y
+
+56
+00:04:27.850 --> 00:04:29.890
+180, tanto para x como para y.
+
+57
+00:04:45.965 --> 00:04:50.874
+Agregamos el bloque apuntar en dirección
+también con los valores -180 y 180.
+
+58
+00:04:50.874 --> 00:04:53.620
+Repetimos hasta que 
+la caja lo toque
+
+59
+00:04:59.065 --> 00:05:02.836
+Luego, repetimos hasta
+que la caja lo toque, que se
+
+60
+00:05:02.836 --> 00:05:06.890
+vaya moviendo unos pasos y agregamos
+también que rebote si toca el borde.
+
+61
+00:05:11.525 --> 00:05:16.160
+Cuando es tocado por la caja, lo borramos
+usando el bloque "borrar este clon".
+
+62
+00:05:16.160 --> 00:05:19.500
+Vamos a probar.
+
+63
+00:05:24.085 --> 00:05:28.670
+Me parece que la caja
+está funcionando bien,
+
+64
+00:05:28.670 --> 00:05:31.488
+pero hay algún problema con los fantasmas.
+
+65
+00:05:31.488 --> 00:05:35.478
+El primer fantasma que está en el
+escenario no se está moviendo y
+
+66
+00:05:35.478 --> 00:05:37.570
+no lo podemos capturar con la caja.
+
+67
+00:05:37.570 --> 00:05:41.980
+En otras palabras, no tiene el
+comportamiento del clon que especificamos.
+
+68
+00:05:41.980 --> 00:05:44.679
+Mmm... ¡claro!, ya me di cuenta.
+
+69
+00:05:44.679 --> 00:05:47.510
+El fantasma no es un clon.
+
+70
+00:05:47.510 --> 00:05:50.664
+El que queda es el propio objeto fantasma.
+
+71
+00:05:50.664 --> 00:05:55.427
+Una forma de depurar mi programa y
+corregir este error podría ser incluir un
+
+72
+00:05:55.427 --> 00:05:58.560
+bloque esconder al comienzo
+del programa del fantasma.
+
+73
+00:05:58.560 --> 00:06:01.640
+En este caso iría antes
+del bloque por siempre.
+
+74
+00:06:05.995 --> 00:06:10.350
+Cuando empiece como clon, luego de ubicarlo
+lo mostramos con el bloque mostrar.
+
+75
+00:06:12.350 --> 00:06:14.304
+Probemos de nuevo.
+
+76
+00:06:15.304 --> 00:06:16.400
+¡Súper!
+
+77
+00:06:16.400 --> 00:06:19.920
+Este es un gran ejemplo de
+reutilización de código.
+
+78
+00:06:19.920 --> 00:06:23.561
+Todo lo que tuvimos que hacer
+fue especificar cuándo deben ser
+
+79
+00:06:23.561 --> 00:06:26.362
+creados los clones y cuál
+es su comportamiento y
+
+80
+00:06:26.362 --> 00:06:29.420
+tenemos un juego donde se
+pueden cazar varios fantasmas.
+
+81
+00:06:29.420 --> 00:06:34.440
+Podemos agregarle que se muestre la
+cuenta de cuántos fantasmas se cazaron.
+
+82
+00:06:34.440 --> 00:06:40.750
+Para ello definimos la variable atrapados.
+
+83
+00:06:40.750 --> 00:06:46.310
+La iniciamos en cero al comienzo
+del programa del fantasma original.
+
+84
+00:06:48.310 --> 00:06:52.410
+Cada vez que se va borrar
+un clon la incrementamos.
+
+85
+00:06:56.410 --> 00:06:57.110
+Probemos hasta aquí.
+
+86
+00:07:05.640 --> 00:07:06.170
+Perfecto.
+
+87
+00:07:06.170 --> 00:07:09.486
+Para detener la ejecución
+presionamos el botón rojo.
+
+88
+00:07:09.486 --> 00:07:10.790
+Funciona todo bien.
+
+89
+00:07:10.790 --> 00:07:13.275
+Podemos agregarle más elementos,
+
+90
+00:07:13.275 --> 00:07:18.090
+por ejemplo, que se pueda jugar diez
+segundos y luego se detenga todo.
+
+91
+00:07:18.090 --> 00:07:23.397
+Para lograr este comportamiento,
+una opción es agregar en la caja que
+
+92
+00:07:23.397 --> 00:07:28.564
+al comenzar reinicie el cronómetro y
+repetir hasta que supere el tiempo.
+
+93
+00:07:28.564 --> 00:07:30.550
+Ajustamos el código que teníamos.
+
+94
+00:07:38.915 --> 00:07:43.776
+Repetimos hasta que el tiempo
+
+95
+00:07:43.776 --> 00:07:50.240
+supere, por ejemplo, diez segundos
+
+96
+00:07:50.240 --> 00:07:52.510
+y al final detenemos todo.
+
+97
+00:07:59.510 --> 00:08:01.040
+Probemos nuevamente.
+
+98
+00:08:12.400 --> 00:08:15.590
+Llegamos a los diez segundos
+y se detuvo el programa.
+
+99
+00:08:15.590 --> 00:08:18.992
+Es un juego sencillo pero divertido.
+
+100
+00:08:18.992 --> 00:08:21.799
+Te invitamos a extenderlo más aún,
+
+101
+00:08:21.799 --> 00:08:24.400
+puedes incluirle sonidos, mover más
+rápido los fantasmas y muchas cosas más.

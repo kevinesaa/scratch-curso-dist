@@ -1,0 +1,416 @@
+WEBVTT
+
+1
+00:00:04.205 --> 00:00:08.410
+Ya tenemos una idea clara de
+qué queremos programar y cómo.
+
+2
+00:00:08.410 --> 00:00:12.394
+Empecemos a implementar
+nuestro juego en Scratch.
+
+3
+00:00:12.394 --> 00:00:14.821
+Comenzaremos un nuevo proyecto.
+
+4
+00:00:14.821 --> 00:00:16.644
+Primero veremos la interfaz.
+
+5
+00:00:16.644 --> 00:00:19.030
+En nuestro juego tenemos tres objetos:
+
+6
+00:00:19.030 --> 00:00:23.957
+el zombie, la flor y el personaje
+que los aleja, una escoba.
+
+7
+00:00:23.957 --> 00:00:28.615
+Así en Scratch, al gato le cambiamos
+el disfraz para que sea una escoba.
+
+8
+00:00:28.615 --> 00:00:31.110
+Al disfraz le ponemos de nombre escoba.
+
+9
+00:00:31.110 --> 00:00:35.120
+Vamos a hacer el diseño.
+
+10
+00:00:43.130 --> 00:00:45.500
+De nombre le ponemos personaje.
+
+11
+00:00:47.500 --> 00:00:50.078
+Agregamos un nuevo objeto
+que será para la flor,
+
+12
+00:00:50.078 --> 00:00:55.610
+su nombre será flor y le vamos a poner
+dos disfraces que diseñamos nosotros.
+
+13
+00:01:08.545 --> 00:01:13.480
+Duplicamos el disfraz.
+
+14
+00:01:13.480 --> 00:01:18.990
+Los disfraces tienen diferencias en
+la ubicación del tallo y la carita.
+
+15
+00:01:18.990 --> 00:01:19.844
+¿Por qué?
+
+16
+00:01:19.844 --> 00:01:25.487
+Como vimos en las unidades anteriores,
+alternando disfraces podemos lograr el
+
+17
+00:01:25.487 --> 00:01:29.950
+efecto de animación o movimiento, en este
+caso veremos como si las flores bailaran.
+
+18
+00:01:43.880 --> 00:01:45.810
+Ajustamos el tamaño
+para que queden chicas.
+
+19
+00:01:48.810 --> 00:01:50.480
+Agregamos ahora un objeto
+que será el zombie.
+
+20
+00:01:57.540 --> 00:02:02.589
+Tanto al objeto como a su
+disfraz le ponemos de
+
+21
+00:02:02.589 --> 00:02:04.660
+nombre: zombie.
+
+22
+00:02:07.660 --> 00:02:10.864
+Ajustamos su tamaño y sentido de
+
+23
+00:02:10.864 --> 00:02:13.420
+giro porque sólo mirará
+a izquierda y derecha.
+
+24
+00:02:17.420 --> 00:02:19.260
+Bien, ya tenemos los
+objetos y sus disfraces.
+
+25
+00:02:19.260 --> 00:02:23.892
+También podemos agregar el fondo del
+escenario, similar a nuestro boceto. En la
+
+26
+00:02:23.892 --> 00:02:29.620
+parte izquierda está el borde de la casa.
+De nombre le ponemos fondo casa.
+
+27
+00:02:54.980 --> 00:02:58.500
+También agregamos el fondo que se
+mostrará cuando se termine el juego,
+
+28
+00:02:58.500 --> 00:03:00.340
+que es parecido a éste.
+
+29
+00:03:12.930 --> 00:03:14.960
+En este caso, el nombre es juego terminado.
+
+30
+00:03:14.960 --> 00:03:16.892
+Nuestra interfaz está lista.
+
+31
+00:03:16.892 --> 00:03:21.360
+Ahora comencemos a programar los
+objetos de acuerdo a nuestro diseño.
+
+32
+00:03:21.360 --> 00:03:26.813
+Según nuestro seudocódigo de la
+escoba corresponde: el inicio,
+
+33
+00:03:26.813 --> 00:03:28.290
+por siempre, ir a la posición del ratón.
+
+34
+00:03:28.290 --> 00:03:32.780
+Creamos el bloque inicio y luego agregamos
+la bandera verde y el bloque inicio.
+
+35
+00:03:40.735 --> 00:03:43.603
+Luego, agregamos el bloque
+repetir por siempre y
+
+36
+00:03:43.603 --> 00:03:45.690
+dentro, ir a la posición del ratón.
+
+37
+00:03:48.690 --> 00:03:50.787
+En el inicio programaremos que se ponga en
+
+38
+00:03:50.787 --> 00:03:54.320
+el centro y diga las instrucciones
+según nuestro seudocódigo.
+
+39
+00:04:28.520 --> 00:04:30.268
+Ya tenemos pronto este personaje.
+
+40
+00:04:30.268 --> 00:04:31.830
+Pasemos al zombie.
+
+41
+00:04:33.830 --> 00:04:36.160
+Vamos a necesitar, como
+comentamos, tres variables:
+
+42
+00:04:36.160 --> 00:04:41.548
+una para el tiempo entre apariciones
+de zombies, otra para el
+
+43
+00:04:41.548 --> 00:04:47.130
+puntaje y finalmente otra para llevar su
+velocidad, que podemos llamar pasos zombie.
+
+44
+00:04:47.130 --> 00:04:50.104
+Así primero definimos en el
+zombie la variable que llevará el
+
+45
+00:04:50.104 --> 00:04:55.110
+valor del tiempo entre apariciones,
+de nombre le ponemos tiempo entre zombies.
+
+46
+00:04:55.110 --> 00:05:00.030
+Esta variable queremos ponerla visible
+y que el usuario pueda configurarla.
+
+47
+00:05:00.030 --> 00:05:04.563
+Podríamos utilizar un bloque preguntar y esperar
+pero veremos otra opción para que el
+
+48
+00:05:04.563 --> 00:05:06.150
+jugador pueda cambiarla.
+
+49
+00:05:06.150 --> 00:05:09.266
+Si nos paramos sobre la
+variable en el escenario, con
+
+50
+00:05:09.266 --> 00:05:11.810
+botón derecho aparecen estas opciones.
+
+51
+00:05:15.810 --> 00:05:17.797
+Elegiremos deslizador, lo que nos permitirá
+
+52
+00:05:17.797 --> 00:05:22.710
+modificar el valor desplazando la barrita.
+Observa que al moverla se cambia el valor.
+
+53
+00:05:24.710 --> 00:05:28.120
+Presionando nuevamente con botón
+derecho aparecen estas opciones.
+
+54
+00:05:31.120 --> 00:05:35.560
+Elegimos ahora fijar rango,
+por ejemplo, entre uno y cinco.
+
+55
+00:05:37.560 --> 00:05:39.455
+O sea el jugador podrá
+cambiar el tiempo entre las
+
+56
+00:05:39.455 --> 00:05:43.730
+distintas apariciones de los
+zombies a un valor entre uno y
+
+57
+00:05:43.730 --> 00:05:48.250
+cinco segundos moviendo la barra del
+deslizador cuando él lo desee.
+
+58
+00:05:48.250 --> 00:05:52.250
+En el programa la inicializaremos
+con el valor cinco.
+
+59
+00:05:54.250 --> 00:05:57.683
+Como comentamos, cada zombie se
+moverá a una cierta cantidad de
+
+60
+00:05:57.683 --> 00:06:03.259
+pasos que durante el juego se irá haciendo
+cada vez mayor, para hacerlo más difícil.
+
+61
+00:06:03.259 --> 00:06:07.242
+Definimos la variable pasos
+zombie para todos los objetos.
+
+62
+00:06:08.242 --> 00:06:12.188
+Esta variable no queremos que la vea el
+usuario, así que la esconderemos cuando
+
+63
+00:06:12.188 --> 00:06:16.020
+comience el programa y le fijaremos un
+valor inicial, por ejemplo, en cinco,
+
+64
+00:06:16.020 --> 00:06:17.554
+que lo haremos luego.
+
+65
+00:06:17.554 --> 00:06:21.040
+También tenemos que definir
+la variable puntaje.
+
+66
+00:06:25.040 --> 00:06:27.271
+Ahora que definimos las tres
+variables que necesitamos,
+
+67
+00:06:27.271 --> 00:06:31.290
+vamos completando el código del
+zombie según nuestro seudocódigo.
+
+68
+00:06:31.290 --> 00:06:36.360
+Al presionar la bandera verde,
+haremos todo lo vinculado al inicio.
+
+69
+00:06:36.360 --> 00:06:40.760
+Definimos un bloque nuevo inicio
+que enseguida completaremos.
+
+70
+00:06:46.760 --> 00:06:47.610
+Agregamos la bandera verde,
+
+71
+00:06:47.610 --> 00:06:53.525
+el bloque inicio y que, por siempre, cree
+un clon y esperar un breve tiempo,
+
+72
+00:06:53.525 --> 00:06:56.280
+es nuestro caso es esperar el
+tiempo entre zombies.
+
+73
+00:07:07.285 --> 00:07:10.290
+Vamos a completar el bloque
+inicio que dejamos pendiente.
+
+74
+00:07:11.290 --> 00:07:13.805
+Como indicamos en nuestro
+diseño, fijamos el
+
+75
+00:07:13.805 --> 00:07:16.690
+tiempo entre zombies en cinco
+y mostramos esa variable.
+
+76
+00:07:22.690 --> 00:07:25.290
+También inicializamos el
+puntaje y lo mostramos.
+
+77
+00:07:29.465 --> 00:07:33.640
+Fijamos los pasos iniciales del zombie
+en cinco y escondemos la variable.
+
+78
+00:07:39.050 --> 00:07:42.604
+Además, esperamos unos segundos
+para dar un tiempo antes de que 
+
+79
+00:07:42.604 --> 00:07:44.460
+empiecen a llegar los zombies.
+
+80
+00:07:48.960 --> 00:07:52.471
+Como vimos en unidades anteriores,
+agregamos al comienzo el
+
+81
+00:07:52.471 --> 00:07:56.186
+bloque esconder para que nuestro
+objeto zombie no quede en la pantalla,
+
+82
+00:07:56.186 --> 00:07:58.920
+ya que sólo trabajaremos con
+los clones de los zombies.
+
+83
+00:08:02.920 --> 00:08:04.206
+Como comentamos, queremos que
+
+84
+00:08:04.206 --> 00:08:07.539
+la cantidad de pasos del zombie se
+vaya cambiando automáticamente cada
+
+85
+00:08:07.539 --> 00:08:11.473
+pocos segundos, en una manera
+simultánea con el programa existente.
+
+86
+00:08:11.473 --> 00:08:15.106
+Para construir este programa
+agregamos otra bandera verde y
+
+87
+00:08:15.106 --> 00:08:18.950
+por siempre, esperamos unos segundos
+e incrementamos los pasos.
+
+88
+00:08:28.950 --> 00:08:32.130
+En el próximo video programaremos
+el manejo del clon del zombie.

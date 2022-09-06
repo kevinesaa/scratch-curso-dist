@@ -1,0 +1,386 @@
+WEBVTT
+
+1
+00:00:03.000 --> 00:00:07.510
+Ahora haremos otra de las
+modificaciones que comentamos
+
+2
+00:00:07.510 --> 00:00:10.570
+en el video anterior y cambiaremos
+la dirección inicial de la pelota.
+
+3
+00:00:10.570 --> 00:00:15.074
+¿Dónde debemos modificar?
+Dentro del código de la pelota
+
+4
+00:00:15.074 --> 00:00:18.460
+el lugar es en el bloque
+apuntar en dirección.
+
+5
+00:00:18.460 --> 00:00:20.860
+Vamos a probar con otros valores.
+
+6
+00:00:20.860 --> 00:00:22.360
+Por ejemplo 180.
+
+7
+00:00:28.620 --> 00:00:29.881
+¿Qué ocurre?
+
+8
+00:00:29.881 --> 00:00:31.433
+Sale hacia abajo.
+
+9
+00:00:31.433 --> 00:00:33.670
+¿Y si ponemos -45?
+
+10
+00:00:44.430 --> 00:00:47.238
+Comienza en diagonal hacia la izquierda.
+
+11
+00:00:47.238 --> 00:00:50.830
+Vamos a analizar qué pasaría
+si ponemos el valor 90.
+
+12
+00:00:57.180 --> 00:00:58.764
+Ups.
+¿Se puede jugar?
+
+13
+00:00:58.764 --> 00:01:03.530
+No, porque la pelota sólo se mueve
+horizontalmente, ¿y el valor -90?
+
+14
+00:01:10.530 --> 00:01:11.530
+Ups, tampoco.
+
+15
+00:01:11.530 --> 00:01:14.491
+Sucede lo mismo si ponemos
+el valor -90.
+
+16
+00:01:14.491 --> 00:01:17.171
+Encontramos un posible
+error en el programa.
+
+17
+00:01:17.171 --> 00:01:21.170
+Debemos tener cuidado al elegir valores
+para evitar que no se pueda jugar luego.
+
+18
+00:01:21.170 --> 00:01:25.765
+Siempre debemos probar el programa
+cuidadosamente chequeando que cumpla las
+
+19
+00:01:25.765 --> 00:01:27.440
+condiciones que deseamos.
+
+20
+00:01:27.440 --> 00:01:31.565
+La prueba nos ayuda a identificar errores.
+
+21
+00:01:31.565 --> 00:01:35.690
+Este proceso se llama depurar el
+programa o depuración en general.
+
+22
+00:01:35.690 --> 00:01:39.670
+Es una parte importante del
+proceso de desarrollo de software.
+
+23
+00:01:39.670 --> 00:01:44.030
+También es importante identificar casos
+que sean representativos para probar.
+
+24
+00:01:44.030 --> 00:01:48.487
+Por ejemplo, cuando probamos el programa
+de la tarjeta de cumpleaños en la unidad
+
+25
+00:01:48.487 --> 00:01:52.621
+anterior, donde la mariposa respondía
+diferente si el usuario era menor a ocho
+
+26
+00:01:52.621 --> 00:01:57.775
+años o no, probamos dos casos, uno con
+el valor seis y otro con el valor 14.
+
+27
+00:01:57.775 --> 00:02:02.350
+En este curso fomentamos a desarrollar
+programas en forma incremental.
+
+28
+00:02:02.350 --> 00:02:04.042
+¿Qué significa esto?
+
+29
+00:02:04.042 --> 00:02:06.160
+Agregando cosas poco a poco.
+
+30
+00:02:06.160 --> 00:02:10.040
+Así, te sugerimos probarlo
+en forma incremental.
+
+31
+00:02:10.040 --> 00:02:13.367
+Verás que seguramente será más
+sencillo encontrar los errores o
+
+32
+00:02:13.367 --> 00:02:14.720
+"bugs" como se denomina
+en inglés del programa.
+
+33
+00:02:16.720 --> 00:02:19.910
+Bien, volvamos a nuestro juego para seguir
+trabajando en el movimiento de la pelota.
+
+34
+00:02:19.910 --> 00:02:24.220
+Otra alternativa es ponerle que
+tome una dirección al azar,
+
+35
+00:02:24.220 --> 00:02:29.219
+para ello utilizamos el bloque número
+al azar y le podemos poner como
+
+36
+00:02:29.219 --> 00:02:31.160
+valores entre -30 y 30.
+
+37
+00:02:31.160 --> 00:02:34.100
+El código sería.
+
+38
+00:02:40.100 --> 00:02:43.040
+Lo probamos.
+
+39
+00:02:43.040 --> 00:02:47.520
+Bien, ahora cambiaremos
+el color de la pelota.
+
+40
+00:02:47.520 --> 00:02:52.318
+Podría estar divertido que fuera cambiando
+de color a medida que se mueve, agregando
+
+41
+00:02:52.318 --> 00:02:58.960
+el bloque cambiar efecto color por 25 antes al
+bloque mover logramos el efecto deseado.
+
+42
+00:03:05.960 --> 00:03:08.160
+Lo probamos.
+
+43
+00:03:12.520 --> 00:03:14.384
+Bien, bien lindo.
+
+44
+00:03:14.384 --> 00:03:16.130
+Vamos a agregar otro efecto.
+
+45
+00:03:16.130 --> 00:03:20.740
+Para dejar el rastro de donde pasó la
+pelota necesitamos agregar un lápiz.
+
+46
+00:03:20.740 --> 00:03:22.308
+¿Cómo haremos esto?
+
+47
+00:03:22.308 --> 00:03:26.181
+Al comienzo del juego bajamos un lápiz
+y cuando termina lo levantamos y
+
+48
+00:03:26.181 --> 00:03:30.382
+borramos el trayecto para dejar
+todo vacío para el siguiente juego.
+
+49
+00:03:30.382 --> 00:03:34.780
+Antes del bloque detener todo ponemos
+los bloques de subir el lápiz y borrar.
+
+50
+00:03:34.780 --> 00:03:36.780
+Vamos a hacerlo.
+
+51
+00:03:52.945 --> 00:03:55.110
+Lo probamos.
+
+52
+00:04:01.000 --> 00:04:02.830
+Perfecto.
+
+53
+00:04:02.830 --> 00:04:05.565
+¿Qué tal ahora modificar el escenario,
+la pelota y
+
+54
+00:04:05.565 --> 00:04:08.481
+la paleta para transformarlo
+en un Pizza Pong?
+
+55
+00:04:09.481 --> 00:04:12.952
+Representaría un típico cocinero
+quien lanza la masa de la
+
+56
+00:04:12.952 --> 00:04:16.680
+pizza para darle forma,
+pero cuidado la masa no debe caer al piso.
+
+57
+00:04:16.680 --> 00:04:20.420
+Para ello partiremos del pong
+original y haremos las adaptaciones.
+
+58
+00:04:20.420 --> 00:04:24.124
+Cambiaremos el fondo por una cocina
+eligiendo de la biblioteca un
+
+59
+00:04:24.124 --> 00:04:25.480
+escenario apropiado.
+
+60
+00:04:34.225 --> 00:04:37.257
+Editamos el diseño para incluir la
+
+61
+00:04:37.257 --> 00:04:40.970
+barra roja que sirve para
+detectar que tocó el borde.
+
+62
+00:04:49.730 --> 00:04:51.490
+Ahora modificaremos la pelota.
+
+63
+00:04:51.490 --> 00:04:54.393
+Para cambiar el diseño de
+la pelota por la masa,
+
+64
+00:04:54.393 --> 00:04:58.760
+agregaremos dos disfraces en la pelota
+y vamos a eliminar el original.
+
+65
+00:04:58.760 --> 00:05:00.310
+Cada disfraz mostrará
+el diseño de la masa.
+
+66
+00:05:00.310 --> 00:05:02.310
+Vamos a hacerlo.
+
+67
+00:05:26.310 --> 00:05:29.586
+El objetivo de tener dos
+disfraces es lograr un
+
+68
+00:05:29.586 --> 00:05:31.320
+efecto más lindo cuando se esté moviendo.
+
+69
+00:05:32.320 --> 00:05:36.792
+Tendremos que agregar además que
+cada vez que se mueva la pelota,
+
+70
+00:05:36.792 --> 00:05:40.560
+bueno, la masa ahora, cambie
+al siguiente disfraz.
+
+71
+00:05:49.560 --> 00:05:52.473
+Si deseas cambiar el tamaño de la pizza,
+puedes
+
+72
+00:05:52.473 --> 00:05:55.460
+presionar el botón encoger que está sobre
+la derecha, encima de la bandera verde.
+
+73
+00:05:57.460 --> 00:06:01.850
+Para el caso de cambiar el diseño de la paleta
+por un cocinero puedes elegir
+
+74
+00:06:01.850 --> 00:06:05.043
+algún personaje que te guste y
+adaptar su imagen o, como en nuestro
+
+75
+00:06:05.043 --> 00:06:07.220
+caso, vamos a dibujar uno.
+
+76
+00:06:56.380 --> 00:06:59.540
+De ser necesario reubicamos el personaje
+para que se mueva por el borde inferior.
+
+77
+00:07:11.020 --> 00:07:12.911
+¿Qué te pareció?
+
+78
+00:07:12.911 --> 00:07:13.690
+Está buenísimo.
+
+79
+00:07:13.690 --> 00:07:17.262
+Hicimos algunas modificaciones al
+juego original del Pong y vimos cómo
+
+80
+00:07:17.262 --> 00:07:22.500
+podemos transformarlo en el Pizza Pong,
+un juego diferente pero con la misma idea.
+
+81
+00:07:22.500 --> 00:07:24.893
+¿Qué otro juego podemos
+hacer a partir del Pong?
+
+82
+00:07:24.893 --> 00:07:27.440
+En el siguiente video
+veremos uno de deportes.
+
+83
+00:07:27.440 --> 00:07:28.530
+¿Cómo será?

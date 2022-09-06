@@ -1,0 +1,431 @@
+WEBVTT
+
+1
+00:00:03.000 --> 00:00:07.270
+En la unidad anterior creamos
+el juego del helicóptero,
+
+2
+00:00:07.270 --> 00:00:11.280
+en el que movíamos un helicóptero
+a través de las nubes evitando chocarlas.
+
+3
+00:00:11.280 --> 00:00:14.670
+Pensemos en posibles
+ampliaciones o agregados al
+
+4
+00:00:14.670 --> 00:00:18.150
+juego para hacerlo más
+interesante y desafiante.
+
+5
+00:00:18.150 --> 00:00:20.206
+¿Qué le podríamos agregar?
+
+6
+00:00:20.206 --> 00:00:23.990
+Una opción posible es llevar
+la cuenta de la cantidad de
+
+7
+00:00:23.990 --> 00:00:25.980
+veces que chocó a las nubes.
+
+8
+00:00:25.980 --> 00:00:31.434
+Para hacer esto, necesitamos un
+lugar donde guardar ese valor,
+
+9
+00:00:31.434 --> 00:00:34.630
+lo que en ciencias de la
+computación llamamos variable.
+
+10
+00:00:34.630 --> 00:00:38.260
+Una variable es un lugar
+en la memoria de la
+
+11
+00:00:38.260 --> 00:00:42.940
+computadora para guardar un valor
+que luego podemos consultar.
+
+12
+00:00:42.940 --> 00:00:47.935
+Cada variable tiene un
+nombre y un valor asociado.
+
+13
+00:00:47.935 --> 00:00:52.930
+A través del nombre podemos acceder
+para usar o para modificar ese valor.
+
+14
+00:00:52.930 --> 00:00:59.070
+Por ejemplo, aquí definimos una variable
+que denominamos edad, que tiene valor 14.
+
+15
+00:00:59.070 --> 00:01:03.520
+Se puede pensar las variables
+como cajones con etiqueta,
+
+16
+00:01:03.520 --> 00:01:06.593
+cada uno de los cuales
+contiene información.
+
+17
+00:01:06.593 --> 00:01:09.680
+La etiqueta nos ayuda
+a identificar el cajón.
+
+18
+00:01:09.680 --> 00:01:14.649
+Y así como en la vida real hay cajones que
+son para uso personal solamente y otros
+
+19
+00:01:14.649 --> 00:01:19.660
+para uso compartido, podemos distinguir
+entre variables locales y globales.
+
+20
+00:01:19.660 --> 00:01:24.711
+Las variables locales son para uso
+personal de un determinado elemento del
+
+21
+00:01:24.711 --> 00:01:28.910
+programa, como por ejemplo un objeto,
+y no puede ser accedido por otros.
+
+22
+00:01:28.910 --> 00:01:29.893
+Por otra parte,
+
+23
+00:01:29.893 --> 00:01:34.680
+las variables globales pueden ser usadas
+por todos los elementos del programa.
+
+24
+00:01:34.680 --> 00:01:39.118
+Las variables son un concepto fundamental
+en las ciencias de la computación,
+
+25
+00:01:39.118 --> 00:01:41.820
+y son muy útiles cuando
+desarrollamos juegos,
+
+26
+00:01:41.820 --> 00:01:44.606
+por ejemplo,
+para llevar el registro del puntaje,
+
+27
+00:01:44.606 --> 00:01:48.480
+el nivel de dificultad, o el número
+de vidas que le queda a un personaje.
+
+28
+00:01:48.480 --> 00:01:51.131
+Vamos a crear una variable en Scratch.
+
+29
+00:01:51.131 --> 00:01:55.560
+Elige entre los bloques de datos
+la opción de crear una variable.
+
+30
+00:01:55.560 --> 00:02:00.186
+Esto creará un lugar donde guardar
+el valor que llevará la cantidad de
+
+31
+00:02:00.186 --> 00:02:01.390
+veces que chocó.
+
+32
+00:02:01.390 --> 00:02:04.506
+Como nombre le podemos
+poner veces o choques para
+
+33
+00:02:04.506 --> 00:02:06.862
+ayudarnos a recordar qué contiene.
+
+34
+00:02:06.862 --> 00:02:08.310
+Aquí elegimos veces.
+
+35
+00:02:08.310 --> 00:02:12.825
+La elegimos que sea accesible
+para todos los objetos.
+
+36
+00:02:12.825 --> 00:02:14.983
+En el momento en que empieza el programa,
+
+37
+00:02:14.983 --> 00:02:17.340
+la cantidad de choques
+debe empezar en cero.
+
+38
+00:02:17.340 --> 00:02:21.350
+Para definir esto usamos el
+bloque fijar veces a cero.
+
+39
+00:02:21.350 --> 00:02:25.299
+Este bloque lo pondremos inmediatamente
+después de la bandera verde.
+
+40
+00:02:25.299 --> 00:02:27.350
+¿En qué momento debe modificarse?
+
+41
+00:02:27.350 --> 00:02:31.290
+Cada vez que toca una nube,
+debe cambiar su valor por uno.
+
+42
+00:02:31.290 --> 00:02:34.291
+Esto se logra con el bloque
+cambiar veces por uno,
+
+43
+00:02:34.291 --> 00:02:37.160
+el cual ponemos luego del
+bloque que dice auch.
+
+44
+00:02:41.160 --> 00:02:43.140
+Vamos a ejecutar el programa,
+
+45
+00:02:43.140 --> 00:02:47.275
+y observa cómo se va modificando
+la variable con cada choque.
+
+46
+00:02:47.275 --> 00:02:53.371
+Asegúrate que esté
+seleccionada para poder verla
+
+47
+00:02:53.371 --> 00:02:57.510
+en el escenario.
+
+48
+00:03:03.210 --> 00:03:03.928
+¡Brillante!
+
+49
+00:03:03.928 --> 00:03:05.474
+Ya tenemos la cuenta de choques.
+
+50
+00:03:05.474 --> 00:03:08.910
+Otra opción que podemos incluir es
+poner algún efecto gráfico al chocar.
+
+51
+00:03:08.910 --> 00:03:13.596
+Por ejemplo, podemos utilizar el
+bloque cambiar efecto brillantez por
+
+52
+00:03:13.596 --> 00:03:18.200
+25, ubicándolo antes del bloque de decir
+y luego quitar los efectos gráficos.
+
+53
+00:03:28.165 --> 00:03:30.130
+Vamos a probarlo.
+
+54
+00:03:33.130 --> 00:03:34.800
+Ahí va cambiando de efecto.
+
+55
+00:03:37.800 --> 00:03:39.640
+Podemos enriquecer aún
+más nuestro juego del
+
+56
+00:03:39.640 --> 00:03:43.647
+helicóptero incluyéndole
+instrucciones para el usuario.
+
+57
+00:03:43.647 --> 00:03:47.370
+De esta forma el usuario sabrá de
+inmediato lo que se espera que haga.
+
+58
+00:03:47.370 --> 00:03:52.252
+Estas instrucciones para el usuario
+son el equivalente de la llamada
+
+59
+00:03:52.252 --> 00:03:55.980
+documentación para el usuario que se ve en
+los sistemas de software profesionales.
+
+60
+00:03:55.980 --> 00:03:59.185
+Esa documentación normalmente
+incluye tutoriales y
+
+61
+00:03:59.185 --> 00:04:02.610
+manuales de usuario que lo
+guían justamente al usuario.
+
+62
+00:04:02.610 --> 00:04:04.775
+En nuestro caso no necesitamos un manual,
+
+63
+00:04:04.775 --> 00:04:07.310
+con incluir las instrucciones
+será suficiente.
+
+64
+00:04:07.310 --> 00:04:12.358
+Podemos hacer que el helicóptero diga las
+instrucciones por unos pocos segundos,
+
+65
+00:04:12.358 --> 00:04:13.810
+al comienzo del juego.
+
+66
+00:04:13.810 --> 00:04:18.800
+Por ejemplo, podría decir, muéveme con
+las flechas, y luego evita las nubes.
+
+67
+00:04:18.800 --> 00:04:20.850
+Vamos a agregarlo.
+
+68
+00:04:41.770 --> 00:04:44.859
+Lo ejecutamos, y cuando comienza,
+aparecen las instrucciones.
+
+69
+00:04:44.859 --> 00:04:46.210
+Y luego podemos jugar.
+
+70
+00:04:46.210 --> 00:04:50.960
+¿Qué te parece ahora agregarle un botón de
+
+71
+00:04:50.960 --> 00:04:54.540
+reiniciar que nos permita comenzar
+el juego desde el principio?
+
+72
+00:04:54.540 --> 00:04:58.415
+La idea es que presionando ese botón
+se vuelve a establecer el número de
+
+73
+00:04:58.415 --> 00:04:59.410
+choques en cero.
+
+74
+00:04:59.410 --> 00:05:01.357
+¿Cómo hacemos esto en Scratch?
+
+75
+00:05:01.357 --> 00:05:03.870
+Seleccionamos un botón de la biblioteca.
+
+76
+00:05:19.280 --> 00:05:21.266
+Este botón es bastante grande,
+
+77
+00:05:21.266 --> 00:05:25.151
+así que le podemos poner al comienzo
+del programa que le fije el tamaño,
+
+78
+00:05:25.151 --> 00:05:26.920
+por ejemplo, al 50 por ciento.
+
+79
+00:05:41.290 --> 00:05:44.324
+También podemos
+especificarle dónde ponerlo.
+
+80
+00:05:44.324 --> 00:05:47.660
+Aquí lo voy a poner cerca
+del contador de los choques.
+
+81
+00:05:47.660 --> 00:05:50.526
+En este caso mis coordenadas son
+
+82
+00:05:50.526 --> 00:05:59.910
+-190, 90.
+
+83
+00:06:02.910 --> 00:06:05.704
+Bien, ahora le vamos
+
+84
+00:06:05.704 --> 00:06:09.900
+a especificar que, cuando sea presionado,
+fije el número de choques en cero.
+
+85
+00:06:09.900 --> 00:06:15.520
+Agregamos que cuando se cliquee
+este objeto, que lo sacamos
+
+86
+00:06:15.520 --> 00:06:22.350
+de la paleta de eventos,
+le ponemos que fije veces en cero.
+
+87
+00:06:22.350 --> 00:06:25.040
+Vamos a probar nuestro juego
+ajustado a ver si funciona.
+
+88
+00:06:30.040 --> 00:06:34.953
+Voy a probar el botón de reiniciar.
+
+89
+00:06:34.953 --> 00:06:38.180
+Como observas, cambió el valor.
+
+90
+00:06:38.180 --> 00:06:41.321
+Puso el número de choques
+en cero de nuevo.
+
+91
+00:06:41.321 --> 00:06:44.645
+Te invitamos a que pruebes
+más efectos y a que
+
+92
+00:06:44.645 --> 00:06:47.250
+incorpores más ideas para seguir
+enriqueciendo este juego.

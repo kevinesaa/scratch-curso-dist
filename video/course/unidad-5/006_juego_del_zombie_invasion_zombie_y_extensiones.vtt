@@ -1,0 +1,360 @@
+WEBVTT
+
+1
+00:00:04.490 --> 00:00:09.487
+Vamos a agregarle ahora que, cada
+tanto y como efecto sorpresa, aparezcan un
+
+2
+00:00:09.487 --> 00:00:12.830
+montón de zombies juntos, tal
+como una verdadera invasión.
+
+3
+00:00:12.830 --> 00:00:18.362
+Lo que queremos hacer en seudocódigo
+es que: por siempre, espere
+
+4
+00:00:18.362 --> 00:00:22.890
+un tiempo al azar y luego genere una
+cantidad también al azar de clones.
+
+5
+00:00:22.890 --> 00:00:28.707
+Así, en Scratch agregamos en el
+zombie la bandera verde y que
+
+6
+00:00:28.707 --> 00:00:34.286
+por siempre espere un tiempo al
+azar antes de cada invasión zombie.
+
+7
+00:00:34.286 --> 00:00:36.680
+Por ejemplo, entre 5 y 10 segundos.
+
+8
+00:00:36.680 --> 00:00:42.450
+Y luego genere un número al azar
+de clones con el bloque repetir.
+
+9
+00:00:47.080 --> 00:00:51.710
+La cantidad de clones puede
+ser entre 5 y 15.
+
+10
+00:00:59.380 --> 00:01:01.050
+Agregamos también un comentario.
+
+11
+00:01:11.210 --> 00:01:13.370
+Cada clon actuará de la
+misma forma que antes.
+
+12
+00:01:13.370 --> 00:01:18.940
+Observa que éste es otro ejemplo
+de un proceso concurrente:
+
+13
+00:01:18.940 --> 00:01:23.423
+queremos que se ejecute a la misma vez
+que los demás procesos en el zombie.
+
+14
+00:01:23.423 --> 00:01:24.300
+Lo probamos.
+
+15
+00:01:47.000 --> 00:01:47.920
+Funciona bien,
+
+16
+00:01:47.920 --> 00:01:53.258
+pero quizás sea más divertido darle 
+tiempo al jugador a familiarizarse con
+
+17
+00:01:53.258 --> 00:01:56.910
+el programa antes de que empiecen
+a llegar muchos zombies juntos.
+
+18
+00:01:56.910 --> 00:02:01.194
+Y para asegurarnos de ello,
+podemos agregar la condición de
+
+19
+00:02:01.194 --> 00:02:05.250
+que salgan luego de que se haya superado
+un puntaje mínimo, por ejemplo, 10 puntos.
+
+20
+00:02:05.250 --> 00:02:11.380
+Lo agregamos con el bloque
+esperar hasta que sea mayor a 10.
+
+21
+00:02:21.100 --> 00:02:22.220
+Probamos de nuevo.
+
+22
+00:02:45.820 --> 00:02:49.961
+Viendo en detalle la ejecución
+vemos que, cuando muestra la
+
+23
+00:02:49.961 --> 00:02:54.200
+pantalla final de cierre, estaría
+bueno que sólo apareciera el puntaje.
+
+24
+00:02:54.200 --> 00:02:58.390
+Este detalle no lo habíamos percibido
+en nuestras pruebas previas anteriores.
+
+25
+00:02:58.390 --> 00:03:02.340
+Por eso es necesario probar varias
+veces prestando mucha atención.
+
+26
+00:03:02.340 --> 00:03:06.523
+Modificamos el código en el
+escenario agregando que esconda la
+
+27
+00:03:06.523 --> 00:03:10.230
+variable tiempo entre zombies
+antes de detener todos.
+
+28
+00:03:12.230 --> 00:03:13.890
+Probamos otra vez.
+
+29
+00:03:22.655 --> 00:03:23.420
+Probamos de nuevo el botón deslizador.
+
+30
+00:03:44.025 --> 00:03:44.630
+Bien.
+
+31
+00:03:44.630 --> 00:03:47.790
+Y ahí aparece la variable nuevamente.
+
+32
+00:03:47.790 --> 00:03:49.341
+Está pronto el juego.
+
+33
+00:03:49.341 --> 00:03:55.464
+Ahora revisemos la lista de requerimientos
+para asegurarnos que no nos falta nada:
+
+34
+00:03:55.464 --> 00:03:58.109
+es sencillo, es sólo mover el ratón,
+
+35
+00:03:58.109 --> 00:04:02.530
+es divertido ciertamente,
+nos sorprende con la invasión zombie,
+
+36
+00:04:02.530 --> 00:04:07.887
+se puede llevar el puntaje, son simpáticos
+los personajes, hay varios niveles,
+
+37
+00:04:07.887 --> 00:04:11.495
+podemos regularlo con el tiempo entre
+zombies y también se va haciendo más
+
+38
+00:04:11.495 --> 00:04:16.591
+difícil porque vienen cada vez más rápido,
+hay elementos que nos ayudan: las flores,
+
+39
+00:04:16.591 --> 00:04:21.744
+hay sonido cuando regresa el zombie,
+están bien claras las instrucciones.
+
+40
+00:04:21.744 --> 00:04:22.420
+¡Súper!
+
+41
+00:04:22.420 --> 00:04:26.072
+Mmm... el requerimiento de los
+personajes simpáticos nos da
+
+42
+00:04:26.072 --> 00:04:28.840
+otra idea para extender nuestro juego.
+
+43
+00:04:28.840 --> 00:04:34.180
+Podríamos agregarle que se pueda cambiar
+de personaje: en vez de una escoba podemos
+
+44
+00:04:34.180 --> 00:04:37.180
+poner la imagen de Cody para que
+aleje a los zombies o podrías diseñar tu
+
+45
+00:04:37.180 --> 00:04:42.250
+propio personaje, y por qué no incluirle
+hasta la foto de algún personaje de película.
+
+46
+00:04:42.250 --> 00:04:47.950
+Seguimos ampliando y
+modificando nuestro programa.
+
+47
+00:04:47.950 --> 00:04:51.460
+En nuestro caso agregaremos a Cody.
+
+48
+00:04:51.460 --> 00:04:55.450
+Su disfraz lo puedes obtener de nuestro
+sitio o lo puedes dibujar tú mismo.
+
+49
+00:04:55.450 --> 00:05:00.190
+Para cambiar de disfraz podemos
+hacerlo presionando la barra.
+
+50
+00:05:00.190 --> 00:05:08.190
+Agregamos en el personaje.
+
+51
+00:05:31.405 --> 00:05:32.012
+>> ¡Súper!
+
+52
+00:05:32.012 --> 00:05:34.620
+Juego yo.
+
+53
+00:05:34.620 --> 00:05:38.450
+¿Y si en vez de que lleguen a la
+casa llegan a mi nave?
+
+54
+00:05:38.450 --> 00:05:39.646
+>> ¡Qué buena idea!
+
+55
+00:05:39.646 --> 00:05:40.767
+Vamos a hacerlo.
+
+56
+00:05:40.767 --> 00:05:46.320
+Agregaremos entonces un fondo de escenario
+que esté relacionado con su nave espacial.
+
+57
+00:05:46.320 --> 00:05:54.320
+El diseño podría ser similar a éste.
+
+58
+00:06:34.215 --> 00:06:36.110
+Lo agregamos y le ponemos
+de nombre fondo nave.
+
+59
+00:06:40.110 --> 00:06:43.060
+Programamos en el fondo que,
+al tocar la barra, cambie.
+
+60
+00:06:47.060 --> 00:06:51.120
+Si es el fondo de la casa,
+cambiamos al fondo de la nave.
+
+61
+00:06:51.120 --> 00:06:52.660
+Si no fuera ese,
+
+62
+00:06:52.660 --> 00:06:57.050
+verificamos si es el fondo de la nave y si
+es así, cambiamos al de la casa y jardín.
+
+63
+00:06:57.050 --> 00:07:00.720
+Si fuera el fondo de juego terminado,
+no se cambia a ninguno de estos dos.
+
+64
+00:07:37.875 --> 00:07:40.600
+Cuando empiece el juego arranca
+con el disfraz de la escoba.
+
+65
+00:07:40.600 --> 00:07:43.202
+Agregamos en el código de
+inicio del personaje y
+
+66
+00:07:43.202 --> 00:07:47.365
+completamos también las instrucciones:
+presiona la barra para cambiar de
+
+67
+00:07:47.365 --> 00:07:51.320
+personaje, y extenderemos un poco
+el tiempo para poder leerlas bien.
+
+68
+00:08:14.005 --> 00:08:17.150
+Probemos esta nueva versión
+a ver si funciona como queremos.
+
+69
+00:08:21.000 --> 00:08:21.035
+Empieza con la
+
+70
+00:08:21.035 --> 00:08:27.400
+escoba y al presionar
+la barra cambia a Cody.
+
+71
+00:08:36.320 --> 00:08:39.910
+Presionando nuevamente la barra podemos
+ir alternando de fondos y personajes.
+
+72
+00:08:39.910 --> 00:08:40.977
+¡Excelente!
+
+73
+00:08:40.977 --> 00:08:43.770
+¿Qué más se te ocurre? ¿Una opción más?
+
+74
+00:08:43.770 --> 00:08:48.527
+Podrías agregarle un nuevo requerimiento
+como algún otro personaje que nos de
+
+75
+00:08:48.527 --> 00:08:51.140
+puntos adicionales o sonidos propios.
+
+76
+00:08:51.140 --> 00:08:54.100
+Queda abierto el desafío a tu imaginación.
+
+77
+00:08:54.100 --> 00:08:57.980
+En el próximo video veremos cómo
+compartirlo en el sitio de Scratch.

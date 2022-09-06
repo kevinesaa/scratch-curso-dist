@@ -1,0 +1,395 @@
+WEBVTT
+
+1
+00:00:04.565 --> 00:00:06.641
+Supongamos que el gato está en una fiesta.
+
+2
+00:00:06.641 --> 00:00:09.130
+En un salón lleno de globos
+de diferentes colores.
+
+3
+00:00:09.130 --> 00:00:14.950
+Queremos que camine y cambie de apariencia
+según el color del globo que esté tocando.
+
+4
+00:00:14.950 --> 00:00:18.790
+En particular, queremos
+escribir un programa donde,
+
+5
+00:00:18.790 --> 00:00:23.860
+si en algún momento el gato toca un
+globo verde, el gato cambie de color.
+
+6
+00:00:23.860 --> 00:00:28.926
+Si en algún momento el gato
+toca un globo naranja, el gato
+
+7
+00:00:28.926 --> 00:00:34.590
+crece y si en algún momento el gato toca
+un globo violeta, el gato se achica.
+
+8
+00:00:34.590 --> 00:00:39.070
+Creamos un nuevo proyecto.
+
+9
+00:00:39.070 --> 00:00:43.550
+Lo primero que haremos es ponerle
+como fondo un diseño de globos.
+
+10
+00:00:43.550 --> 00:00:44.390
+Para ello,
+
+11
+00:00:44.390 --> 00:00:49.770
+vamos a utilizar una imagen que se puede
+descargar desde nuestro sitio web.
+
+12
+00:00:49.770 --> 00:00:54.403
+Así que vamos a nuestra página de Recursos
+y lo descargamos en cualquier parte de
+
+13
+00:00:54.403 --> 00:00:55.450
+nuestro equipo.
+
+14
+00:00:55.450 --> 00:00:58.916
+En mi caso, lo descargué en el escritorio.
+
+15
+00:00:58.916 --> 00:01:04.135
+Ahora vamos a Scratch,
+presionamos sobre el escenario,
+
+16
+00:01:04.135 --> 00:01:11.860
+le indicamos la orejita de fondos y al
+presionar la opción subir desde un archivo
+
+17
+00:01:11.860 --> 00:01:18.040
+indicamos como archivo el que recién
+descargamos, en mi caso del escritorio.
+
+18
+00:01:21.040 --> 00:01:24.850
+¡Genial, ahora sí estamos en una fiesta!
+
+19
+00:01:24.850 --> 00:01:28.642
+Vamos a escribir el programa, ponemos la
+bandera verde para indicar el comienzo.
+
+20
+00:01:28.642 --> 00:01:32.992
+Como vimos, queremos que el gato camine
+todo el tiempo, entonces usamos un
+
+21
+00:01:32.992 --> 00:01:37.910
+bloque "por siempre", luego mover diez
+pasos y rebotar si está tocando el borde.
+
+22
+00:01:45.910 --> 00:01:50.040
+Se planteó que si el gato toca
+un globo verde, cambie de color.
+
+23
+00:01:50.040 --> 00:01:54.170
+Está la palabra "si",
+así que hay una decisión.
+
+24
+00:01:54.170 --> 00:01:58.520
+De la paleta de control
+elegimos el bloque "si entonces".
+
+25
+00:02:01.520 --> 00:02:04.108
+Dentro de sensores, tenemos
+
+26
+00:02:04.108 --> 00:02:08.680
+el bloque tocando color y lo ubicamos
+dentro de la condición del bloque sí.
+
+27
+00:02:09.680 --> 00:02:13.507
+Queremos que el color sea verde,
+la forma de indicarle ese color es
+
+28
+00:02:13.507 --> 00:02:18.925
+presionando sobre el color del propio
+bloque tocando color, te aparecerá
+
+29
+00:02:18.925 --> 00:02:24.280
+una manita y luego presionamos sobre
+el color deseado, en este caso verde.
+
+30
+00:02:24.280 --> 00:02:27.170
+Bien, ahora haremos que cambie de color.
+
+31
+00:02:27.170 --> 00:02:32.274
+Vamos a la paleta de apariencia y
+elegimos el bloque cambiar efecto color y
+
+32
+00:02:32.274 --> 00:02:35.155
+lo ponemos dentro del bloque si.
+
+33
+00:02:39.155 --> 00:02:42.210
+Lo que hará es que, cada vez que toque
+el color verde, cambiará de color.
+
+34
+00:02:42.210 --> 00:02:46.290
+No queremos que el gato gire, así que
+vamos a cambiar el sentido de giro.
+
+35
+00:02:46.290 --> 00:02:50.650
+Probemos hasta aquí.
+
+36
+00:02:50.650 --> 00:02:55.245
+Vamos bien.
+
+37
+00:02:55.245 --> 00:02:59.840
+Ahora, agregamos el
+caso del color naranja.
+
+38
+00:02:59.840 --> 00:03:03.433
+De la misma manera elegimos
+un bloque si entonces y
+
+39
+00:03:03.433 --> 00:03:06.690
+lo colocamos dentro del
+bloque por siempre.
+
+40
+00:03:11.080 --> 00:03:15.470
+Agregamos el bloque de tocando el
+color y elegimos el color naranja.
+
+41
+00:03:20.270 --> 00:03:25.070
+En este caso, queremos que el
+comportamiento sea que crezca.
+
+42
+00:03:25.070 --> 00:03:29.156
+Así que elegimos dentro de apariencia
+el bloque cambiar tamaño y
+
+43
+00:03:29.156 --> 00:03:31.360
+dentro colocamos el valor 5.
+
+44
+00:03:36.225 --> 00:03:37.234
+De forma similar,
+
+45
+00:03:37.234 --> 00:03:41.090
+agregamos otro bloque sí a continuación
+para el caso del color violeta.
+
+46
+00:03:41.090 --> 00:03:46.762
+Agregamos, el
+
+47
+00:03:46.762 --> 00:03:51.470
+chequeo del color violeta.
+
+48
+00:03:51.470 --> 00:03:56.570
+En este caso queremos que se achique,
+así que ponemos el valor -20.
+
+49
+00:03:56.570 --> 00:04:02.040
+Cambiar tamaño por -20.
+
+50
+00:04:02.040 --> 00:04:05.810
+Vamos a probarlo.
+
+51
+00:04:05.810 --> 00:04:14.284
+Funciona, pero vemos que se achica mucho,
+
+52
+00:04:14.284 --> 00:04:19.360
+podemos corregir este efecto, probemos
+entonces con el valor -5.
+
+53
+00:04:19.360 --> 00:04:25.640
+Mejor, ¿no?
+
+54
+00:04:25.640 --> 00:04:27.423
+Vamos a agregar más cosas.
+
+55
+00:04:27.423 --> 00:04:32.253
+Cada vez que ejecutamos el programa
+querríamos que el gato empiece con el
+
+56
+00:04:32.253 --> 00:04:33.870
+mismo diseño y tamaño.
+
+57
+00:04:33.870 --> 00:04:39.170
+Tenemos el bloque "quitar efectos
+gráficos" y "fijar tamaño a 100%".
+
+58
+00:04:39.170 --> 00:04:43.020
+Vamos a agregarlos y a ejecutar varias
+veces el programa, para experimentar.
+
+59
+00:04:53.020 --> 00:04:56.337
+>> Inés, veo que están los
+
+60
+00:04:56.337 --> 00:05:01.944
+bloques "establecer efecto color" y
+"cambiar efecto color", ¿son iguales?
+
+61
+00:05:01.944 --> 00:05:05.050
+>> ¡Qué buena pregunta Cody!,
+vamos a investigarlo.
+
+62
+00:05:05.050 --> 00:05:09.932
+Probemos poner el bloque "establecer
+efecto color" con el valor 25,
+
+63
+00:05:09.932 --> 00:05:12.970
+en lugar de "cambiar efecto color por 25".
+
+64
+00:05:23.940 --> 00:05:24.910
+Lo ejecutamos.
+
+65
+00:05:26.910 --> 00:05:28.396
+Y, ¿qué ocurrió?
+
+66
+00:05:28.396 --> 00:05:32.768
+El gato no cambia de color todo el
+tiempo como en la versión anterior.
+
+67
+00:05:32.768 --> 00:05:34.350
+Expliquemos la diferencia.
+
+68
+00:05:34.350 --> 00:05:39.960
+Cada color en Scratch tiene asociado
+internamente un número que lo representa.
+
+69
+00:05:39.960 --> 00:05:41.261
+El bloque cambiar
+
+70
+00:05:41.261 --> 00:05:45.780
+lo que hace es incrementar ese valor
+en la cantidad que le indiquemos.
+
+71
+00:05:45.780 --> 00:05:49.750
+El bloque fijar lo establece
+en el valor que le damos.
+
+72
+00:05:49.750 --> 00:05:51.341
+¿Quedó clara la idea?
+
+73
+00:05:51.341 --> 00:05:52.376
+>> Sí, gracias.
+
+74
+00:05:52.376 --> 00:05:56.476
+>> Recuerda que tienes el foro por
+si luego quieres consultar algo más.
+
+75
+00:05:56.476 --> 00:05:57.897
+>> Perfecto, hasta luego.
+
+76
+00:05:57.897 --> 00:05:58.680
+>> Hasta luego.
+
+77
+00:05:58.680 --> 00:06:03.110
+Ahora, analicemos cómo
+hicimos este programa.
+
+78
+00:06:03.110 --> 00:06:05.317
+Lo descompusimos en partes,
+
+79
+00:06:05.317 --> 00:06:10.450
+vimos los diferentes casos y fuimos
+incorporando cada uno de ellos.
+
+80
+00:06:10.450 --> 00:06:15.434
+A la vez fuimos probando, si encontramos
+algo que no funcionaba como queremos,
+
+81
+00:06:15.434 --> 00:06:16.470
+lo corregimos.
+
+82
+00:06:16.470 --> 00:06:21.960
+Si pensamos sobre ello, el proceso que
+seguimos es un algoritmo en sí mismo.
+
+83
+00:06:21.960 --> 00:06:23.578
+¿Interesante, no?
+
+84
+00:06:23.578 --> 00:06:26.480
+Hasta ahora, hemos usado sólo el gato.
+
+85
+00:06:26.480 --> 00:06:27.824
+En el próximo video,
+
+86
+00:06:27.824 --> 00:06:31.160
+veremos cómo usar diferentes objetos
+o sprites en el mismo programa.

@@ -1,0 +1,85 @@
+WEBVTT
+
+1
+00:00:04.490 --> 00:00:06.275
+¿Cómo vamos en el curso?
+
+2
+00:00:06.275 --> 00:00:08.310
+Ya hemos visto muchos temas.
+
+3
+00:00:08.310 --> 00:00:12.630
+Nos familiarizamos con las estructuras de
+control y con el concepto de variable.
+
+4
+00:00:12.630 --> 00:00:17.127
+Vimos las principales etapas del
+proceso de desarrollo de software y
+
+5
+00:00:17.127 --> 00:00:20.831
+aplicamos todos los conceptos
+aprendidos en divertidos juegos y
+
+6
+00:00:20.831 --> 00:00:23.870
+animaciones como el Pizza
+Pong y el de tirar penales.
+
+7
+00:00:24.870 --> 00:00:29.030
+En esta unidad vamos a trabajar con
+la reutilización de nuestro código,
+
+8
+00:00:29.030 --> 00:00:33.710
+una muy buena práctica en la
+programación de computadoras.
+
+9
+00:00:33.710 --> 00:00:38.974
+Presentaremos el concepto de procedimiento
+que nos permitirá dividir nuestro código en
+
+10
+00:00:38.974 --> 00:00:42.327
+partes más chicas que puedan ser
+reutilizadas y generalizadas para que
+
+11
+00:00:42.327 --> 00:00:45.990
+puedan ser aplicadas a una
+variedad más amplia de problemas.
+
+12
+00:00:48.990 --> 00:00:52.659
+También aprenderemos cómo reutilizar
+el código para crear clones de
+
+13
+00:00:52.659 --> 00:00:53.010
+nuestros objetos.
+
+14
+00:00:56.010 --> 00:00:59.281
+Vamos a crear muchos juegos divertidos
+con la utilización tanto de
+
+15
+00:00:59.281 --> 00:01:02.451
+los procedimientos como de la clonación.
+
+16
+00:01:02.451 --> 00:01:07.248
+Dibujaremos una escalera, cazaremos
+fantasmas y hasta haremos la ola del estadio.
+
+17
+00:01:09.248 --> 00:01:11.890
+¿Pronto para nuevo desafíos?
+
+18
+00:01:11.890 --> 00:01:13.660
+¡A programar!

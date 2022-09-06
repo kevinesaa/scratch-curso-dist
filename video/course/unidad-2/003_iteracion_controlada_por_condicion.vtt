@@ -1,0 +1,155 @@
+WEBVTT
+
+1
+00:00:04.550 --> 00:00:09.096
+Las repeticiones controladas por una
+condición nos permiten repetir una
+
+2
+00:00:09.096 --> 00:00:13.210
+parte del programa hasta que se
+cumpla una determinada condición,
+
+3
+00:00:13.210 --> 00:00:14.699
+hasta que pase algo.
+
+4
+00:00:14.699 --> 00:00:18.510
+Estos comportamientos son
+usuales en la vida diaria.
+
+5
+00:00:18.510 --> 00:00:23.930
+Por ejemplo, las personas siguen caminando
+hasta que ven el semáforo en rojo.
+
+6
+00:00:23.930 --> 00:00:29.990
+O Suertudo, mi perro, continúa comiendo
+hasta que no queda más comida en su plato,
+
+7
+00:00:29.990 --> 00:00:32.811
+o cuando quiero levantar mi taza de té,
+
+8
+00:00:32.811 --> 00:00:37.520
+que está sobre la mesa,
+me continúo acercando hasta que la toco.
+
+9
+00:00:37.520 --> 00:00:42.667
+Aquí tenemos un diagrama de flujo que
+muestra el algoritmo para tomar mi
+
+10
+00:00:42.667 --> 00:00:43.880
+taza de la mesa.
+
+11
+00:00:43.880 --> 00:00:51.300
+Se repite caminar un paso hacia la taza
+hasta que la toco, luego la levanto.
+
+12
+00:00:51.300 --> 00:00:56.104
+Ahora, ¿qué pasa si ya estoy tocando
+la taza cuando decido tomarla,
+
+13
+00:00:56.104 --> 00:00:58.020
+o sea, cuando comienza el algoritmo?
+
+14
+00:00:58.020 --> 00:00:59.130
+En este caso,
+
+15
+00:00:59.130 --> 00:01:04.491
+la condición se cumple al principio,
+simplemente no debo moverme hacia ella.
+
+16
+00:01:04.491 --> 00:01:06.070
+Directamente la levanto.
+
+17
+00:01:06.070 --> 00:01:08.000
+Ahora veamos un caso diferente.
+
+18
+00:01:08.000 --> 00:01:12.834
+Supongamos que inicialmente
+estoy lejos de la taza y Cody,
+
+19
+00:01:12.834 --> 00:01:18.920
+un poco bromista, me aleja la taza un
+paso justo antes de acercarme yo un paso.
+
+20
+00:01:18.920 --> 00:01:20.793
+No la podré alcanzar.
+
+21
+00:01:20.793 --> 00:01:24.170
+La condición de tocar
+la taza no se cumple.
+
+22
+00:01:24.170 --> 00:01:27.980
+Y nuevamente cuando intento acercarme,
+Cody la aleja.
+
+23
+00:01:27.980 --> 00:01:30.769
+De esta manera nunca
+me acercaré a la taza.
+
+24
+00:01:30.769 --> 00:01:35.660
+En otras palabras, nunca saldré de
+este ciclo y no terminará el programa.
+
+25
+00:01:35.660 --> 00:01:38.288
+Esperemos que Cody no nos haga esta broma.
+
+26
+00:01:38.288 --> 00:01:43.403
+Recordarás que en la unidad pasada vimos
+las condiciones cuando conversamos sobre
+
+27
+00:01:43.403 --> 00:01:45.160
+la estructura de decisión.
+
+28
+00:01:45.160 --> 00:01:48.470
+Allí mencionamos que
+eran de tipo booleano,
+
+29
+00:01:48.470 --> 00:01:51.870
+o sea que tenían un
+resultado verdadero o falso.
+
+30
+00:01:51.870 --> 00:01:53.362
+Aquí es el mismo caso,
+
+31
+00:01:53.362 --> 00:01:58.400
+los ciclos controlados por condición,
+utilizan condiciones booleanas.
+
+32
+00:01:58.400 --> 00:02:01.936
+¿Estás listo para
+incorporar estos elementos?
+
+33
+00:02:01.936 --> 00:02:05.030
+En el próximo video crearemos un video
+musical y utilizaremos la iteración.

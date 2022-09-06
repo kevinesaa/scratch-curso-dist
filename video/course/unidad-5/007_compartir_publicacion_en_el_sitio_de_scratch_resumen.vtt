@@ -1,0 +1,232 @@
+WEBVTT
+
+1
+00:00:03.000 --> 00:00:07.200
+Hemos hecho el diseño y la programación.
+
+2
+00:00:07.200 --> 00:00:10.329
+Lo hemos probado cuidadosamente
+así que ya es tiempo de
+
+3
+00:00:10.329 --> 00:00:12.240
+dárselo a los futuros usuarios.
+
+4
+00:00:12.240 --> 00:00:15.712
+En un sistema real esto
+implicaría poner disponible el
+
+5
+00:00:15.712 --> 00:00:20.170
+programa para que el usuario lo pueda
+utilizar cuándo y cómo lo desee.
+
+6
+00:00:20.170 --> 00:00:23.627
+En nuestro caso sería compartirlo
+en el sitio de Scratch, ahí lo
+
+7
+00:00:23.627 --> 00:00:29.220
+dejamos disponible para que todos puedan
+usarlo o mejorarlo haciéndole el remix.
+
+8
+00:00:29.220 --> 00:00:32.240
+Por ejemplo,
+agregándole más sonidos o personajes.
+
+9
+00:00:32.240 --> 00:00:36.655
+Para compartirlo en el sitio de Scratch
+tienes que estar trabajando online.
+
+10
+00:00:36.655 --> 00:00:38.070
+Vamos a ponerle nombre.
+
+11
+00:00:43.070 --> 00:00:44.920
+Presiona el botón compartir.
+
+12
+00:00:48.920 --> 00:00:51.795
+El compartirlo, permitirá como indicamos,
+que otros usuarios de Scratch puedan
+
+13
+00:00:51.795 --> 00:00:56.300
+verlo y modificarlo, agregarle más ideas,
+esto es hacerle mantenimiento al programa.
+
+14
+00:00:56.300 --> 00:01:00.827
+También podrás agregarle información
+con detalles de cómo se juega,
+
+15
+00:01:00.827 --> 00:01:02.830
+el objetivo del juego o notas:
+
+16
+00:01:02.830 --> 00:01:06.950
+es lo que comentamos en el curso como
+documentación para el usuario.
+
+17
+00:01:06.950 --> 00:01:15.740
+Completamos por ejemplo, las instrucciones:
+mueve el ratón para alejar.
+
+18
+00:01:26.120 --> 00:01:30.050
+Si presionas la barra podrás
+cambiar de personaje.
+
+19
+00:01:37.050 --> 00:01:37.709
+En notas
+
+20
+00:01:37.709 --> 00:01:41.665
+y créditos puedes poner que
+el juego fue realizado en el
+
+21
+00:01:41.665 --> 00:01:46.057
+curso ¡A programar! Si
+deseas chequear cuáles
+
+22
+00:01:46.057 --> 00:01:51.210
+proyectos tienes compartidos, presiona en
+tu usuario y selecciona Mis Cosas.
+
+23
+00:01:54.210 --> 00:01:56.668
+Ahí podrás gestionar cuáles
+quieres compartir y cuáles no,
+
+24
+00:01:56.668 --> 00:02:00.750
+por ejemplo, aquellos proyectos que
+tienes en trabajo y no están terminados.
+
+25
+00:02:03.750 --> 00:02:05.261
+Observa que en todo este
+proceso de creación del
+
+26
+00:02:05.261 --> 00:02:09.190
+juego hemos aplicado las distintas
+etapas del desarrollo de software.
+
+27
+00:02:09.190 --> 00:02:13.300
+Conversamos sobre el análisis
+de los requerimientos, el diseño,
+
+28
+00:02:13.300 --> 00:02:17.874
+la implementación, la prueba,
+y mantenimiento, entre otras fases, todo tal
+
+29
+00:02:17.874 --> 00:02:21.200
+cual un verdadero ingeniero
+o ingeniera de software.
+
+30
+00:02:21.200 --> 00:02:26.198
+En este curso hemos presentado los
+conceptos fundamentales de las ciencias de
+
+31
+00:02:26.198 --> 00:02:29.583
+la computación como variable,
+estructuras de control y eventos y
+
+32
+00:02:29.583 --> 00:02:32.366
+nos hemos familiarizado con las
+prácticas de la ingeniería de
+
+33
+00:02:32.366 --> 00:02:37.270
+software. También hemos aprendido como
+manejar problemas desde el punto de vista
+
+34
+00:02:37.270 --> 00:02:41.740
+computacional a través de la abstracción,
+descomposición y generalización.
+
+35
+00:02:41.740 --> 00:02:45.020
+Todo esto aplicado cuando creamos
+nuestros programas en Scratch.
+
+36
+00:02:45.020 --> 00:02:46.592
+Uno podría preguntarse:
+
+37
+00:02:46.592 --> 00:02:51.530
+¿los especialistas en computación utilizan
+lo que hemos aprendido en el curso?
+
+38
+00:02:51.530 --> 00:02:53.570
+La respuesta es sí.
+
+39
+00:02:53.570 --> 00:02:59.554
+Los procesos que seguimos y los métodos
+que aplicamos son muy similares a los
+
+40
+00:02:59.554 --> 00:03:04.136
+que se aplican en la vida profesional de
+un ingeniero o ingeniera de software.
+
+41
+00:03:04.136 --> 00:03:08.785
+Implementar, probar, depurar, reutilizar,
+modularizar son tareas que hacen los
+
+42
+00:03:08.785 --> 00:03:12.090
+desarrolladores de software en
+todo el mundo, incluídos nosotros.
+
+43
+00:03:12.090 --> 00:03:16.161
+Los programadores profesionales
+utilizan lenguajes de
+
+44
+00:03:16.161 --> 00:03:19.390
+programación tales como Python, Java, C.
+
+45
+00:03:19.390 --> 00:03:22.857
+Estos son sólo algunos
+ejemplos de lenguajes y
+
+46
+00:03:22.857 --> 00:03:27.430
+cuando comiences a probarlos verás que,
+en cierta forma, son parecidos a Scratch.
+
+47
+00:03:27.430 --> 00:03:33.054
+Te invitamos a ver el siguiente video
+opcional en el cual mostramos un pequeño
+
+48
+00:03:33.054 --> 00:03:36.340
+ejemplo de un programa en Scratch
+y su equivalente en Python.

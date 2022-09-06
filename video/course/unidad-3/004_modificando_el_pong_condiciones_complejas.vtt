@@ -1,0 +1,478 @@
+WEBVTT
+
+1
+00:00:04.030 --> 00:00:07.625
+Pensemos en modificaciones
+para el juego del Pong.
+
+2
+00:00:07.625 --> 00:00:09.510
+¿Qué ideas se te ocurren?
+
+3
+00:00:09.510 --> 00:00:14.840
+Puede ser que la pelota se mueva más
+rápido, que cambie la dirección inicial,
+
+4
+00:00:14.840 --> 00:00:20.170
+cambiar el color de la pelota, que quede
+dibujado el camino que recorrió la pelota,
+
+5
+00:00:20.170 --> 00:00:24.860
+cambiar el dibujo de la paleta por un
+golero y el escenario por una cancha de
+
+6
+00:00:24.860 --> 00:00:29.146
+fútbol y así tirar penales, uf,
+hay muchísimas posibilidades.
+
+7
+00:00:29.146 --> 00:00:31.840
+Vamos a empezar a hacer algunas de ellas.
+
+8
+00:00:31.840 --> 00:00:34.717
+Queremos que la pelota
+se mueva más rápido.
+
+9
+00:00:34.717 --> 00:00:37.450
+Investiga dónde deberíamos modificar.
+
+10
+00:00:37.450 --> 00:00:38.949
+¿Lo ubicaste?
+
+11
+00:00:38.949 --> 00:00:44.630
+Se logra aumentando la cantidad
+de pasos que se mueve cada vez.
+
+12
+00:00:44.630 --> 00:00:47.149
+Vamos a probar con distintos valores.
+
+13
+00:00:47.149 --> 00:00:48.910
+Por ejemplo, 15 ó 20.
+
+14
+00:00:48.910 --> 00:00:55.060
+Ahí lo cambiamos.
+
+15
+00:00:55.060 --> 00:00:56.401
+Y va mucho más rápido.
+
+16
+00:00:56.401 --> 00:01:01.210
+Simplemente modificando este número podemos
+hacer un juego más fácil o difícil.
+
+17
+00:01:01.210 --> 00:01:05.715
+Y esto nos da una idea, podríamos crear
+un juego con dos niveles de dificultad.
+
+18
+00:01:05.715 --> 00:01:10.220
+Al comienzo del programa suponemos
+que será la versión lenta.
+
+19
+00:01:10.220 --> 00:01:13.570
+Y le preguntaremos al jugador
+si quiere nivel rápido o no.
+
+20
+00:01:13.570 --> 00:01:18.310
+En función de su respuesta, utilizaremos
+una cantidad de pasos diferente.
+
+21
+00:01:18.310 --> 00:01:22.074
+Sería útil definir una variable
+para guardar la cantidad de
+
+22
+00:01:22.074 --> 00:01:24.190
+pasos que debe moverse cada vez.
+
+23
+00:01:24.190 --> 00:01:29.270
+La creamos y de nombre
+le ponemos cantidad.
+
+24
+00:01:29.270 --> 00:01:35.760
+Inicialmente, le fijamos el valor en
+diez, por ejemplo, para un juego normal.
+
+25
+00:01:35.760 --> 00:01:39.630
+Y este bloque lo ubicamos luego
+de que se posicionó la pelota.
+
+26
+00:01:39.630 --> 00:01:45.600
+Enseguida le formulamos la pregunta,
+
+27
+00:01:45.600 --> 00:01:51.570
+de si quiere rápido y luego
+verificamos la respuesta que dio.
+
+28
+00:01:55.520 --> 00:01:59.790
+Utilizamos un bloque si y la
+condición que usamos dentro es
+
+29
+00:01:59.790 --> 00:02:03.110
+para verificar si la
+respuesta es igual a si.
+
+30
+00:02:16.210 --> 00:02:21.310
+En caso que la respuesta fuera si,
+fijamos la cantidad a 30.
+
+31
+00:02:21.310 --> 00:02:26.585
+Dentro del bloque repetir,
+
+32
+00:02:26.585 --> 00:02:31.860
+cambiamos también que en vez de mover diez
+pasos, sea mover la cantidad de pasos.
+
+33
+00:02:31.860 --> 00:02:36.820
+El código te quedaría así.
+
+34
+00:02:36.820 --> 00:02:40.825
+Vamos a probarlo.
+
+35
+00:02:40.825 --> 00:02:44.830
+La primera vez decimos rápido.
+
+36
+00:02:44.830 --> 00:02:46.105
+Uy, bien rápido.
+
+37
+00:02:46.105 --> 00:02:51.140
+Lo probamos nuevamente y ahora le
+decimos que no queremos un juego rápido.
+
+38
+00:02:51.140 --> 00:02:56.345
+Perfecto.
+
+39
+00:02:56.345 --> 00:03:00.923
+¿Qué ocurre si el jugador responde quizás
+o cualquier otra palabra distinta de
+
+40
+00:03:00.923 --> 00:03:01.550
+sí y de no?
+
+41
+00:03:01.550 --> 00:03:07.740
+El programa haría el mismo comportamiento
+del no, pero no tiene mucho sentido.
+
+42
+00:03:07.740 --> 00:03:10.696
+No te preocupes, que
+podemos solucionarlo fácilmente.
+
+43
+00:03:10.696 --> 00:03:12.890
+Las respuestas aceptadas serán sí o no,
+
+44
+00:03:12.890 --> 00:03:15.424
+y si el jugador ingresa otra respuesta,
+
+45
+00:03:15.424 --> 00:03:18.260
+haremos que el programa
+repita la pregunta.
+
+46
+00:03:18.260 --> 00:03:23.119
+Para lograrlo, verificaremos
+primero si la respuesta es sí o no.
+
+47
+00:03:23.119 --> 00:03:26.277
+Utilizaremos un bloque repetir hasta que y
+
+48
+00:03:26.277 --> 00:03:30.380
+la condición es doble: o
+indicó si o indicó no.
+
+49
+00:03:36.945 --> 00:03:43.510
+En operadores, seleccionamos el
+bloque o y completamos la condición.
+
+50
+00:03:48.305 --> 00:03:53.349
+Que la respuesta sea igual a sí o
+
+51
+00:03:53.349 --> 00:03:59.330
+la respuesta sea igual a no.
+
+52
+00:04:05.690 --> 00:04:12.280
+El bloque o,
+
+53
+00:04:12.280 --> 00:04:15.040
+nos permite expresar
+condiciones complejas y
+
+54
+00:04:15.040 --> 00:04:18.870
+es cierta en el caso que se cumpla
+al menos una de las condiciones.
+
+55
+00:04:18.870 --> 00:04:22.150
+En caso que la respuesta sea otra,
+volvemos a preguntar.
+
+56
+00:04:32.270 --> 00:04:37.543
+Luego que nos aseguramos que
+
+57
+00:04:37.543 --> 00:04:42.400
+indicó la respuesta válida, nos fijamos
+si la respuesta fue específicamente sí.
+
+58
+00:04:42.400 --> 00:04:45.820
+Y en ese caso fijamos la cantidad
+de pasos en el número más alto.
+
+59
+00:04:45.820 --> 00:04:48.824
+Es una buena práctica de
+programación asegurarnos de
+
+60
+00:04:48.824 --> 00:04:52.840
+verificar los datos que ingresan
+los usuarios de nuestros programas.
+
+61
+00:04:52.840 --> 00:04:58.145
+Vamos a probarlo.
+
+62
+00:05:03.450 --> 00:05:07.990
+De esta manera,
+vamos a evitar posibles errores.
+
+63
+00:05:07.990 --> 00:05:12.530
+Cuando el usuario proporciona datos no
+válidos o datos que no tienen sentido,
+
+64
+00:05:12.530 --> 00:05:15.670
+es útil avisarle e invitarlo
+a volverlos a ingresar,
+
+65
+00:05:15.670 --> 00:05:19.170
+dándole además guías sobre qué
+tipo de respuestas se espera.
+
+66
+00:05:19.170 --> 00:05:20.130
+Hola Cody.
+
+67
+00:05:20.130 --> 00:05:25.469
+>> Hola Inés, en operadores vi que
+está el bloque y además del bloque o.
+
+68
+00:05:25.469 --> 00:05:27.123
+¿Se puede usar igual?
+
+69
+00:05:27.123 --> 00:05:28.790
+>> Es muy buena pregunta.
+
+70
+00:05:28.790 --> 00:05:33.519
+Tanto el bloque o como el bloque y se
+usan para expresar condiciones complejas,
+
+71
+00:05:33.519 --> 00:05:35.790
+pero no tienen el mismo significado.
+
+72
+00:05:35.790 --> 00:05:39.690
+El bloque y es verdadero
+cuando las dos condiciones que
+
+73
+00:05:39.690 --> 00:05:42.160
+queremos verificar son ciertas.
+
+74
+00:05:42.160 --> 00:05:44.957
+Por ejemplo, si quieres acceder a tu
+
+75
+00:05:44.957 --> 00:05:49.930
+correo, debes indicar correctamente
+el usuario y la contraseña.
+
+76
+00:05:49.930 --> 00:05:54.150
+Si indicas bien sólo uno de ellos
+o ninguno, no accedes a tu correo.
+
+77
+00:05:54.150 --> 00:05:55.232
+Por otro lado,
+
+78
+00:05:55.232 --> 00:06:00.660
+el bloque o es verdadero cuando al menos
+una de las condiciones es verdadera.
+
+79
+00:06:00.660 --> 00:06:04.844
+Por ejemplo, en un día de lluvia
+en un parque al aire libre para no
+
+80
+00:06:04.844 --> 00:06:08.921
+mojarte las opciones pueden
+ser tener un paraguas abierto o
+
+81
+00:06:08.921 --> 00:06:11.380
+tener una campera de lluvia puesta.
+
+82
+00:06:11.380 --> 00:06:14.155
+Basta con una de las dos
+condiciones ciertas o
+
+83
+00:06:14.155 --> 00:06:18.690
+ambas para que la condición general
+sea cierta, en este caso no mojarte.
+
+84
+00:06:18.690 --> 00:06:20.166
+¿Quedó claro?
+
+85
+00:06:20.166 --> 00:06:21.538
+>> Sí, gracias.
+
+86
+00:06:21.538 --> 00:06:24.646
+Además está el no, ¿para qué sirve?
+
+87
+00:06:24.646 --> 00:06:25.620
+>> Te explico.
+
+88
+00:06:25.620 --> 00:06:28.852
+También se aplica el
+bloque no a una condición.
+
+89
+00:06:28.852 --> 00:06:32.030
+Por ejemplo,
+la condición es el semáforo está en rojo.
+
+90
+00:06:32.030 --> 00:06:36.340
+Si la ponemos sola, es verdadera
+cuando el semáforo está en rojo.
+
+91
+00:06:36.340 --> 00:06:38.557
+Si la ponemos dentro de un bloque no,
+
+92
+00:06:38.557 --> 00:06:41.489
+es verdadera cuando el
+semáforo no esté en rojo.
+
+93
+00:06:41.489 --> 00:06:44.070
+Por ejemplo, está en verde o en amarillo.
+
+94
+00:06:44.070 --> 00:06:47.620
+Es decir, verifica la condición opuesta.
+
+95
+00:06:47.620 --> 00:06:52.015
+Estos bloques se pueden combinar
+también para expresar condiciones más
+
+96
+00:06:52.015 --> 00:06:53.390
+complejas como esta:
+
+97
+00:06:53.390 --> 00:06:58.100
+si es un día de semana y no es un feriado,
+ir a la escuela.
+
+98
+00:06:58.100 --> 00:06:58.936
+>> Perfecto.
+
+99
+00:06:58.936 --> 00:07:04.295
+>> Te recomendamos que investigues los
+bloque y, y o, y también el bloque no.
+
+100
+00:07:04.295 --> 00:07:07.256
+Y experimentes combinándolos
+en distintas formas.
+
+101
+00:07:07.256 --> 00:07:10.928
+Por ejemplo, para chequear si un
+número está en un rango, o sea,
+
+102
+00:07:10.928 --> 00:07:13.848
+si es mayor que un cierto
+valor o menor que otro.
+
+103
+00:07:13.848 --> 00:07:16.098
+En el siguiente video,
+veremos muchas más modificaciones que
+
+104
+00:07:16.098 --> 00:07:19.480
+podemos hacerle al Pong.

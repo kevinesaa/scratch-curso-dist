@@ -1,0 +1,262 @@
+WEBVTT
+
+1
+00:00:04.450 --> 00:00:09.192
+Basados en los requisitos del juego ahora
+vamos a diseñar la interfaz del juego y
+
+2
+00:00:09.192 --> 00:00:09.910
+el código.
+
+3
+00:00:09.910 --> 00:00:13.590
+Aquí tenemos un boceto de
+la interfaz de usuario.
+
+4
+00:00:13.590 --> 00:00:17.550
+Se puede ver que también hemos
+decidido que el helicóptero va
+
+5
+00:00:17.550 --> 00:00:20.430
+a decir "auch" cada vez
+que choca sobre una nube.
+
+6
+00:00:20.430 --> 00:00:25.770
+Al diseñar nuestro código es importante
+evitar cualquier detalle innecesario.
+
+7
+00:00:25.770 --> 00:00:31.971
+En ciencias de la computación esto se
+llama abstracción y consiste en manejar un
+
+8
+00:00:31.971 --> 00:00:38.391
+problema concentrándose en lo fundamental,
+ignorando los detalles innecesarios.
+
+9
+00:00:38.391 --> 00:00:42.936
+Por ejemplo, cuando creamos un mapa en
+geografía, hacemos una abstracción de
+
+10
+00:00:42.936 --> 00:00:43.740
+la realidad.
+
+11
+00:00:43.740 --> 00:00:47.300
+No ponemos todo lo que hay
+en la región en el mapa,
+
+12
+00:00:47.300 --> 00:00:50.740
+sólo ponemos la información que
+sea de interés o relevante.
+
+13
+00:00:50.740 --> 00:00:56.820
+La abstracción también involucra elegir
+el nivel correcto o apropiado de detalle.
+
+14
+00:00:56.820 --> 00:00:59.940
+Por ejemplo, podemos medir el
+tiempo en términos de años,
+
+15
+00:00:59.940 --> 00:01:05.140
+meses, semanas, días, horas, minutos,
+segundos y así sucesivamente.
+
+16
+00:01:05.140 --> 00:01:09.460
+Pero cuando se habla de nuestras
+vacaciones de verano, normalmente no
+
+17
+00:01:09.460 --> 00:01:13.530
+nos referiremos al segundo o minuto
+particular en que ocurrió algo.
+
+18
+00:01:13.530 --> 00:01:18.180
+Muy probablemente nos referiremos
+a semanas o días específicos.
+
+19
+00:01:18.180 --> 00:01:22.820
+Este es el nivel adecuado de abstracción
+para el tema de las vacaciones de verano.
+
+20
+00:01:22.820 --> 00:01:27.880
+¿Puedes pensar otros ejemplos de
+abstracción, por ejemplo, en cuadros famosos?
+
+21
+00:01:27.880 --> 00:01:30.160
+Súbelos al foro de discusión.
+
+22
+00:01:30.160 --> 00:01:35.170
+Del mismo modo que cuando hacemos
+mapas abstraemos de la realidad,
+
+23
+00:01:35.170 --> 00:01:39.304
+cuando hacemos un programa también
+tenemos que eliminar una gran cantidad de
+
+24
+00:01:39.304 --> 00:01:40.710
+detalles innecesarios.
+
+25
+00:01:40.710 --> 00:01:45.201
+Así, al crear un juego sencillo
+para manejar un helicóptero no
+
+26
+00:01:45.201 --> 00:01:48.690
+necesitamos preocuparnos por
+el proceso real de conducción.
+
+27
+00:01:48.690 --> 00:01:51.950
+Podemos simplemente centrarnos
+en las cosas que nos importan:
+
+28
+00:01:51.950 --> 00:01:56.279
+queremos que el helicóptero se pueda
+desplazar hacia arriba, abajo,
+
+29
+00:01:56.279 --> 00:01:58.450
+derecha, izquierda y eso es todo.
+
+30
+00:01:58.450 --> 00:02:03.755
+En forma similar, no tenemos que
+diferenciar entre distintos tipos
+
+31
+00:02:03.755 --> 00:02:06.690
+de nubes como podría hacerlo
+un experto en meteorología.
+
+32
+00:02:06.690 --> 00:02:10.500
+Simplemente consideraremos tamaños
+y diseños diferentes de nubes.
+
+33
+00:02:10.500 --> 00:02:15.315
+Ahora, el diseño de nuestro código
+también implica descomponer el
+
+34
+00:02:15.315 --> 00:02:20.035
+juego en sus partes, tal como hicimos
+en el ejemplo del Fruit ninja.
+
+35
+00:02:20.035 --> 00:02:24.630
+En nuestro caso las partes identificadas
+por el juego del helicóptero son:
+
+36
+00:02:24.630 --> 00:02:29.472
+el control del movimiento del helicóptero,
+el manejo de los choques con las nubes y
+
+37
+00:02:29.472 --> 00:02:32.450
+el manejo de choque con
+el borde del escenario.
+
+38
+00:02:32.450 --> 00:02:35.320
+En relación con el
+movimiento del helicóptero,
+
+39
+00:02:35.320 --> 00:02:39.444
+a su vez lo podemos descomponer en
+mover hacia arriba, hacia abajo,
+
+40
+00:02:39.444 --> 00:02:41.830
+hacia la izquierda y hacia la derecha.
+
+41
+00:02:41.830 --> 00:02:45.400
+Pensemos en el movimiento
+hacia la derecha.
+
+42
+00:02:45.400 --> 00:02:49.839
+Cuando presione la flecha
+derecha del teclado, el
+
+43
+00:02:49.839 --> 00:02:52.422
+helicóptero debería
+moverse hacia la derecha y
+
+44
+00:02:52.422 --> 00:02:56.972
+ajustar su disfraz para que sea más real,
+simulando el movimiento de la hélice.
+
+45
+00:02:56.972 --> 00:03:01.730
+Mirar hacia la derecha,
+ajustar su disfraz, moverse.
+
+46
+00:03:01.730 --> 00:03:05.610
+Para las otras direcciones es similar.
+
+47
+00:03:05.610 --> 00:03:10.278
+Ahora consideremos lo relativo
+al choque con las nubes.
+
+48
+00:03:10.278 --> 00:03:16.330
+El algoritmo sería: por siempre,
+si tocando la nube decir "auch".
+
+49
+00:03:16.330 --> 00:03:20.490
+Ahora miremos la última
+parte de nuestro programa.
+
+50
+00:03:20.490 --> 00:03:24.620
+Siempre que el helicóptero alcance
+el borde del escenario, queremos una
+
+51
+00:03:24.620 --> 00:03:26.510
+nueva configuración de nubes.
+
+52
+00:03:26.510 --> 00:03:32.360
+Por siempre, si toca el borde del
+escenario, cambiar el fondo de nubes.
+
+53
+00:03:32.360 --> 00:03:37.275
+Ahora que tenemos una clara idea de qué
+es lo que queremos programar y cómo,
+
+54
+00:03:37.275 --> 00:03:40.190
+vamos a implementarlo en Scratch.

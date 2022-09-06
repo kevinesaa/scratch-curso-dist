@@ -1,0 +1,540 @@
+WEBVTT
+
+1
+00:00:03.000 --> 00:00:05.614
+En esta entrevista, Eduardo nos
+
+2
+00:00:05.614 --> 00:00:09.396
+cuenta la importancia de especificar
+requerimientos correctamente y
+
+3
+00:00:09.396 --> 00:00:14.480
+descomponer los problemas para
+resolverlos más fácilmente.
+
+4
+00:00:14.480 --> 00:00:16.055
+>> Hola Eduardo.
+
+5
+00:00:16.055 --> 00:00:17.354
+Bienvenido a esta unidad.
+
+6
+00:00:17.354 --> 00:00:21.260
+Contanos, ¿qué es lo que disfrutas más
+de las ciencias de la computación en general?
+
+7
+00:00:21.260 --> 00:00:24.491
+>> Pues yo creo que hoy particularmente
+la tecnología y las ciencias de la
+
+8
+00:00:24.491 --> 00:00:28.974
+computación parte de lo fascinante es la
+presencia que tiene hoy en nuestra vida
+
+9
+00:00:28.974 --> 00:00:33.764
+cotidiana, que tiene en nuestro trabajo,
+que tiene en nuestra vida personal,
+
+10
+00:00:33.764 --> 00:00:37.788
+la introducción de la tecnología en
+todas las cosas que hacemos y cómo en
+
+11
+00:00:37.788 --> 00:00:42.921
+definitiva las ciencias de la computación,
+la programación son la magia
+
+12
+00:00:42.921 --> 00:00:47.290
+que está por detrás de toda la tecnología
+que usamos durante todos los días.
+
+13
+00:00:47.290 --> 00:00:50.495
+>> ¿Y en particular de la programación?
+
+14
+00:00:50.495 --> 00:00:53.292
+>> Primero que nada creo que hay una
+parte que es fascinante y
+
+15
+00:00:53.292 --> 00:00:54.777
+es la capacidad de crear, ¿no?
+
+16
+00:00:54.777 --> 00:00:59.517
+Parte de lo que aprendemos
+cuando aprendemos a programar empezamos
+
+17
+00:00:59.517 --> 00:01:03.559
+a darnos cuenta que aprendemos a crear
+cosas que tienen su comportamiento que
+
+18
+00:01:03.559 --> 00:01:07.325
+funcionan de cierta forma,
+que podemos crear experiencias para gente,
+
+19
+00:01:07.325 --> 00:01:10.843
+para personas, para alguien más
+que a la hora de hacer algo se
+
+20
+00:01:10.843 --> 00:01:15.672
+encuentran con un programa,
+con una aplicación o con un servicio que
+
+21
+00:01:15.672 --> 00:01:20.640
+hace algo para satisfacer una necesidad
+o para un juego como entretenimiento.
+
+22
+00:01:20.640 --> 00:01:26.550
+Primero lo fascinante de lo que podemos
+hacer a la hora de lo que programamos.
+
+23
+00:01:26.550 --> 00:01:31.068
+Eso por un lado y por otro lado de cómo
+lo ves hacia adelante, en esto que
+
+24
+00:01:31.068 --> 00:01:36.280
+decíamos antes que la tecnología cada vez, cada
+vez forma más parte de lo que hacemos,
+
+25
+00:01:36.280 --> 00:01:41.620
+hay algo claro a nivel mundial y es cómo
+cada vez visitamos más programadores,
+
+26
+00:01:41.620 --> 00:01:45.808
+y programadores con diferentes tipos de
+conocimientos, no solamente diferentes
+
+27
+00:01:45.808 --> 00:01:49.503
+tipos de conocimientos en términos de
+qué tecnologías conocen, sino 
+
+28
+00:01:49.503 --> 00:01:52.942
+de saber programar distintos tipos de
+cosas, desde aquellos que lo que saben
+
+29
+00:01:52.942 --> 00:01:56.450
+programar son aplicaciones tradicionales,
+los que saben programar juegos,
+
+30
+00:01:56.450 --> 00:02:00.892
+los que saben programar hardware, es decir
+pequeñas piezas, pequeños aparatos que
+
+31
+00:02:00.892 --> 00:02:04.931
+sepan hacer ciertas cosas, que se
+sepan comportar de distintas maneras.
+
+32
+00:02:04.931 --> 00:02:07.818
+Hoy en está en auge la
+programación de los drones,
+
+33
+00:02:07.818 --> 00:02:11.782
+esos pequeños helicópteros o
+cuadricópteros, poder programar eso,
+
+34
+00:02:11.782 --> 00:02:16.038
+poder programar robots o poder programar
+aplicaciones para dispositivos móviles,
+
+35
+00:02:16.038 --> 00:02:20.185
+entonces creo por un lado está lo
+fascinante de las cosas que podemos crear,
+
+36
+00:02:20.185 --> 00:02:24.365
+por otro lado está la diversidad y
+la necesidad de personas que sepan
+
+37
+00:02:24.365 --> 00:02:30.929
+programar para poder abastecer una
+enorme demanda de dispositivos,
+
+38
+00:02:30.929 --> 00:02:34.020
+aparatos, software programables.
+
+39
+00:02:34.020 --> 00:02:38.150
+>> En esta unidad discutimos
+sobre la especificación de requerimientos.
+
+40
+00:02:38.150 --> 00:02:42.280
+Contanos cómo hacen tu equipo y
+vos para recolectar requerimientos.
+
+41
+00:02:42.280 --> 00:02:47.747
+>> Lo de recolectar requerimientos es bien interesante
+porque por un lado hay una parte que es la
+
+42
+00:02:47.747 --> 00:02:51.270
+más natural que decís le pregunto a quién
+es mi cliente qué es lo que necesita.
+
+43
+00:02:51.270 --> 00:02:55.230
+Pero eso es sólo una parte de la historia
+porque hay muchas veces que el cliente o
+
+44
+00:02:55.230 --> 00:02:59.080
+el usuario realmente no sabe lo que
+necesita y tenemos que ir más allá de eso.
+
+45
+00:02:59.080 --> 00:03:05.185
+Y ahí es donde la observación de cómo
+trabaja el cliente o el usuario,
+
+46
+00:03:05.185 --> 00:03:09.525
+de cómo resuelve en forma
+cotidiana ciertas actividades para
+
+47
+00:03:09.525 --> 00:03:13.510
+nosotros entender cómo con tecnología
+podríamos resolver mejor eso.
+
+48
+00:03:13.510 --> 00:03:14.713
+Y como decía muchas veces,
+
+49
+00:03:14.713 --> 00:03:17.760
+el cliente no tiene la mejor respuesta
+de cómo se lo podría imaginar.
+
+50
+00:03:17.760 --> 00:03:22.796
+Somos nosotros los que tenemos en cierta
+forma la responsabilidad nosotros del lado
+
+51
+00:03:22.796 --> 00:03:27.655
+de las ciencias de la computación y del
+lado de la programación, tenemos la
+
+52
+00:03:27.655 --> 00:03:31.556
+responsabilidad de generar el vínculo
+entre una tarea que se realiza de
+
+53
+00:03:31.556 --> 00:03:35.570
+cierta forma y como la tecnología
+podría resolverla de forma mejor.
+
+54
+00:03:35.570 --> 00:03:39.264
+En ese espacio es que se generan los
+requerimientos más interesantes y
+
+55
+00:03:39.264 --> 00:03:42.554
+donde se generan los requerimientos
+que no sólo van a la
+
+56
+00:03:42.554 --> 00:03:46.237
+tecnología sino que van
+a generar las experiencias a los
+
+57
+00:03:46.237 --> 00:03:49.480
+usuarios adecuados para llevar
+adelante de la mejor forma su tarea.
+
+58
+00:03:49.480 --> 00:03:53.300
+>> ¿Y qué pasaría si los requerimientos
+no están bien especificados?
+
+59
+00:03:53.300 --> 00:03:57.412
+>> Es algo bastante común eso de
+que no estén bien especificados y
+
+60
+00:03:57.412 --> 00:03:58.402
+aquí suceden dos cosas,
+
+61
+00:03:58.402 --> 00:04:01.917
+o sea cuando efectivamente nos encontramos
+que no están bien especificados, eso a lo
+
+62
+00:04:01.917 --> 00:04:06.469
+que lleva es a frustración del lado
+del usuario y esa frustración se
+
+63
+00:04:06.469 --> 00:04:11.010
+traslada a nosotros como programadores
+o como proveedores de la tecnología.
+
+64
+00:04:11.010 --> 00:04:16.178
+Por eso que es tan importante así como
+hacer el trabajo de requerimientos,
+
+65
+00:04:16.178 --> 00:04:21.600
+es hacer los trabajos adecuados de
+validación, es decir estar frecuentemente
+
+66
+00:04:21.600 --> 00:04:26.547
+chequeando con el cliente de si tanto
+aquello que nos dijo como aquello que
+
+67
+00:04:26.547 --> 00:04:30.559
+nosotros nos imaginamos que necesitaba,
+estar constantemente lo que llamamos
+
+68
+00:04:30.559 --> 00:04:35.700
+iterando en esto funciona, esto no
+funciona, estar constantemente probando.
+
+69
+00:04:35.700 --> 00:04:41.354
+La observación es un atributo sumamente
+importante para lograr censar el avance
+
+70
+00:04:41.354 --> 00:04:48.488
+si vamos en la dirección adecuada y en
+definitiva poder validar si vamos en el
+
+71
+00:04:48.488 --> 00:04:52.770
+camino correcto y lo que estamos haciendo
+es lo correcto en etapas tempranas.
+
+72
+00:04:52.770 --> 00:04:54.727
+>> Luego que tenemos los requerimientos,
+
+73
+00:04:54.727 --> 00:04:58.190
+vimos que una de las cosas que hay que
+diseñar es la interfaz de usuario.
+
+74
+00:04:58.190 --> 00:05:00.714
+¿Qué deberíamos tener en cuenta?
+
+75
+00:05:00.714 --> 00:05:02.320
+>> Yo creo que tanto la interfaz,
+
+76
+00:05:02.320 --> 00:05:06.839
+inclusive me ampliaría un poquito en la
+experiencia del usuario como un todo.
+
+77
+00:05:06.839 --> 00:05:10.541
+Hoy cuando pensamos, y vamos a un
+escenario muy común que es el de los
+
+78
+00:05:10.541 --> 00:05:15.693
+dispositivos móviles, cuando pensamos en
+los dispositivos móviles pensamos sí en
+
+79
+00:05:15.693 --> 00:05:21.107
+la interfaz usuaria, en que sea atractiva
+visualmente, que es un atributo no menor,
+
+80
+00:05:21.107 --> 00:05:25.385
+es decir hoy un usuario puede elegir
+utilizar una aplicación versus otra,
+
+81
+00:05:25.385 --> 00:05:28.010
+una en lugar de otra porque
+es más atractiva visualmente,
+
+82
+00:05:28.010 --> 00:05:30.700
+porque los colores son mejores,
+porque el diseño es mejor,
+
+83
+00:05:30.700 --> 00:05:33.318
+entonces, por un lado el diseño
+de la interfaz de usuario,
+
+84
+00:05:33.318 --> 00:05:37.902
+por otro lado el diseño de la experiencia
+de usuario en términos de que sea intuitiva,
+
+85
+00:05:37.902 --> 00:05:43.119
+de que la navegación sea intuitiva, de que
+es fácil de utilizar y además de eso, el
+
+86
+00:05:43.119 --> 00:05:48.143
+pensar la experiencia del usuario desde el punto de
+vista de los recursos con los que contamos.
+
+87
+00:05:48.143 --> 00:05:52.697
+Y con esto me refiere es, si estamos con
+un dispositivo móvil, tenemos que saber que
+
+88
+00:05:52.697 --> 00:05:58.070
+contamos con capacidades que
+van más allá del touch de
+
+89
+00:05:58.070 --> 00:06:02.206
+la pantalla, eventualmente contamos con la capacidad de generar
+ciertos gestos y utilizar de
+
+90
+00:06:02.206 --> 00:06:07.231
+forma adecuada los pocos botones que tenga
+ese smartphone que estamos utilizando,
+
+91
+00:06:07.231 --> 00:06:10.801
+eventualmente utilizar la cámara,
+eventualmente utilizar el sensor de
+
+92
+00:06:10.801 --> 00:06:14.529
+luz para iluminar más la pantalla a la
+hora que voy a hacer ciertas acciones.
+
+93
+00:06:14.529 --> 00:06:18.739
+Con esto lo que quiero decir es que la
+interfaz de usuario y si lo amplío un poco
+
+94
+00:06:18.739 --> 00:06:23.294
+la experiencia del usuario, es parte del
+todo a la hora de contemplar al máximo cuáles son
+
+95
+00:06:23.294 --> 00:06:26.900
+las capacidades que tengo para ofrecer
+una mejor experiencia al usuario.
+
+96
+00:06:31.720 --> 00:06:33.321
+>> Otro tema que estuvimos trabajando en esta unidad fue la descomposición de problemas.
+Teniendo en cuenta tu amplia experiencia,
+
+97
+00:06:33.321 --> 00:06:35.840
+¿podrías darle alguna recomendación
+a los nuevos programadores?
+
+98
+00:06:35.840 --> 00:06:40.235
+>> Si hablo de la descomposición de
+problemas es una cosa que me gustaría
+
+99
+00:06:40.235 --> 00:06:48.054
+primero decir, es el descomponer problemas
+probablemente sea de las herramientas
+
+100
+00:06:48.054 --> 00:06:52.721
+más valiosas que adquirimos quienes
+estudiamos tecnología, no solamente para
+
+101
+00:06:52.721 --> 00:06:56.030
+resolver problemas tecnológicos sino
+para resolver problemas en general.
+
+102
+00:06:56.030 --> 00:07:02.545
+Yo muchas veces digo que en mi
+tarea del día a día me paso más tiempo resolviendo problemas genéricos,
+
+103
+00:07:02.545 --> 00:07:06.659
+es decir, problemas que no necesariamente
+tengo que saber de programación o
+
+104
+00:07:06.659 --> 00:07:09.593
+no necesariamente tengo que saber de
+tecnología o no necesariamente tengo que
+
+105
+00:07:09.593 --> 00:07:11.690
+saber de redes sino que
+resuelvo problemas en general.
+
+106
+00:07:11.690 --> 00:07:17.085
+Y las bases y los fundamentos que
+me dio el estudiar programación
+
+107
+00:07:17.085 --> 00:07:22.480
+y el estudiar diseño me permiten resolver
+problemas de todo tipo.
+
+108
+00:07:22.480 --> 00:07:28.016
+Yendo a la pregunta concretamente, la estructuración de pensamiento
+para resolver problemas creo
+
+109
+00:07:28.016 --> 00:07:35.500
+que es uno de los valores más importantes
+que nos da el prepararnos y el
+
+110
+00:07:35.500 --> 00:07:37.660
+capacitarnos en ciencias de la computación
+y en la programación en particular.

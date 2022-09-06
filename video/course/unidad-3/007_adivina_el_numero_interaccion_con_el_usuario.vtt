@@ -1,0 +1,344 @@
+WEBVTT
+
+1
+00:00:03.000 --> 00:00:05.515
+Vamos a crear un juego para adivinar,
+
+2
+00:00:05.515 --> 00:00:09.030
+que nos permitirá trabajar
+más con condiciones.
+
+3
+00:00:09.030 --> 00:00:11.773
+En este juego competirás
+contra la computadora,
+
+4
+00:00:11.773 --> 00:00:14.460
+tratando de adivinar un
+número que ella piensa.
+
+5
+00:00:14.460 --> 00:00:15.501
+Vamos a crearlo.
+
+6
+00:00:15.501 --> 00:00:18.904
+Lo primero que necesitamos es
+una variable para guardar el
+
+7
+00:00:18.904 --> 00:00:21.486
+número que piensa la computadora.
+
+8
+00:00:21.486 --> 00:00:24.190
+Así, definimos la variable número.
+
+9
+00:00:24.190 --> 00:00:30.792
+Observa que si la desmarcas, no se
+muestra su valor en el área de ejecución.
+
+10
+00:00:30.792 --> 00:00:33.410
+¿Cuál será el algoritmo
+para nuestro juego?
+
+11
+00:00:33.410 --> 00:00:37.288
+Primero, especificamos el número
+que piensa la computadora.
+
+12
+00:00:37.288 --> 00:00:40.403
+Fijamos este número secreto
+a un valor entre uno y diez.
+
+13
+00:00:40.403 --> 00:00:43.411
+Y para ello vamos a usar el bloque
+número al azar que está en la
+
+14
+00:00:43.411 --> 00:00:44.630
+paleta de operadores.
+
+15
+00:00:48.630 --> 00:00:50.830
+Luego, debemos
+
+16
+00:00:50.830 --> 00:00:54.184
+preguntarle al jugador que indique el
+número que supone pensó la computadora y
+
+17
+00:00:54.184 --> 00:00:59.190
+repetiremos el proceso hasta que ese
+número coincida con el de la computadora.
+
+18
+00:01:20.065 --> 00:01:24.910
+Cada vez que sea diferente, le diremos que
+es incorrecto y se lo volveremos a pedir.
+
+19
+00:01:24.910 --> 00:01:30.440
+Finalmente cuando acierte, lo felicitamos.
+
+20
+00:01:41.910 --> 00:01:45.540
+Agregamos la bandera verde y lo probamos.
+
+21
+00:01:50.170 --> 00:01:52.603
+Bien, ya tenemos el juego pronto.
+
+22
+00:01:52.603 --> 00:01:54.800
+Veamos cómo enriquecerlo más.
+
+23
+00:01:54.800 --> 00:01:58.302
+Observa que la variable número está
+en pantalla si está marcada en la
+
+24
+00:01:58.302 --> 00:01:59.300
+paleta de datos.
+
+25
+00:01:59.300 --> 00:02:02.564
+Podemos ponerle dentro del
+programa que no se muestre.
+
+26
+00:02:02.564 --> 00:02:05.490
+Para ello,
+usamos el bloque esconder variable.
+
+27
+00:02:05.490 --> 00:02:11.891
+También, podemos ponerle que, si presiona
+
+28
+00:02:11.891 --> 00:02:16.870
+la flecha hacia arriba, se muestre y que si
+presiona la flecha hacia abajo, se oculte.
+
+29
+00:02:30.320 --> 00:02:35.770
+Vamos a probar hasta aquí.
+
+30
+00:02:43.770 --> 00:02:49.770
+Bien, ¿qué tal agregarle pistas
+sobre el número que ingresó,
+
+31
+00:02:49.770 --> 00:02:53.020
+si es más grande o más chico que el
+que pensó? Vamos a ver cómo hacerlo.
+
+32
+00:02:53.020 --> 00:02:57.800
+Luego que ingresó un número incorrecto,
+verificamos si es mayor o menor.
+
+33
+00:02:57.800 --> 00:03:02.651
+Utilizamos un bloque si, sino porque
+las condiciones son dos solamente,
+
+34
+00:03:02.651 --> 00:03:05.350
+que sea mayor o en otro
+caso que sea menor, 
+
+35
+00:03:05.350 --> 00:03:09.280
+porque el caso de que sea el mismo ya
+lo verificamos antes y le informamos.
+
+36
+00:03:44.350 --> 00:03:47.920
+Ajustamos también el texto de la pregunta.
+
+37
+00:04:06.310 --> 00:04:08.910
+Y lo probamos.
+
+38
+00:04:12.910 --> 00:04:15.620
+El número secreto, en este caso, es tres.
+
+39
+00:04:15.620 --> 00:04:21.106
+Si ponemos cinco,
+tu número es mayor que el número secreto.
+
+40
+00:04:21.106 --> 00:04:23.770
+Y probamos de nuevo,
+por ejemplo ponemos uno,
+
+41
+00:04:23.770 --> 00:04:27.393
+tu número es menor que el número secreto.
+
+42
+00:04:27.393 --> 00:04:30.398
+Ahora voy a adivinar y nos dice bien.
+
+43
+00:04:30.398 --> 00:04:35.138
+Un detalle, ten presente que para que
+funcione la flecha hacia arriba y
+
+44
+00:04:35.138 --> 00:04:38.730
+hacia abajo no tienes que estar en la
+caja de texto del ingreso de datos.
+
+45
+00:04:38.730 --> 00:04:43.230
+¿Qué te parece agregarle ahora que diga,
+cuánto tiempo le llevó todo el juego?
+
+46
+00:04:43.230 --> 00:04:46.203
+Tenemos disponible en
+sensores el cronómetro.
+
+47
+00:04:46.203 --> 00:04:48.820
+Al comienzo del programa lo reiniciamos.
+
+48
+00:04:51.820 --> 00:04:55.070
+Al final, además de felicitarlo,
+le mostramos el tiempo.
+
+49
+00:04:55.070 --> 00:04:59.901
+Podemos usar el bloque unir que nos
+permite justamente unir varios elementos.
+
+50
+00:04:59.901 --> 00:05:02.743
+En este caso,
+un texto "felicitaciones" y 
+
+51
+00:05:02.743 --> 00:05:08.080
+"tu tiempo es" o algo similar
+con el valor del cronómetro.
+
+52
+00:05:10.080 --> 00:05:13.810
+Entonces aquí decimos unir.
+
+53
+00:05:30.120 --> 00:05:33.000
+Lo probamos.
+
+54
+00:05:39.000 --> 00:05:42.894
+En este caso nuestro tiempo fue 9,271.
+
+55
+00:05:42.894 --> 00:05:47.621
+¿Cómo podemos hacer si quisiéramos
+agregarle que diga si lo hizo rápido,
+
+56
+00:05:47.621 --> 00:05:52.074
+por ejemplo, si nos llevó menos de cinco
+segundos, o lento, si nos llevó cinco o más?.
+
+57
+00:05:52.074 --> 00:05:56.697
+Al igual que en una carrera de velocidad,
+debemos detener el cronómetro en el
+
+58
+00:05:56.697 --> 00:05:59.884
+mismo momento de terminar y
+luego verificar si ese valor es
+
+59
+00:05:59.884 --> 00:06:02.773
+superior a cinco,
+diez o el valor que hayamos elegido.
+
+60
+00:06:02.773 --> 00:06:06.170
+Vamos a definir una nueva variable
+tiempo donde lo guardaremos.
+
+61
+00:06:06.170 --> 00:06:10.310
+La fijamos en cero en el
+comienzo del programa.
+
+62
+00:06:10.310 --> 00:06:11.532
+Cuando acierta,
+
+63
+00:06:11.532 --> 00:06:16.908
+fijamos el valor de esta variable con el
+del cronómetro así guardamos el tiempo
+
+64
+00:06:16.908 --> 00:06:21.220
+exacto que le llevó y posteriormente
+verificamos el valor con un bloque si.
+
+65
+00:06:33.365 --> 00:06:35.510
+Ajustamos aquí para decir el tiempo
+
+66
+00:06:39.510 --> 00:06:41.930
+y agregamos el bloque si.
+
+67
+00:06:50.595 --> 00:06:53.260
+Si el tiempo fue menor a cinco,
+
+68
+00:06:53.260 --> 00:07:00.980
+le decimos lo hiciste rápido.
+
+69
+00:07:09.185 --> 00:07:11.390
+Lo hiciste un poco lento.
+
+70
+00:07:17.390 --> 00:07:19.160
+Escondemos la variable tiempo.
+
+71
+00:07:19.160 --> 00:07:26.095
+Ejecutamos el programa para probarlo.
+
+72
+00:07:29.095 --> 00:07:33.030
+Lo hicimos un poco lento esta vez.
+
+73
+00:07:33.030 --> 00:07:34.751
+¡Tendremos que practicar más!.
+
+74
+00:07:34.751 --> 00:07:39.640
+Bien, tenemos un juego para adivinar
+números con funciones muy interesantes.
+
+75
+00:07:39.640 --> 00:07:43.650
+También le puedes agregar efectos en
+el fondo, para hacerlo más lindo.

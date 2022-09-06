@@ -1,0 +1,129 @@
+WEBVTT
+
+1
+00:00:03.000 --> 00:00:05.480
+Muchas veces hay
+
+2
+00:00:05.480 --> 00:00:09.290
+más de un posible algoritmo para
+resolver efectivamente un problema.
+
+3
+00:00:09.290 --> 00:00:14.048
+Miremos este mapa y tratemos de darle
+instrucciones a una persona que está en el
+
+4
+00:00:14.048 --> 00:00:16.800
+hotel y quiere llegar
+a la estación de tren.
+
+5
+00:00:17.800 --> 00:00:20.330
+¿Puedes proponer dos
+algoritmos para este problema?
+
+6
+00:00:21.330 --> 00:00:23.506
+Una opción puede ser mirar hacia el norte,
+
+7
+00:00:23.506 --> 00:00:28.310
+caminar dos cuadras,
+mirar hacia el oeste, caminar una cuadra.
+
+8
+00:00:29.310 --> 00:00:31.810
+Otra opción puede ser
+mirar hacia el oeste,
+
+9
+00:00:31.810 --> 00:00:37.037
+caminar una cuadra, mirar hacia el norte,
+caminar dos cuadras.
+
+10
+00:00:38.037 --> 00:00:42.663
+Hay más opciones quizás no tan
+rápidas pero que igualmente resuelven
+
+11
+00:00:42.663 --> 00:00:43.670
+nuestro problema.
+
+12
+00:00:44.670 --> 00:00:47.701
+Como seguramente habrás notado
+los algoritmos anteriores no
+
+13
+00:00:47.701 --> 00:00:50.970
+tienen que ver con las computadoras
+y pueden tomar varias formas.
+
+14
+00:00:51.970 --> 00:00:56.364
+Por ejemplo, el primer algoritmo que
+mostramos para ir del hotel a la
+
+15
+00:00:56.364 --> 00:01:00.338
+estación de tren puede ser
+representado en un mapa o
+
+16
+00:01:00.338 --> 00:01:05.080
+como texto o como un diagrama de
+flujo o como código de computadora.
+
+17
+00:01:05.080 --> 00:01:07.109
+Vamos a ver estas opciones.
+
+18
+00:01:07.109 --> 00:01:12.850
+Aquí tenemos un mapa que representa
+en forma visual el algoritmo.
+
+19
+00:01:12.850 --> 00:01:16.442
+Claramente muestra que debemos
+caminar dos cuadras hacia el norte y
+
+20
+00:01:16.442 --> 00:01:18.280
+luego una mirando hacia el oeste.
+
+21
+00:01:20.280 --> 00:01:24.469
+El algoritmo en español podría
+ser: mira hacia el norte,
+
+22
+00:01:24.469 --> 00:01:29.151
+camina dos cuadras, luego gira
+hacia el oeste y camina una cuadra.
+
+23
+00:01:29.151 --> 00:01:32.940
+El diagrama de flujo muestra
+visualmente el algoritmo.
+
+24
+00:01:32.940 --> 00:01:40.630
+Se ve en forma clara el caracter
+secuencial, el seguir un paso tras otro.
+
+25
+00:01:40.630 --> 00:01:42.396
+¿Quieres saber más sobre los algoritmos?
+
+26
+00:01:42.396 --> 00:01:45.470
+En el próximo video
+analizaremos más ejemplos.
+
+27
+00:01:45.470 --> 00:01:49.260
+¡Esto recién comienza!.

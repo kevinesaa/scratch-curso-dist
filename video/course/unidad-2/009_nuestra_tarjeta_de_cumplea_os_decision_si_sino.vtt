@@ -1,0 +1,215 @@
+WEBVTT
+
+1
+00:00:04.060 --> 00:00:08.120
+¿Qué otros elementos podríamos agregarle
+a nuestra tarjeta de cumpleaños?
+
+2
+00:00:08.120 --> 00:00:13.247
+Por ejemplo, podríamos variar la reacción
+de la mariposa a la respuesta de
+
+3
+00:00:13.247 --> 00:00:14.664
+la edad del usuario.
+
+4
+00:00:14.664 --> 00:00:18.060
+Así, si el usuario indica que
+su edad es menor a ocho,
+
+5
+00:00:18.060 --> 00:00:21.501
+la mariposa podría decir:
+¡tan joven y ya programando!,
+
+6
+00:00:21.501 --> 00:00:23.477
+mientras que si tiene ocho o más,
+
+7
+00:00:23.477 --> 00:00:27.490
+la mariposa podría decir simplemente
+la edad y decir, ¡muy bien!.
+
+8
+00:00:27.490 --> 00:00:32.090
+En todos los casos, la mariposa debe
+invitar luego a soplar las velitas.
+
+9
+00:00:32.090 --> 00:00:36.500
+¿Cómo modificamos el programa
+para incluir este comportamiento?
+
+10
+00:00:36.500 --> 00:00:41.269
+Para lograr esto, necesitamos otra
+estructura de control que encontramos en
+
+11
+00:00:41.269 --> 00:00:42.690
+la paleta de control.
+
+12
+00:00:42.690 --> 00:00:47.680
+La que usaremos es una estructura
+de decisión, el bloque "sí, sino".
+
+13
+00:00:47.680 --> 00:00:55.001
+Esta estructura nos permite
+
+14
+00:00:55.001 --> 00:01:00.680
+diferenciar los pasos a seguir dependiendo
+de si una condición es verdadera o no.
+
+15
+00:01:00.680 --> 00:01:04.300
+La condición se coloca en la parte del sí.
+
+16
+00:01:04.300 --> 00:01:09.000
+En nuestro caso, la condición es si la
+edad del usuario, o sea, el número que nos
+
+17
+00:01:09.000 --> 00:01:12.852
+da el usuario como respuesta a la
+pregunta de la mariposa, es menor a ocho.
+
+18
+00:01:12.852 --> 00:01:14.548
+Si la condición se cumple,
+
+19
+00:01:14.548 --> 00:01:18.920
+la mariposa va a decir, como indicamos,
+¡tan joven y ya programando!
+
+20
+00:01:27.570 --> 00:01:33.520
+Si la condición no se cumple,
+la mariposa debe decir la edad
+
+21
+00:01:33.520 --> 00:01:40.350
+y después decir, ¡muy bien!
+
+22
+00:01:40.350 --> 00:01:48.070
+Luego de ambos casos la mariposa
+invita a soplar las velitas.
+
+23
+00:01:48.070 --> 00:01:53.970
+Vamos a completar la condición de la edad.
+
+24
+00:01:53.970 --> 00:01:57.350
+Y vamos a probar si el programa funciona.
+
+25
+00:01:57.350 --> 00:02:01.360
+Probaremos primero una edad menor
+que ocho, por ejemplo seis.
+
+26
+00:02:09.755 --> 00:02:12.150
+Bien, la mariposa
+reacciona como esperamos.
+
+27
+00:02:12.150 --> 00:02:17.810
+Ahora probaremos una edad mayor a ocho,
+por ejemplo, 14.
+
+28
+00:02:24.380 --> 00:02:26.950
+Excelente, también la mariposa
+responde como queríamos.
+
+29
+00:02:26.950 --> 00:02:29.029
+Un detalle, analiza este código.
+
+30
+00:02:29.429 --> 00:02:30.770
+¿Te parecen equivalentes?
+
+31
+00:02:30.770 --> 00:02:33.449
+Estos dos programas son,
+por cierto equivalentes,
+
+32
+00:02:33.449 --> 00:02:35.260
+tienen el mismo comportamiento.
+
+33
+00:02:35.260 --> 00:02:37.292
+Sin embargo, el primero de ellos,
+
+34
+00:02:37.292 --> 00:02:40.150
+el que está a la izquierda,
+es más concreto y claro.
+
+35
+00:02:40.150 --> 00:02:43.619
+En vez de usar el bloque decir dos veces,
+basta con una.
+
+36
+00:02:43.619 --> 00:02:45.890
+Conceptualmente es más correcto.
+
+37
+00:02:45.890 --> 00:02:49.893
+La mariposa debe invitar a soplar
+las velitas en cualquier caso,
+
+38
+00:02:49.893 --> 00:02:52.600
+sin diferenciar si son
+menores de ocho o no.
+
+39
+00:02:52.600 --> 00:02:55.769
+Ahora pensemos por un momento en
+el proceso que seguimos cuando
+
+40
+00:02:55.769 --> 00:02:57.690
+desarrollamos nuestros programas.
+
+41
+00:02:57.690 --> 00:03:01.735
+Poco a poco agregamos elementos
+y funciones al programa.
+
+42
+00:03:01.735 --> 00:03:05.780
+Las probamos y luego incorporamos
+más siguiendo el mismo proceso.
+
+43
+00:03:05.780 --> 00:03:10.110
+Este enfoque incremental es muy
+común en la ingeniería de software:
+
+44
+00:03:10.110 --> 00:03:13.590
+cada nueva versión del programa
+hace más que la anterior.
+
+45
+00:03:13.590 --> 00:03:17.047
+En el próximo video
+aplicaremos esta idea y
+
+46
+00:03:17.047 --> 00:03:20.010
+le agregaremos sonidos a nuestra tarjeta.

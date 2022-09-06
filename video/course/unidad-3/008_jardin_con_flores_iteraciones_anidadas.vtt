@@ -1,0 +1,349 @@
+WEBVTT
+
+1
+00:00:03.000 --> 00:00:05.513
+En este curso hemos hablado
+
+2
+00:00:05.513 --> 00:00:10.373
+de la importancia de probar y depurar
+nuestros programas con el fin de corregir
+
+3
+00:00:10.373 --> 00:00:14.400
+posibles errores. Esto es justamente
+lo que vamos a hacer en este video.
+
+4
+00:00:14.400 --> 00:00:16.851
+Mira este programa en Scratch,
+
+5
+00:00:16.851 --> 00:00:21.400
+tenemos un objeto con disfraz
+de flor y aquí está el código.
+
+6
+00:00:21.400 --> 00:00:26.445
+Lo ejecutamos, ¿y qué obtenemos?
+
+7
+00:00:26.445 --> 00:00:29.455
+Nos queda una imagen similar
+a un jardín de flores.
+
+8
+00:00:29.455 --> 00:00:31.490
+Vamos ahora a analizar el código.
+
+9
+00:00:31.490 --> 00:00:35.300
+El programa primero ubica el
+objeto en la posición 0 0,
+
+10
+00:00:35.300 --> 00:00:37.290
+que es el centro de la pantalla.
+
+11
+00:00:37.290 --> 00:00:41.870
+Y repite cuatro veces
+un conjunto de bloques.
+
+12
+00:00:41.870 --> 00:00:47.543
+Dentro repite siete veces
+cambiar la x por 40,
+
+13
+00:00:47.543 --> 00:00:53.222
+esto es, desplazarse a la derecha 40
+pasos y luego viene el bloque sellar.
+
+14
+00:00:53.222 --> 00:00:55.010
+¿Qué es lo que hace ese bloque?
+
+15
+00:00:55.010 --> 00:00:59.105
+En general, para saber en detalle qué
+función tiene un bloque, como vimos en
+
+16
+00:00:59.105 --> 00:01:03.882
+una unidad previa, podemos pedir ayuda
+presionando con botón derecho sobre el
+
+17
+00:01:03.882 --> 00:01:06.380
+propio bloque. Vamos a mirar la ayuda.
+
+18
+00:01:06.380 --> 00:01:14.740
+Como indica ahí, este bloque tiene por
+función fijar la imagen del objeto,
+
+19
+00:01:14.740 --> 00:01:19.470
+en nuestro caso la flor, en la posición
+que está en ese momento, como un sello.
+
+20
+00:01:19.470 --> 00:01:22.650
+Se puede limpiar la pantalla luego
+utilizando el bloque borrar.
+
+21
+00:01:25.650 --> 00:01:31.940
+Entonces, esta parte interior lo que hace
+es poner siete flores en fila horizontal.
+
+22
+00:01:31.940 --> 00:01:36.781
+Luego de esta iteración
+vuelve a poner x en cero y
+
+23
+00:01:36.781 --> 00:01:41.450
+desplaza el valor de y en 40,
+o sea, 40 pasos hacia arriba.
+
+24
+00:01:41.450 --> 00:01:45.570
+En total lo que hará es dibujar cuatro
+filas según el detalle de cada fila.
+
+25
+00:01:45.570 --> 00:01:50.578
+Si pensamos el código debería
+haber dibujado cuatro filas con
+
+26
+00:01:50.578 --> 00:01:52.367
+siete flores cada uno.
+
+27
+00:01:52.367 --> 00:01:54.700
+Pero en pantalla se ven menos.
+
+28
+00:01:54.700 --> 00:01:56.906
+¿Puedes detectar el problema?
+
+29
+00:01:56.906 --> 00:01:59.819
+El problema es que a medida
+que va creciendo x
+
+30
+00:01:59.819 --> 00:02:02.280
+se sale de la pantalla de ejecución.
+
+31
+00:02:02.280 --> 00:02:04.564
+Probemos cambiar por una cantidad menor,
+
+32
+00:02:04.564 --> 00:02:07.490
+por ejemplo,
+tres en vez de siete flores en cada fila.
+
+33
+00:02:12.490 --> 00:02:13.040
+Cambio ese número.
+
+34
+00:02:13.040 --> 00:02:16.770
+Cambié ese número pero sigo
+viendo todas las flores.
+
+35
+00:02:16.770 --> 00:02:21.970
+Falta agregar un bloque borrar al
+comienzo del programa, vamos a agregarlo.
+
+36
+00:02:26.780 --> 00:02:31.590
+Bien, ahora sí dibuja cuatro
+filas con tres flores cada una,
+
+37
+00:02:31.590 --> 00:02:33.497
+pero hay una flor más arriba.
+
+38
+00:02:33.497 --> 00:02:34.716
+¿Cómo puede ser?
+
+39
+00:02:34.716 --> 00:02:37.240
+Es el propio objeto que queda visible.
+
+40
+00:02:37.240 --> 00:02:40.564
+Lo que podemos hacer es esconderlo
+al final, para que no se
+
+41
+00:02:40.564 --> 00:02:42.060
+confunda con el jardín.
+
+42
+00:02:42.060 --> 00:02:45.638
+Lo mostramos al principio
+y lo escondemos al final.
+
+43
+00:02:45.638 --> 00:02:50.733
+Esconder al final, y lo mostramos arriba.
+
+44
+00:02:50.733 --> 00:02:52.960
+Ejecutamos.
+
+45
+00:02:52.960 --> 00:02:57.750
+Bien, volvamos al problema de
+dibujar siete flores por fila.
+
+46
+00:02:57.750 --> 00:03:03.130
+Podemos achicar la cantidad de pasos que
+se desplaza en x para que quepan todas,
+
+47
+00:03:03.130 --> 00:03:05.736
+o comenzar a dibujar
+más hacia la izquierda.
+
+48
+00:03:05.736 --> 00:03:09.520
+Por ejemplo, podemos probar que
+comience en -100 0.
+
+49
+00:03:09.520 --> 00:03:14.675
+También debemos modificar
+que, cuando pase a la
+
+50
+00:03:14.675 --> 00:03:18.070
+siguiente fila, vuelva a poner
+el valor en x en -100.
+
+51
+00:03:23.070 --> 00:03:24.450
+Bien,
+
+52
+00:03:29.450 --> 00:03:30.610
+perfecto.
+
+53
+00:03:30.610 --> 00:03:33.848
+En este caso lo que hicimos fue
+probar a fondo un programa,
+
+54
+00:03:33.848 --> 00:03:37.564
+le encontramos algunos errores o
+cosas a corregir, los ajustamos y
+
+55
+00:03:37.564 --> 00:03:41.360
+volvimos a probar hasta que nuestro
+programa se comportó como deseamos.
+
+56
+00:03:41.360 --> 00:03:45.570
+Te invitamos a seguir el mismo proceso
+en la construcción de tus programas.
+
+57
+00:03:45.570 --> 00:03:49.400
+En algunos casos puede haber diferentes
+maneras de solucionar los errores,
+
+58
+00:03:49.400 --> 00:03:52.850
+sólo debes elegir la que te parezca
+más simple y la más cercana a los
+
+59
+00:03:52.850 --> 00:03:54.310
+requisitos del programa.
+
+60
+00:03:54.310 --> 00:03:58.576
+Vale la pena mencionar que en este
+programa tenemos dos iteraciones:
+
+61
+00:03:58.576 --> 00:03:59.960
+una dentro de la otra.
+
+62
+00:03:59.960 --> 00:04:04.441
+Es un ejemplo de lo que se llama
+bucles anidados o ciclos anidados y
+
+63
+00:04:04.441 --> 00:04:05.670
+son muy comunes.
+
+64
+00:04:05.670 --> 00:04:09.642
+De hecho, puedes anidar una iteración
+dentro de otra, y dentro otra,
+
+65
+00:04:09.642 --> 00:04:10.950
+y así sucesivamente.
+
+66
+00:04:10.950 --> 00:04:13.423
+Aprendimos un montón en esta unidad.
+
+67
+00:04:13.423 --> 00:04:18.310
+Vimos ejemplos de programas ya hechos
+a los cuales analizamos en detalle.
+
+68
+00:04:18.310 --> 00:04:20.438
+Le agregamos comentarios al código,
+
+69
+00:04:20.438 --> 00:04:23.465
+instrucciones para el jugador
+y también incluimos varias
+
+70
+00:04:23.465 --> 00:04:27.020
+modificaciones interesantes que nos
+permitieron hacer nuevas versiones
+
+71
+00:04:27.020 --> 00:04:31.870
+ampliadas y novedosas de juegos conocidos
+como el Pizza Pong o tirar penales.
+
+72
+00:04:31.870 --> 00:04:36.731
+También conversamos sobre otra etapa
+de desarrollo del software, que es la
+
+73
+00:04:36.731 --> 00:04:41.906
+prueba y depuración y comentamos sobre
+la importancia de la documentación.
+
+74
+00:04:41.906 --> 00:04:45.624
+En la próxima unidad
+trabajaremos con clones, sí,
+
+75
+00:04:45.624 --> 00:04:49.940
+clones y con otras formas de
+escribir código más avanzadas.

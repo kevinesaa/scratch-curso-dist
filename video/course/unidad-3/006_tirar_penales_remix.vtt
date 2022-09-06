@@ -1,0 +1,376 @@
+WEBVTT
+
+1
+00:00:04.560 --> 00:00:08.060
+Así como modificamos el Pong para
+transformarlo en el Pizza Pong,
+
+2
+00:00:08.060 --> 00:00:11.867
+podríamos transformar el juego
+original en uno para tirar penales.
+
+3
+00:00:11.867 --> 00:00:13.246
+¿Quieres intentarlo?
+
+4
+00:00:13.246 --> 00:00:14.240
+Vamos a hacerlo.
+
+5
+00:00:14.240 --> 00:00:17.580
+Partimos como indicamos
+del juego original.
+
+6
+00:00:17.580 --> 00:00:20.029
+>> Inés, no conozco mucho de fútbol.
+
+7
+00:00:20.029 --> 00:00:22.151
+¿Me explicas qué es un penal?
+
+8
+00:00:22.151 --> 00:00:23.060
+>> Sí, claro.
+
+9
+00:00:23.060 --> 00:00:27.094
+En el fútbol el penal es un tiro
+directo al arco, que se hace desde un
+
+10
+00:00:27.094 --> 00:00:30.250
+punto marcado en el pasto
+a una cierta distancia.
+
+11
+00:00:30.250 --> 00:00:34.499
+En nuestro juego mostraremos
+solamente el área cercana al arco,
+
+12
+00:00:34.499 --> 00:00:38.052
+esto es el punto penal y el borde mismo
+del arco visto desde arriba, que lo
+
+13
+00:00:38.052 --> 00:00:39.690
+representaremos con una línea.
+
+14
+00:00:39.690 --> 00:00:41.611
+>> Perfecto, hasta luego.
+
+15
+00:00:41.611 --> 00:00:45.517
+>> En este caso cambiamos el dibujo
+de la paleta por un golero o
+
+16
+00:00:45.517 --> 00:00:48.260
+guarda meta, visto desde
+arriba como dijimos.
+
+17
+00:00:48.260 --> 00:00:52.650
+Vamos a editar el disfraz
+y le vamos a poner nombre.
+
+18
+00:01:07.750 --> 00:01:12.172
+Modificamos también el escenario para que
+sea un arco de fútbol visto de arriba y
+
+19
+00:01:12.172 --> 00:01:14.680
+también vamos a poner
+la posición del penal.
+
+20
+00:01:14.680 --> 00:01:18.055
+Recuerda dejar marcado
+el borde inferior de
+
+21
+00:01:18.055 --> 00:01:21.421
+otro color para poder detectar
+que cruzó la línea del gol.
+
+22
+00:01:21.421 --> 00:01:24.689
+La línea de gol será toda la base
+y asegúrate que el color de la
+
+23
+00:01:24.689 --> 00:01:27.980
+línea inferior sea diferente
+al del fondo y al del golero.
+
+24
+00:01:45.980 --> 00:01:48.024
+Modificaremos el código de la pelota.
+
+25
+00:01:48.024 --> 00:01:52.988
+Para poder patear cómodamente varias
+veces, cambiaremos el código quitando la
+
+26
+00:01:52.988 --> 00:01:57.340
+bandera verde inicial y poniendo el
+bloque al presionar la tecla espacio.
+
+27
+00:01:57.340 --> 00:02:02.051
+Cuando se presiona la tecla espacio se va
+a ubicar la pelota en el punto penal y
+
+28
+00:02:02.051 --> 00:02:04.570
+se va a apuntar en una dirección al azar.
+
+29
+00:02:10.220 --> 00:02:15.870
+Las coordenadas del punto penal
+son aproximadamente 0 150.
+
+30
+00:02:35.090 --> 00:02:37.931
+Ahora no debe
+
+31
+00:02:37.931 --> 00:02:42.020
+moverse por siempre sino hasta que toque
+el golero o llegue a la línea del gol.
+
+32
+00:02:42.020 --> 00:02:47.140
+Vamos a utilizar el bloque repetir hasta
+en el cual debemos poner la condición.
+
+33
+00:02:47.140 --> 00:02:52.184
+Para escribir esta condición compuesta
+
+34
+00:02:52.184 --> 00:02:56.050
+usaremos el bloque "o" que está disponible
+en operadores como ya vimos,
+
+35
+00:02:56.050 --> 00:03:00.649
+e incluiremos las dos condiciones: si toca
+el golero o si toca la línea del gol,
+
+36
+00:03:00.649 --> 00:03:03.890
+o sea el color que hayas
+elegido para el borde inferior.
+
+37
+00:03:23.790 --> 00:03:27.690
+Lo que estaremos repitiendo será rebotar
+si toca el borde y moverse unos pasos.
+
+38
+00:03:33.470 --> 00:03:36.952
+Finalmente podemos
+detectar si fue gol o no.
+
+39
+00:03:36.952 --> 00:03:39.250
+Agregamos un bloque si sino.
+
+40
+00:03:39.250 --> 00:03:42.982
+La condición a verificar es si
+está tocando el color del borde,
+
+41
+00:03:42.982 --> 00:03:44.790
+lo que indicaría que fue gol.
+
+42
+00:03:44.790 --> 00:03:46.701
+En ese caso decimos gol.
+
+43
+00:03:46.701 --> 00:03:48.890
+En otro caso decimos atajó.
+
+44
+00:03:48.890 --> 00:03:53.170
+En ambos casos usamos el
+bloque decir por un segundo.
+
+45
+00:04:19.915 --> 00:04:24.920
+El otro código de la pelota no
+es necesario así que lo sacamos.
+
+46
+00:04:29.760 --> 00:04:34.600
+Podemos también cambiar
+el disfraz de la pelota.
+
+47
+00:04:39.745 --> 00:04:44.890
+Si quieres puedes cambiar
+el tamaño de la pelota.
+
+48
+00:04:44.890 --> 00:04:46.770
+Vamos a probar hasta aquí.
+
+49
+00:04:46.770 --> 00:04:52.340
+Recuerda presionar la bandera verde y
+para lanzar la pelota, presionar espacio.
+
+50
+00:04:57.655 --> 00:05:02.970
+Bien, ya tenemos el
+golero y podemos atajar.
+
+51
+00:05:02.970 --> 00:05:06.020
+Estaría muy bueno llevar el marcador, ¿no?
+
+52
+00:05:06.020 --> 00:05:10.310
+Para llevar la cuenta de la cantidad
+de goles necesitamos una variable.
+
+53
+00:05:10.310 --> 00:05:13.990
+Vamos a definir la variable y
+le ponemos de nombre goles.
+
+54
+00:05:13.990 --> 00:05:19.628
+Como indicamos, siempre es buena práctica
+de programación ponerle nombres
+
+55
+00:05:19.628 --> 00:05:23.830
+que nos ayuden a recordar su contenido.
+
+56
+00:05:23.830 --> 00:05:29.950
+Debemos agregar que al comienzo la
+cantidad de goles empiece en cero.
+
+57
+00:05:29.950 --> 00:05:34.180
+Para ello agregamos el bloque de
+bandera verde y fijar goles a cero.
+
+58
+00:05:34.180 --> 00:05:40.530
+También podemos llevar la
+cuenta de los que atajó.
+
+59
+00:05:40.530 --> 00:05:44.720
+Para ello agregamos otra variable
+atajó que empieza en cero.
+
+60
+00:05:51.415 --> 00:05:54.208
+Hace falta hacer algunos cambios más.
+
+61
+00:05:54.208 --> 00:05:58.110
+Cuando decimos gol, incrementamos
+la variable goles.
+
+62
+00:05:58.110 --> 00:06:03.440
+Ponemos el bloque cambiar goles por uno.
+
+63
+00:06:03.440 --> 00:06:08.770
+En el caso que dice atajó,
+ponemos cambiar atajó por uno.
+
+64
+00:06:08.770 --> 00:06:12.544
+Ya tenemos una nueva
+adaptación del juego del Pong,
+
+65
+00:06:12.544 --> 00:06:16.250
+ahora transformándose en
+juego de tirar penales.
+
+66
+00:06:16.250 --> 00:06:18.948
+Si lo deseas también
+puedes agregarle sonidos.
+
+67
+00:06:18.948 --> 00:06:23.683
+En Scratch, el proceso de tomar un programa
+y hacerle modificaciones recibe el
+
+68
+00:06:23.683 --> 00:06:26.270
+nombre de reinventar o hacer el remix.
+
+69
+00:06:26.270 --> 00:06:30.300
+Si observas en el sitio de Scratch,
+por ejemplo, en el caso del Pong,
+
+70
+00:06:30.300 --> 00:06:34.180
+el cual podemos buscarlo en el sitio,
+te aparece una imagen similar a ésta.
+
+71
+00:06:34.180 --> 00:06:41.200
+Esa imagen representa la cantidad de
+veces que se ha reinventado el juego.
+
+72
+00:06:41.200 --> 00:06:44.705
+Y si presionas sobre ella te
+aparece como un árbol en donde se
+
+73
+00:06:44.705 --> 00:06:47.240
+muestran distintas versiones de este juego.
+
+74
+00:06:47.240 --> 00:06:50.208
+Te invitamos a que navegues sobre
+ese árbol y pruebes algunas de
+
+75
+00:06:50.208 --> 00:06:51.110
+estas versiones.
+
+76
+00:06:52.110 --> 00:06:55.550
+Pensando en términos de ingeniería
+del software, el concepto de
+
+77
+00:06:55.550 --> 00:06:59.990
+reinventar se podría relacionar en cierta
+forma con el mantenimiento del software.
+
+78
+00:06:59.990 --> 00:07:04.370
+El mantenimiento es una actividad muy
+amplia que incluye corrección de errores y
+
+79
+00:07:04.370 --> 00:07:05.840
+mejora de los programas.
+
+80
+00:07:05.840 --> 00:07:08.150
+En el próximo video haremos otro juego.

@@ -1,0 +1,529 @@
+WEBVTT
+
+1
+00:00:04.560 --> 00:00:08.041
+Tenemos bastantes cosas para
+programar en este juego,
+
+2
+00:00:08.041 --> 00:00:10.640
+por lo que empecemos por descomponerlo.
+
+3
+00:00:10.640 --> 00:00:14.128
+Una forma natural de
+dividirlo en partes más
+
+4
+00:00:14.128 --> 00:00:19.130
+pequeñas sería identificar los diferentes
+elementos que tenemos que programar.
+
+5
+00:00:19.130 --> 00:00:24.480
+Así tenemos la escoba, el zombie,
+la flor y el escenario.
+
+6
+00:00:24.480 --> 00:00:28.310
+Ahora vamos a descomponer
+cada uno de ellos.
+
+7
+00:00:28.310 --> 00:00:32.329
+Comenzaremos programando el
+personaje, que en nuestro caso el
+
+8
+00:00:32.329 --> 00:00:34.890
+que elegimos tiene disfraz de escoba.
+
+9
+00:00:34.890 --> 00:00:42.470
+Su programa incluye en seudocódigo: iniciar
+y por siempre, ir a la posición del ratón.
+
+10
+00:00:42.470 --> 00:00:47.760
+El comportamiento de tocar el zombie con
+la escoba lo programaremos en el zombie.
+
+11
+00:00:47.760 --> 00:00:53.340
+El inicio incluye posicionarlo en
+el centro y dar las instrucciones.
+
+12
+00:00:53.340 --> 00:00:57.605
+Para dar las instrucciones podríamos
+haber elegido cualquiera de
+
+13
+00:00:57.605 --> 00:01:01.456
+los personajes de nuestro juego,
+pero seleccionamos la escoba ya
+
+14
+00:01:01.456 --> 00:01:05.220
+que es el personaje principal con el
+cual el usuario controla este juego.
+
+15
+00:01:05.220 --> 00:01:08.930
+Las instrucciones podrían
+incluir frases como: mueve el
+
+16
+00:01:08.930 --> 00:01:13.130
+ratón para alejar a los zombies,
+evita que lleguen a la casa.
+
+17
+00:01:13.130 --> 00:01:16.978
+El objetivo del juego es alejar
+la mayor cantidad de zombies,
+
+18
+00:01:16.978 --> 00:01:19.200
+o sea, obtener un puntaje bien alto.
+
+19
+00:01:19.200 --> 00:01:22.090
+En el momento que llega alguno, terminó.
+
+20
+00:01:22.090 --> 00:01:27.616
+Ojo, es importante mencionar que los
+zombies no deberían aparecer mientras la
+
+21
+00:01:27.616 --> 00:01:32.220
+escoba esté dando las instrucciones, para
+que el juego sea justo para el jugador.
+
+22
+00:01:32.220 --> 00:01:36.800
+Cuando diseñemos el código del zombie
+tendremos que tener esto en cuenta.
+
+23
+00:01:36.800 --> 00:01:38.997
+¿Cuántos zombies deberíamos tener?
+
+24
+00:01:38.997 --> 00:01:42.800
+Queremos una cantidad ilimitada
+de zombies durante el juego pero,
+
+25
+00:01:42.800 --> 00:01:45.143
+¿cómo haremos para lograrlo?
+
+26
+00:01:45.143 --> 00:01:46.975
+Usando clones, ¡claro!.
+
+27
+00:01:46.975 --> 00:01:51.249
+El programa del zombie incluye el inicio y
+
+28
+00:01:51.249 --> 00:01:55.620
+por siempre, crear un clon
+y esperar un breve tiempo.
+
+29
+00:01:55.620 --> 00:01:59.040
+¿Con qué frecuencia crearemos los clones?
+
+30
+00:01:59.040 --> 00:02:01.202
+Para responder esta pregunta,
+
+31
+00:02:01.202 --> 00:02:05.050
+pensemos un poco más en los
+requerimientos que tenemos.
+
+32
+00:02:05.050 --> 00:02:10.100
+Queremos que nuestro juego tenga
+diferentes niveles de dificultad.
+
+33
+00:02:10.100 --> 00:02:14.780
+Podemos hacer que los zombies
+aparezcan cada cierto tiempo que
+
+34
+00:02:14.780 --> 00:02:16.550
+podremos establecer.
+
+35
+00:02:16.550 --> 00:02:19.648
+Para un juego difícil, el
+tiempo será pequeño y
+
+36
+00:02:19.648 --> 00:02:23.080
+para un juego más fácil, el
+tiempo será más grande.
+
+37
+00:02:23.080 --> 00:02:27.718
+Para registrar el tiempo entre
+la creación de los zombies y
+
+38
+00:02:27.718 --> 00:02:31.571
+poder modificarlo
+necesitaremos una variable.
+
+39
+00:02:31.571 --> 00:02:36.710
+Además de esta variable, necesitaremos
+otra para llevar el puntaje.
+
+40
+00:02:36.710 --> 00:02:42.230
+Ambas variables serán inicializadas
+en el bloque de inicio del zombie.
+
+41
+00:02:42.230 --> 00:02:47.630
+El tiempo entre zombies, por ejemplo,
+en cinco y el puntaje en cero.
+
+42
+00:02:47.630 --> 00:02:52.096
+Y también tendremos que esperar un
+breve tiempo para permitir que el
+
+43
+00:02:52.096 --> 00:02:54.300
+jugador lea las instrucciones.
+
+44
+00:02:54.300 --> 00:03:00.020
+Vamos a diseñar ahora el comportamiento
+del zombie cuando empiece como clon.
+
+45
+00:03:00.020 --> 00:03:04.560
+Primero será ubicado sobre
+la derecha del escenario,
+
+46
+00:03:04.560 --> 00:03:09.288
+luego se moverá continuamente
+hacia la izquierda chequeando si
+
+47
+00:03:09.288 --> 00:03:13.674
+está tocando la escoba,
+la flor o si llegó a la casa.
+
+48
+00:03:13.674 --> 00:03:17.560
+Cuando toca la escoba se emite un sonido,
+
+49
+00:03:17.560 --> 00:03:22.240
+se cuenta un zombie más
+atrapado y el zombie regresa.
+
+50
+00:03:22.240 --> 00:03:26.040
+Cuando toca la flor, espera
+por un breve tiempo.
+
+51
+00:03:26.040 --> 00:03:31.575
+Si llega a la casa, o sea a la zona
+izquierda de la pantalla, termina el juego.
+
+52
+00:03:31.575 --> 00:03:36.010
+Ya detallaremos más adelante qué
+significa que terminó el juego.
+
+53
+00:03:36.010 --> 00:03:40.340
+Ahora pensemos un poco más
+en el movimiento del zombie.
+
+54
+00:03:40.340 --> 00:03:43.420
+¿Cuán rápido debería moverse?
+
+55
+00:03:43.420 --> 00:03:48.480
+Podríamos especificar su movimiento por
+ejemplo, en cinco o 10 pasos cada vez.
+
+56
+00:03:48.480 --> 00:03:51.608
+Otra opción para hacerlo más divertido y
+
+57
+00:03:51.608 --> 00:03:56.369
+desafiante es hacer que cada cinco
+segundos los zombies aumenten su
+
+58
+00:03:56.369 --> 00:04:01.126
+velocidad y así resultará
+más difícil alejarlos a todos.
+
+59
+00:04:01.126 --> 00:04:06.155
+Para implementar esto necesitaremos una
+variable para la velocidad del zombie,
+
+60
+00:04:06.155 --> 00:04:08.790
+o sea, para la cantidad de
+pasos que debe moverse.
+
+61
+00:04:08.790 --> 00:04:11.504
+¿Dónde debemos iniciar esta variable?
+
+62
+00:04:11.504 --> 00:04:13.680
+¿Y dónde la debemos modificar?
+
+63
+00:04:13.680 --> 00:04:19.832
+Como afecta a todos los clones creados,
+esto nos indica que la debemos
+
+64
+00:04:19.832 --> 00:04:24.973
+iniciar en el mismo bloque del inicio del
+zombie, por ejemplo, con el valor cinco.
+
+65
+00:04:24.973 --> 00:04:29.723
+Para poder modificarla cada
+pocos segundos necesitamos otro
+
+66
+00:04:29.723 --> 00:04:35.172
+programa o script dentro del objeto del
+zombie, que se ejecuta al mismo tiempo.
+
+67
+00:04:35.172 --> 00:04:37.785
+>> Inés: ¿por qué necesitamos otro script?
+
+68
+00:04:37.785 --> 00:04:42.378
+¿No podría ponerlo en el mismo
+bloque del por siempre crear clon y
+
+69
+00:04:42.378 --> 00:04:44.506
+esperar el tiempo entre zombies?
+
+70
+00:04:44.506 --> 00:04:45.292
+>> No, Cody.
+
+71
+00:04:45.292 --> 00:04:46.640
+Y te cuento por qué.
+
+72
+00:04:46.640 --> 00:04:51.300
+Si la pusiéramos ahí,
+el proceso sería diferente.
+
+73
+00:04:51.300 --> 00:04:53.910
+Sería por siempre, se crea un clon,
+
+74
+00:04:53.910 --> 00:04:58.883
+se espera un tiempo entre la creación
+de los clones, luego se debería
+
+75
+00:04:58.883 --> 00:05:04.349
+esperar los cinco segundos que dijimos,
+y finalmente se modificaría la velocidad.
+
+76
+00:05:04.349 --> 00:05:07.170
+Pero no es éste el
+comportamiento que queremos.
+
+77
+00:05:07.170 --> 00:05:11.410
+Queremos que los dos procesos
+se ejecuten en forma simultánea.
+
+78
+00:05:11.410 --> 00:05:17.354
+En ciencia de la computación decimos
+que son procesos concurrentes.
+
+79
+00:05:17.354 --> 00:05:18.778
+>> Ah, bien, bien.
+
+80
+00:05:18.778 --> 00:05:23.530
+>> La concurrencia es muy
+común en la vida diaria.
+
+81
+00:05:23.530 --> 00:05:28.526
+Por ejemplo, cada uno de los chefs de
+un restaurante prepara varios platos al
+
+82
+00:05:28.526 --> 00:05:29.520
+mismo tiempo.
+
+83
+00:05:29.520 --> 00:05:33.530
+Por ejemplo, puede estar hirviendo papas,
+cocinando carne en un horno,
+
+84
+00:05:33.530 --> 00:05:36.090
+cortando vegetales, todo simultáneamente.
+
+85
+00:05:36.090 --> 00:05:41.977
+Y si miramos el restaurante en general, el
+comportamiento de los chefs es concurrente
+
+86
+00:05:41.977 --> 00:05:46.290
+con el de los mozos y los encargados,
+están todos trabajando a la vez.
+
+87
+00:05:46.290 --> 00:05:52.440
+La concurrencia es un concepto importante
+en la ciencia de la computación.
+
+88
+00:05:52.440 --> 00:05:57.000
+En Scratch es muy fácil crear
+programas concurrentes.
+
+89
+00:05:57.000 --> 00:06:01.947
+Y si lo pensamos, muchos de los programas
+que hicimos son, por cierto, concurrentes.
+
+90
+00:06:01.947 --> 00:06:05.395
+Por ejemplo, en el juego del
+Pong, el programa de la pelota y
+
+91
+00:06:05.395 --> 00:06:07.880
+el de la paleta se
+ejecutan a la misma vez.
+
+92
+00:06:07.880 --> 00:06:13.850
+Ahora, analizaremos la parte del
+código correspondiente a la flor.
+
+93
+00:06:13.850 --> 00:06:19.299
+Cuando empiece el juego, queremos poner
+varias flores en el jardín para entretener 
+
+94
+00:06:19.299 --> 00:06:25.030
+a los zombies, por ejemplo, entre tres y 10
+flores y que su cantidad varíe al azar.
+
+95
+00:06:25.030 --> 00:06:32.748
+El seudocódigo sería: repetir una
+cantidad al azar de veces, crear clon.
+
+96
+00:06:32.748 --> 00:06:38.530
+Bien, ahora, ¿cuál será su
+comportamiento cuando empiece como clon?
+
+97
+00:06:38.530 --> 00:06:43.956
+Sería: posicionar la flor en algún lugar
+de la pantalla, repetir hasta que
+
+98
+00:06:43.956 --> 00:06:49.640
+la toque el zombie, cambiar de disfraz por
+un breve tiempo para simular la animación,
+
+99
+00:06:49.640 --> 00:06:54.550
+finalmente borrar el clon,
+o sea, una vez que fue tocada, desaparece.
+
+100
+00:06:54.550 --> 00:06:55.465
+Y pronto.
+
+101
+00:06:55.465 --> 00:06:58.830
+Ahora trabajaremos por el escenario.
+
+102
+00:06:58.830 --> 00:07:03.680
+Cuando comience el programa debe
+tener el fondo del jardín y la casa.
+
+103
+00:07:03.680 --> 00:07:06.966
+Hemos diseñado dos fondos
+para el escenario y
+
+104
+00:07:06.966 --> 00:07:11.656
+decidimos que, una vez que el juego
+termine, cambie el fondo del jardín y
+
+105
+00:07:11.656 --> 00:07:14.280
+la casa a uno que indica
+que el juego terminó.
+
+106
+00:07:14.280 --> 00:07:17.430
+¿Qué más debe ocurrir
+cuando el juego termina?
+
+107
+00:07:17.430 --> 00:07:22.360
+Todos los programas o scripts
+deben detener su ejecución.
+
+108
+00:07:22.360 --> 00:07:26.310
+Este comportamiento puede ser
+programado en el escenario.
+
+109
+00:07:26.310 --> 00:07:30.046
+Bien, hemos hecho la descomposición
+de nuestro programa y
+
+110
+00:07:30.046 --> 00:07:32.970
+tenemos un diseño
+detallado de nuestro código.
+
+111
+00:07:32.970 --> 00:07:35.850
+En el próximo video construiremos
+nuestro juego en Scratch.

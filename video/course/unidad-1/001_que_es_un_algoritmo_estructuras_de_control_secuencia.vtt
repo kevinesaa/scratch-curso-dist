@@ -1,0 +1,196 @@
+WEBVTT
+
+1
+00:00:04.000 --> 00:00:07.580
+En esta unidad aprenderás cómo
+crear tu primer programa.
+
+2
+00:00:07.580 --> 00:00:10.590
+¿Pronto para comenzar? ¡Arrancamos!.
+
+3
+00:00:10.590 --> 00:00:15.090
+¿Alguna vez le diste instrucciones a
+una persona para ir de un lugar a otro?
+
+4
+00:00:16.090 --> 00:00:17.818
+¿O le enseñaste a un amigo
+a realizar alguna tarea,
+
+5
+00:00:18.818 --> 00:00:20.680
+como, por ejemplo, atarse los cordones?
+
+6
+00:00:21.000 --> 00:00:24.404
+¿O seguiste una receta de
+cocina para elaborar una torta,
+
+7
+00:00:24.404 --> 00:00:26.500
+galletitas u otra preparación?
+
+8
+00:00:27.500 --> 00:00:29.704
+Si tu respuesta a alguna
+de estas preguntas es sí,
+
+9
+00:00:30.704 --> 00:00:33.540
+entonces ya conoces algo de programación.
+
+10
+00:00:34.540 --> 00:00:38.442
+Vamos a empezar analizando
+ejemplos de la vida real que
+
+11
+00:00:37.442 --> 00:00:40.840
+nos permitirán mostrarte conceptos
+fundamentales de programación.
+
+12
+00:00:42.500 --> 00:00:46.206
+Supongamos que queremos enseñarle a una
+persona como preparar un sándwich con pan,
+
+13
+00:00:46.206 --> 00:00:47.170
+jamón y queso.
+
+14
+00:00:49.170 --> 00:00:53.580
+Los pasos los podemos describir como:
+tomar dos tajadas de pan,
+
+15
+00:00:54.580 --> 00:00:59.065
+colocar una feta de jamón sobre
+una tajada, colocar una feta de
+
+16
+00:00:59.065 --> 00:01:03.334
+queso sobre el jamón, colocar la
+segunda tajada de pan sobre el queso.
+
+17
+00:01:03.334 --> 00:01:08.261
+Y ¡pronto!. Si quisiéramos escribir
+los pasos en español podría ser
+
+18
+00:01:08.261 --> 00:01:14.484
+similar a esto. Puedes observar
+que el proceso lo describimos como
+
+19
+00:01:14.484 --> 00:01:19.369
+una secuencia de pasos que se
+siguen en orden uno detrás de otro.
+
+20
+00:01:19.369 --> 00:01:21.070
+Veamos otro ejemplo.
+
+21
+00:01:21.070 --> 00:01:25.290
+Queremos detallar el proceso de cambiar
+una bombita de luz que está quemada.
+
+22
+00:01:27.290 --> 00:01:29.830
+Podemos hacerlo en forma
+segura de esta manera.
+
+23
+00:01:30.830 --> 00:01:33.090
+Si me falta repuesto de bombita,
+comprar un repuesto.
+
+24
+00:01:35.090 --> 00:01:39.146
+Apagar la llave de la luz, repetir
+girar la bombita quemada en sentido anti
+
+25
+00:01:39.146 --> 00:01:44.638
+horario hasta sacarla del porta lámparas,
+tirar a la basura la bombita quemada,
+
+26
+00:01:44.638 --> 00:01:48.110
+colocar la bombita nueva en el
+porta lámparas, repetir girar en
+
+27
+00:01:48.110 --> 00:01:53.464
+sentido contrario hasta que quede apretada
+y prender la llave de luz.
+
+28
+00:01:54.464 --> 00:01:57.040
+Si el proceso lo queremos escribir
+podría lucir similar 
+
+29
+00:01:57.040 --> 00:01:59.910
+a éste.
+
+30
+00:01:59.910 --> 00:02:04.568
+Aquí tenemos una secuencia de pasos
+en orden y también utilizamos una decisión,
+
+31
+00:02:05.568 --> 00:02:07.180
+"si me falta repuesto".
+
+32
+00:02:07.180 --> 00:02:09.510
+Y repeticiones o iteraciones, "repetir hasta".
+
+33
+00:02:11.510 --> 00:02:15.102
+La secuencia,
+la decisión y la iteración son lo que
+
+34
+00:02:15.102 --> 00:02:19.650
+llamamos estructuras de control y con
+ellas construimos los programas.
+
+35
+00:02:20.650 --> 00:02:23.930
+Describimos el proceso de
+preparar un sándwich o
+
+36
+00:02:23.930 --> 00:02:26.130
+cambiar la bombita como
+un proceso paso a paso.
+
+37
+00:02:27.130 --> 00:02:32.380
+Esta secuencia ordenada de
+pasos se llama algoritmo.
+
+38
+00:02:33.380 --> 00:02:37.883
+Los algoritmos describen el proceso
+para llevar adelante una tarea o
+
+39
+00:02:37.883 --> 00:02:41.920
+resolver un problema en
+una forma paso a paso.
+
+40
+00:02:42.920 --> 00:02:45.970
+Pueden incluir secuencias, decisiones e
+
+41
+00:02:45.970 --> 00:02:49.420
+iteraciones como vimos en
+los dos ejemplos previos.

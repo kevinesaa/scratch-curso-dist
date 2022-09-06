@@ -1,0 +1,294 @@
+WEBVTT
+
+1
+00:00:04.645 --> 00:00:09.290
+En el video anterior dibujamos un
+cuadrado, ahora dibujaremos una escalera.
+
+2
+00:00:09.290 --> 00:00:13.710
+En esta escalera, la cantidad de
+escalones la va a indicar el usuario.
+
+3
+00:00:13.710 --> 00:00:17.012
+Pensemos qué debe hacer el programa.
+
+4
+00:00:17.012 --> 00:00:20.062
+Lo primero que hay que
+hacer es preguntarle al
+
+5
+00:00:20.062 --> 00:00:24.501
+usuario cuántos escalones quiere
+y luego dibujar esa cantidad.
+
+6
+00:00:24.501 --> 00:00:28.824
+Ahora pensando un poquito más
+hacia adelante si tuviera un
+
+7
+00:00:28.824 --> 00:00:32.710
+bloque escalón todo me
+resultaría más sencillo.
+
+8
+00:00:32.710 --> 00:00:38.711
+Así el programa en seudocódigo podría ser:
+preguntar cantidad de escalones, repetir
+
+9
+00:00:38.711 --> 00:00:45.310
+cantidad de escalones, dibujar un escalón,
+¿Cómo sería el dibujar un escalón?
+
+10
+00:00:45.310 --> 00:00:51.268
+Su seudocódigo podría ser: bajar el lápiz,
+mirar hacia arriba,
+
+11
+00:00:51.268 --> 00:00:58.134
+mover 30 pasos, mirar hacia la derecha,
+mover 30 pasos y subir el lápiz.
+
+12
+00:00:58.134 --> 00:01:00.665
+Observa el proceso.
+
+13
+00:01:00.665 --> 00:01:03.953
+Pensamos primero a nivel más
+general, sin entrar detalle de
+
+14
+00:01:03.953 --> 00:01:07.481
+qué es el bloque dibujar
+escalón y luego lo analizamos.
+
+15
+00:01:07.481 --> 00:01:10.320
+Fuimos de lo más general a lo particular.
+
+16
+00:01:10.320 --> 00:01:13.470
+Esta es buena estrategia
+de diseño de software:
+
+17
+00:01:13.470 --> 00:01:19.323
+ocuparme primero de las cosas más amplias
+o generales y después de los detalles.
+
+18
+00:01:19.323 --> 00:01:20.949
+Vamos ahora a programar.
+
+19
+00:01:20.949 --> 00:01:23.339
+Creamos un nuevo proyecto,
+
+20
+00:01:24.339 --> 00:01:28.729
+definimos el bloque escalón pero no
+lo vamos a detallar más todavía.
+
+21
+00:01:28.729 --> 00:01:32.348
+Primero haremos el algoritmo de mayor
+nivel para dibujar la escalera y
+
+22
+00:01:32.348 --> 00:01:34.500
+luego volveremos a este procedimiento.
+
+23
+00:01:34.500 --> 00:01:39.309
+Según nuestro seudocódigo,
+ponemos la bandera verde y
+
+24
+00:01:39.309 --> 00:01:42.452
+preguntamos cuántos escalones quiere.
+
+25
+00:01:42.452 --> 00:01:46.760
+Y luego usando el bloque repetir respuesta
+veces usamos el bloque escalón.
+
+26
+00:02:11.145 --> 00:02:16.424
+El programa del bloque escalón sería tal
+cual lo escribimos en el seudocódigo:
+
+27
+00:02:16.424 --> 00:02:25.570
+bajar el lápiz, mirar hacia arriba,
+mover 30 pasos,
+
+28
+00:02:25.570 --> 00:02:32.307
+mirar hacia la derecha, mover
+
+29
+00:02:32.307 --> 00:02:38.940
+30 pasos y subir el lápiz.
+
+30
+00:02:39.940 --> 00:02:41.720
+Probemos.
+
+31
+00:02:41.720 --> 00:02:46.060
+Le vamos a indicar tres escalones.
+
+32
+00:02:46.060 --> 00:02:49.680
+Muy bien,
+volvemos a ejecutar y le indicamos dos.
+
+33
+00:02:51.680 --> 00:02:52.850
+Ups.
+
+34
+00:02:52.850 --> 00:02:56.069
+Continuó la escalera previa,
+que no es lo que queríamos.
+
+35
+00:02:56.069 --> 00:02:59.830
+En pantalla se está viendo como una
+escalera de cinco y no una de dos.
+
+36
+00:02:59.830 --> 00:03:02.470
+Debemos revisar el programa
+para ajustar este error.
+
+37
+00:03:02.470 --> 00:03:03.970
+Vamos a depurar el programa.
+
+38
+00:03:03.970 --> 00:03:06.029
+¿Qué es lo que estaría faltando?
+
+39
+00:03:06.029 --> 00:03:08.520
+Que al comienzo del programa borre todo.
+
+40
+00:03:08.520 --> 00:03:14.440
+Lo agrego y vuelvo a probar.
+
+41
+00:03:14.440 --> 00:03:17.909
+Ups.
+Ahora sigue dibujando pero arriba a la
+
+42
+00:03:17.909 --> 00:03:20.360
+derecha y se va de la pantalla.
+
+43
+00:03:20.360 --> 00:03:24.209
+Falta agregar que se
+reposicione en pantalla.
+
+44
+00:03:24.209 --> 00:03:27.908
+Agregamos un bloque ir a -100,
+-100,
+
+45
+00:03:27.908 --> 00:03:31.110
+elegimos esas coordenadas
+como inicio de la escalera.
+
+46
+00:03:31.110 --> 00:03:36.202
+También le podemos poner que
+muestre el gato al comienzo y
+
+47
+00:03:36.202 --> 00:03:39.833
+lo oculte al final, para ver el
+efecto de qué va dibujando.
+
+48
+00:03:39.833 --> 00:03:43.660
+Así podemos agregar el bloque mostrar
+al comienzo y esconder al final.
+
+49
+00:03:45.660 --> 00:03:46.600
+Lo probamos.
+
+50
+00:03:50.600 --> 00:03:52.400
+Perfecto.
+
+51
+00:03:52.400 --> 00:03:57.519
+>> Inés,
+¿Qué pasaría si el usuario responde una
+
+52
+00:03:57.519 --> 00:03:59.412
+cantidad muy grande de escalones?
+
+53
+00:03:59.412 --> 00:04:01.241
+>> Es una muy buena pregunta, Cody.
+
+54
+00:04:01.241 --> 00:04:02.260
+Vamos a probarlo.
+
+55
+00:04:06.260 --> 00:04:09.660
+Como ves, el dibujo no entra en la
+pantalla, no se ve toda la escalera.
+
+56
+00:04:09.660 --> 00:04:14.165
+>> Ups, ¿y qué podemos hacer
+para evitar ese problema?
+
+57
+00:04:14.165 --> 00:04:18.747
+>> Podemos verificar que el valor que
+ingresa el usuario no supere el máximo y
+
+58
+00:04:18.747 --> 00:04:20.923
+si lo supera, volver a pedírselo.
+
+59
+00:04:20.923 --> 00:04:24.120
+¿Puedes calcular cuántos
+escalones cabrían?
+
+60
+00:04:24.120 --> 00:04:26.604
+>> Lo voy a pensar.
+
+61
+00:04:26.604 --> 00:04:28.205
+>> Muy bien.
+
+62
+00:04:28.205 --> 00:04:33.143
+Le dejamos este desafío de calcular
+la cantidad máxima de escalones.
+
+63
+00:04:33.143 --> 00:04:35.718
+Agrega la verificación.
+
+64
+00:04:35.718 --> 00:04:37.380
+Cody ya está trabajando en ello.

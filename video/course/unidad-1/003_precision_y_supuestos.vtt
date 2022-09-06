@@ -1,0 +1,276 @@
+WEBVTT
+
+1
+00:00:02.530 --> 00:00:09.310
+Vamos a ver otros casos de algoritmos,
+por ejemplo cruzar una calle,
+
+2
+00:00:09.310 --> 00:00:16.350
+cocinar una torta, ponerse una camisa,
+sumar dos números de tres dígitos cada uno
+
+3
+00:00:16.350 --> 00:00:21.420
+o hasta explicarle a un extraterrestre
+como cepillar sus dientes.
+
+4
+00:00:21.420 --> 00:00:25.808
+En cada caso es importante pensar
+pensar en las suposiciones que hacemos.
+
+5
+00:00:25.808 --> 00:00:30.290
+Por ejemplo, ¿qué damos por
+supuesto respecto al tránsito
+
+6
+00:00:30.290 --> 00:00:32.720
+a la hora de diseñar un
+algoritmo para cruzar la calle?
+
+7
+00:00:32.720 --> 00:00:38.300
+Los vehículos circulan por la
+derecha como en Uruguay o en España
+
+8
+00:00:38.300 --> 00:00:39.700
+o en la derecha como en Escocia.
+
+9
+00:00:40.880 --> 00:00:44.010
+Debemos tener en cuenta de
+donde vienen los vehículos
+
+10
+00:00:44.010 --> 00:00:45.310
+para mirar al lado que corresponda.
+
+11
+00:00:46.400 --> 00:00:48.430
+Pero, volvamos al ejemplo más difícil,
+
+12
+00:00:48.430 --> 00:00:53.420
+¿qué podemos suponer cuando se
+le enseñe a un extraterrestre
+
+13
+00:00:53.420 --> 00:00:57.870
+como cepillarse los dientes,
+sabe lo que es un cepillo de dientes?
+
+14
+00:00:57.870 --> 00:00:58.370
+Cody.
+
+15
+00:00:59.830 --> 00:01:03.590
+Le presentamos a Cody que va a estar
+participando en este curso también.
+
+16
+00:01:04.650 --> 00:01:08.570
+Cody no es de este planeta por
+lo que nuestro primer desafío
+
+17
+00:01:08.570 --> 00:01:10.650
+será enseñarles como
+cepillarse los dientes.
+
+18
+00:01:11.890 --> 00:01:16.510
+Por eso te invitamos a que escribas las
+instrucciones como vimos en los ejemplos
+
+19
+00:01:16.510 --> 00:01:19.370
+anteriores y la subas
+al foro de discusión.
+
+20
+00:01:20.430 --> 00:01:21.370
+Hasta luego Cody.
+
+21
+00:01:21.370 --> 00:01:27.510
+Después de analizar el problema y
+hacer cualquier hipótesis o suposición
+
+22
+00:01:27.510 --> 00:01:31.940
+necesaria, podemos seguir adelante y
+describir como hacer estas tareas.
+
+23
+00:01:33.450 --> 00:01:37.550
+Es fundamental detallar
+claramente las instrucciones,
+
+24
+00:01:37.550 --> 00:01:41.410
+pueden haber pasos que significan algo
+distinto para diferentes personas,
+
+25
+00:01:42.660 --> 00:01:47.630
+por ejemplo si una persona está horneando
+una torta y la instrucción fuera poner en
+
+26
+00:01:47.630 --> 00:01:52.030
+el horno por un corto tiempo, la persona
+no sabrá cuanto es un corto tiempo.
+
+27
+00:01:53.130 --> 00:01:55.850
+Vamos a hacer un experimento que muestra
+
+28
+00:01:55.850 --> 00:02:00.500
+claramente la importancia de que las
+instrucciones deben ser precisas.
+
+29
+00:02:00.500 --> 00:02:03.420
+Te invitamos a que tomes
+un lápiz y una hoja
+
+30
+00:02:03.420 --> 00:02:07.214
+y sigas las instrucciones de la
+siguiente imagen para dibujar un objeto.
+
+31
+00:02:07.214 --> 00:02:07.720
+Dibuja un segmento de recta horizontal.
+
+32
+00:02:07.720 --> 00:02:16.710
+Dibuja un segmento de recta vertical
+que corte al otro segmento.
+
+33
+00:02:16.710 --> 00:02:20.170
+Une los extremos de los
+segmentos con líneas rectas.
+
+34
+00:02:20.170 --> 00:02:22.530
+En uno de los extremos
+dibuja una línea curva.
+
+35
+00:02:22.530 --> 00:02:25.040
+¿Qué te resultó?
+
+36
+00:02:25.040 --> 00:02:29.630
+El objeto original que estábamos
+tratando de describir era una cometa.
+
+37
+00:02:29.630 --> 00:02:31.580
+¿Te quedó algo parecido?
+
+38
+00:02:33.110 --> 00:02:35.540
+El algoritmo que se presentó
+es bastante ambiguo,
+
+39
+00:02:35.540 --> 00:02:38.750
+así que hay muchas
+maneras de interpretarlo.
+
+40
+00:02:38.750 --> 00:02:42.560
+De hecho uno esperaría ver
+una gran variedad de dibujos
+
+41
+00:02:42.560 --> 00:02:45.890
+y la mayoría de ellos probablemente ni
+se parezcan a una cometa en lo absoluto.
+
+42
+00:02:45.890 --> 00:02:50.470
+¿Puedes escribir un algoritmo más
+claro para dibujar una cometa?
+
+43
+00:02:51.800 --> 00:02:54.640
+Inténtalo y pruébalo con tus
+amigos a ver si funciona.
+
+44
+00:02:56.480 --> 00:03:01.060
+También pueden desarrollar un algoritmo
+para dibujar algún otro objeto.
+
+45
+00:03:01.060 --> 00:03:05.650
+Puedes subirlo al foro y tus compañeros
+de clase pueden adivinar de qué se trata.
+
+46
+00:03:05.650 --> 00:03:09.460
+Como nos mostró este experimento
+ser preciso es muy importante
+
+47
+00:03:09.460 --> 00:03:13.740
+a la hora de dar instrucciones a un ser
+humano y más aún si es a una computadora.
+
+48
+00:03:14.980 --> 00:03:17.460
+Estas solamente siguen instrucciones
+
+49
+00:03:17.460 --> 00:03:20.820
+y si no son claras probablemente
+no funcionen como deben.
+
+50
+00:03:22.400 --> 00:03:27.640
+Si lo pensamos bien, las computadoras no
+son realmente tan inteligentes a pesar de
+
+51
+00:03:27.640 --> 00:03:33.620
+que son muy buenas en algunas tareas como
+hacer cálculos enormes o jugar al ajedrez,
+
+52
+00:03:33.620 --> 00:03:37.350
+en otras se destacan los humanos
+por ejemplo cuidando un niño,
+
+53
+00:03:37.350 --> 00:03:41.880
+reconociendo objetos en imágenes,
+o teniendo una conversación significativa,
+
+54
+00:03:41.880 --> 00:03:44.870
+tareas que no son fáciles
+para una computadora.
+
+55
+00:03:44.870 --> 00:03:49.630
+Muy bien, ahora que hemos aprendido qué es
+un algoritmo y que vimos varios ejemplos
+
+56
+00:03:49.630 --> 00:03:54.210
+de la vida real, es momento de empezar
+a implementar algoritmos en scratch.
+
+57
+00:03:54.210 --> 00:03:56.820
+Esto es lo que haremos
+exactamente en el próximo video.

@@ -1,0 +1,155 @@
+WEBVTT
+
+1
+00:00:04.530 --> 00:00:07.470
+¿Cómo repetimos partes de un programa?
+
+2
+00:00:07.470 --> 00:00:12.445
+Miremos en detalle la estructura de
+control iteración que representa el
+
+3
+00:00:12.445 --> 00:00:15.100
+proceso de repetir partes de un programa.
+
+4
+00:00:15.100 --> 00:00:20.128
+En la unidad pasada usamos el
+bloque de Scratch "por siempre" que
+
+5
+00:00:20.128 --> 00:00:24.102
+nos permite repetir una parte
+del programa por siempre,
+
+6
+00:00:24.102 --> 00:00:28.770
+sin parar, cuando queremos programar
+ciclos infinitos que nunca terminan.
+
+7
+00:00:28.770 --> 00:00:32.290
+Pero, ¿y si no queremos
+que sean por siempre?
+
+8
+00:00:32.290 --> 00:00:38.981
+Además de estos ciclos o repeticiones
+infinitas hay dos tipos de iteración más:
+
+9
+00:00:38.981 --> 00:00:43.982
+las controladas por una cantidad y
+las controladas por una condición.
+
+10
+00:00:43.982 --> 00:00:48.953
+Las iteraciones controladas por una
+cantidad nos permiten repetir una
+
+11
+00:00:48.953 --> 00:00:52.690
+parte del programa una
+cantidad específica de veces.
+
+12
+00:00:52.690 --> 00:00:56.770
+Hay muchos ejemplos de la
+vida real donde las usamos.
+
+13
+00:00:56.770 --> 00:01:02.340
+Por ejemplo, si le decimos a Cody que
+prepare cinco sándwiches idénticos,
+
+14
+00:01:02.340 --> 00:01:05.315
+repetiríamos cinco veces
+el proceso que vimos en
+
+15
+00:01:05.315 --> 00:01:08.080
+la unidad pasada para
+preparar un sándwich.
+
+16
+00:01:08.080 --> 00:01:12.828
+Podemos modificar nuestro algoritmo
+para preparar un sándwich y
+
+17
+00:01:12.828 --> 00:01:16.180
+repetir el proceso entero cinco veces.
+
+18
+00:01:16.180 --> 00:01:20.992
+Para ello utilizamos la palabra
+repetir y le indicamos la cantidad de
+
+19
+00:01:20.992 --> 00:01:24.570
+veces que queremos que se repita,
+como se muestra en el seudocódigo.
+
+20
+00:01:24.570 --> 00:01:28.975
+Podríamos también describir
+el proceso sin usar la
+
+21
+00:01:28.975 --> 00:01:33.842
+estructura repetir, escribiendo
+las instrucciones cinco veces.
+
+22
+00:01:33.842 --> 00:01:36.490
+Pero, ¿y si se repitiera 10 veces?
+
+23
+00:01:36.490 --> 00:01:41.200
+Como puedes ver esta no es una manera
+eficiente de escribir programas.
+
+24
+00:01:41.200 --> 00:01:43.004
+y ¡hasta sería aburrida!.
+
+25
+00:01:43.004 --> 00:01:47.601
+El uso del bloque repetir nos
+permite escribir programas más
+
+26
+00:01:47.601 --> 00:01:50.429
+concisos, que podemos revisar fácilmente.
+
+27
+00:01:50.429 --> 00:01:54.850
+También, si queremos pedirle que sean
+tres sándwiches en vez de cinco,
+
+28
+00:01:54.850 --> 00:01:59.380
+simplemente tenemos que cambiar
+el cinco por un tres y listo.
+
+29
+00:01:59.380 --> 00:02:02.051
+En Scratch tenemos el
+bloque repetir que se
+
+30
+00:02:02.051 --> 00:02:05.620
+usa para estas repeticiones
+controladas por cantidad.
+
+31
+00:02:05.620 --> 00:02:10.491
+Antes de crear programas usando
+estos bloques, en el próximo video
+
+32
+00:02:10.491 --> 00:02:14.140
+veremos las repeticiones
+controladas por condición.

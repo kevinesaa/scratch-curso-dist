@@ -1,0 +1,209 @@
+WEBVTT
+
+1
+00:00:04.475 --> 00:00:08.950
+Como vimos en el sitio de Scratch, hay
+muchos ejemplos de juegos y animaciones.
+
+2
+00:00:08.950 --> 00:00:12.312
+Vamos a analizar uno de
+ellos y lo modificaremos,
+
+3
+00:00:12.312 --> 00:00:14.480
+el link te aparece en pantalla.
+
+4
+00:00:14.480 --> 00:00:18.612
+Si estás trabajando fuera de línea lo
+puedes bajar del área de recursos de
+
+5
+00:00:18.612 --> 00:00:19.570
+nuestro sitio.
+
+6
+00:00:19.570 --> 00:00:23.980
+Tenemos esta imagen,
+presionamos en ver dentro.
+
+7
+00:00:23.980 --> 00:00:27.990
+Miremos el código.
+
+8
+00:00:27.990 --> 00:00:31.475
+No te preocupes si no entiendes
+todo el código en este momento.
+
+9
+00:00:31.475 --> 00:00:33.330
+Ejecútalo con la bandera verde.
+
+10
+00:00:33.330 --> 00:00:40.187
+Aparece una animación
+de baile con sonidos.
+
+11
+00:00:40.187 --> 00:00:43.553
+Si quieres detener la animación
+presionamos el botón rojo que está al
+
+12
+00:00:43.553 --> 00:00:44.840
+lado de la bandera verde.
+
+13
+00:00:44.840 --> 00:00:48.620
+En este programa tenemos
+dos objetos o sprites.
+
+14
+00:00:48.620 --> 00:00:53.445
+En los anteriores que vimos
+teníamos uno solo, el gato.
+
+15
+00:00:53.445 --> 00:00:58.270
+Se pueden tener varios objetos, cada uno
+con su propio comportamiento y apariencia.
+
+16
+00:00:58.270 --> 00:01:01.886
+Y si presionas en cada uno de ellos,
+puedes ver su propio programa.
+
+17
+00:01:01.886 --> 00:01:04.340
+Cada objeto puede tener varios disfraces.
+
+18
+00:01:04.340 --> 00:01:10.190
+Presiona la orejita de
+disfraces para verlos.
+
+19
+00:01:10.190 --> 00:01:16.040
+Como desafío haremos que el
+dinosaurio se mueva más rápido.
+
+20
+00:01:16.040 --> 00:01:18.990
+Investiga y trata de ver cómo lograrlo.
+
+21
+00:01:18.990 --> 00:01:20.650
+¿Quieres una pista?
+
+22
+00:01:20.650 --> 00:01:23.444
+Trata de cambiar el tiempo
+desde el bloque deslizar.
+
+23
+00:01:23.444 --> 00:01:24.380
+Vamos a hacerlo.
+
+24
+00:01:24.380 --> 00:01:31.130
+Ponemos un tiempo menor.
+
+25
+00:01:37.880 --> 00:01:41.160
+Bien, también queremos que la
+chica se mueva cuando baila.
+
+26
+00:01:41.160 --> 00:01:44.990
+Prueba agregar el bloque
+mover y lo vamos a ejecutar.
+
+27
+00:01:59.000 --> 00:02:00.347
+¿Qué pasó?
+
+28
+00:02:00.347 --> 00:02:05.010
+Cuando llega al borde no
+vemos más a la chica.
+
+29
+00:02:05.010 --> 00:02:09.760
+Agreguemos el bloque "rebotar si está
+tocando el borde" y probamos nuevamente.
+
+30
+00:02:14.615 --> 00:02:16.520
+Opssss.
+Ahora se da vuelta.
+
+31
+00:02:16.520 --> 00:02:19.470
+Recuerda cambiarle el sentido de giro.
+
+32
+00:02:19.470 --> 00:02:25.860
+Probamos.
+
+33
+00:02:29.930 --> 00:02:34.000
+No te olvides que puedes guardar el
+programa modificado en tu computadora.
+
+34
+00:02:34.000 --> 00:02:38.030
+Quizás ni hayas notado que no tenemos que
+entender todo el código para modificarlo.
+
+35
+00:02:38.030 --> 00:02:42.732
+De hecho, ni siquiera hemos mirado el
+código para el escenario y sin embargo
+
+36
+00:02:42.732 --> 00:02:46.900
+hemos sido capaces de modificar con éxito
+el comportamiento de los dos sprites.
+
+37
+00:02:46.900 --> 00:02:50.502
+Ahora analizaremos cómo
+cambia el escenario cuando el
+
+38
+00:02:50.502 --> 00:02:52.270
+programa está corriendo.
+
+39
+00:02:52.270 --> 00:02:56.445
+Presiona sobre escenario.
+
+40
+00:02:56.445 --> 00:03:00.620
+Si presionamos sobre la orejita de
+fondo vemos los fondos que usa.
+
+41
+00:03:00.620 --> 00:03:05.290
+Si presiona sobre la orejita de
+programas tenemos el código.
+
+42
+00:03:05.290 --> 00:03:09.553
+Mirándolo en detalle, vemos que cada
+medio segundo cambia el fondo y
+
+43
+00:03:09.553 --> 00:03:13.615
+también por siempre toca una canción.
+
+44
+00:03:13.615 --> 00:03:19.156
+En este video analizamos una animación
+que seleccionamos del sitio de Scratch.
+
+45
+00:03:19.156 --> 00:03:21.130
+En el próximo crearemos una nosotros.

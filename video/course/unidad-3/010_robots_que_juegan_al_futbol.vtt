@@ -1,0 +1,634 @@
+WEBVTT
+
+1
+00:00:06.280 --> 00:00:08.904
+Siempre me interesaron
+las matemáticas y
+
+2
+00:00:08.904 --> 00:00:12.560
+y las aplicaciones de las matemáticas
+en la física, química, etc.
+
+3
+00:00:12.560 --> 00:00:17.716
+Como alumno escolar nunca había
+programado nada hasta el final
+
+4
+00:00:17.716 --> 00:00:22.571
+del liceo, pero eso era muy normal
+en aquellos días, ya que las computadoras
+
+5
+00:00:22.571 --> 00:00:27.686
+apenas estaban apareciendo a
+fines de los años '80 y los '90
+
+6
+00:00:27.686 --> 00:00:33.702
+Entonces, mi primera aproximación
+fue al estudio de Basic y me enganché.
+
+7
+00:00:33.702 --> 00:00:38.583
+Luego aprendí C, aprendí varios
+tipos de sistemas operativos
+
+8
+00:00:38.583 --> 00:00:44.091
+lo que me fascinaba era poder codificar
+todo lo que quería hacer en un
+
+9
+00:00:44.091 --> 00:00:48.760
+lindo lenguaje lógico, escribirlo, y verlo
+ocurrir. Podía ver cosas moverse
+
+10
+00:00:48.760 --> 00:00:53.090
+en la pantalla, porque yo había
+dicho que debía ocurrir de esa manera.
+
+11
+00:00:53.090 --> 00:00:58.000
+Y luego en algún punto en la universidad
+me enseñaron cómo programar un
+
+12
+00:00:58.000 --> 00:01:02.853
+microprocesador y motores hápticos conectados
+y eso fue lo que realmente me enganchó
+
+13
+00:01:02.853 --> 00:01:06.566
+y fue de muchas formas mi introducción
+a la robótica, porque era la primera vez
+
+14
+00:01:06.566 --> 00:01:09.473
+que escribía programas que hacían
+moverse cosas en el mundo físico
+
+15
+00:01:09.473 --> 00:01:14.510
+y desde entonces siempre he estado
+haciendo cosas como esa.
+
+16
+00:01:14.510 --> 00:01:19.538
+La robótica es un área interesante
+porque es muy difícil determinar
+
+17
+00:01:19.538 --> 00:01:22.510
+qué es y qué no es un robot.
+
+18
+00:01:22.510 --> 00:01:25.873
+A cierto nivel se puede decir que,
+algo que tenga sensores y
+
+19
+00:01:25.873 --> 00:01:29.077
+actuadores y que tenga un programa
+de ciclo cerrado, es un robot, pero
+
+20
+00:01:29.077 --> 00:01:32.963
+pienso que la mayoría de las personas
+tienen algo más específico en mente
+
+21
+00:01:32.963 --> 00:01:37.186
+la mayoría se imagina robots humanoides
+que se ven como uno y tienen brazos y piernas,
+
+22
+00:01:37.186 --> 00:01:40.958
+como mínimo piensan en máquinas
+que pueden moverse por el mundo
+
+23
+00:01:40.958 --> 00:01:44.030
+y hacer cosas, algo así como
+los insectos o los animales.
+
+24
+00:01:44.030 --> 00:01:48.739
+Pienso que es una definición
+razonable de lo que es un robot.
+
+25
+00:01:48.739 --> 00:01:52.760
+Este campo ha tenido un crecimiento
+de manera espectacular, especialmente
+
+26
+00:01:52.760 --> 00:01:56.911
+en los últimos 10 años, pero también si
+pensamos en las décadas pasadas, 
+
+27
+00:01:56.911 --> 00:02:00.953
+una de las razones es que los sensores
+se han vuelto ubicuos, todo tiene un sensor,
+
+28
+00:02:00.953 --> 00:02:05.472
+su teléfono tiene un sensor, su TV tiene
+un sensor, su auto tiene un sensor.
+
+29
+00:02:05.472 --> 00:02:10.129
+Y cada vez más encontramos actuadores
+que son cosas que pueden mover algo
+
+30
+00:02:10.129 --> 00:02:14.160
+en el mundo físico, también se
+están volviendo ubicuos.
+
+31
+00:02:14.160 --> 00:02:18.188
+Así que si puedes escribir el tipo
+correcto de programas y
+
+32
+00:02:18.188 --> 00:02:22.911
+si puedes juntar todas estas cosas
+de pronto tienes la oportunidad de hacer
+
+33
+00:02:22.911 --> 00:02:25.216
+que cualquier cosa ocurra
+en el mundo físico.
+
+34
+00:02:25.216 --> 00:02:27.481
+y en el entendido de que eso
+se puede lograr,
+
+35
+00:02:27.481 --> 00:02:32.700
+la robótica de ha vuelto parte
+de cómo funciona el mundo.
+
+36
+00:02:32.700 --> 00:02:36.358
+Y eso me gusta, 
+me gusta el hecho de hayan
+
+37
+00:02:36.358 --> 00:02:41.337
+tantos tipos de sistemas diferentes
+por ahí y que los tipos de programas
+
+38
+00:02:41.337 --> 00:02:45.891
+que estamos creando, el día que puedan
+aprender y actuar en forma autónoma
+
+39
+00:02:45.891 --> 00:02:50.250
+van a cambiar el ecosistema entero y
+tornar inteligente el mundo en que vivimos .
+
+40
+00:02:50.250 --> 00:02:55.491
+Los robots pueden hacer
+muchas cosas diferentes,
+
+41
+00:02:55.491 --> 00:03:01.971
+y una de las más divertidas que he
+hecho que un robot haga, es jugar fútbol.
+
+42
+00:03:01.971 --> 00:03:03.157
+¿Por qué lo hacemos?
+
+43
+00:03:03.157 --> 00:03:08.355
+Porque es interesante y un gran
+desafío para la inteligencia artificial.
+
+44
+00:03:08.355 --> 00:03:13.024
+Una de las metas de este campo es 
+entender las diferentes cosas
+
+45
+00:03:13.024 --> 00:03:16.360
+que la gente hace y la forma en
+que operan en el mundo cotidiano.
+
+46
+00:03:16.360 --> 00:03:20.385
+Esto incluye razonar y el tipo de cosas
+que están programando ahora
+
+47
+00:03:20.385 --> 00:03:26.540
+pero también incluye la conexión
+entre el sentir físico y el actuar físico.
+
+48
+00:03:26.540 --> 00:03:30.226
+Había un desafío,
+hace algunas décadas,
+
+49
+00:03:30.226 --> 00:03:34.585
+de hacer un programa de computadora
+que venciera al campeón de ajedrez,
+
+50
+00:03:34.585 --> 00:03:38.340
+y fue tomado muy en serio por los científicos
+de la computación y por el público en general
+
+51
+00:03:38.340 --> 00:03:42.200
+a quienes les fascina la idea de que una
+máquina pueda pensar de esa manera.
+
+52
+00:03:42.200 --> 00:03:45.585
+Pero en ese entonces las máquinas
+solamente pensaban dentro de una caja. 
+
+53
+00:03:45.585 --> 00:03:47.721
+El siguiente desafío,
+en especial para la gente
+
+54
+00:03:47.721 --> 00:03:51.770
+interesada en la robótica, es: ¿puedes hacer
+que una computadora piense fuera de la caja?
+
+55
+00:03:51.770 --> 00:03:54.140
+¿puedes hacerlas pensar
+en el mundo físico?
+
+56
+00:03:54.140 --> 00:03:58.432
+Y buscando lo que sería un 
+buen desafío, dijeron
+
+57
+00:03:58.432 --> 00:04:02.479
+¡hagamos que jueguen fútbol! y
+el desafío actual para la comunidad
+
+58
+00:04:02.479 --> 00:04:07.550
+de investigadores que participan de este
+proyecto llamado Robocop, es hacer
+
+59
+00:04:07.550 --> 00:04:12.918
+un equipo de robots humanoides que
+compitan contra los campeones mundiales FIFA
+
+60
+00:04:12.918 --> 00:04:17.536
+y que puedan vencerlos para el año 2050. 
+Aún estamos algunas décadas lejos,
+
+61
+00:04:17.536 --> 00:04:21.671
+pero cada año, en algún lugar, estos
+investigadores se reúnen en
+
+62
+00:04:21.671 --> 00:04:24.559
+competiciones internacionales, y llevan
+equipos de robots jugadores de fútbol.
+
+63
+00:04:24.559 --> 00:04:26.099
+A veces se ven así.
+
+64
+00:04:26.099 --> 00:04:31.065
+Hay muchas ligas diferentes, en una 
+de ellas se ven como se ve aquí.
+
+65
+00:04:31.065 --> 00:04:35.802
+La idea es tener una competencia de
+programación, equipo contra equipo,
+
+66
+00:04:35.802 --> 00:04:40.242
+programa contra programa, donde
+desplegamos nuestros programas en robots
+
+67
+00:04:40.242 --> 00:04:43.505
+y la competencia se da exactamente
+como en un partido de fútbol, bajo
+
+68
+00:04:43.505 --> 00:04:47.002
+esas reglas, hasta con un árbitro
+que indica cuándo es una falta,
+
+69
+00:04:47.002 --> 00:04:50.391
+cuando alguien es penalizado,
+quién gana y quién pierde.
+
+70
+00:04:50.391 --> 00:04:54.652
+Pero una de las cosas más difíciles
+al hacer que robots jueguen fútbol
+
+71
+00:04:54.652 --> 00:04:58.921
+es hacerlos funcionar autónomamente
+por largos períodos.
+
+72
+00:04:58.921 --> 00:05:02.870
+Mucho de lo que se hace en robótica
+es realizar una pequeña tarea
+
+73
+00:05:02.870 --> 00:05:06.510
+que se hace repetidas veces
+y que se hace muy bien,
+
+74
+00:05:06.510 --> 00:05:08.911
+pero en el fútbol las condiciones
+cambian todo el tiempo.
+
+75
+00:05:08.911 --> 00:05:12.272
+Así, tu inicias el robot,
+patea la pelota, se mueve a algún lugar,
+
+76
+00:05:12.272 --> 00:05:15.776
+otro llega y se la lleva,
+tienen que mirar a ver si la encuentra,
+
+77
+00:05:15.776 --> 00:05:20.754
+tal vez no la encuentra, tal vez
+se caiga, u otra cosa pase y
+
+78
+00:05:20.754 --> 00:05:26.155
+el grado de incertidumbre en este
+entorno es espectacular y
+
+79
+00:05:26.155 --> 00:05:30.934
+ser capaz de programar una máquina que
+pueda manejar tal nivel de incompletitud
+
+80
+00:05:30.934 --> 00:05:33.817
+es muy difícil y desafiante.
+
+81
+00:05:33.817 --> 00:05:37.683
+Pero una vez logras ver que algo
+de esto sucede,
+
+82
+00:05:37.683 --> 00:05:41.593
+cuando vez robots jugando
+durante algunos minutos,
+
+83
+00:05:41.593 --> 00:05:45.857
+aunque sea tan solo ver un robot
+haciendo un pase a otro
+
+84
+00:05:45.857 --> 00:05:49.777
+y otro que lo intercepta y patea al arco
+es muy gratificante, porque
+
+85
+00:05:49.777 --> 00:05:53.840
+ves algo que hasta ese momento
+solo las personas podían hacer
+
+86
+00:05:53.840 --> 00:05:57.255
+y ahora ves máquinas que, por sí solas,
+sin intervención humana lo hacen.
+
+87
+00:05:57.255 --> 00:05:58.640
+Eso es mu fascinante.
+
+88
+00:05:58.640 --> 00:06:06.640
+La prueba es probablemente la parte más
+importante que debemos hacer en este entorno,
+
+89
+00:06:06.640 --> 00:06:12.601
+así, si quieres que el robot actúe en
+tantas circunstancias diferentes,
+
+90
+00:06:12.601 --> 00:06:16.683
+por ejemplo, queremos programar un robot
+en la cancha que tenemos aquí
+
+91
+00:06:16.683 --> 00:06:21.363
+y lo llevamos al otro lado del mundo hasta
+China a una cancha que nunca vimos antes
+
+92
+00:06:21.363 --> 00:06:25.878
+con luces de las que nunca hablamos,
+debería seguir funcionando bien.
+
+93
+00:06:25.878 --> 00:06:30.185
+Así que debemos probarlos bajo condiciones
+variadas, debemos pensar en las cosas
+
+94
+00:06:30.185 --> 00:06:34.849
+que pueden salir mal, simularlas,
+hacer que pasen y ver si el programa
+
+95
+00:06:34.849 --> 00:06:39.444
+aún funciona. Una de las cosas más
+difíciles de probar robots es que 
+
+96
+00:06:39.444 --> 00:06:43.411
+debemos hacer que esas condiciones 
+se den en el mundo físico, no es solamente
+
+97
+00:06:43.411 --> 00:06:47.190
+probar diferentes entradas hechas
+desde un teclado, sino que debemos
+
+98
+00:06:47.190 --> 00:06:50.700
+proba al robot por largos períodos
+para ver si algo sale mal.
+
+99
+00:06:50.700 --> 00:06:55.364
+Así que entonces nos sentamos y pensamos
+en lo que llamamos escenarios, que son
+
+100
+00:06:55.364 --> 00:06:58.700
+formas en que el robot
+podría jugar,
+
+101
+00:06:58.700 --> 00:07:03.605
+hacemos que ocurran en el mundo real
+y vemos que pasa, vemos si funcionan.
+
+102
+00:07:03.605 --> 00:07:07.363
+Si no funcionan, debemos retroceder y buscar
+que parte no funcionó como debería
+
+103
+00:07:07.363 --> 00:07:12.260
+por qué falló el programa, y eso nos lleva,
+muchas semanas o meses, porque
+
+104
+00:07:12.260 --> 00:07:16.110
+si no lo hacemos no podrá
+haber un juego.
+
+105
+00:07:16.110 --> 00:07:20.962
+Creo que la programación se está
+volviendo cada vez más importante
+
+106
+00:07:20.962 --> 00:07:25.637
+ya que todo en el mundo se está volviendo
+electrónico de una u otra manera.
+
+107
+00:07:25.637 --> 00:07:27.974
+Quiero decir, todo el mundo tiene 
+un teléfono celular inteligente,
+
+108
+00:07:27.974 --> 00:07:30.490
+todos tienen un TV que es
+inteligente de alguna forma.
+
+109
+00:07:30.490 --> 00:07:33.054
+Todo se está volviendo programable,
+
+110
+00:07:33.054 --> 00:07:36.180
+puedes hasta programar la manera
+en que se comporta tu casa.
+
+111
+00:07:36.180 --> 00:07:41.870
+Así que, si sabes programar, tienes la
+libertad para hacer que estas cosas pasen.
+
+112
+00:07:41.870 --> 00:07:44.235
+Así que pienso que todos deberían
+aprender a programar,
+
+113
+00:07:44.235 --> 00:07:47.540
+aún si eso no es parte de su trabajo,
+deberían aprender cómo funciona
+
+114
+00:07:47.540 --> 00:07:51.448
+porque si no lo haces nunca podrás
+entender cómo funciona el mundo
+
+115
+00:07:51.448 --> 00:07:53.210
+y esa es una posición desventajosa.
+
+116
+00:07:53.210 --> 00:07:55.862
+Como consejo para los demás,
+
+117
+00:07:55.862 --> 00:08:01.643
+encuentro programar mucho más divertido
+si lo haces con un objetivo en mente.
+
+118
+00:08:01.643 --> 00:08:06.397
+Si tienes Scratch y quieres hacer
+que haga alguna cosa, es
+
+119
+00:08:06.397 --> 00:08:09.736
+mucho más divertido escribir ese programa
+que simplemente sentarse a resolver
+
+120
+00:08:09.736 --> 00:08:11.710
+algunos ejercicios de algún libro.
+
+121
+00:08:11.710 --> 00:08:16.029
+Eso es otra de las cosas lindas de los
+robots, que casi todo lo que hacemos
+
+122
+00:08:16.029 --> 00:08:18.957
+con ellos comienza con la pregunta 
+¿podemos lograr que haga esto?
+
+123
+00:08:18.957 --> 00:08:21.161
+Por ejemplo,
+¿podemos hacer que recoja algo?
+
+124
+00:08:21.161 --> 00:08:22.470
+¿podemos hacer que patee la pelota?
+
+125
+00:08:22.470 --> 00:08:23.620
+¿podemos hacer que lo logre?
+
+126
+00:08:23.620 --> 00:08:27.726
+Así que, les recomiendo que, cuando
+intenten aprender a programar, piensen
+
+127
+00:08:27.726 --> 00:08:31.019
+en lo que quieren que haga vuestro
+programa y háganlo tan divertido 
+
+128
+00:08:31.019 --> 00:08:36.870
+que los inspire a sentarse durante
+largas horas de debugging
+
+129
+00:08:36.870 --> 00:08:41.059
+y prueba.

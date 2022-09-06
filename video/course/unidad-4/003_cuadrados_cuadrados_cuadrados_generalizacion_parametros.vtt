@@ -1,0 +1,487 @@
+WEBVTT
+
+1
+00:00:03.000 --> 00:00:06.120
+¿Cómo sería dibujar un cuadrado?
+
+2
+00:00:06.120 --> 00:00:09.460
+En una unidad anterior
+hablamos sobre cómo hacerlo.
+
+3
+00:00:09.460 --> 00:00:14.303
+Pero ahora, pensando en que podemos tener
+disponibles nuevos bloques, estaría muy
+
+4
+00:00:14.303 --> 00:00:17.385
+bueno tener un bloque que lo dibujara.
+
+5
+00:00:17.385 --> 00:00:21.400
+Este es parte de nuestro código para dibujar el cuadrado
+que ya vimos en otra unidad.
+
+6
+00:00:21.400 --> 00:00:25.780
+Vamos a crear un nuevo bloque en Scratch
+y lo llamaremos dibujar cuadrado.
+
+7
+00:00:32.450 --> 00:00:36.990
+Movemos el código dentro de la definición
+y para probarlo podríamos poner
+
+8
+00:00:36.990 --> 00:00:41.430
+que al presionar la barra espaciadora
+utilice el bloque dibujar cuadrado.
+
+9
+00:00:49.430 --> 00:00:51.250
+Bien, nuestro bloque dibuja un cuadrado.
+
+10
+00:00:51.250 --> 00:00:54.379
+Si lo deseamos le podríamos
+agregar un bloque borrar al
+
+11
+00:00:54.379 --> 00:00:56.660
+comienzo, antes del bloque cuadrado.
+
+12
+00:00:56.660 --> 00:01:01.112
+Este procedimiento dibuja un
+cuadrado de un lado específico,
+
+13
+00:01:01.112 --> 00:01:03.800
+esto es, cada lado tiene 100 pasos.
+
+14
+00:01:03.800 --> 00:01:08.311
+Para hacerlo más general
+podríamos ampliar el programa y
+
+15
+00:01:08.311 --> 00:01:12.690
+que preguntara qué tamaño de lado queremos
+y dibuje el cuadrado con ese lado.
+
+16
+00:01:12.690 --> 00:01:16.916
+Estaría muy bueno tener un
+bloque dibujar cuadrado lado y
+
+17
+00:01:16.916 --> 00:01:19.508
+pasarle como dato o parámetro el valor.
+
+18
+00:01:19.508 --> 00:01:25.280
+Observemos lo siguiente: en Scratch hay
+diferentes tipos de bloques, por ejemplo
+
+19
+00:01:25.280 --> 00:01:30.970
+en el bloque mover x pasos se debe indicar
+la cantidad de pasos que se desea mover.
+
+20
+00:01:30.970 --> 00:01:34.420
+Este dato a incluir se llama parámetro.
+
+21
+00:01:34.420 --> 00:01:39.873
+Un parámetro es un valor que se le pasa
+al procedimiento y sirve para cambiar
+
+22
+00:01:39.873 --> 00:01:45.330
+una instrucción general como mover x
+pasos en algo concreto: mover 25 pasos.
+
+23
+00:01:45.330 --> 00:01:51.040
+Así, los bloques, incluidos los que nosotros
+definimos, pueden recibir parámetros.
+
+24
+00:01:51.040 --> 00:01:56.565
+Por ejemplo, en el caso que estamos
+analizando, como vimos, se podría
+
+25
+00:01:56.565 --> 00:02:01.040
+crear un bloque para dibujar el cuadrado
+que reciba como dato el tamaño del lado.
+
+26
+00:02:03.040 --> 00:02:06.600
+Agreguemos entonces el nuevo bloque
+
+27
+00:02:06.600 --> 00:02:11.330
+y elige dentro de opciones
+añadir entrada numérica.
+
+28
+00:02:11.330 --> 00:02:16.150
+Al añadir la entrada cambia
+el nombre que ofrece por lado.
+
+29
+00:02:18.150 --> 00:02:21.740
+Aplicamos otra vez aquí la recomendación
+
+30
+00:02:21.740 --> 00:02:25.490
+de poner nombres a las variables que
+nos ayuden a recordar su contenido.
+
+31
+00:02:25.490 --> 00:02:29.179
+Completamos ahora el código que es
+casi el mismo de dibujar un cuadrado.
+
+32
+00:02:29.179 --> 00:02:33.060
+La única diferencia es que nos moveremos
+una cantidad de pasos igual a lado.
+
+33
+00:02:38.060 --> 00:02:40.780
+Podemos ver que este
+procedimiento para dibujar
+
+34
+00:02:40.780 --> 00:02:44.960
+un cuadrado es una versión generalizada
+del procedimiento anterior para dibujarlo.
+
+35
+00:02:44.960 --> 00:02:48.298
+Si lo deseas puedes agregarle
+también algún efecto de color y
+
+36
+00:02:48.298 --> 00:02:51.120
+grosor de lápiz para que
+el dibujo quede más lindo.
+
+37
+00:02:51.120 --> 00:02:55.034
+Algo muy importante que debemos tener
+presente cuando programamos es que en
+
+38
+00:02:55.034 --> 00:02:57.430
+general hay varias formas
+de hacer las cosas.
+
+39
+00:02:57.430 --> 00:03:01.485
+La mayoría de las veces
+no hay una única posible.
+
+40
+00:03:01.485 --> 00:03:04.491
+Podrías haber programado correctamente
+este bloque de otra manera y
+
+41
+00:03:04.491 --> 00:03:05.540
+sería válido también.
+
+42
+00:03:05.540 --> 00:03:09.785
+Para probar el bloque podemos hacer un
+programa que dibuje varios cuadrados, por
+
+43
+00:03:09.785 --> 00:03:15.250
+ejemplo tres y todos tendrán el extremo
+superior izquierdo en la misma posición.
+
+44
+00:03:21.505 --> 00:03:23.760
+Agregamos un bloque borrar primero.
+
+45
+00:03:25.760 --> 00:03:28.908
+El programa irá preguntando
+al usuario en cada caso
+
+46
+00:03:28.908 --> 00:03:34.310
+qué lado quiere y su respuesta será el
+lado que le pasemos al bloque dibujar.
+
+47
+00:03:51.240 --> 00:03:53.300
+Vamos a probarlo.
+
+48
+00:04:00.590 --> 00:04:02.103
+¿Cómo es que funciona?
+
+49
+00:04:02.103 --> 00:04:03.833
+Si cuando pregunta el lado,
+
+50
+00:04:03.833 --> 00:04:07.880
+digitamos como respuesta 80, se
+dibuja un cuadrado de lado 80.
+
+51
+00:04:07.880 --> 00:04:11.456
+En forma similar, si digitamos
+100, el lado a dibujar es 100.
+
+52
+00:04:11.456 --> 00:04:13.350
+Lo mismo para el tercer cuadrado.
+
+53
+00:04:13.350 --> 00:04:18.265
+El valor que se ingresa en respuesta
+se lo pasamos como parámetro al
+
+54
+00:04:18.265 --> 00:04:20.650
+bloque dibujar cuadrado lado.
+
+55
+00:04:20.650 --> 00:04:25.518
+La variable lado que está definida
+en el propio bloque, toma su valor,
+
+56
+00:04:25.518 --> 00:04:29.340
+esto es se asigna el valor de
+la respuesta a la variable lado.
+
+57
+00:04:29.340 --> 00:04:33.900
+Dentro del bloque nuevo de
+dibujar se usa la variable lado.
+
+58
+00:04:33.900 --> 00:04:38.055
+>> Inés, cuando estaba creando
+el bloque puse un parámetro de
+
+59
+00:04:38.055 --> 00:04:42.430
+más pero no se cómo sacarlo,
+¿debo borrar todo el bloque?
+
+60
+00:04:42.430 --> 00:04:44.095
+>> No, no es necesario.
+
+61
+00:04:44.095 --> 00:04:47.016
+Arriba de cada parámetro
+te aparece una cruz que
+
+62
+00:04:47.016 --> 00:04:49.660
+si la presionas te permite
+borrar ese parámetro.
+
+63
+00:04:49.660 --> 00:04:53.730
+Esto es en el momento en que
+estás creando el bloque.
+
+64
+00:04:53.730 --> 00:04:58.490
+Si ya lo definiste puedes editarlo
+y ajustar lo que necesites.
+
+65
+00:05:11.490 --> 00:05:12.251
+>> Solucionado entonces.
+
+66
+00:05:12.251 --> 00:05:12.890
+>> Bien.
+
+67
+00:05:12.890 --> 00:05:17.757
+Otra extensión que podemos hacer
+es tener un bloque al cual se le
+
+68
+00:05:17.757 --> 00:05:22.650
+pase el tamaño del lado y las coordenadas
+x e y de donde queremos que lo ubique.
+
+69
+00:05:22.650 --> 00:05:24.048
+Vamos a hacerlo.
+
+70
+00:05:24.048 --> 00:05:28.909
+Creamos un nuevo bloque dibujar
+cuadrado lado posición que
+
+71
+00:05:28.909 --> 00:05:34.230
+tiene tres parámetros: el lado, x e y.
+
+72
+00:05:45.015 --> 00:05:47.345
+Lo primero que tiene que
+hacer es ubicarse en
+
+73
+00:05:47.345 --> 00:05:53.600
+la posición x e y dada y luego dibujar
+desde allí un cuadrado del lado indicado.
+
+74
+00:05:53.600 --> 00:05:57.640
+Pero, ya tenemos un bloque que lo hace,
+lo podemos reutilizar.
+
+75
+00:06:10.060 --> 00:06:14.276
+Para probarlo, hacemos un programa que
+dibuje tres cuadrados similar al de
+
+76
+00:06:14.276 --> 00:06:17.581
+hoy, que tengan el mismo extremo
+superior como antes pero en el
+
+77
+00:06:17.581 --> 00:06:20.828
+que podamos especificarle
+cuál será esa posición.
+
+78
+00:06:20.828 --> 00:06:23.670
+Aquí elegiremos la posición 80 80.
+
+79
+00:06:46.905 --> 00:06:49.499
+Bien. Si analizamos el proceso en
+general que hicimos en relación al
+
+80
+00:06:49.499 --> 00:06:53.444
+cuadrado, en la unidad previa
+creamos una primera versión o
+
+81
+00:06:53.444 --> 00:06:59.085
+forma del programa, la cual en esta
+unidad modificamos utilizando los bloques
+
+82
+00:06:59.085 --> 00:07:03.430
+y generalizamos para dibujar cuadrados de
+cualquier lado y en cualquier posición.
+
+83
+00:07:03.430 --> 00:07:07.316
+La generalización de soluciones
+es una práctica muy útil de la
+
+84
+00:07:07.316 --> 00:07:08.970
+ingeniería de software.
+
+85
+00:07:08.970 --> 00:07:12.207
+Involucra hacer nuestros
+programas menos específicos que
+
+86
+00:07:12.207 --> 00:07:16.670
+un caso particular y que así pueden ser
+reutilizados en diferentes situaciones.
+
+87
+00:07:16.670 --> 00:07:23.153
+Por ejemplo, si tenemos un algoritmo para
+hervir leche semidescremada, podríamos
+
+88
+00:07:23.153 --> 00:07:29.356
+generalizarlo en describir cómo hervir leche o más aún,
+cómo hervir líquidos.
+
+89
+00:07:29.356 --> 00:07:33.630
+En nuestro caso, cuando definimos el
+procedimiento dibujar cuadrado lado
+
+90
+00:07:33.630 --> 00:07:38.068
+estábamos generalizando el
+procedimiento dibujar cuadrado para
+
+91
+00:07:38.068 --> 00:07:41.451
+dibujar un cuadrado de cualquier lado.
+
+92
+00:07:41.451 --> 00:07:45.832
+Luego lo generalizamos más aún, permitiendo
+dibujar cuadrados de cualquier tamaño en
+
+93
+00:07:45.832 --> 00:07:49.950
+cualquier lugar con el procedimiento
+dibujar cuadrado lado posición.
+
+94
+00:07:49.950 --> 00:07:53.527
+Es muy recomendable seguir este
+enfoque incremental cuando
+
+95
+00:07:53.527 --> 00:07:56.830
+generalizamos soluciones
+como hicimos en este video.
+
+96
+00:07:56.830 --> 00:08:00.636
+Es una buena idea también reutilizar
+nuestro propio código así
+
+97
+00:08:00.636 --> 00:08:05.339
+como reutilizamos el procedimiento
+dibujar cuadrado lado cuando definimos el
+
+98
+00:08:05.339 --> 00:08:08.060
+procedimiento dibujar
+cuadrado lado posición.
+
+99
+00:08:08.060 --> 00:08:11.333
+¿Y qué tal si ahora generalizamos
+el procedimiento de
+
+100
+00:08:11.333 --> 00:08:15.071
+dibujar cuadrados más aún,
+por ejemplo, para dibujar figuras de
+
+101
+00:08:15.071 --> 00:08:19.190
+cualquier cantidad de lados donde
+todos los lados sean del mismo largo?
+
+102
+00:08:19.190 --> 00:08:23.150
+Te dejamos este desafío y esperamos que
+nos cuentes en el foro cómo te fue.

@@ -1,0 +1,408 @@
+WEBVTT
+
+1
+00:00:03.000 --> 00:00:06.300
+Llegamos a la última unidad.
+
+2
+00:00:06.300 --> 00:00:10.792
+Hemos aprendido muchísimas cosas y
+es hora de integrarlas ahora en un
+
+3
+00:00:10.792 --> 00:00:12.190
+proyecto completo.
+
+4
+00:00:12.190 --> 00:00:13.956
+¿Qué tal hacer otro juego?
+
+5
+00:00:13.956 --> 00:00:18.742
+Aplicaremos los pasos de la ingeniería
+de software que nos ayudarán a crear el
+
+6
+00:00:18.742 --> 00:00:20.080
+juego que queremos.
+
+7
+00:00:20.080 --> 00:00:23.827
+Cuando programemos este juego
+estaremos usando conceptos de
+
+8
+00:00:23.827 --> 00:00:28.910
+computación que hemos aprendido en el
+curso tales como secuencia, decisión e
+
+9
+00:00:28.910 --> 00:00:33.641
+iteración, variable, evento,
+procedimiento y clonación.
+
+10
+00:00:33.641 --> 00:00:38.835
+Y aún hay más, también veremos e
+integraremos nuevos conceptos como
+
+11
+00:00:38.835 --> 00:00:43.900
+concurrencia, prototipar y broadcasting
+o envío de mensajes entre objetos.
+
+12
+00:00:43.900 --> 00:00:46.514
+¡A divertirnos programando!.
+
+13
+00:00:46.514 --> 00:00:50.820
+Nuestro objetivo es diseñar y
+programar un juego completo.
+
+14
+00:00:50.820 --> 00:00:55.611
+Los personajes elegidos son los
+zombies, pero a estos personajes de
+
+15
+00:00:55.611 --> 00:00:56.453
+fantasía no les tenemos miedo.
+
+16
+00:00:56.453 --> 00:00:58.990
+Aquí estamos prontos para jugar con ellos.
+
+17
+00:00:58.990 --> 00:01:00.032
+Comenzamos.
+
+18
+00:01:01.032 --> 00:01:05.654
+Como comentamos en unidades anteriores
+el proceso de la ingeniería de
+
+19
+00:01:05.654 --> 00:01:08.650
+software requiere de establecer
+los requerimientos,
+
+20
+00:01:08.650 --> 00:01:14.166
+diseñar e implementar el programa,
+documentar y probar, entre otras etapas.
+
+21
+00:01:14.166 --> 00:01:18.511
+Este proceso se puede hacer en
+forma lineal, donde cada fase se
+
+22
+00:01:18.511 --> 00:01:21.170
+completa antes de pasar a la siguiente.
+
+23
+00:01:22.170 --> 00:01:26.256
+Esto significa, por ejemplo, completar
+todo nuestro código antes de
+
+24
+00:01:26.256 --> 00:01:29.080
+realizar las pruebas del programa.
+
+25
+00:01:30.080 --> 00:01:36.805
+Este enfoque se llama en cascada porque
+el desarrollo fluye hacia abajo de una
+
+26
+00:01:36.805 --> 00:01:42.702
+fase a la siguiente sin volver atrás, como
+sucede con el agua de una cascada real.
+
+27
+00:01:42.702 --> 00:01:47.944
+Hay más enfoques para el desarrollo
+de software que son más flexibles que
+
+28
+00:01:47.944 --> 00:01:53.690
+el modelo de cascada permitiendo revisar,
+corregir y mejorar las fases previas.
+
+29
+00:01:53.690 --> 00:02:00.888
+En este curso hemos recomendado seguir el
+enfoque incremental en el cual partimos
+
+30
+00:02:00.888 --> 00:02:05.635
+con los requerimientos y diseño de nuestro
+programa y luego implementamos una versión
+
+31
+00:02:05.635 --> 00:02:11.110
+básica del programa, la cual probamos y
+modificamos hasta que quede como deseamos.
+
+32
+00:02:11.110 --> 00:02:13.080
+O sea construimos nuestro
+programa incrementalmente.
+
+33
+00:02:13.080 --> 00:02:17.950
+Agregando más funciones y
+detalles en cada nuevo paso.
+
+34
+00:02:19.950 --> 00:02:23.935
+Durante el proceso podemos decidir revisar
+
+35
+00:02:23.935 --> 00:02:26.227
+nuestros requerimientos y
+diseño y luego seguir otra vez
+
+36
+00:02:26.227 --> 00:02:30.480
+hacia adelante con las siguientes fases
+del proceso de desarrollo del software.
+
+37
+00:02:31.480 --> 00:02:33.740
+Crearemos nuestro juego de
+zombies en forma incremental.
+
+38
+00:02:35.740 --> 00:02:37.731
+Empezaremos por los requerimientos.
+
+39
+00:02:37.731 --> 00:02:39.000
+¿Qué juego queremos hacer?
+
+40
+00:02:40.000 --> 00:02:44.920
+Conversando con amigos e inspirados en
+el conocido juego de plantas y zombies,
+
+41
+00:02:44.920 --> 00:02:49.105
+pensamos en un juego que: sea
+sencillo de jugar, sea divertido,
+
+42
+00:02:51.105 --> 00:02:55.530
+nos sorprenda, permita llevar el
+puntaje, tenga personajes simpáticos,
+
+43
+00:02:55.530 --> 00:03:01.080
+tenga diferentes niveles,
+que haya recompensas o elementos que ayuden.
+
+44
+00:03:01.080 --> 00:03:06.970
+tenga algún sonido y
+tenga claramente las instrucciones.
+
+45
+00:03:06.970 --> 00:03:10.970
+Tenemos una interesante
+lista de requerimientos.
+
+46
+00:03:10.970 --> 00:03:14.220
+Ten presente que, si en vez de zombies
+prefieres que sean robots, autos,
+
+47
+00:03:14.220 --> 00:03:17.337
+pelotas u otros personajes,
+solamente tendrás que
+
+48
+00:03:17.337 --> 00:03:21.260
+cambiar los disfraces que usemos, así que
+puedes hacer el juego que tú quieras.
+
+49
+00:03:23.260 --> 00:03:27.055
+En el juego que crearemos primero
+aparecerán las instrucciones y
+
+50
+00:03:27.055 --> 00:03:28.720
+luego se podrá jugar.
+
+51
+00:03:28.720 --> 00:03:32.162
+Podemos crear un juego en el cual
+los zombies tratan de llegar a tu
+
+52
+00:03:32.162 --> 00:03:35.677
+casa, pero los podemos alejar
+y lograr que se vayan.
+
+53
+00:03:35.677 --> 00:03:38.210
+Si llegan a tu casa, termina el juego.
+
+54
+00:03:40.210 --> 00:03:43.105
+Como elemento adicional,
+podemos poner unas flores que
+
+55
+00:03:43.105 --> 00:03:46.380
+ayudarán a detener los zombies,
+pero sólo por unos segundos,
+
+56
+00:03:46.380 --> 00:03:51.780
+se entretienen un breve tiempo y luego
+retomarán su objetivo de llegar a tu casa.
+
+57
+00:03:52.780 --> 00:03:56.139
+También, como efecto sorpresa, los zombies
+cada tanto vienen en grupos grandes,
+
+58
+00:03:56.139 --> 00:04:00.971
+como una verdadera invasión, y tendrás
+que apurarte para alejarlos a todos.
+
+59
+00:04:00.971 --> 00:04:05.439
+O sea el juego podría definirse
+de esta manera: el objetivo es,
+
+60
+00:04:05.439 --> 00:04:10.426
+moviendo el ratón, alejar la mayor
+cantidad posible de zombies,
+
+61
+00:04:10.426 --> 00:04:13.330
+sumando un punto por cada uno que alejas.
+
+62
+00:04:13.330 --> 00:04:16.690
+Si alguno llega a tu casa, pierdes.
+
+63
+00:04:16.690 --> 00:04:20.360
+Los zombies aparecen de a uno o en grupos.
+
+64
+00:04:20.360 --> 00:04:24.429
+Las flores ayudan a defender la
+casa haciendo que los zombies se
+
+65
+00:04:24.429 --> 00:04:28.130
+detengan por unos segundos
+siempre que toquen una flor.
+
+66
+00:04:29.130 --> 00:04:31.090
+Ya tenemos las principales
+características de nuestro juego.
+
+67
+00:04:32.090 --> 00:04:37.000
+Es tiempo ahora de pensar acerca
+de cómo diseñar nuestro juego.
+
+68
+00:04:37.000 --> 00:04:38.240
+Comencemos con el diseño de la interfaz.
+
+69
+00:04:40.240 --> 00:04:44.332
+En la interfaz tendremos el diseño de los
+zombies y del personaje que los alejará.
+
+70
+00:04:45.332 --> 00:04:49.230
+Podemos dibujar ese personaje como
+una escoba, así los barremos.
+
+71
+00:04:49.230 --> 00:04:53.262
+Además de los zombies y de la
+escoba, tendremos las flores que
+
+72
+00:04:53.262 --> 00:04:57.490
+podrán aparecer en diferentes
+lugares de la pantalla.
+
+73
+00:04:57.490 --> 00:05:01.610
+Bien, ya sabemos cómo debe lucir
+nuestra interfaz durante el juego.
+
+74
+00:05:01.610 --> 00:05:03.919
+Pero¸ ¿y cuando el juego termine?,
+
+75
+00:05:03.919 --> 00:05:07.100
+o ¿antes de que empiece, cuando se
+dan las instrucciones al usuario?
+
+76
+00:05:07.100 --> 00:05:09.020
+Pensemos sobre este punto.
+
+77
+00:05:09.020 --> 00:05:14.110
+Las instrucciones podrían ser dadas por
+uno de los personajes del juego sobre
+
+78
+00:05:14.110 --> 00:05:18.010
+el mismo escenario donde se juega, algo
+así como la imagen que ves en pantalla.
+
+79
+00:05:20.010 --> 00:05:23.495
+Cuando el juego termina podríamos
+tener un fondo diferente,
+
+80
+00:05:23.495 --> 00:05:27.980
+uno muy simple para informarle
+al jugador que el juego terminó.
+
+81
+00:05:28.980 --> 00:05:32.968
+Por un lado tenemos la interfaz definida
+donde se verán los personajes de la
+
+82
+00:05:32.968 --> 00:05:35.546
+escoba, del zombie y la flor.
+
+83
+00:05:35.546 --> 00:05:40.973
+Por otro lado, debemos pensar y
+programar el movimiento del zombie,
+
+84
+00:05:40.973 --> 00:05:45.810
+el control de tiempo, el puntaje,
+las flores y más cosas.
+
+85
+00:05:45.810 --> 00:05:46.777
+Vamos de a poco.
+
+86
+00:05:46.777 --> 00:05:49.690
+En el próximo video
+diseñaremos nuestro código.
