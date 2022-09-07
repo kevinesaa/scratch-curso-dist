@@ -1,4 +1,4 @@
-p, h1, h2, h3, h4, h5, h6, li, th, td {
+p, h1, h2, h3, h4, h5, h6, li, th, td, dl, dt, dd, span {
    color: white;
 }
 
@@ -13,4 +13,13 @@ a {
     padding-top: 50px;
     padding-bottom: 70px;
     box-sizing: border-box;
+    text-align:justify;
+}
+
+dd {
+    margin-left: 0;
+}
+
+dt {
+    text-align:center;
 }
