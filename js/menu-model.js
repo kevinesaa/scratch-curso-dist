@@ -19,7 +19,7 @@ const MENU = {
         path:'unidad-0',
         type:menuOptionEntryTypes.introContainer,
         items:[
-            {id:'vid-0', type:menuOptionEntryTypes.video, title:'Presentación', uri:'presentacion.mp4', captationsUri:"presentacion.vtt", notes : []},
+            {id:'vid-0', type:menuOptionEntryTypes.video, title:'Presentación', uri:'presentacion.mp4', captationsUri:"presentacion.vtt", notes : ["nota de prueba","nota de prueba","nota de prueba"]},
 
         ]
     },

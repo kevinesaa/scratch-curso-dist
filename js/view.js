@@ -35,6 +35,7 @@ const nextVideoButtonDisplayClass = goToNextVideoButton.style.display;
 //notes button
 const notesImageButton = document.getElementById(notesButtonId);
 const notesSectionContainer = document.getElementById(notesSectionId);
+const noteImageButtonClass = notesImageButton.style.display;
 const notesContainerDisplayStyle = notesSectionContainer.style.display;
 
 const ALL_VIEW_CONTAINER = Object.freeze({

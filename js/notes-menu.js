@@ -19,35 +19,80 @@ function onInitNotesBar()
     hideNotesMenu();
 }
 
+function hideNotesButton() 
+{
+    notesImageButton.style.display = hideStyleClass;
+}
+
+function showNotesButton() 
+{
+    notesImageButton.style.display = noteImageButtonClass;
+}
+
 function hideNotesMenu() 
 {
     notesSectionContainer.style.display = hideStyleClass;
+    //todo change icon
 }
 
 function showNotesMenu() 
 {
-    notesSectionContainer.style.display = notesContainerDisplayStyle;   
+    notesSectionContainer.style.display = notesContainerDisplayStyle; 
+    //todo change icon  
 }
 
 
 function setNotes(notes) 
 {
-    
+    cleanNotes();
+    notes.forEach(element => {
+        const item = document.createElement("li");
+        item.innerText = element;
+        notesSectionContainer.appendChild(item);
+    });
+}
+
+function cleanNotes()
+{
+    const children = notesSectionContainer.children;
+    for (let i=0; i < children.length; i++)
+    {
+        const child = children[i];
+        notesSectionContainer.removeChild(child);
+    }
 }
 
 function notesMenuOnSelectItemMenuListener(menuItem) 
 {
 
-    if(menuItem && menuItem.notes) 
+    if(menuItem) 
     {
-        setNotes(menuItem.notes);
+        if(menuItem.notes && menuItem.notes.length > 0)
+        {
+            setNotes(menuItem.notes);
+            showNotesButton();
+        }
+        else 
+        {
+            hideNotesMenu();
+            hideNotesButton();
+        }
     }
 }
 
 function notesMenuOnPlayNewVideo(video) 
 {
-    if(video && video.notes)
+    if(video)
     {
-        setNotes(video.notes);
+        if(video.notes && video.notes.length > 0)
+        {
+            setNotes(video.notes);
+            showNotesButton();
+        }
+        else 
+        {
+            hideNotesMenu();
+            hideNotesButton();
+        }
     }
 }

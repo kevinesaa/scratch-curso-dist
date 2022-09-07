@@ -29,6 +29,8 @@ function initLayoutFunctions()
 
 function videoLayout(item)
 {
+    
+
     internalPageContainer.style.display = hideStyleClass;
     videoFragmentContainer.style.display = videoFragmentContainerDisplayClass;
 }
