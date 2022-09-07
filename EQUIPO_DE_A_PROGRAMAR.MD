@@ -18,10 +18,10 @@ Ing. Marcelo Rubino e Ing. Muriel Barrios
 
 | Área        | University of Edinburgh - Code Yourself! | Universidad ORT Uruguay - ¡A Programar! |
 | ----------- | ----------- | ----------- |
-| Gerencia del proyecto | Amy Woodgate | Víctor Paulós Greco |
-| Coordinación Académica | Areti Manataki        | Inés Friss de Kereki |
-| Coordinación General   |          | Plinio Gañi Areco |
-| Asesoría en Educación a Distancia | Louise Connelly   | Víctor Paulós Greco |
-| Producción Audiovisual | Tim Askew; Lucy Kendra; Nicol Craig | Rómulo Piedra (Productor); Valentina Baracco (Directora); Santiago Albano (Editor); Marilisa De Lilla (Maquilladora) |
-| Multimedios | Tim Askew; Lucy Kendra | Lídice Benatar (Logo del curso - Diseño de Cody); Gonzalo Cumini (Ilustraciones. Animaciones de Cody); Plinio Gañi Areco (Música, Voz de Cody) |
-| Soporte de plataforma del curso | Imogen Scott; Nuria Fraile | Plinio Gañi Areco; Liliana Pino |
+| **Gerencia del proyecto** | Amy Woodgate | Víctor Paulós Greco |
+| **Coordinación Académica** | Areti Manataki        | Inés Friss de Kereki |
+| **Coordinación General**   |          | Plinio Gañi Areco |
+| **Asesoría en Educación a Distancia** | Louise Connelly   | Víctor Paulós Greco |
+| **Producción Audiovisual** | Tim Askew; Lucy Kendra; Nicol Craig | Rómulo Piedra (Productor); Valentina Baracco (Directora); Santiago Albano (Editor); Marilisa De Lilla (Maquilladora) |
+| **Multimedios** | Tim Askew; Lucy Kendra | Lídice Benatar (Logo del curso - Diseño de Cody); Gonzalo Cumini (Ilustraciones. Animaciones de Cody); Plinio Gañi Areco (Música, Voz de Cody) |
+| **Soporte de plataforma del curso** | Imogen Scott; Nuria Fraile | Plinio Gañi Areco; Liliana Pino |
