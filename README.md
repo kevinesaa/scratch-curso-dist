@@ -1,6 +1,12 @@
+# ¡A programar! Offline versión
+
+Aplicación web destinada a distribuir el contenido y los recursos del curso de Scratch [¡A programar!](https://es.coursera.org/learn/a-programar) de manera offline, para que el mismo se pueda estudiar por personan con carencias en la conexión de acceso a internet.
+
 ### ¿Cómo ejecutar la aplicación?
 
-Arrastra y suelta el archivo index.html del directorio raíz hasta el navegador web.
+- [Descarga todo el contenido](https://github.com/kevinesaa/scratch-curso-dist/archive/refs/heads/master.zip)
+- Descomprime el archivo
+- Arrastra y suelta el archivo index.html del directorio raíz hasta el navegador web.
 
 ### ¿Cómo contribuir en este repositorio?
 
