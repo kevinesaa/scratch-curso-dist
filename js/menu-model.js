@@ -46,7 +46,8 @@ const MENU = {
             {id:'vid-013', type:menuOptionEntryTypes.video, title:'Día nublado... ¡no! Coordenadas en Scratch', uri:'013_dia_nublado_no_coordenadas_en_scratch.mp4', captationsUri:"013_dia_nublado_no_coordenadas_en_scratch.vtt", notes : []},
             {id:'vid-014', type:menuOptionEntryTypes.video, title:'¡Una película! Animación con 2 personajes', uri:'014_una_pelicula_de_animacion_con_2_personajes.mp4', captationsUri:"014_una_pelicula_de_animacion_con_2_personajes.vtt", notes : []},
             {id:'vid-015', type:menuOptionEntryTypes.video, title:'¡Algoritmos en la producción de Audiovisuales!', uri:'015_algoritmos_en_la_produccion_de_audiovisuales.mp4', captationsUri:"015_algoritmos_en_la_produccion_de_audiovisuales.vtt", notes : []},
-            {id:'vid-016', type:menuOptionEntryTypes.video, title:'Decisiones en un laboratorio de investigación', uri:'016_decisiones_en_un_laboratorio_de_investigacion.mp4', captationsUri:"016_decisiones_en_un_laboratorio_de_investigacion.vtt", notes : []}
+            {id:'vid-016', type:menuOptionEntryTypes.video, title:'Decisiones en un laboratorio de investigación', uri:'016_decisiones_en_un_laboratorio_de_investigacion.mp4', captationsUri:"016_decisiones_en_un_laboratorio_de_investigacion.vtt", notes : []},
+            {id:'exe-001', type:menuOptionEntryTypes.internalPage, title:'Ejercicios sugeridos de la unidad 1', uri:'../exercises/unidad-01.html'},
         ]
     },
     unidad2:{
@@ -74,7 +75,8 @@ const MENU = {
             {id:'vid-031', type:menuOptionEntryTypes.video, title:'Juego del Helicóptero: diseño. Abstracción', uri:'015_juego_del_helicoptero_dise_o_abstraccion.mp4', captationsUri:"015_juego_del_helicoptero_dise_o_abstraccion.vtt", notes : []},
             {id:'vid-032', type:menuOptionEntryTypes.video, title:'Juego del Helicóptero: implementación', uri:'016_juego_del_helicoptero_implementacion.mp4', captationsUri:"016_juego_del_helicoptero_implementacion.vtt", notes : []},
             {id:'vid-033', type:menuOptionEntryTypes.video, title:'Requerimientos y descomposición de problemas', uri:'017_requerimientos_y_descomposicion_de_problemas.mp4', captationsUri:"017_requerimientos_y_descomposicion_de_problemas.vtt", notes : []},
-            {id:'vid-034', type:menuOptionEntryTypes.video, title:'Requerimientos, Prototipos y Abstracción en Arquitectura', uri:'018_requerimientos_prototipos_y_abstraccion_en_arquitectura.mp4', captationsUri:"018_requerimientos_prototipos_y_abstraccion_en_arquitectura.vtt", notes : []}
+            {id:'vid-034', type:menuOptionEntryTypes.video, title:'Requerimientos, Prototipos y Abstracción en Arquitectura', uri:'018_requerimientos_prototipos_y_abstraccion_en_arquitectura.mp4', captationsUri:"018_requerimientos_prototipos_y_abstraccion_en_arquitectura.vtt", notes : []},
+            {id:'exe-002', type:menuOptionEntryTypes.internalPage, title:'Ejercicios sugeridos de la unidad 2', uri:'../exercises/unidad-02.html'},
         ]
     },
     unidad3:{
@@ -94,7 +96,8 @@ const MENU = {
             {id:'vid-040', type:menuOptionEntryTypes.video, title:'¡Adivina el número! Interacción con el usuario', uri:'007_adivina_el_numero_interaccion_con_el_usuario.mp4', captationsUri:"007_adivina_el_numero_interaccion_con_el_usuario.vtt", notes : []},
             {id:'vid-041', type:menuOptionEntryTypes.video, title:'Jardín con flores. Iteraciones anidadas', uri:'008_jardin_con_flores_iteraciones_anidadas.mp4', captationsUri:"008_jardin_con_flores_iteraciones_anidadas.vtt", notes : []},
             {id:'vid-042', type:menuOptionEntryTypes.video, title:'¡Remix en el laboratorio de Biotecnología!', uri:'009_remix_en_el_laboratorio_de_biotecnologia.mp4', captationsUri:"009_remix_en_el_laboratorio_de_biotecnologia.vtt", notes : []},
-            {id:'vid-043', type:menuOptionEntryTypes.video, title:'Robots que juegan al fútbol', uri:'010_robots_que_juegan_al_futbol.mp4', captationsUri:"010_robots_que_juegan_al_futbol.vtt", notes : []}
+            {id:'vid-043', type:menuOptionEntryTypes.video, title:'Robots que juegan al fútbol', uri:'010_robots_que_juegan_al_futbol.mp4', captationsUri:"010_robots_que_juegan_al_futbol.vtt", notes : []},
+            {id:'exe-003', type:menuOptionEntryTypes.internalPage, title:'Ejercicios sugeridos de la unidad 2', uri:'../exercises/unidad-03.html'},
         ]
     },
     unidad4:{
@@ -114,7 +117,8 @@ const MENU = {
             {id:'vid-050', type:menuOptionEntryTypes.video, title:'¡Romper burbujas! Modularidad', uri:'007_romper_burbujas_modularidad.mp4', captationsUri:"007_romper_burbujas_modularidad.vtt", notes : []},
             {id:'vid-051', type:menuOptionEntryTypes.video, title:'¡La Ola!', uri:'008_la_ola.mp4', captationsUri:"008_la_ola.vtt", notes : []},
             {id:'vid-052', type:menuOptionEntryTypes.video, title:'Cómo nuestros programas pueden cambiar la forma de hacer las cosas', uri:'009_como_nuestros_programas_pueden_cambiar_la_forma_de_hacer_las_cosas.mp4', captationsUri:"009_como_nuestros_programas_pueden_cambiar_la_forma_de_hacer_las_cosas.vtt", notes : []},
-            {id:'vid-053', type:menuOptionEntryTypes.video, title:'Entrevista a Joyera', uri:'010_entrevista_a_joyera.mp4', captationsUri:"010_entrevista_a_joyera.vtt", notes : []}
+            {id:'vid-053', type:menuOptionEntryTypes.video, title:'Entrevista a Joyera', uri:'010_entrevista_a_joyera.mp4', captationsUri:"010_entrevista_a_joyera.vtt", notes : []},
+            {id:'exe-004', type:menuOptionEntryTypes.internalPage, title:'Ejercicios sugeridos de la unidad 4', uri:'../exercises/unidad-04.html'},
         ]
     },
     unidad5:{
@@ -135,6 +139,7 @@ const MENU = {
             {id:'vid-061', type:menuOptionEntryTypes.video, title:'Scratch y otro lenguaje de programación: Python', uri:'008_scratch_y_otro_lenguaje_de_programacion_python.mp4', captationsUri:"008_scratch_y_otro_lenguaje_de_programacion_python.vtt", notes : []},
             {id:'vid-062', type:menuOptionEntryTypes.video, title:'¿Cómo crear un video juego exitoso?', uri:'009_como_crear_un_video_juego_exitoso.mp4', captationsUri:"009_como_crear_un_video_juego_exitoso.vtt", notes : []},
             {id:'vid-063', type:menuOptionEntryTypes.video, title:'Entrevista a estudiante de Computación', uri:'010_entrevista_a_estudiante_de_computacion.mp4', captationsUri:"010_entrevista_a_estudiante_de_computacion.vtt", notes : []},
+            {id:'exe-005', type:menuOptionEntryTypes.internalPage, title:'Ejercicios sugeridos de la unidad 5', uri:'../exercises/unidad-05.html'},
         ]
     },
     about:{
@@ -152,7 +157,7 @@ const MENU = {
     externalSites:{
         id:'web-sites-1',
         title:'Sitios de interés',
-        summary:'Nota: necesitas una conexión a internet para visitar estos sitios web.',
+        summary:'Nota: necesitas una conexión a internet para visitar la mayoría de estos sitios web.',
         path:'',
         type:menuOptionEntryTypes.linkContainer,
         items:[
@@ -161,6 +166,7 @@ const MENU = {
             {id:'ext-03', type:menuOptionEntryTypes.externalLink, title:'Actualizar mi Scratch', uri:'https://scratch.mit.edu/download'},
             {id:'ext-04', type:menuOptionEntryTypes.externalLink, title:'Colaborar en está web', uri:'https://github.com/kevinesaa/scratch-curso-dist'},
             {id:'ext-05', type:menuOptionEntryTypes.externalLink, title:'Colaborar en los repositorios de Scratch', uri:'https://github.com/LLK/'},
+            {id:'res-006', type:menuOptionEntryTypes.internalPage, title:'Otros recursos', uri:'external-resources.html'},
         ]
     }
 };
