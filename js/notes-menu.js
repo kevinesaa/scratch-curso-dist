@@ -32,12 +32,14 @@ function showNotesButton()
 function hideNotesMenu() 
 {
     notesSectionContainer.style.display = hideStyleClass;
+    NOTES_MENU_BUTTON_CLICK.dispatch(false);
     //todo change icon
 }
 
 function showNotesMenu() 
 {
-    notesSectionContainer.style.display = notesContainerDisplayStyle; 
+    notesSectionContainer.style.display = notesContainerDisplayStyle;
+    NOTES_MENU_BUTTON_CLICK.dispatch(true); 
     //todo change icon  
 }
 

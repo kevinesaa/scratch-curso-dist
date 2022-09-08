@@ -34,7 +34,7 @@ const MENU = {
             {id:'vid-002', type:menuOptionEntryTypes.video, title:'Representación de algoritmos', uri:'002_representacion_de_algoritmos.mp4', captationsUri:"002_representacion_de_algoritmos.vtt", notes : []},
             {id:'vid-003', type:menuOptionEntryTypes.video, title:'Precisión y supuestos', uri:'003_precision_y_supuestos.mp4', captationsUri:"003_precision_y_supuestos.vtt", notes : []},
             {id:'vid-004', type:menuOptionEntryTypes.video, title:'¿Qué es Scratch? Ejemplos de programas', uri:'004_que_es_scratch_ejemplos_de_programas_tarjeta_de_cumplea_os_flappy_bird.mp4', captationsUri:"004_que_es_scratch_ejemplos_de_programas_tarjeta_de_cumplea_os_flappy_bird.vtt", notes : []},
-            {id:'vid-005', type:menuOptionEntryTypes.video, title:'Opciones para trabajar en Scratch', uri:'005_opciones_para_trabajar_en_scratch.mp4', captationsUri:"005_opciones_para_trabajar_en_scratch.vtt", notes : []},
+            {id:'vid-005', type:menuOptionEntryTypes.video, title:'Opciones para trabajar en Scratch', uri:'005_opciones_para_trabajar_en_scratch.mp4', captationsUri:"005_opciones_para_trabajar_en_scratch.vtt", notes : ["En los recursos de la unidad, podrás encontrar las opciones de los instaladores de Scratch, para que puedas programar sin necesidad de acceder a internet."]},
             {id:'res-001', type:menuOptionEntryTypes.internalPage, title:'Recursos de la unidad 1', uri:'../resources/unidad-01.html'},
             {id:'vid-006', type:menuOptionEntryTypes.video, title:'Principales componentes de Scratch. Guardar y descargar', uri:'006_principales_componentes_de_scratch_guardar_y_descargar.mp4', captationsUri:"006_principales_componentes_de_scratch_guardar_y_descargar.vtt", notes : []},
             {id:'vid-007', type:menuOptionEntryTypes.video, title:'Decisión', uri:'007_decision.mp4', captationsUri:"007_decision.vtt", notes : []},
@@ -159,6 +159,8 @@ const MENU = {
             {id:'ext-01', type:menuOptionEntryTypes.externalLink, title:'¡Me quiero certificar!', uri:'https://es.coursera.org/learn/a-programar'},
             {id:'ext-02', type:menuOptionEntryTypes.externalLink, title:'Web oficial de Scratch', uri:'https://scratch.mit.edu'},
             {id:'ext-03', type:menuOptionEntryTypes.externalLink, title:'Actualizar mi Scratch', uri:'https://scratch.mit.edu/download'},
+            {id:'ext-04', type:menuOptionEntryTypes.externalLink, title:'Colaborar en está web', uri:'https://github.com/kevinesaa/scratch-curso-dist'},
+            {id:'ext-05', type:menuOptionEntryTypes.externalLink, title:'Colaborar en los repositorios de Scratch', uri:'https://github.com/LLK/'},
         ]
     }
 };

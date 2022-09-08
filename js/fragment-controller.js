@@ -6,6 +6,24 @@ function onInitFragmentController()
     Object.freeze(fragmentLayouts);
     SIDE_BAR_SESSION_EVENT_BUS.subscribe(fragmentControllerOnSelectMenuItem);
     SELECT_MENU_ITEM_EVENT_BUS.subscribe(fragmentControllerOnSelectMenuItem);
+    NOTES_MENU_BUTTON_CLICK.subscribe(fragmentControllerOnNotesClickButton);
+}
+
+function fragmentControllerOnNotesClickButton(showNotes)
+{
+    if(showNotes)
+    {
+        //todo
+        /** 
+         video-screen-fragment-container
+         video-section
+         notes-section
+        */
+    }
+    else
+    {
+        //todo
+    }
 }
 
 function fragmentControllerOnSelectMenuItem(item)
@@ -29,10 +47,17 @@ function initLayoutFunctions()
 
 function videoLayout(item)
 {
-    
 
     internalPageContainer.style.display = hideStyleClass;
     videoFragmentContainer.style.display = videoFragmentContainerDisplayClass;
+    if(item.notes && item.notes.length > 0)
+    {
+        //todo
+    }
+    else
+    {
+        //todo
+    }
 }
 
 function internalPageLayout(item)
@@ -45,4 +70,10 @@ function internalPageLayout(item)
 function externalPage(item)
 {
     window.open(item.uri, '_blank');
+}
+
+
+function openNotesLayout() 
+{
+
 }
