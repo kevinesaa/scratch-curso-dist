@@ -1,5 +1,5 @@
 //meta
-const broserTitle = document.getElementById(browserTitleId); 
+const browserTitle = document.getElementById(browserTitleId); 
 
 //header bar
 const headerTitle = document.getElementById(headerTitleId);

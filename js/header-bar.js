@@ -1,30 +1,29 @@
+class HeaderBarView {
+    
+    #headerTitleView;
+    #browserTitleView;
 
-
-function onInitHeader() 
-{
-    SIDE_BAR_SESSION_EVENT_BUS.subscribe(headerBarOnSelectItemMenuListener);
-    SELECT_MENU_ITEM_EVENT_BUS.subscribe(headerBarOnSelectItemMenuListener);
-    VIDEO_PLAYER_EVENT_BUS.subscribe(headerBarOnPlayNewVideo);
-}
-
-function setTitle(title) 
-{
-    headerTitle.innerText = title;
-    broserTitle.innerText = title;
-}
-
-function headerBarOnSelectItemMenuListener(menuItem) 
-{
-    if(menuItem) 
-    {
-        setTitle(menuItem.title);
+    constructor(headerViewContainer) {
+        this.#headerTitleView = headerViewContainer.headerTitleView;
+        this.#browserTitleView = headerViewContainer.browserTitleView;
     }
-}
 
-function headerBarOnPlayNewVideo(video) 
-{
-    if(video) 
-    {
-        setTitle(video.title);
+    setTitle = (title) => {
+        this.#headerTitleView.innerText = title;
+        this.#browserTitleView.innerText = title;
+    }
+
+    onPlayNewVideo = (video) => {
+        
+        if(video) {
+            this.setTitle(video.title);
+        }
+    }
+
+    onSelectItemMenuListener = (menuItem) => {
+        
+        if(menuItem) {
+            this.setTitle(menuItem.title);
+        }
     }
 }
