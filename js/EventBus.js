@@ -2,15 +2,15 @@
 
 class EventBus {
 
-    #observers = new Set();
+    #observers;
 
-    constructor(){
-        
+    constructor(listenerSetArray){
+        this.#observers = listenerSetArray;
     }
 
 
     dispatch = (args) => {
-        this.#observers.forEach(value => value(args));
+        this.#observers.forEach(func => func(args));
     }
 
     subscribe = (func) => {

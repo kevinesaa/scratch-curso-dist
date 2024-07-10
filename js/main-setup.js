@@ -1,9 +1,9 @@
 
-const VIDEO_PLAYER_EVENT_BUS = new EventBus();
-const START_SESSION_EVENT_BUS = new EventBus();
-const SIDE_BAR_SESSION_EVENT_BUS = new EventBus();
-const SELECT_MENU_ITEM_EVENT_BUS = new EventBus();
-const NOTES_MENU_BUTTON_CLICK = new EventBus();
+const VIDEO_PLAYER_EVENT_BUS = new EventBus(new Set());
+const START_SESSION_EVENT_BUS = new EventBus(new Set());
+const SIDE_BAR_SESSION_EVENT_BUS = new EventBus(new Set());
+const SELECT_MENU_ITEM_EVENT_BUS = new EventBus(new Set());
+const NOTES_MENU_BUTTON_CLICK = new EventBus(new Set());
 
 const ALL_EVENT_BUSES = Object.freeze({
     VIDEO_PLAYER_EVENT_BUS,
