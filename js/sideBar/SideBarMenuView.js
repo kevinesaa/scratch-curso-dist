@@ -73,8 +73,12 @@ class SideBarMenuView {
         item.setOnItemClickListener(this.#onItemClickListener);
     }
 
-    addOnItemClickListener = (callbackListener) => {
+    subscribeOnItemClickListener = (callbackListener) => {
         this.#onSelectItemEventBus.subscribe(callbackListener);
+    }
+
+    unsubscribeOnItemClickListener = (callbackListener) => {
+        this.#onSelectItemEventBus.unsubscribe(callbackListener);
     }
 
     showSideBar = () => {
