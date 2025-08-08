@@ -2,7 +2,6 @@
 
 function onInitNotesBar() 
 {
-    SIDE_BAR_SESSION_EVENT_BUS.subscribe(notesMenuOnSelectItemMenuListener);
     SELECT_MENU_ITEM_EVENT_BUS.subscribe(notesMenuOnSelectItemMenuListener);
     VIDEO_PLAYER_EVENT_BUS.subscribe(notesMenuOnPlayNewVideo);
     notesImageButton.onclick = () => 
