@@ -2,13 +2,12 @@
 const VIDEO_PLAYER_EVENT_BUS = new EventBus(new Set());
 const START_SESSION_EVENT_BUS = new EventBus(new Set());
 const SELECT_MENU_ITEM_EVENT_BUS = new EventBus(new Set());
-const NOTES_MENU_BUTTON_CLICK = new EventBus(new Set());
+
 
 const ALL_EVENT_BUSES = Object.freeze({
     VIDEO_PLAYER_EVENT_BUS,
     START_SESSION_EVENT_BUS,
-    SELECT_MENU_ITEM_EVENT_BUS,
-    NOTES_MENU_BUTTON_CLICK
+    SELECT_MENU_ITEM_EVENT_BUS
 });
 
 function onInitHeader() 
@@ -58,6 +57,21 @@ function onInitSideBar()
     START_SESSION_EVENT_BUS.subscribe(sideBar.onStartSessionListener);
     VIDEO_PLAYER_EVENT_BUS.subscribe(sideBar.onPlayNewVideoListener);
 }
+
+function onInitNotesBar() 
+{
+    const notesView = new NotesContainerView();
+    notesView.setNotesContainerView(notesSectionContainer);
+    notesView.setImageButtonView(notesImageButton);
+    notesView.setHideStyleClass(hideStyleClass)
+    notesView.setImageButtonDisplayStyleClass(noteImageButtonClass);
+    notesView.setNoteMenuDisplayStyleClass(notesContainerDisplayStyle)
+    SELECT_MENU_ITEM_EVENT_BUS.subscribe(notesView.onSideBarChangeItemListener);
+    VIDEO_PLAYER_EVENT_BUS.subscribe(notesView.onPlayNewVideoListener);
+
+    notesView.hideNotesMenu();
+}
+
 
 function onInitFragmentController() 
 {
