@@ -237,7 +237,7 @@ class VideoPlayerView {
 
     constructor(eventBus,playListController) {
         
-        this.#videoPlayerEventBus = eventBus;
+        videoPlayerEventBus = eventBus;
         this.#playListController = playListController;
     }
 

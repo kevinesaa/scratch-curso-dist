@@ -67,10 +67,13 @@ function onInitVideoPlayer()
         .filter(item => item.type == menuOptionEntryTypes.video)    
         .forEach(v => videoSourceList[v.id] = v);
     
-    const playListController = new PlayListController(videoSourceList)
-    const videoPlayerView = new VideoPlayerView(VIDEO_PLAYER_EVENT_BUS,playListController);
     
-    
+    const videoPlayerView = new VideoPlayerBuilder()
+        .setRootView(document)
+        .setSourcePlayListDictionary(videoSourceList)
+        .setEventBus(VIDEO_PLAYER_EVENT_BUS)
+        .build();
+      
 }
 
 function onInitNotesBar() 
