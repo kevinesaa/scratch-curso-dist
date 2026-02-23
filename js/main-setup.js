@@ -58,6 +58,21 @@ function onInitSideBar()
     VIDEO_PLAYER_EVENT_BUS.subscribe(sideBar.onPlayNewVideoListener);
 }
 
+function onInitVideoPlayer() 
+{   
+    const videoSourceList = {};
+    Object.entries(MENU)
+        .filter(entry => entry[1].hasOwnProperty('items'))
+        .flatMap(key => key[1].items)
+        .filter(item => item.type == menuOptionEntryTypes.video)    
+        .forEach(v => videoSourceList[v.id] = v);
+    
+    const playListController = new PlayListController(videoSourceList)
+    const videoPlayerView = new VideoPlayerView(VIDEO_PLAYER_EVENT_BUS,playListController);
+    
+    
+}
+
 function onInitNotesBar() 
 {
     const notesView = new NotesContainerView();
@@ -112,6 +127,9 @@ function main()
     onInitHeader();
     onInitSideBar();
     onInitVideoPlayer();
+    // ======================= /
+    //old_onInitVideoPlayer();
+    // ======================= /
     onInitNotesBar();
     onInitFragmentController();
     onInitSession();

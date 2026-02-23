@@ -25,7 +25,7 @@ const currentVideo = {
     key:VIDEO_KEYS_ARRAY[0]
 };
 
-function onInitVideoPlayer() 
+function old_onInitVideoPlayer() 
 {
     playButton.onclick = () => {
         
@@ -141,14 +141,13 @@ function onSubtitleClickButton()
 
 function previusVideo() 
 {
-    console.log(" h ")
     const p = currentVideo.index - 1;
     const key = VIDEO_KEYS_ARRAY[p];
     playVideoById(key);
 }
 
-function nextVideo() {
-    console.log(" m ")
+function nextVideo() 
+{
     const n = currentVideo.index + 1;
     const key = VIDEO_KEYS_ARRAY[n];
     playVideoById(key);
@@ -224,5 +223,31 @@ function checkIfHideNextButton()
     {
         //Issue the html is not hidding
         goToNextVideoButton.style.display = hideStyleClass;
+    }
+}
+
+
+
+
+class VideoPlayerView {
+    
+    #videoPlayerEventBus;
+    #playListController;
+    
+
+    constructor(eventBus,playListController) {
+        
+        this.#videoPlayerEventBus = eventBus;
+        this.#playListController = playListController;
+    }
+
+    //* play the video without notify */
+    playVideoByIdSilently = (videoId) => {
+        
+    }
+
+    //* play the video and notify */
+    playVideoById = (videoId) => {
+        
     }
 }

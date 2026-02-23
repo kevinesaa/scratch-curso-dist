@@ -10,6 +10,8 @@
 
 ### Restricciones 
 
+- Se debe de tener un enfoque dónde se pueda ejecutar la aplicación simplemente arrastrando el archivo "index.html" al navegador.
+
 **en construccion**
 
 ### Software necesario 
