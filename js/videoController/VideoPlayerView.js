@@ -61,7 +61,7 @@ class VideoPlayerView {
             this.#videoPlayer.src = videoModel.uri;
             this.#videoPlayer.currentTime = 0;
             this.#videoCaptations.src = videoModel.captationsUri;
-            videoPlayer.play();
+            this.#videoPlayer.play();
 
             //todo chance play icon to pause icon
             //todo checkIfHidePreviusButton();
