@@ -16,40 +16,38 @@ class VideoPlayerView {
 
     constructor(binding) {
 
-                binding.playButton.onclick = () => {
-                    this.togglePlayButton();
-                };
+        binding.playButton.onclick = () => {
+            this.togglePlayButton();
+        };
 
-                binding.goToPreviusVideoButton.onclick = () => {
-                    this.goToPreviousVideo();
-                };
+        binding.goToPreviusVideoButton.onclick = () => {
+            this.goToPreviousVideo();
+        };
 
-                binding.goToNextVideoButton.onclick = () => {
-                    this.goToNextVideo();
-                };
+        binding.goToNextVideoButton.onclick = () => {
+            this.goToNextVideo();
+        };
 
-                binding.videoSubtitleButton.onclick = () => {
-                    this.toggleSubtitles();
-                };
+        binding.videoSubtitleButton.onclick = () => {
+            this.toggleSubtitles();
+        };
 
-                this.#videoPlayer = binding.videoPlayer;
-                this.#videoCaptations = binding.videoCaptations;
+        this.#videoPlayer = binding.videoPlayer;
+        this.#videoCaptations = binding.videoCaptations;
 
-                this.#goToPreviusVideoButton = binding.goToPreviusVideoButton;
-                this.#goToNextVideoButton = binding.goToNextVideoButton;
+        this.#goToPreviusVideoButton = binding.goToPreviusVideoButton;
+        this.#goToNextVideoButton = binding.goToNextVideoButton;
 
-                this.#previusVideoButtonDisplayClass = binding.goToPreviusVideoButton.style.display;
-                this.#nextVideoButtonDisplayClass = binding.goToNextVideoButton.style.display;
+        this.#previusVideoButtonDisplayClass = binding.goToPreviusVideoButton.style.display;
+        this.#nextVideoButtonDisplayClass = binding.goToNextVideoButton.style.display;
 
-                this.#videoDurationDisplay = binding.videoDurationDisplay;
-                this.#videoCurrentTimeDisplay = binding.videoCurrentTimeDisplay;
+        this.#videoDurationDisplay = binding.videoDurationDisplay;
+        this.#videoCurrentTimeDisplay = binding.videoCurrentTimeDisplay;
 
-                this.#videoPlayer.addEventListener('loadedmetadata', () => this.updateVideoDuration());
-                this.#videoPlayer.addEventListener('timeupdate', () => this.updateCurrentTime());
-
-            }
-
-
+        this.#videoPlayer.addEventListener('loadedmetadata', () => this.updateVideoDuration());
+        this.#videoPlayer.addEventListener('timeupdate', () => this.updateCurrentTime());
+        
+    }
 
     setOnPlayVideoEventBus = (eventBus) => {
         this.#onPlayVideoEventBus = eventBus;
