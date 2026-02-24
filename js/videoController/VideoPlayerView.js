@@ -157,9 +157,12 @@ class VideoPlayerView {
         if(textTrack) {
             const captationShowState = 'showing';
             const captationHideState = 'hidden';
-            if(textTrack.mode == captationShowState) {
+            if(textTrack.mode == captationShowState) 
+            {
                 textTrack.mode = captationHideState;
-            } else if(textTrack.mode == captationHideState) {
+            }
+            else 
+            {
                 textTrack.mode = captationShowState;
             }
         }
