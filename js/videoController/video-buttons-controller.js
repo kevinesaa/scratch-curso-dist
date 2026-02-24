@@ -227,27 +227,3 @@ function checkIfHideNextButton()
 }
 
 
-
-
-class VideoPlayerView {
-    
-    #videoPlayerEventBus;
-    #playListController;
-    
-
-    constructor(eventBus,playListController) {
-        
-        videoPlayerEventBus = eventBus;
-        this.#playListController = playListController;
-    }
-
-    //* play the video without notify */
-    playVideoByIdSilently = (videoId) => {
-        
-    }
-
-    //* play the video and notify */
-    playVideoById = (videoId) => {
-        
-    }
-}
