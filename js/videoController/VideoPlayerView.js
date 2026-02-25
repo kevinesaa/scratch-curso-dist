@@ -29,7 +29,7 @@ class VideoPlayerView {
         };
 
         binding.videoSubtitleButton.onclick = () => {
-            this.toggleSubtitles();
+            this.#toggleSubtitles();
         };
 
         this.#videoPlayer = binding.videoPlayer;
@@ -91,13 +91,13 @@ class VideoPlayerView {
         {
             this.#playListController.setCurrentVideoByKeyId(videoId);
             this.#videoPlayer.pause();
+            this.#toggleSubtitles();
             this.#videoPlayer.src = videoModel.uri;
             this.#videoPlayer.currentTime = 0;
-            this.#videoCaptations.src = videoModel.captationsUri;
-
-            this.updateNavigationButtonVisibility();
-
+            this.#videoCaptations.src = videoModel.captationsContent;
+            this.#updateNavigationButtonVisibility();
             this.#videoPlayer.play();
+            this.#toggleSubtitles();
 
             //todo chance play icon to pause icon
         }
@@ -134,7 +134,7 @@ class VideoPlayerView {
         }
     }
 
-    updateNavigationButtonVisibility = () => {
+    #updateNavigationButtonVisibility = () => {
         if(this.#playListController != null) {
             if(this.#playListController.hasPrevius()) {
                 this.#goToPreviusVideoButton.style.display = this.#previusVideoButtonDisplayClass;
@@ -150,7 +150,7 @@ class VideoPlayerView {
         }
     }
 
-    toggleSubtitles = () => {
+    #toggleSubtitles = () => {
         const textTrack = this.#videoPlayer.textTracks[0];
         if(textTrack) {
             const captationShowState = 'showing';
