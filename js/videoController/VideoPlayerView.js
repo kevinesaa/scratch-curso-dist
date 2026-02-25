@@ -5,14 +5,17 @@ class VideoPlayerView {
     #onPlayVideoEventBus;
     #playListController;
 
+    #shouldPlayVideo = false;
     #videoPlayer;
     #videoCaptations;
+    
     #goToPreviusVideoButton;
     #goToNextVideoButton;
     #previusVideoButtonDisplayClass;
     #nextVideoButtonDisplayClass;
     #videoDurationDisplay;
     #videoCurrentTimeDisplay;
+    
 
     constructor(binding) {
 
@@ -36,17 +39,27 @@ class VideoPlayerView {
         this.#videoCaptations = binding.videoCaptations;
 
         this.#goToPreviusVideoButton = binding.goToPreviusVideoButton;
-        this.#goToNextVideoButton = binding.goToNextVideoButton;
-
         this.#previusVideoButtonDisplayClass = binding.goToPreviusVideoButton.style.display;
+        this.#goToPreviusVideoButton.style.display = VideoPlayerView.#DISPLAY_NONE;
+
+        this.#goToNextVideoButton = binding.goToNextVideoButton;
         this.#nextVideoButtonDisplayClass = binding.goToNextVideoButton.style.display;
+        this.#goToNextVideoButton.style.display = VideoPlayerView.#DISPLAY_NONE;
 
         this.#videoDurationDisplay = binding.videoDurationDisplay;
         this.#videoCurrentTimeDisplay = binding.videoCurrentTimeDisplay;
 
-        this.#videoPlayer.addEventListener('loadedmetadata', () => this.updateVideoDuration());
-        this.#videoPlayer.addEventListener('timeupdate', () => this.updateCurrentTime());
         
+        this.#videoPlayer.addEventListener('loadedmetadata', () => {
+            this.#updateVideoDuration();
+            //https://github.com/elan-ev/opencast-studio/issues/581
+            if(this.#shouldPlayVideo) {
+                this.#videoPlayer.play();
+                this.#shouldPlayVideo = false;
+            }
+        });
+        
+        this.#videoPlayer.addEventListener('timeupdate', () => this.#updateCurrentTime());
     }
 
     setOnPlayVideoEventBus = (eventBus) => {
@@ -55,6 +68,9 @@ class VideoPlayerView {
 
     setPlayListController = (playListController) => {
         this.#playListController = playListController;
+        this.#updateNavigationButtonVisibility();
+        this.#updateVideoDuration();
+        this.#updateCurrentTime();
     }
 
     togglePlayButton = () => {
@@ -92,13 +108,13 @@ class VideoPlayerView {
             this.#playListController.setCurrentVideoByKeyId(videoId);
             this.#videoPlayer.pause();
             this.#toggleSubtitles();
-            this.#videoPlayer.src = videoModel.uri;
             this.#videoPlayer.currentTime = 0;
             this.#videoCaptations.src = videoModel.captationsContent;
             this.#updateNavigationButtonVisibility();
-            this.#videoPlayer.play();
             this.#toggleSubtitles();
 
+            this.#videoPlayer.src = videoModel.uri;
+            this.#shouldPlayVideo = true;
             //todo chance play icon to pause icon
         }
     }
@@ -167,14 +183,14 @@ class VideoPlayerView {
     }
 
 
-    updateVideoDuration = () => {
+    #updateVideoDuration = () => {
         const duration = this.#videoPlayer.duration;
         const formattedTime = this.#formatVideoTime(duration);
         this.#videoDurationDisplay.textContent = `${formattedTime.minute}:${formattedTime.seconds}`;
     }
 
 
-    updateCurrentTime = () => {
+    #updateCurrentTime = () => {
         const currentTime = this.#videoPlayer.currentTime;
         const formattedTime = this.#formatVideoTime(currentTime);
         this.#videoCurrentTimeDisplay.textContent = `${formattedTime.minute}:${formattedTime.seconds}`;
