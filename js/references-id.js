@@ -4,11 +4,6 @@ const navMenuHighlightItemClass = "nav-bar-item-highlight";
 const navMenuHighlightSectionClass = "nav-bar-section-highlight";
 
 
-//meta
-const browserTitleId = "browser-title";
-//header
-const headerTitleId = "header-title";
-
 //framents
 const internalPageContainerId = "internal-page-fragment-container";
 const internalPageViewDisplayId = "object-internal-page-view";
@@ -25,15 +20,4 @@ const navMenuId = "main-nav-bar";
 const notesButtonId = "notes-menu-icon";
 const notesSectionId = "notes-section";
 
-//video section
-const videoSectionContainerId = "video-section";
-const videoCaptationId = "video-captation";
-const videoDisplayPlayerId = "video-player";
-const audioButtonId = "audio-button";
-const videoCurrentTimeDisplayId = "current-video-time-display";
-const goToPreviusVideoButtonId = "go-to-previous-video";
-const playVideoButtonId = "play-video-button";
-const goToNextVideoButtonId = "go-to-next-video";
-const videoDurationDisplayId = "video-time-duration-display";
-const videoSubtitleButtonId = "video-subtitle-button";
-const videoFullScreenButtonId = "video-fullscreen-button";
+
