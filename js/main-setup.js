@@ -91,15 +91,9 @@ function onInitNotesBar()
 
 function onInitFragmentController() 
 {
-
-    const frameController = new FrameScreenController(menuOptionEntryTypes,window);
-    frameController.setHideStyleClass(hideStyleClass);
-    frameController.setInternalContainerPageView(internalPageContainer);
-    frameController.setInternalPageView(internalPageDisplay);
-    frameController.setInternalPageCssDisplayClass(internalPageContainerDisplayClass);
-    frameController.setVideoContainerPageView(videoFragmentContainer);
-    frameController.setVideoContainerCssDisplayClass(internalPageContainerDisplayClass);
-
+    const fragmentViewBinding = new FrameScreenControllerBindView(document);
+    const frameController = new FrameScreenControllerView(window, fragmentViewBinding.getBinding(), menuOptionEntryTypes);
+    
     SELECT_MENU_ITEM_EVENT_BUS.subscribe(frameController.onSelectMenuItemListener);
 }
 

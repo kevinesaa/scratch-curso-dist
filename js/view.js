@@ -1,9 +1,3 @@
-//framents
-const internalPageContainer = document.getElementById(internalPageContainerId);
-const internalPageContainerDisplayClass = internalPageContainer.style.display;
-const internalPageDisplay = document.getElementById(internalPageViewDisplayId);
-const videoFragmentContainer = document.getElementById(videoFragmentContainerId); 
-const videoFragmentContainerDisplayClass = videoFragmentContainer.style.display;
 
 //menu side bar
 const menuContainer = document.getElementById(menuContainerId);
