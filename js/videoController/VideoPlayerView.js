@@ -80,7 +80,7 @@ class VideoPlayerView {
         if(!this.#videoPlayer.src)
         {
             if(this.#playListController != null) {
-                const currentVideo = this.#playListController.getCurrentIndexObject()
+                const currentVideo = this.#playListController.getCurrentIndexObject();
                 this.playVideoById(currentVideo.key);
             }
 
@@ -173,12 +173,13 @@ class VideoPlayerView {
                 this.#updateNavigationButtonVisibility();
                 this.#updateVideoDuration();
                 this.#updateCurrentTime();
+                if(this.#onPlayVideoEventBus != null) {
+                   this.#onPlayVideoEventBus.dispatch(videoModel);
+                }
             }
             
         }
     }
-
-
 
     #updateNavigationButtonVisibility = () => {
         if(this.#playListController != null) {
@@ -212,7 +213,6 @@ class VideoPlayerView {
         }
     }
 
-
     #updateVideoDuration = () => {
         const duration = this.#videoPlayer.duration;
         const formattedTime = this.#formatVideoTime(duration);
@@ -220,14 +220,12 @@ class VideoPlayerView {
         //todo add and update progress bar
     }
 
-
     #updateCurrentTime = () => {
         const currentTime = this.#videoPlayer.currentTime;
         const formattedTime = this.#formatVideoTime(currentTime);
         this.#videoCurrentTimeDisplay.textContent = `${formattedTime.minute}:${formattedTime.seconds}`;
         //todo add and update progress bar
     }
-
 
     #formatVideoTime = (timeInSeconds) => {
         
