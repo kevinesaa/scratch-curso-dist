@@ -3,6 +3,7 @@ class VideoPlayerBuilder {
     #eventBus;
     #sourcePlayListDictionary;
     #rootView;
+    #menuItemTypes;
 
     constructor() {
     }
@@ -21,11 +22,16 @@ class VideoPlayerBuilder {
         this.#rootView =rootView;
         return this;
     }
+    
+    setMenuItemTypes = (menuItemTypes) => {
+        this.#menuItemTypes = menuItemTypes;
+        return this;
+    }
 
     build() {
         
         const videoPlayerBinding = new VideoPlayerBindView(this.#rootView);
-        const videoPlayerView = new VideoPlayerView(videoPlayerBinding.getBinding());
+        const videoPlayerView = new VideoPlayerView(videoPlayerBinding.getBinding(),this.#menuItemTypes);
         
         if (this.#sourcePlayListDictionary) {
             const playListController = new PlayListController(this.#sourcePlayListDictionary)

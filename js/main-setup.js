@@ -70,11 +70,13 @@ function onInitVideoPlayer()
     
     const videoPlayerView = new VideoPlayerBuilder()
         .setRootView(document)
+        .setMenuItemTypes(menuOptionEntryTypes)
         .setSourcePlayListDictionary(videoSourceList)
         .setEventBus(VIDEO_PLAYER_EVENT_BUS)
         .build();
     
     START_SESSION_EVENT_BUS.subscribe(videoPlayerView.onStartSessionListener);
+    SELECT_MENU_ITEM_EVENT_BUS.subscribe(videoPlayerView.onSelectItemMenuListener);
 }
 
 function onInitNotesBar() 
@@ -117,7 +119,7 @@ function onInitSession()
 
 
 
-function init() 
+function main() 
 {
     //ALL_VIEW_CONTAINER
     //{MENU, ALL_EVENT_BUSES}
@@ -129,16 +131,6 @@ function init()
     onInitSession();
 }
 
-class Main {
 
 
-    constructor() {
-
-    }
-
-    init = () => {
-
-    }
-}
-
-window.addEventListener("load",  init);
+window.addEventListener("load",  main);
