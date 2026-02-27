@@ -3,9 +3,9 @@ class HeaderBarView {
     #headerTitleView;
     #browserTitleView;
 
-    constructor(headerViewContainer) {
-        this.#headerTitleView = headerViewContainer.headerTitleView;
-        this.#browserTitleView = headerViewContainer.browserTitleView;
+    constructor(binding) {
+        this.#headerTitleView = binding.headerTitleView;
+        this.#browserTitleView = binding.browserTitleView;
     }
 
     setTitle = (title) => {

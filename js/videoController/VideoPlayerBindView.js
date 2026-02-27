@@ -2,6 +2,10 @@ class VideoPlayerBindView {
 
     #binding = {};
     
+    getBinding = () => {
+        return this.#binding;
+    }
+
     constructor(rootView) {
         this.#binding.videoSectionContainer = rootView.getElementById("video-section");
         this.#binding.videoCaptations = rootView.getElementById("video-captation");
@@ -14,9 +18,5 @@ class VideoPlayerBindView {
         this.#binding.videoDurationDisplay = rootView.getElementById("video-time-duration-display");
         this.#binding.videoSubtitleButton = rootView.getElementById("video-subtitle-button");
         this.#binding.videoFullScreenButton = rootView.getElementById("video-fullscreen-button");
-    }
-
-    getBinding = () => {
-        return this.#binding;
     }
 }

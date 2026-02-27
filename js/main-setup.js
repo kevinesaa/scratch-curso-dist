@@ -13,13 +13,8 @@ const ALL_EVENT_BUSES = Object.freeze({
 function onInitHeader() 
 {
     
-    const headerTitle = document.getElementById("header-title");
-    const browserTitle = document.getElementById("browser-title"); 
-    
-    const headerBarView = new HeaderBarView({
-        headerTitleView:headerTitle,
-        browserTitleView:browserTitle
-    });
+    const headerBarBinding = new HeaderBarBindView(document);
+    const headerBarView = new HeaderBarView(headerBarBinding.getBinding());
     
     
     SELECT_MENU_ITEM_EVENT_BUS.subscribe(headerBarView.onSelectItemMenuListener);
