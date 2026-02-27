@@ -1,0 +1,11 @@
+class Application {
+
+
+    constructor() {
+
+    }
+
+    init = () => {
+
+    }
+}
