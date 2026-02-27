@@ -10,8 +10,5 @@ const navMenuIconOpenId = "nav-menu-icon-open";
 const navMenuCloseAreaId = "close-menu-area";
 const navMenuId = "main-nav-bar";
 
-//notes menu
-const notesButtonId = "notes-menu-icon";
-const notesSectionId = "notes-section";
 
 
