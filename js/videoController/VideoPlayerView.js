@@ -16,9 +16,14 @@ class VideoPlayerView {
     #videoDurationDisplay;
     #videoCurrentTimeDisplay;
     
+    #menuItemTypes;
+    #lastMenuType;
 
-    constructor(binding) {
-
+    constructor(binding,menuItemTypes) {
+        
+        this.#lastMenuType = null;
+        this.#menuItemTypes = menuItemTypes;
+        
         binding.playButton.onclick = () => {
             this.togglePlayButton();
         };
@@ -139,7 +144,7 @@ class VideoPlayerView {
     pauseVideo = () => {
         
         this.#videoPlayer.pause();
-        //todo chance play icon to play icon
+        //todo chance pause icon to play icon
     }
 
     goToPreviousVideo = () => {
@@ -158,6 +163,27 @@ class VideoPlayerView {
                 this.playVideoById(videoModel.id);
             }
         }
+    }
+
+    onSelectItemMenuListener = (menuItem) => {
+        
+        if(menuItem.type != this.#menuItemTypes.video) {
+            this.#lastMenuType = menuItem.type;
+            this.pauseVideo();
+        }
+        else 
+        {
+            const currentIndex = this.#playListController.getCurrentIndexObject();
+            if(currentIndex.key != menuItem.id) {
+                this.playVideoByIdSilently(menuItem.id);
+            }
+            else {
+                if(this.#lastMenuType != this.#menuItemTypes.video) {
+                    this.playVideoByIdSilently(currentIndex.key);
+                }
+            }
+        }
+        
     }
 
     onStartSessionListener = (session) => {
