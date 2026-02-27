@@ -52,6 +52,7 @@ class VideoPlayerView {
         
         this.#videoPlayer.addEventListener('loadedmetadata', () => {
             this.#updateVideoDuration();
+            this.#updateNavigationButtonVisibility();
             //https://github.com/elan-ev/opencast-studio/issues/581
             if(this.#shouldPlayVideo) {
                 this.#videoPlayer.play();
@@ -93,43 +94,52 @@ class VideoPlayerView {
             }
             else
             {
-                this.#videoPlayer.pause();
-                //todo chance play icon to play icon
+                this.pauseVideo();
             }
         }
     }
 
     //* play the video without notify */
     playVideoByIdSilently = (videoId) => {
+        
+        if(this.#playListController != null) {
+            const videoModel = this.#playListController.getVideoByKeyId(videoId);
+            if(videoModel != null)
+            {
+                this.#playListController.setCurrentVideoByKeyId(videoId);
+                this.pauseVideo();
+                this.#toggleSubtitles();
+                this.#videoPlayer.currentTime = 0;
+                this.#videoCaptations.src = videoModel.captationsContent;
+                this.#updateNavigationButtonVisibility();
+                this.#toggleSubtitles();
 
-        const videoModel = this.#playListController.getVideoByKeyId(videoId);
-        if(videoModel != null)
-        {
-            this.#playListController.setCurrentVideoByKeyId(videoId);
-            this.#videoPlayer.pause();
-            this.#toggleSubtitles();
-            this.#videoPlayer.currentTime = 0;
-            this.#videoCaptations.src = videoModel.captationsContent;
-            this.#updateNavigationButtonVisibility();
-            this.#toggleSubtitles();
-
-            this.#videoPlayer.src = videoModel.uri;
-            this.#shouldPlayVideo = true;
-            //todo chance play icon to pause icon
+                this.#videoPlayer.src = videoModel.uri;
+                this.#shouldPlayVideo = true;
+                //todo chance play icon to pause icon
+            }
         }
     }
 
     //* play the video and notify */
     playVideoById = (videoId) => {
-
-        const videoModel = this.#playListController.getVideoByKeyId(videoId);
-        if(videoModel != null)
-        {
-            this.playVideoByIdSilently(videoId);
-            if(this.#onPlayVideoEventBus != null) {
-                this.#onPlayVideoEventBus.dispatch(videoModel);
+        
+        if(this.#playListController != null) {
+            const videoModel = this.#playListController.getVideoByKeyId(videoId);
+            if(videoModel != null)
+            {
+                this.playVideoByIdSilently(videoId);
+                if(this.#onPlayVideoEventBus != null) {
+                    this.#onPlayVideoEventBus.dispatch(videoModel);
+                }
             }
         }
+    }
+
+    pauseVideo = () => {
+        
+        this.#videoPlayer.pause();
+        //todo chance play icon to play icon
     }
 
     goToPreviousVideo = () => {
@@ -149,6 +159,26 @@ class VideoPlayerView {
             }
         }
     }
+
+    onStartSessionListener = (session) => {
+        if(this.#playListController != null) {
+            
+            this.#playListController.setCurrentVideoByKeyId(session.videoId);
+            const videoModel = this.#playListController.getCurrent();
+            if(videoModel != null)
+            {   
+                this.#shouldPlayVideo = false;
+                this.#videoCaptations.src = videoModel.captationsContent;
+                this.#videoPlayer.src = videoModel.uri;
+                this.#updateNavigationButtonVisibility();
+                this.#updateVideoDuration();
+                this.#updateCurrentTime();
+            }
+            
+        }
+    }
+
+
 
     #updateNavigationButtonVisibility = () => {
         if(this.#playListController != null) {
@@ -187,6 +217,7 @@ class VideoPlayerView {
         const duration = this.#videoPlayer.duration;
         const formattedTime = this.#formatVideoTime(duration);
         this.#videoDurationDisplay.textContent = `${formattedTime.minute}:${formattedTime.seconds}`;
+        //todo add and update progress bar
     }
 
 
@@ -194,6 +225,7 @@ class VideoPlayerView {
         const currentTime = this.#videoPlayer.currentTime;
         const formattedTime = this.#formatVideoTime(currentTime);
         this.#videoCurrentTimeDisplay.textContent = `${formattedTime.minute}:${formattedTime.seconds}`;
+        //todo add and update progress bar
     }
 
 

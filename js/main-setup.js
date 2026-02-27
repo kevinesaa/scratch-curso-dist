@@ -73,7 +73,8 @@ function onInitVideoPlayer()
         .setSourcePlayListDictionary(videoSourceList)
         .setEventBus(VIDEO_PLAYER_EVENT_BUS)
         .build();
-      
+    
+    START_SESSION_EVENT_BUS.subscribe(videoPlayerView.onStartSessionListener);
 }
 
 function onInitNotesBar() 
@@ -114,28 +115,30 @@ function onInitSession()
     VIDEO_PLAYER_EVENT_BUS.subscribe(sessionManager.onPlayNewVideoListener);
 }
 
-class Main {
 
 
-    constructor() {
-
-    }
-}
-
-
-function main() 
+function init() 
 {
     //ALL_VIEW_CONTAINER
     //{MENU, ALL_EVENT_BUSES}
     onInitHeader();
     onInitSideBar();
     onInitVideoPlayer();
-    // ======================= /
-    //old_onInitVideoPlayer();
-    // ======================= /
     onInitNotesBar();
     onInitFragmentController();
     onInitSession();
 }
 
-window.addEventListener("load",  main);
+class Main {
+
+
+    constructor() {
+
+    }
+
+    init = () => {
+
+    }
+}
+
+window.addEventListener("load",  init);

@@ -70,7 +70,6 @@ class PlayListController {
             
             if(  index >= 0 && index < length ) {
 
-                //lastMenuItemType:null,
                 this.#currentVideo.index = index;
                 this.#currentVideo.key = this.#videoKeysArray[index];
             }
@@ -82,7 +81,6 @@ class PlayListController {
         const length = this.#keyIndexArray != null ? Object.keys(this.#keyIndexArray).length:0;
         if(length > 0 && this.#keyIndexArray.hasOwnProperty(key))
         {
-            //lastMenuItemType:null,
             this.#currentVideo.index = this.#keyIndexArray[key];
             this.#currentVideo.key = key;
         }
