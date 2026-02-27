@@ -1,56 +1,36 @@
 
 class NotesContainerView {
 
+    static #DISPLAY_NONE = 'none';
+
     #notesMenuContainerView;
     #notesImageButton;
-    #hideStyleClass;
     #noteImageButtonClass;
     #noteContainerDisplayClass;
 
-    constructor() {
+    constructor(binding) {
+        this.#notesMenuContainerView = binding.notesSectionContainer;
+        this.#notesImageButton = binding.notesImageButton;
         
-    }
-
-    setNotesContainerView = (view) => {
-        this.#notesMenuContainerView = view;
-    }
-
-    setImageButtonView = (view) => {
+        this.#noteImageButtonClass = binding.notesImageButton.style.display;
+        this.#noteContainerDisplayClass = binding.notesSectionContainer.style.display;
         
-        this.#notesImageButton = view;
         this.#notesImageButton.onclick = () => { 
-            
             this.#onNoteImageButtonClickListner();
         }
     }
 
-    setHideStyleClass = (cssClass) => {
-        this.#hideStyleClass = cssClass;
-    }
-
-    setImageButtonDisplayStyleClass = (cssClass) => {
-        this.#noteImageButtonClass = cssClass;
-    }
-
-    setNoteMenuDisplayStyleClass = (cssClass) => {
-        this.#noteContainerDisplayClass = cssClass;
-    }
-
     showNotesMenu = () => {
         this.#notesMenuContainerView.style.display = this.#noteContainerDisplayClass;
-        // todo change image button icon
-        // notesImageButton
     }
 
     hideNotesMenu = () => {
-        this.#notesMenuContainerView.style.display = this.#hideStyleClass;
-        // todo change image button icon
-        // notesImageButton
+        this.#notesMenuContainerView.style.display = NotesContainerView.#DISPLAY_NONE;
     }
 
 
     hideNotesButton = () => {
-        this.#notesImageButton.style.display = this.#hideStyleClass;
+        this.#notesImageButton.style.display = NotesContainerView.#DISPLAY_NONE;
     }
 
     showNotesButton = () => {
@@ -113,7 +93,7 @@ class NotesContainerView {
 
     #onNoteImageButtonClickListner = () => {
         
-        if( this.#notesMenuContainerView.style.display == hideStyleClass) 
+        if( this.#notesMenuContainerView.style.display == NotesContainerView.#DISPLAY_NONE) 
         {
             this.showNotesMenu();
         }

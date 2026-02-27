@@ -76,12 +76,9 @@ function onInitVideoPlayer()
 
 function onInitNotesBar() 
 {
-    const notesView = new NotesContainerView();
-    notesView.setNotesContainerView(notesSectionContainer);
-    notesView.setImageButtonView(notesImageButton);
-    notesView.setHideStyleClass(hideStyleClass)
-    notesView.setImageButtonDisplayStyleClass(noteImageButtonClass);
-    notesView.setNoteMenuDisplayStyleClass(notesContainerDisplayStyle)
+    const notesViewBinding = new NotesContainerBindView(document);
+    const notesView = new NotesContainerView(notesViewBinding.getBinding());
+    
     SELECT_MENU_ITEM_EVENT_BUS.subscribe(notesView.onSideBarChangeItemListener);
     VIDEO_PLAYER_EVENT_BUS.subscribe(notesView.onPlayNewVideoListener);
 
