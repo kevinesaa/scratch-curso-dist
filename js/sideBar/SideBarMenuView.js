@@ -1,5 +1,7 @@
 class SideBarMenuView {
     
+    static #DISPLAY_NONE = 'none';
+    
     //view
     #rootView;
     #hideStyleClass;

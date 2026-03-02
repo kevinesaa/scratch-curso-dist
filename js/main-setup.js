@@ -4,12 +4,6 @@ const START_SESSION_EVENT_BUS = new EventBus(new Set());
 const SELECT_MENU_ITEM_EVENT_BUS = new EventBus(new Set());
 
 
-const ALL_EVENT_BUSES = Object.freeze({
-    VIDEO_PLAYER_EVENT_BUS,
-    START_SESSION_EVENT_BUS,
-    SELECT_MENU_ITEM_EVENT_BUS
-});
-
 function onInitHeader() 
 {
     
@@ -29,36 +23,25 @@ function onInitSideBar()
     const navMenuLineClass = "nav-menu-line";
     const navMenuHighlightItemClass = "nav-bar-item-highlight";
     const navMenuHighlightSectionClass = "nav-bar-section-highlight";
-
-    // side bar menu
-    const menuContainerId = "nav-menu-container";
-    const navMenuIconCloseId = "nav-menu-icon-close";
-    const navMenuIconOpenId = "nav-menu-icon-open";
-    const navMenuCloseAreaId = "close-menu-area";
-    const navMenuId = "main-nav-bar";
-
-
-    const menuContainer = document.getElementById(menuContainerId);
-    const menuCloseIcon = document.getElementById(navMenuIconCloseId);
-    const menuOpenIcon = document.getElementById(navMenuIconOpenId);
-    const menuCloseArea = document.getElementById(navMenuCloseAreaId);
-    const menuContainerDisplayStyle = menuContainer.style.display;
+    
+    const sideBarBinding = new SideBarMenuBindView(document).getBinding();
+    const menuContainerDisplayStyle = sideBarBinding.menuContainer.style.display;
 
     const nonClickbleSectionTypes = [ menuOptionEntryTypes.introContainer ];
-    const nav = document.getElementById(navMenuId);
+    
     const sectionFactory = new MenuSectionFactory(document, hideStyleClass, navMenuLineClass);
     const itemFactory = new MenuItemViewFactory(document,navMenuHighlightItemClass);
     
     const sideBar = 
         new SideBarMenuBuilder()
             .setRootView(document)
+            .setMenuContainderView(sideBarBinding.menuContainer)
+            .setCloseIconView(sideBarBinding.menuCloseIcon)
+            .setCloseMenuAreaView(sideBarBinding.menuCloseArea)
+            .setOpenIconView(sideBarBinding.menuOpenIcon)
+            .setNavegationMenuView(sideBarBinding.navMenuView)
             .setHideStyleClass(hideStyleClass)
-            .setMenuContainderView(menuContainer)
-            .setCloseIconView(menuCloseIcon)
-            .setCloseMenuAreaView(menuCloseArea)
-            .setOpenIconView(menuOpenIcon)
             .setMenuContainerDisplayStyle(menuContainerDisplayStyle)
-            .setNavegationMenuView(nav)
             .setNonClickableSectionArray(nonClickbleSectionTypes)
             .setSectionFactory(sectionFactory)
             .setItemFactory(itemFactory)
@@ -123,18 +106,18 @@ function onInitSession()
     VIDEO_PLAYER_EVENT_BUS.subscribe(sessionManager.onPlayNewVideoListener);
 }
 
-
-
 function main() 
 {
-    //ALL_VIEW_CONTAINER
-    //{MENU, ALL_EVENT_BUSES}
     onInitHeader();
     onInitSideBar();
     onInitVideoPlayer();
     onInitNotesBar();
     onInitFragmentController();
     onInitSession();
+
+    const app =  new Application();
+
+    app.init();
 }
 
 

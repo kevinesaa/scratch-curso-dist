@@ -8,4 +8,28 @@ class Application {
     init = () => {
 
     }
+
+    #onInitHeader = () => {
+
+    }
+
+    #onInitSideBar = () => {
+
+    }
+
+    #onInitVideoPlayer = () => {
+
+    }
+
+    #onInitNotesBar = () => {
+
+    }
+
+    #onInitFragmentController = () => {
+
+    }
+
+    #onInitSession = () => {
+
+    }
 }
