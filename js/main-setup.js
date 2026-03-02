@@ -24,6 +24,26 @@ function onInitHeader()
 
 function onInitSideBar() 
 {   
+
+    const hideStyleClass = "none";
+    const navMenuLineClass = "nav-menu-line";
+    const navMenuHighlightItemClass = "nav-bar-item-highlight";
+    const navMenuHighlightSectionClass = "nav-bar-section-highlight";
+
+    // side bar menu
+    const menuContainerId = "nav-menu-container";
+    const navMenuIconCloseId = "nav-menu-icon-close";
+    const navMenuIconOpenId = "nav-menu-icon-open";
+    const navMenuCloseAreaId = "close-menu-area";
+    const navMenuId = "main-nav-bar";
+
+
+    const menuContainer = document.getElementById(menuContainerId);
+    const menuCloseIcon = document.getElementById(navMenuIconCloseId);
+    const menuOpenIcon = document.getElementById(navMenuIconOpenId);
+    const menuCloseArea = document.getElementById(navMenuCloseAreaId);
+    const menuContainerDisplayStyle = menuContainer.style.display;
+
     const nonClickbleSectionTypes = [ menuOptionEntryTypes.introContainer ];
     const nav = document.getElementById(navMenuId);
     const sectionFactory = new MenuSectionFactory(document, hideStyleClass, navMenuLineClass);
