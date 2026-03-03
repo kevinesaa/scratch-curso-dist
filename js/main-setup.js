@@ -23,7 +23,7 @@ function onInitSideBar()
     const navMenuLineClass = "nav-menu-line";
     const navMenuHighlightItemClass = "nav-bar-item-highlight";
     const navMenuHighlightSectionClass = "nav-bar-section-highlight";
-    
+
     const sideBarBinding = new SideBarMenuBindView(document).getBinding();
     const menuContainerDisplayStyle = sideBarBinding.menuContainer.style.display;
 
@@ -115,8 +115,15 @@ function main()
     onInitFragmentController();
     onInitSession();
 
-    const app =  new Application();
-
+    const app = new Application();
+    app.setMenuModel(MENU);
+    app.setMenuEntryTypes(menuOptionEntryTypes);
+    app.setRootView(document);
+    app.setWindowManager(window);
+    app.setLocalStore(localStorage);
+    app.setVideoPlayerEventBus(VIDEO_PLAYER_EVENT_BUS);
+    app.setSelectMenuItemEventBus(SELECT_MENU_ITEM_EVENT_BUS);
+    app.setSessionEventBus(START_SESSION_EVENT_BUS);
     app.init();
 }
 
