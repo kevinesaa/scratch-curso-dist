@@ -46,11 +46,17 @@ class Application {
     }
 
     init = () => {
-
+        this.#initHeader();
     }
 
-    #onInitHeader = () => {
+    #initHeader = () => {
 
+        const headerBarBinding = new HeaderBarBindView(this.#rootView);
+        const headerBarView = new HeaderBarView(headerBarBinding.getBinding());
+        
+        
+        this.#selectMenuItemEventBus.subscribe(headerBarView.onSelectItemMenuListener);
+        this.#videoPlayerEventBus.subscribe(headerBarView.onPlayNewVideo);
     }
 
     #onInitSideBar = () => {

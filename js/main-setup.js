@@ -4,18 +4,6 @@ const START_SESSION_EVENT_BUS = new EventBus(new Set());
 const SELECT_MENU_ITEM_EVENT_BUS = new EventBus(new Set());
 
 
-function onInitHeader() 
-{
-    
-    const headerBarBinding = new HeaderBarBindView(document);
-    const headerBarView = new HeaderBarView(headerBarBinding.getBinding());
-    
-    
-    SELECT_MENU_ITEM_EVENT_BUS.subscribe(headerBarView.onSelectItemMenuListener);
-    VIDEO_PLAYER_EVENT_BUS.subscribe(headerBarView.onPlayNewVideo);
-}
-
-
 function onInitSideBar() 
 {   
 
@@ -108,12 +96,12 @@ function onInitSession()
 
 function main() 
 {
-    onInitHeader();
+    
     onInitSideBar();
     onInitVideoPlayer();
     onInitNotesBar();
     onInitFragmentController();
-    onInitSession();
+    
 
     const app = new Application();
     app.setMenuModel(MENU);
@@ -125,6 +113,8 @@ function main()
     app.setSelectMenuItemEventBus(SELECT_MENU_ITEM_EVENT_BUS);
     app.setSessionEventBus(START_SESSION_EVENT_BUS);
     app.init();
+
+    onInitSession();
 }
 
 
