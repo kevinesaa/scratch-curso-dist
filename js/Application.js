@@ -46,7 +46,12 @@ class Application {
     }
 
     init = () => {
+        this.#initSideBar();
+        this.#initVideoPlayer();
+        this.#initNotesBar();
+        this.#initFragmentController();
         this.#initHeader();
+        this.#initSession();
     }
 
     #initHeader = () => {
@@ -59,23 +64,87 @@ class Application {
         this.#videoPlayerEventBus.subscribe(headerBarView.onPlayNewVideo);
     }
 
-    #onInitSideBar = () => {
+    #initSideBar = () => {
+        const hideStyleClass = "none";
+        const navMenuLineClass = "nav-menu-line";
+        const navMenuHighlightItemClass = "nav-bar-item-highlight";
 
+        const sideBarBinding = new SideBarMenuBindView(this.#rootView).getBinding();
+        const menuContainerDisplayStyle = sideBarBinding.menuContainer.style.display;
+
+        const nonClickbleSectionTypes = [ this.#menuEntryTypes.introContainer ];
+        
+        const sectionFactory = new MenuSectionFactory(this.#rootView, hideStyleClass, navMenuLineClass);
+        const itemFactory = new MenuItemViewFactory(this.#rootView, navMenuHighlightItemClass);
+        
+        const sideBar = 
+            new SideBarMenuBuilder()
+                .setRootView(this.#rootView)
+                .setMenuContainderView(sideBarBinding.menuContainer)
+                .setCloseIconView(sideBarBinding.menuCloseIcon)
+                .setCloseMenuAreaView(sideBarBinding.menuCloseArea)
+                .setOpenIconView(sideBarBinding.menuOpenIcon)
+                .setNavegationMenuView(sideBarBinding.navMenuView)
+                .setHideStyleClass(hideStyleClass)
+                .setMenuContainerDisplayStyle(menuContainerDisplayStyle)
+                .setNonClickableSectionArray(nonClickbleSectionTypes)
+                .setSectionFactory(sectionFactory)
+                .setItemFactory(itemFactory)
+                .setMenuDataEntries(this.#menuModel)
+                .setOnSelectItemBus(this.#selectMenuItemEventBus)
+                .build();
+        
+        sideBar.hideSideBar();
+        sideBar.hideAllSection();
+        
+        this.#sessionEventBus.subscribe(sideBar.onStartSessionListener);
+        this.#videoPlayerEventBus.subscribe(sideBar.onPlayNewVideoListener);
     }
 
-    #onInitVideoPlayer = () => {
-
+    #initVideoPlayer = () => {
+        // Build video source dictionary from menuModel
+        const videoSourceList = {};
+        Object.entries(this.#menuModel)
+            .filter(entry => entry[1].hasOwnProperty('items'))
+            .flatMap(key => key[1].items)
+            .filter(item => item.type == this.#menuEntryTypes.video)    
+            .forEach(v => videoSourceList[v.id] = v);
+        
+        // Create VideoPlayer using VideoPlayerBuilder
+        const videoPlayerView = new VideoPlayerBuilder()
+            .setRootView(this.#rootView)
+            .setMenuItemTypes(this.#menuEntryTypes)
+            .setSourcePlayListDictionary(videoSourceList)
+            .setEventBus(this.#videoPlayerEventBus)
+            .build();
+        
+        // Subscribe to event buses
+        this.#sessionEventBus.subscribe(videoPlayerView.onStartSessionListener);
+        this.#selectMenuItemEventBus.subscribe(videoPlayerView.onSelectItemMenuListener);
     }
 
-    #onInitNotesBar = () => {
+    #initNotesBar = () => {
+        const notesViewBinding = new NotesContainerBindView(this.#rootView);
+        const notesView = new NotesContainerView(notesViewBinding.getBinding());
+        
+        this.#selectMenuItemEventBus.subscribe(notesView.onSideBarChangeItemListener);
+        this.#videoPlayerEventBus.subscribe(notesView.onPlayNewVideoListener);
 
+        notesView.hideNotesMenu();
     }
 
-    #onInitFragmentController = () => {
-
+    #initFragmentController = () => {
+        const fragmentViewBinding = new FrameScreenControllerBindView(this.#rootView);
+        const frameController = new FrameScreenControllerView(this.#windowManager, fragmentViewBinding.getBinding(), this.#menuEntryTypes);
+        
+        this.#selectMenuItemEventBus.subscribe(frameController.onSelectMenuItemListener);
     }
 
-    #onInitSession = () => {
-
+    #initSession = () => {
+        const sessionManager = new SessionManager(this.#localStore, this.#sessionEventBus, this.#menuEntryTypes);
+        sessionManager.startSessionNotify();
+        
+        this.#selectMenuItemEventBus.subscribe(sessionManager.onSelectItemMenuListener);
+        this.#videoPlayerEventBus.subscribe(sessionManager.onPlayNewVideoListener);
     }
 }
