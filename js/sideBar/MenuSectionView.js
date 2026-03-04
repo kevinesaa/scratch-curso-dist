@@ -1,7 +1,6 @@
 class MenuSectionView {
     
     //view
-    #rootView;
     #sectionView;
     #sectionListView;
     #titleTextView;
@@ -18,37 +17,23 @@ class MenuSectionView {
     #isAllocate = false;
     #isClickable = false;
 
-    constructor(index,rootView) {
+    constructor(index, binding, hideStyleClass) {
+        
         this.#sectionIndex = index;
-        this.#rootView = rootView;
-    }
-
-    setSectionView = (view) => {
-        this.#sectionView = view;
-    }
-
-    setHideStyleClass = (hideStyleClass) => {
         this.#hideStyleClass = hideStyleClass;
+        
+        this.#sectionView = binding.sectionView;
+        this.#sectionListView = binding.sectionListView;
+        this.#titleTextView = binding.titleTextView;
+        this.#displaySectionClass = binding.displaySectionClass;
     }
 
     getSectionView = () => {
         return this.#sectionView;
     }
 
-    setSectionListView = (view) => {
-        this.#sectionListView = view;
-    }
-
     getSecctionListView = () => {
         return this.#sectionListView;
-    }
-
-    setTitleTextView = (view) => {
-        this.#titleTextView = view;
-    }
-
-    setDisplaySectionClass = (displayClass) => {
-        this.#displaySectionClass = displayClass;
     }
 
     setIsClickable = (isClickable) => {

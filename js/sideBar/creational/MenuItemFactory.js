@@ -11,10 +11,13 @@ class MenuItemViewFactory {
     createItemView = (itemEntryData) => {
 
         const navEntry = this.#rootView.createElement("li");
-        const itemViewContainer = new MenuItemView(this.#rootView);
-        itemViewContainer.setItemView(navEntry);
+        
+        const binding = {
+            itemView: navEntry
+        };
+        
+        const itemViewContainer = new MenuItemView(binding, this.#highlightItemClass);
         itemViewContainer.setItemDataEntry(itemEntryData);
-        itemViewContainer.setHighlightItemClass(this.#highlightItemClass);
         
         return itemViewContainer;
 

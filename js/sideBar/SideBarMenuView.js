@@ -1,12 +1,10 @@
 class SideBarMenuView {
     
+    static #DISPLAY_NONE = 'none';
     //view
-    #rootView;
     #hideStyleClass;
     
-    #menuOpenIconView;
-    #menuCloseIconView;
-    #menuCloseArea;
+    
     #menuContainerView;
     #menuContainerDisplayStyle;
 
@@ -20,48 +18,37 @@ class SideBarMenuView {
     // bus
     #onSelectItemEventBus;
     
-    constructor(rootView,hideStyleClass) {
-        this.#rootView = rootView;
+    constructor(binding, hideStyleClass) {
+        
         this.#hideStyleClass = hideStyleClass;
-    }
-
-    setMenuContainderView = (view) => {
-        this.#menuContainerView = view;
-    }
-    
-    setContainderDisplayStyle = (style) => {
-        this.#menuContainerDisplayStyle = style;
-    }
-
-    setOpenIconView = (view) => {
-        this.#menuOpenIconView = view;
-        this.#menuOpenIconView.onclick = () => {
+        
+        binding.menuOpenIcon.onclick = () => {
             this.showSideBar();
-        }
-    }
+        };
 
-    setCloseIconView = (view) => {
-        this.#menuCloseIconView = view;
-        this.#menuCloseIconView.onclick = () => {
+        binding.menuCloseIcon.onclick = () => {
             this.hideSideBar();
         };
-    }
 
-    setCloseMenuAreaView = (view) => {
-        this.#menuCloseArea = view;
-        this.#menuCloseArea.onclick = () => {
+        binding.menuCloseArea.onclick = () => {
             this.hideSideBar();
         };
-    }
+        
 
-    setNavegationMenuView = (view) => {
-        this.#navegationMenuView = view;
+        this.#menuContainerView = binding.menuContainer;
+        this.#navegationMenuView = binding.navMenuView;
+        
+        this.#menuContainerDisplayStyle = binding.menuContainer.style.display;
     }
 
     setEventBusOnSelectItem = (eventBus)=> {
         this.#onSelectItemEventBus = eventBus;
     }
 
+    addView = (view) => {
+        this.#navegationMenuView.appendChild(view);
+    }
+    
     addSection = (section) => {
         const data = section.getSectionDataEntry();
         this.#sectionViewContainerDict[data.id] = section;

@@ -26,12 +26,14 @@ class MenuSectionFactory {
         const sectionTitle = rootView.createElement("h4");
         const sectionListDisplay = sectionList.style.display;
         
-        const section = new MenuSectionView(index,rootView);
-        section.setSectionView(sectionView);
-        section.setSectionListView(sectionList);
-        section.setTitleTextView(sectionTitle);
-        section.setDisplaySectionClass(sectionListDisplay);
-        section.setHideStyleClass(this.#hideStyleClass);
+        const binding = {
+            sectionView: sectionView,
+            sectionListView: sectionList,
+            titleTextView: sectionTitle,
+            displaySectionClass: sectionListDisplay
+        };
+        
+        const section = new MenuSectionView(index, binding, this.#hideStyleClass);
         
         section.setSectionDataEntry(sectionEntry);
         
