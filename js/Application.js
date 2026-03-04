@@ -2,6 +2,10 @@ class Application {
 
     #menuModel;
     #menuEntryTypes;
+    #hideStyleCssClass;
+    #separatorSectionCssClass;
+    #highlightItemCssClass;
+    #highlightSectionCssClass;
     #rootView;
     #windowManager;
     #localStore;
@@ -19,6 +23,22 @@ class Application {
 
     setMenuEntryTypes(menuEntryTypes) {
         this.#menuEntryTypes = menuEntryTypes;
+    }
+
+    setHideStyleCssClass(hideStyleCssClass) {
+        this.#hideStyleCssClass = hideStyleCssClass;
+    }
+
+    setSeparatorSectionCssClass(separatorSectionCssClass) {
+        this.#separatorSectionCssClass = separatorSectionCssClass;
+    }
+
+    setHighlightItemCssClass(highlightItemCssClass) {
+        this.#highlightItemCssClass = highlightItemCssClass;
+    }
+
+    setHighlightSectionCssClass(highlightSectionCssClass) {
+        this.#highlightSectionCssClass = highlightSectionCssClass;
     }
 
     setRootView(rootView) {
@@ -65,19 +85,17 @@ class Application {
     }
 
     #initSideBar = () => {
-        const hideStyleClass = "none";
-        const navMenuLineClass = "nav-menu-line";
-        const navMenuHighlightItemClass = "nav-bar-item-highlight";
-
+        
         const nonClickbleSectionTypes = [ this.#menuEntryTypes.introContainer ];
         
-        const sectionFactory = new MenuSectionFactory(this.#rootView, hideStyleClass, navMenuLineClass);
-        const itemFactory = new MenuItemViewFactory(this.#rootView, navMenuHighlightItemClass);
+        //#highlightSectionCssClass;
+        const sectionFactory = new MenuSectionFactory(this.#rootView,this.#hideStyleCssClass,this.#separatorSectionCssClass);
+        const itemFactory = new MenuItemViewFactory(this.#rootView, this.#highlightItemCssClass);
         
         const sideBar = 
             new SideBarMenuBuilder()
                 .setRootView(this.#rootView)
-                .setHideStyleClass(hideStyleClass)
+                .setHideStyleClass(this.#hideStyleCssClass)
                 .setNonClickableSectionArray(nonClickbleSectionTypes)
                 .setSectionFactory(sectionFactory)
                 .setItemFactory(itemFactory)
