@@ -4,14 +4,6 @@ class SideBarMenuBuilder {
     #rootView;
     #hideStyleClass;
 
-    #menuOpenIconView;
-    #menuCloseIconView;
-    #menuCloseAreaView;
-    #menuContainerView;
-    #menuContainerDisplayStyle
-
-    #navegationMenuView;
-
     
     // section settings
     #nonClickbleSectionTypes;
@@ -35,36 +27,6 @@ class SideBarMenuBuilder {
 
     setHideStyleClass = (hideStyleClass) => {
         this.#hideStyleClass = hideStyleClass;
-        return this;
-    }
-    
-    setOpenIconView = (view) => {
-        this.#menuOpenIconView = view;
-        return this;
-    }
-
-    setCloseIconView = (view) => {
-        this.#menuCloseIconView = view;
-        return this;
-    }
-    
-    setCloseMenuAreaView = (view) => {
-        this.#menuCloseAreaView = view;
-        return this;
-    }
-
-    setMenuContainderView = (view) => {
-        this.#menuContainerView = view;
-        return this;
-    }
-
-    setMenuContainerDisplayStyle = (style) => {
-        this.#menuContainerDisplayStyle = style;
-        return this;
-    }
-
-    setNavegationMenuView = (view) => {
-        this.#navegationMenuView = view;
         return this;
     }
 
@@ -95,34 +57,28 @@ class SideBarMenuBuilder {
 
     build = () => { 
         
-        const sideBar = new SideBarMenuView(this.#rootView, this.#hideStyleClass);
-        sideBar.setOpenIconView(this.#menuOpenIconView);
-        sideBar.setCloseIconView(this.#menuCloseIconView);
-        sideBar.setCloseMenuAreaView(this.#menuCloseAreaView);
-        sideBar.setMenuContainderView(this.#menuContainerView);
-        sideBar.setContainderDisplayStyle(this.#menuContainerDisplayStyle);
-        sideBar.setNavegationMenuView(this.#navegationMenuView);
+        const sideBarBinding = new SideBarMenuBindView(this.#rootView);
+        const sideBar = new SideBarMenuView(sideBarBinding.getBinding(), this.#hideStyleClass);
         sideBar.setEventBusOnSelectItem(this.#selectItemBus);
         
         let index = 0;
-        Object.values(this.#menuEntriesItems).forEach( sectionEntry => {
+        Object.values(this.#menuEntriesItems).forEach( sectionDataEntry => {
             
-            const isClickable = !this.#nonClickbleSectionTypes.includes(sectionEntry.type);
-            const section = this.#sectionFactory.createSection(index,sectionEntry);
+            const isClickable = !this.#nonClickbleSectionTypes.includes(sectionDataEntry.type);
+            const section = this.#sectionFactory.createSection(index,sectionDataEntry);
             
-            this.#navegationMenuView.appendChild( section.getSectionView() );
             section.bindDataView();
             section.allocateView();
             section.setIsClickable(isClickable);
-            
             sideBar.addSection(section);
-            
+            sideBar.addView(section.getSectionView());
+
             if (index != 0) {
                 const separatorView = this.#sectionFactory.createSeparatorView();
-                this.#navegationMenuView.appendChild(separatorView);
+                sideBar.addView(separatorView);
             }
 
-            sectionEntry.items.forEach(item => 
+            sectionDataEntry.items.forEach(item => 
             { 
                 const itemViewContainer = this.#itemFactory.createItemView(item);
                 const sectiontView = section.getSecctionListView();

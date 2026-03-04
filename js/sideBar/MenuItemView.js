@@ -2,7 +2,6 @@
 class MenuItemView {
 
     //view
-    #rootView;
     #itemView;
 
     //css
@@ -16,12 +15,9 @@ class MenuItemView {
 
     #onItemClickListener;
 
-    constructor(rootView) {
-        this.#rootView = rootView;
-    }
-
-    setItemView = (view) => {
-        this.#itemView = view;
+    constructor(binding, highlightItemClass) {
+        this.#itemView = binding.itemView;
+        this.#highlightItemClass = highlightItemClass;
     }
 
     getItemView = () => {
@@ -30,10 +26,6 @@ class MenuItemView {
 
     setItemDataEntry = (itemData) => {
         this.#itemDataEntry = itemData;
-    }
-
-    setHighlightItemClass = (cssClass) => {
-        this.#highlightItemClass = cssClass;
     }
 
     getItemDataEntry = () => {
@@ -49,8 +41,6 @@ class MenuItemView {
                 if(this.#onItemClickListener != null && this.#onItemClickListener != undefined) {
                     this.#onItemClickListener(thisViewContainer);
                 }
-                
-                
             }
             this.#isAllocate = true;
         }

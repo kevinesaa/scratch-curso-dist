@@ -69,9 +69,6 @@ class Application {
         const navMenuLineClass = "nav-menu-line";
         const navMenuHighlightItemClass = "nav-bar-item-highlight";
 
-        const sideBarBinding = new SideBarMenuBindView(this.#rootView).getBinding();
-        const menuContainerDisplayStyle = sideBarBinding.menuContainer.style.display;
-
         const nonClickbleSectionTypes = [ this.#menuEntryTypes.introContainer ];
         
         const sectionFactory = new MenuSectionFactory(this.#rootView, hideStyleClass, navMenuLineClass);
@@ -80,13 +77,7 @@ class Application {
         const sideBar = 
             new SideBarMenuBuilder()
                 .setRootView(this.#rootView)
-                .setMenuContainderView(sideBarBinding.menuContainer)
-                .setCloseIconView(sideBarBinding.menuCloseIcon)
-                .setCloseMenuAreaView(sideBarBinding.menuCloseArea)
-                .setOpenIconView(sideBarBinding.menuOpenIcon)
-                .setNavegationMenuView(sideBarBinding.navMenuView)
                 .setHideStyleClass(hideStyleClass)
-                .setMenuContainerDisplayStyle(menuContainerDisplayStyle)
                 .setNonClickableSectionArray(nonClickbleSectionTypes)
                 .setSectionFactory(sectionFactory)
                 .setItemFactory(itemFactory)
