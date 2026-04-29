@@ -8,6 +8,9 @@ class EventBus {
         this.#observers = listenerSetArray;
     }
 
+    getObservers() {
+        return this.#observers;
+    }
 
     dispatch = (args) => {
         this.#observers.forEach(func => func(args));

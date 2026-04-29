@@ -3,34 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>QUnit</title>
+        <title>Unit Tests</title>
         <link rel="stylesheet" href="./thirdParty/QUnit/qunit.css">
     </head>
     <body>
         <div id="qunit"></div>
         <div id="qunit-fixture"></div>
+        
         <script src="./thirdParty/QUnit/qunit.js"></script>
         
-        <script>
-            
-            //TODO add real unit test
-            function add(a, b) { return a + b; }
-            function minus(a,b) { return a - b}
-            
-            QUnit.module('add', function() {
-                
-                QUnit.test('two numbers', function(assert) {
-                    assert.equal(add(1, 2), 3);
-                });
-            });
-            
-            QUnit.module("minus", function(){
-                QUnit.test("two numbers", function(assert){
-                    const result = minus(1,1);
-                    assert.equal(result,0);
-                });
-            });
-
-        </script>
+        <script src="../js/EventBus.js"></script>
+        <script src="./unit-test/EventBusTest.js"></script>
+        
     </body>
 </html>
